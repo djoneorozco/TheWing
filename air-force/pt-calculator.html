@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Aug 03 2026 15:25:15 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Aug 05 2026 07:43:42 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a6ff0545aa01c93602dba3e" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -17,7 +17,7 @@
   <link href="../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../css/webflow.css" rel="stylesheet" type="text/css">
   <link href="../css/pcsunited-com-28346d-d11bc0f56858d43141.webflow.css" rel="stylesheet" type="text/css">
-  <style>html.w-mod-js:not(.w-mod-ix3) :is(.sub-nav-img, .logo-footer, .gradiant-logo, .sub-navigation, [data-scroll="fade_04"], [data-scroll="fade_01"], [data-scroll="fade_03"], [data-scroll="fade_02"], [data-scroll="fade_06"], [data-scroll="fade_05"]) {visibility: hidden !important;}</style>
+  <style>html.w-mod-js:not(.w-mod-ix3) :is(.sub-nav-img, [data-scroll="fade_01"], [data-scroll="fade_05"], [data-scroll="fade_03"], .logo-footer, .gradiant-logo, .sub-navigation, [data-scroll="fade_04"], [data-scroll="fade_02"], [data-scroll="fade_06"]) {visibility: hidden !important;}</style>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -263,7 +263,7 @@
       </iframe>
     </div>
   </div>
-  <div class="w-embed w-script"><!--  ============================================================
+  <div class="code-embed-75 w-embed w-script"><!--  ============================================================
   PCSUNITED • PUBLIC ASK AMY COMMAND CENTER v6.1
   MIDNIGHT AF BLUE THEME
   VIDEO SECTION REMOVED
@@ -1731,10 +1731,1261 @@
 })();
 </script>
   </div>
+  <section class="section-56">
+    <div class="fad-cabinet-2">
+      <div class="section_heading-6">
+        <div class="text-style-badge-6 is-white">To your personal page</div>
+        <h1 class="max-width-large-4"></h1>
+        <div class="spacer-xsmall-10">
+          <h1 class="frd-title-3">Financial Readiness Dashboard</h1>
+        </div>
+        <div class="text-style-muted80-9"></div>
+        <div class="spacer-small-6">
+          <div class="code-embed-74 w-embed w-script"><!--  ============================================================
+  PCSUNITED • AIR FORCE PFA SCORE CHARTS
+  MIDNIGHT AF BLUE • WEBFLOW EMBED
+  Version 1.0.0
+  REQUIRED DATA FILE:
+  https://thewing.netlify.app/PT-Calculator/pfa-score-data.js
+===============================================================  -->
+            <div id="pcsu-pfa-score-charts" style="all:initial;"></div>
+            <script src="https://thewing.netlify.app/PT-Calculator/pfa-score-data.js"></script>
+            <script>
+(() => {
+  "use strict";
+  const root =
+    document.getElementById("pcsu-pfa-score-charts");
+  if (!root || root.__pcsuPfaMounted) return;
+  root.__pcsuPfaMounted = true;
+  const DATA =
+    window.PCSU_PFA_SCORE_DATA;
+  if (
+    !DATA ||
+    !DATA.components ||
+    !Array.isArray(DATA.ageGroups)
+  ) {
+    root.innerHTML = `
+      <div style="
+        padding:24px;
+        border:1px solid rgba(214,101,112,.35);
+        border-radius:18px;
+        background:rgba(66,26,34,.85);
+        color:#fff;
+        font-family:Inter,system-ui,sans-serif;
+        line-height:1.5;
+      ">
+        <strong>PFA Score Chart data could not be loaded.</strong>
+        <br>
+        Confirm that
+        <code>PT-Calculator/pfa-score-data.js</code>
+        is deployed and passes JavaScript syntax validation.
+      </div>
+    `;
+    return;
+  }
+  root.innerHTML = `
+    <style>
+      #pcsu-pfa-score-charts,
+      #pcsu-pfa-score-charts * {
+        box-sizing:border-box;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Arial,
+          sans-serif;
+      }
+      #pcsu-pfa-score-charts {
+        --pfa-bg:#0a2235;
+        --pfa-bg-2:#173954;
+        --pfa-bg-3:#29465f;
+        --pfa-panel:rgba(35,67,94,.84);
+        --pfa-panel-dark:rgba(12,35,54,.92);
+        --pfa-control:rgba(15,44,68,.72);
+        --pfa-control-hover:rgba(29,68,99,.86);
+        --pfa-ink:#f2f7fb;
+        --pfa-soft:#dae8f2;
+        --pfa-muted:rgba(198,217,232,.72);
+        --pfa-line:rgba(183,211,232,.16);
+        --pfa-line-strong:rgba(159,227,212,.36);
+        --pfa-mint:#9fe3d4;
+        --pfa-teal:#7ccbd9;
+        --pfa-gold:#e4c071;
+        --pfa-gold-2:#efd18a;
+        --pfa-peach:#efb08f;
+        --pfa-lavender:#aebcec;
+        width:100%;
+        display:block;
+        color:var(--pfa-ink);
+      }
+      #pcsu-pfa-score-charts .pfa-shell {
+        width:100%;
+        overflow:hidden;
+        border:1px solid var(--pfa-line);
+        border-radius:24px;
+        background:
+          radial-gradient(
+            950px 420px at 8% 0%,
+            rgba(61,142,186,.20),
+            transparent 58%
+          ),
+          radial-gradient(
+            780px 380px at 96% 0%,
+            rgba(148,166,199,.13),
+            transparent 60%
+          ),
+          linear-gradient(
+            135deg,
+            rgba(12,45,69,.98),
+            rgba(37,71,99,.96) 54%,
+            rgba(54,65,82,.96)
+          );
+        box-shadow:
+          0 24px 58px rgba(2,12,24,.30);
+      }
+      #pcsu-pfa-score-charts .pfa-header {
+        padding:26px 26px 20px;
+        border-bottom:1px solid var(--pfa-line);
+        background:
+          linear-gradient(
+            180deg,
+            rgba(223,239,248,.055),
+            rgba(223,239,248,0)
+          );
+      }
+      #pcsu-pfa-score-charts .pfa-header-row {
+        display:flex;
+        align-items:flex-start;
+        justify-content:space-between;
+        gap:20px;
+      }
+      #pcsu-pfa-score-charts .pfa-eyebrow {
+        color:var(--pfa-mint);
+        font-size:11px;
+        line-height:1.2;
+        font-weight:900;
+        letter-spacing:.11em;
+        text-transform:uppercase;
+      }
+      #pcsu-pfa-score-charts .pfa-title {
+        margin:7px 0 0;
+        font-family:
+          Georgia,
+          "Times New Roman",
+          serif;
+        font-size:clamp(26px,3vw,36px);
+        line-height:1.08;
+        font-weight:700;
+        color:var(--pfa-ink);
+      }
+      #pcsu-pfa-score-charts .pfa-copy {
+        max-width:760px;
+        margin:9px 0 0;
+        color:var(--pfa-soft);
+        font-size:14px;
+        line-height:1.55;
+      }
+      #pcsu-pfa-score-charts .pfa-effective {
+        flex:0 0 auto;
+        display:inline-flex;
+        align-items:center;
+        gap:7px;
+        padding:8px 11px;
+        border:1px solid rgba(159,227,212,.23);
+        border-radius:999px;
+        background:rgba(159,227,212,.07);
+        color:var(--pfa-mint);
+        font-size:10px;
+        line-height:1;
+        font-weight:900;
+        letter-spacing:.08em;
+        text-transform:uppercase;
+      }
+      #pcsu-pfa-score-charts .pfa-effective-dot {
+        width:7px;
+        height:7px;
+        border-radius:50%;
+        background:var(--pfa-mint);
+        box-shadow:
+          0 0 0 4px rgba(159,227,212,.06),
+          0 0 12px rgba(159,227,212,.55);
+      }
+      #pcsu-pfa-score-charts .pfa-controls {
+        display:grid;
+        grid-template-columns:
+          minmax(240px,.8fr)
+          minmax(220px,.7fr);
+        gap:16px;
+        padding:22px 26px 0;
+      }
+      #pcsu-pfa-score-charts .pfa-control-group {
+        min-width:0;
+      }
+      #pcsu-pfa-score-charts .pfa-control-label {
+        display:block;
+        margin:0 0 8px;
+        color:var(--pfa-muted);
+        font-size:10px;
+        line-height:1.2;
+        font-weight:900;
+        letter-spacing:.09em;
+        text-transform:uppercase;
+      }
+      #pcsu-pfa-score-charts .pfa-gender-control {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:5px;
+        padding:5px;
+        border:1px solid var(--pfa-line);
+        border-radius:14px;
+        background:rgba(8,29,46,.36);
+      }
+      #pcsu-pfa-score-charts .pfa-gender-btn,
+      #pcsu-pfa-score-charts .pfa-tab {
+        appearance:none;
+        border:1px solid transparent;
+        cursor:pointer;
+        color:var(--pfa-soft);
+        transition:
+          background .18s ease,
+          border-color .18s ease,
+          transform .18s ease,
+          color .18s ease;
+      }
+      #pcsu-pfa-score-charts .pfa-gender-btn {
+        min-height:40px;
+        padding:9px 12px;
+        border-radius:10px;
+        background:transparent;
+        font-size:13px;
+        font-weight:850;
+      }
+      #pcsu-pfa-score-charts .pfa-gender-btn:hover {
+        background:var(--pfa-control-hover);
+      }
+      #pcsu-pfa-score-charts
+      .pfa-gender-btn[aria-pressed="true"] {
+        border-color:rgba(159,227,212,.22);
+        background:
+          linear-gradient(
+            180deg,
+            rgba(44,91,124,.94),
+            rgba(17,53,82,.96)
+          );
+        color:#fff;
+        box-shadow:
+          inset 0 1px 0 rgba(227,241,249,.09),
+          0 9px 20px rgba(2,12,24,.20);
+      }
+      #pcsu-pfa-score-charts .pfa-select {
+        width:100%;
+        min-height:52px;
+        appearance:auto;
+        padding:0 14px;
+        border:1px solid var(--pfa-line);
+        border-radius:14px;
+        outline:none;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(40,77,105,.84),
+            rgba(17,47,72,.90)
+          );
+        color:var(--pfa-ink);
+        font-size:14px;
+        font-weight:800;
+        cursor:pointer;
+      }
+      #pcsu-pfa-score-charts .pfa-select:focus {
+        border-color:var(--pfa-line-strong);
+        box-shadow:
+          0 0 0 4px rgba(159,227,212,.09);
+      }
+      #pcsu-pfa-score-charts .pfa-select option {
+        background:#163955;
+        color:#fff;
+      }
+      #pcsu-pfa-score-charts .pfa-category {
+        padding:22px 26px 0;
+      }
+      #pcsu-pfa-score-charts .pfa-tabs {
+        display:grid;
+        grid-template-columns:
+          repeat(5,minmax(0,1fr));
+        gap:6px;
+        padding:6px;
+        border:1px solid var(--pfa-line);
+        border-radius:16px;
+        background:rgba(8,29,46,.32);
+      }
+      #pcsu-pfa-score-charts .pfa-tab {
+        min-height:44px;
+        padding:9px 10px;
+        border-radius:11px;
+        background:transparent;
+        font-size:12px;
+        line-height:1.2;
+        font-weight:850;
+      }
+      #pcsu-pfa-score-charts .pfa-tab:hover {
+        background:var(--pfa-control-hover);
+        transform:translateY(-1px);
+      }
+      #pcsu-pfa-score-charts
+      .pfa-tab[aria-selected="true"] {
+        border-color:rgba(159,227,212,.20);
+        background:
+          linear-gradient(
+            180deg,
+            rgba(48,98,132,.94),
+            rgba(16,52,81,.98)
+          );
+        color:#fff;
+        box-shadow:
+          inset 0 1px 0 rgba(227,241,249,.09),
+          0 9px 20px rgba(2,12,24,.18);
+      }
+      #pcsu-pfa-score-charts .pfa-summary {
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:14px;
+        margin:20px 26px 0;
+        padding:14px 16px;
+        border:1px solid var(--pfa-line);
+        border-radius:15px;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(126,203,217,.08),
+            rgba(228,192,113,.055)
+          );
+      }
+      #pcsu-pfa-score-charts .pfa-summary-title {
+        color:var(--pfa-ink);
+        font-size:14px;
+        line-height:1.35;
+        font-weight:850;
+      }
+      #pcsu-pfa-score-charts .pfa-summary-copy {
+        margin-top:3px;
+        color:var(--pfa-muted);
+        font-size:12px;
+        line-height:1.4;
+      }
+      #pcsu-pfa-score-charts .pfa-summary-cap {
+        flex:0 0 auto;
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        min-width:86px;
+        padding:10px 12px;
+        border:1px solid rgba(228,192,113,.22);
+        border-radius:999px;
+        background:rgba(228,192,113,.08);
+        color:var(--pfa-gold-2);
+        font-size:11px;
+        font-weight:900;
+        letter-spacing:.05em;
+        text-transform:uppercase;
+      }
+      #pcsu-pfa-score-charts .pfa-table-wrap {
+        margin:18px 26px 0;
+        overflow:auto;
+        border:1px solid var(--pfa-line);
+        border-radius:17px;
+        background:rgba(8,29,46,.28);
+      }
+      #pcsu-pfa-score-charts .pfa-table {
+        width:100%;
+        min-width:680px;
+        border-collapse:separate;
+        border-spacing:0;
+        table-layout:fixed;
+      }
+      #pcsu-pfa-score-charts .pfa-table th,
+      #pcsu-pfa-score-charts .pfa-table td {
+        padding:13px 14px;
+        text-align:center;
+        border-bottom:1px solid rgba(183,211,232,.095);
+        border-right:1px solid rgba(183,211,232,.065);
+      }
+      #pcsu-pfa-score-charts .pfa-table th:last-child,
+      #pcsu-pfa-score-charts .pfa-table td:last-child {
+        border-right:none;
+      }
+      #pcsu-pfa-score-charts .pfa-table thead th {
+        position:sticky;
+        top:0;
+        z-index:2;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(61,96,124,.98),
+            rgba(29,63,91,.98)
+          );
+        color:var(--pfa-soft);
+        font-size:11px;
+        line-height:1.3;
+        font-weight:900;
+        letter-spacing:.045em;
+        text-transform:uppercase;
+      }
+      #pcsu-pfa-score-charts .pfa-table tbody td {
+        color:var(--pfa-soft);
+        font-size:13px;
+        line-height:1.35;
+        font-weight:750;
+        background:rgba(28,61,88,.26);
+      }
+      #pcsu-pfa-score-charts
+      .pfa-table tbody tr:nth-child(even) td {
+        background:rgba(46,79,105,.27);
+      }
+      #pcsu-pfa-score-charts
+      .pfa-table tbody tr:hover td {
+        background:rgba(72,113,143,.32);
+      }
+      #pcsu-pfa-score-charts .pfa-points-cell {
+        color:#fff !important;
+        font-weight:900 !important;
+      }
+      #pcsu-pfa-score-charts .pfa-max-row td {
+        background:
+          linear-gradient(
+            90deg,
+            rgba(159,227,212,.11),
+            rgba(159,227,212,.045)
+          ) !important;
+      }
+      #pcsu-pfa-score-charts .pfa-min-row td {
+        background:
+          linear-gradient(
+            90deg,
+            rgba(228,192,113,.13),
+            rgba(228,192,113,.045)
+          ) !important;
+      }
+      #pcsu-pfa-score-charts .pfa-row-badge {
+        display:inline-flex;
+        align-items:center;
+        margin-left:6px;
+        padding:4px 6px;
+        border:1px solid currentColor;
+        border-radius:999px;
+        font-size:8px;
+        line-height:1;
+        font-weight:900;
+        letter-spacing:.06em;
+        text-transform:uppercase;
+        opacity:.82;
+      }
+      #pcsu-pfa-score-charts .pfa-max-badge {
+        color:var(--pfa-mint);
+      }
+      #pcsu-pfa-score-charts .pfa-min-badge {
+        color:var(--pfa-gold-2);
+      }
+      #pcsu-pfa-score-charts .pfa-risk {
+        display:inline-flex;
+        align-items:center;
+        gap:7px;
+        padding:6px 9px;
+        border-radius:999px;
+        border:1px solid var(--pfa-line);
+        white-space:nowrap;
+      }
+      #pcsu-pfa-score-charts .pfa-risk::before {
+        content:"";
+        width:7px;
+        height:7px;
+        border-radius:50%;
+        background:currentColor;
+      }
+      #pcsu-pfa-score-charts .pfa-risk-low {
+        color:var(--pfa-mint);
+        background:rgba(159,227,212,.07);
+      }
+      #pcsu-pfa-score-charts .pfa-risk-moderate {
+        color:var(--pfa-gold-2);
+        background:rgba(228,192,113,.07);
+      }
+      #pcsu-pfa-score-charts .pfa-risk-high {
+        color:#f0a6b1;
+        background:rgba(240,166,177,.07);
+      }
+      #pcsu-pfa-score-charts .pfa-walk-result {
+        display:inline-flex;
+        align-items:center;
+        gap:7px;
+        padding:6px 10px;
+        border:1px solid rgba(159,227,212,.22);
+        border-radius:999px;
+        color:var(--pfa-mint);
+        background:rgba(159,227,212,.07);
+        font-size:10px;
+        font-weight:900;
+        letter-spacing:.06em;
+        text-transform:uppercase;
+      }
+      #pcsu-pfa-score-charts .pfa-note {
+        padding:18px 26px 24px;
+        color:var(--pfa-muted);
+        font-size:11px;
+        line-height:1.55;
+        font-style:italic;
+      }
+      #pcsu-pfa-score-charts .pfa-source {
+        margin-top:7px;
+        color:rgba(209,225,237,.60);
+        font-style:normal;
+      }
+      @media (max-width:850px) {
+        #pcsu-pfa-score-charts .pfa-header-row {
+          flex-direction:column;
+        }
+        #pcsu-pfa-score-charts .pfa-controls {
+          grid-template-columns:1fr;
+        }
+        #pcsu-pfa-score-charts .pfa-tabs {
+          grid-template-columns:
+            repeat(3,minmax(0,1fr));
+        }
+      }
+      @media (max-width:600px) {
+        #pcsu-pfa-score-charts .pfa-header {
+          padding:21px 18px 17px;
+        }
+        #pcsu-pfa-score-charts .pfa-controls,
+        #pcsu-pfa-score-charts .pfa-category {
+          padding-left:18px;
+          padding-right:18px;
+        }
+        #pcsu-pfa-score-charts .pfa-summary,
+        #pcsu-pfa-score-charts .pfa-table-wrap {
+          margin-left:18px;
+          margin-right:18px;
+        }
+        #pcsu-pfa-score-charts .pfa-summary {
+          align-items:flex-start;
+          flex-direction:column;
+        }
+        #pcsu-pfa-score-charts .pfa-tabs {
+          grid-template-columns:
+            repeat(2,minmax(0,1fr));
+        }
+        #pcsu-pfa-score-charts .pfa-note {
+          padding-left:18px;
+          padding-right:18px;
+        }
+      }
+    </style>
+    <section class="pfa-shell">
+      <header class="pfa-header">
+        <div class="pfa-header-row">
+          <div>
+            <div class="pfa-eyebrow">
+              Official 2026 Standards
+            </div>
+            <h2 class="pfa-title">
+              Air Force PFA Score Charts
+            </h2>
+            <p class="pfa-copy">
+              Compare awarded points across the current Air Force
+              strength, core endurance, cardio, body-composition,
+              and medically authorized walk standards.
+            </p>
+          </div>
+          <div class="pfa-effective">
+            <span class="pfa-effective-dot"></span>
+            Effective 1 Mar 2026
+          </div>
+        </div>
+      </header>
+      <div class="pfa-controls">
+        <div class="pfa-control-group">
+          <span class="pfa-control-label">
+            Scoring Sex
+          </span>
+          <div
+            class="pfa-gender-control"
+            role="group"
+            aria-label="Select scoring sex"
+          >
+            <button
+              type="button"
+              class="pfa-gender-btn"
+              data-sex="male"
+              aria-pressed="true"
+            >
+              Male
+            </button>
+            <button
+              type="button"
+              class="pfa-gender-btn"
+              data-sex="female"
+              aria-pressed="false"
+            >
+              Female
+            </button>
+          </div>
+        </div>
+        <div class="pfa-control-group">
+          <label
+            class="pfa-control-label"
+            for="pcsu-pfa-age"
+          >
+            Age Group
+          </label>
+          <select
+            id="pcsu-pfa-age"
+            class="pfa-select"
+          ></select>
+        </div>
+      </div>
+      <div class="pfa-category">
+        <span class="pfa-control-label">
+          Component Category
+        </span>
+        <div
+          class="pfa-tabs"
+          role="tablist"
+          aria-label="PFA component category"
+        >
+          <button
+            type="button"
+            class="pfa-tab"
+            data-category="cardio"
+            role="tab"
+            aria-selected="true"
+          >
+            Cardio
+          </button>
+          <button
+            type="button"
+            class="pfa-tab"
+            data-category="strength"
+            role="tab"
+            aria-selected="false"
+          >
+            Strength
+          </button>
+          <button
+            type="button"
+            class="pfa-tab"
+            data-category="core"
+            role="tab"
+            aria-selected="false"
+          >
+            Core
+          </button>
+          <button
+            type="button"
+            class="pfa-tab"
+            data-category="body"
+            role="tab"
+            aria-selected="false"
+          >
+            Body Comp
+          </button>
+          <button
+            type="button"
+            class="pfa-tab"
+            data-category="walk"
+            role="tab"
+            aria-selected="false"
+          >
+            2 km Walk
+          </button>
+        </div>
+      </div>
+      <div
+        id="pcsu-pfa-summary"
+        class="pfa-summary"
+      ></div>
+      <div class="pfa-table-wrap">
+        <table
+          class="pfa-table"
+          aria-label="Air Force PFA scoring standards"
+        >
+          <thead id="pcsu-pfa-head"></thead>
+          <tbody id="pcsu-pfa-body"></tbody>
+        </table>
+      </div>
+      <div
+        id="pcsu-pfa-note"
+        class="pfa-note"
+      ></div>
+    </section>
+  `;
+  const ageSelect =
+    root.querySelector("#pcsu-pfa-age");
+  const summaryEl =
+    root.querySelector("#pcsu-pfa-summary");
+  const headEl =
+    root.querySelector("#pcsu-pfa-head");
+  const bodyEl =
+    root.querySelector("#pcsu-pfa-body");
+  const noteEl =
+    root.querySelector("#pcsu-pfa-note");
+  const sexButtons = Array.from(
+    root.querySelectorAll(".pfa-gender-btn")
+  );
+  const tabButtons = Array.from(
+    root.querySelectorAll(".pfa-tab")
+  );
+  const AGE_LABELS = {
+    "under-25":"Under 25",
+    "25-29":"25–29",
+    "30-34":"30–34",
+    "35-39":"35–39",
+    "40-44":"40–44",
+    "45-49":"45–49",
+    "50-54":"50–54",
+    "55-59":"55–59",
+    "60-and-over":"60 and Over",
+    "under-30":"Under 30",
+    "30-39":"30–39",
+    "40-49":"40–49",
+    "50-59":"50–59"
+  };
+  const CATEGORY_CONFIG = {
+    cardio:{
+      title:"Cardiorespiratory Fitness",
+      copy:
+        "Compare the 2-mile run and 20-meter HAMR requirements for the same awarded points.",
+      cap:"50 Point Cap",
+      events:[
+        DATA.components.cardio.twoMileRun,
+        DATA.components.cardio.hamr
+      ],
+      note:
+        "For the run, values are the maximum time allowed for that score. For HAMR, values are the minimum shuttles required."
+    },
+    strength:{
+      title:"Muscular Strength",
+      copy:
+        "Compare 1-minute push-ups and 2-minute hand-release push-ups.",
+      cap:"15 Point Cap",
+      events:[
+        DATA.components.strength.pushups,
+        DATA.components.strength.handReleasePushups
+      ],
+      note:
+        "Repetition values show the minimum number required to receive the displayed points."
+    },
+    core:{
+      title:"Core Endurance",
+      copy:
+        "Compare sit-ups, cross-leg reverse crunches, and the timed forearm plank.",
+      cap:"15 Point Cap",
+      events:[
+        DATA.components.core.situps,
+        DATA.components.core.crossLegReverseCrunch,
+        DATA.components.core.forearmPlank
+      ],
+      note:
+        "Repetition values show minimum repetitions. Plank values show the minimum hold time required."
+    },
+    body:{
+      title:"Body Composition",
+      copy:
+        "Waist-to-height ratio scoring is identical across age groups and scoring sex.",
+      cap:"20 Point Cap",
+      events:[
+        DATA.components.bodyComposition.whtr
+      ],
+      note:
+        "WHtR scoring is age-agnostic. The table preserves the official point values and chart risk classifications."
+    },
+    walk:{
+      title:"Medically Authorized 2-Kilometer Walk",
+      copy:
+        "The 2-kilometer walk uses separate age bands and is evaluated as pass or fail.",
+      cap:"Pass / Fail",
+      events:[
+        DATA.components.medicalWalk.twoKilometerWalk
+      ],
+      note:
+        "The 2-kilometer walk does not use the standard cardio awarded-point table. Medical authorization requirements remain governed by official Air Force policy."
+    }
+  };
+  const state = {
+    sex:"male",
+    ageGroup:"under-25",
+    category:"cardio"
+  };
+  function escapeHtml(value) {
+    return String(
+      value == null ? "" : value
+    )
+      .replace(/&/g,"&amp;")
+      .replace(/</g,"&lt;")
+      .replace(/>/g,"&gt;")
+      .replace(/"/g,"&quot;")
+      .replace(/'/g,"&#039;");
+  }
+  function formatPoints(value) {
+    const number = Number(value);
+    if (!Number.isFinite(number)) {
+      return "—";
+    }
+    return number.toFixed(1) + " pts";
+  }
+  function prefixForQualifier(qualifier) {
+    if (qualifier === "at-or-above") {
+      return "≥ ";
+    }
+    if (qualifier === "at-or-below") {
+      return "≤ ";
+    }
+    return "";
+  }
+  function formatStandardCell(
+    cell,
+    row,
+    event
+  ) {
+    if (
+      cell === null ||
+      cell === undefined ||
+      cell === ""
+    ) {
+      return "—";
+    }
+    const qualifier =
+      cell &&
+      typeof cell === "object"
+        ? cell.qualifier
+        : row.qualifier;
+    const prefix =
+      prefixForQualifier(qualifier);
+    let value = "";
+    if (
+      cell &&
+      typeof cell === "object"
+    ) {
+      value =
+        cell.display != null
+          ? String(cell.display)
+          : cell.value != null
+            ? String(cell.value)
+            : "";
+    } else {
+      value = String(cell);
+    }
+    if (
+      row.maximumScoring &&
+      !qualifier
+    ) {
+      if (
+        event.scoringDirection ===
+        "lower-is-better"
+      ) {
+        return "≤ " + escapeHtml(value);
+      }
+      if (
+        event.scoringDirection ===
+        "higher-is-better"
+      ) {
+        return "≥ " + escapeHtml(value);
+      }
+    }
+    return (
+      escapeHtml(prefix) +
+      escapeHtml(value)
+    );
+  }
+  function riskClass(value) {
+    const text =
+      String(value || "").toLowerCase();
+    if (text.includes("low")) {
+      return "pfa-risk-low";
+    }
+    if (text.includes("moderate")) {
+      return "pfa-risk-moderate";
+    }
+    return "pfa-risk-high";
+  }
+  function getStandardAgeGroups() {
+    return Array.isArray(DATA.ageGroups)
+      ? DATA.ageGroups
+      : [];
+  }
+  function getWalkAgeGroups() {
+    const walk =
+      DATA.components.medicalWalk
+        .twoKilometerWalk;
+    return Array.isArray(walk.ageGroups)
+      ? walk.ageGroups
+      : walk.rows.map(
+          (row) => row.ageGroup
+        );
+  }
+  function populateAgeOptions() {
+    const groups =
+      state.category === "walk"
+        ? getWalkAgeGroups()
+        : getStandardAgeGroups();
+    if (!groups.length) return;
+    if (!groups.includes(state.ageGroup)) {
+      state.ageGroup = groups[0];
+    }
+    ageSelect.innerHTML =
+      groups.map((group) => {
+        return `
+          <option
+            value="${escapeHtml(group)}"
+            ${
+              state.ageGroup === group
+                ? "selected"
+                : ""
+            }
+          >
+            ${escapeHtml(
+              AGE_LABELS[group] || group
+            )}
+          </option>
+        `;
+      }).join("");
+  }
+  function updateControls() {
+    sexButtons.forEach((button) => {
+      const active =
+        button.dataset.sex === state.sex;
+      button.setAttribute(
+        "aria-pressed",
+        active ? "true" : "false"
+      );
+    });
+    tabButtons.forEach((button) => {
+      const active =
+        button.dataset.category ===
+        state.category;
+      button.setAttribute(
+        "aria-selected",
+        active ? "true" : "false"
+      );
+    });
+  }
+  function renderSummary() {
+    const config =
+      CATEGORY_CONFIG[state.category];
+    summaryEl.innerHTML = `
+      <div>
+        <div class="pfa-summary-title">
+          ${escapeHtml(config.title)}
+        </div>
+        <div class="pfa-summary-copy">
+          ${escapeHtml(config.copy)}
+        </div>
+      </div>
+      <div class="pfa-summary-cap">
+        ${escapeHtml(config.cap)}
+      </div>
+    `;
+  }
+  function renderScoredTable() {
+    const config =
+      CATEGORY_CONFIG[state.category];
+    const events =
+      config.events.filter(Boolean);
+    if (!events.length) {
+      headEl.innerHTML = "";
+      bodyEl.innerHTML = `
+        <tr>
+          <td>
+            No chart data is available.
+          </td>
+        </tr>
+      `;
+      return;
+    }
+    const ageIndex =
+      getStandardAgeGroups()
+        .indexOf(state.ageGroup);
+    headEl.innerHTML = `
+      <tr>
+        <th style="width:170px;">
+          Awarded Points
+        </th>
+        ${events.map((event) => `
+          <th>
+            ${escapeHtml(event.label)}
+            ${
+              event.unit
+                ? `<br><span style="
+                    opacity:.65;
+                    font-size:9px;
+                  ">${escapeHtml(event.unit)}</span>`
+                : ""
+            }
+          </th>
+        `).join("")}
+      </tr>
+    `;
+    const rows =
+      Array.isArray(events[0].rows)
+        ? events[0].rows
+        : [];
+    bodyEl.innerHTML =
+      rows.map((row,index) => {
+        const classes = [
+          row.maximumScoring
+            ? "pfa-max-row"
+            : "",
+          row.minimumPassing
+            ? "pfa-min-row"
+            : ""
+        ]
+          .filter(Boolean)
+          .join(" ");
+        const badges = [
+          row.maximumScoring
+            ? `
+              <span
+                class="pfa-row-badge pfa-max-badge"
+              >
+                Max
+              </span>
+            `
+            : "",
+          row.minimumPassing
+            ? `
+              <span
+                class="pfa-row-badge pfa-min-badge"
+              >
+                Min
+              </span>
+            `
+            : ""
+        ].join("");
+        return `
+          <tr class="${classes}">
+            <td class="pfa-points-cell">
+              ${formatPoints(row.awardedPoints)}
+              ${badges}
+            </td>
+            ${events.map((event) => {
+              const eventRow =
+                event.rows[index];
+              const values =
+                eventRow &&
+                Array.isArray(
+                  eventRow[state.sex]
+                )
+                  ? eventRow[state.sex]
+                  : [];
+              const cell =
+                values[ageIndex];
+              return `
+                <td>
+                  ${formatStandardCell(
+                    cell,
+                    eventRow || row,
+                    event
+                  )}
+                </td>
+              `;
+            }).join("")}
+          </tr>
+        `;
+      }).join("");
+  }
+  function renderBodyTable() {
+    const whtr =
+      DATA.components.bodyComposition.whtr;
+    headEl.innerHTML = `
+      <tr>
+        <th>
+          Awarded Points
+        </th>
+        <th>
+          Waist-to-Height Ratio
+        </th>
+        <th>
+          Risk Classification
+        </th>
+      </tr>
+    `;
+    bodyEl.innerHTML =
+      whtr.rows.map((row) => {
+        const classes = row.maximumScoring
+          ? "pfa-max-row"
+          : "";
+        return `
+          <tr class="${classes}">
+            <td class="pfa-points-cell">
+              ${formatPoints(row.awardedPoints)}
+              ${
+                row.maximumScoring
+                  ? `
+                    <span
+                      class="pfa-row-badge pfa-max-badge"
+                    >
+                      Max
+                    </span>
+                  `
+                  : ""
+              }
+            </td>
+            <td>
+              ${escapeHtml(row.ratioDisplay)}
+            </td>
+            <td>
+              <span class="
+                pfa-risk
+                ${riskClass(
+                  row.riskClassification
+                )}
+              ">
+                ${escapeHtml(
+                  row.riskClassification
+                )}
+              </span>
+            </td>
+          </tr>
+        `;
+      }).join("");
+  }
+  function renderWalkTable() {
+    const walk =
+      DATA.components.medicalWalk
+        .twoKilometerWalk;
+    const selectedRow =
+      walk.rows.find(
+        (row) =>
+          row.ageGroup === state.ageGroup
+      ) || walk.rows[0];
+    headEl.innerHTML = `
+      <tr>
+        <th>
+          Age Group
+        </th>
+        <th>
+          Scoring Sex
+        </th>
+        <th>
+          Maximum Passing Time
+        </th>
+        <th>
+          Result Type
+        </th>
+      </tr>
+    `;
+    const selectedStandard =
+      selectedRow[state.sex];
+    bodyEl.innerHTML = `
+      <tr class="pfa-min-row">
+        <td class="pfa-points-cell">
+          ${escapeHtml(
+            AGE_LABELS[selectedRow.ageGroup] ||
+            selectedRow.ageGroup
+          )}
+        </td>
+        <td>
+          ${state.sex === "male"
+            ? "Male"
+            : "Female"}
+        </td>
+        <td>
+          ${prefixForQualifier(
+            selectedStandard.qualifier
+          )}${escapeHtml(
+            selectedStandard.display
+          )}
+        </td>
+        <td>
+          <span class="pfa-walk-result">
+            Pass / Fail
+          </span>
+        </td>
+      </tr>
+    `;
+  }
+  function renderNote() {
+    const config =
+      CATEGORY_CONFIG[state.category];
+    noteEl.innerHTML = `
+      * ${escapeHtml(config.note)}
+      <div class="pfa-source">
+        Source:
+        ${escapeHtml(
+          DATA.metadata.source ||
+          "Official PFRA Scoring Charts"
+        )}
+        • Dataset version
+        ${escapeHtml(
+          DATA.metadata.version || "1.0.0"
+        )}
+      </div>
+    `;
+  }
+  function render() {
+    populateAgeOptions();
+    updateControls();
+    renderSummary();
+    if (state.category === "body") {
+      renderBodyTable();
+    } else if (state.category === "walk") {
+      renderWalkTable();
+    } else {
+      renderScoredTable();
+    }
+    renderNote();
+  }
+  sexButtons.forEach((button) => {
+    button.addEventListener(
+      "click",
+      () => {
+        state.sex =
+          button.dataset.sex || "male";
+        render();
+      }
+    );
+  });
+  tabButtons.forEach((button) => {
+    button.addEventListener(
+      "click",
+      () => {
+        state.category =
+          button.dataset.category ||
+          "cardio";
+        if (state.category === "walk") {
+          state.ageGroup = "under-30";
+        } else if (
+          !getStandardAgeGroups()
+            .includes(state.ageGroup)
+        ) {
+          state.ageGroup = "under-25";
+        }
+        render();
+      }
+    );
+  });
+  ageSelect.addEventListener(
+    "change",
+    () => {
+      state.ageGroup =
+        ageSelect.value;
+      render();
+    }
+  );
+  render();
+})();
+</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6a6ff0545aa01c93602db711" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="../js/webflow.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script>
-  <script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
 </body>
 </html>
