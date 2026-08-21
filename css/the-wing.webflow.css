@@ -2164,9 +2164,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   text-align: center;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin: -24px 0 0;
   padding: 94px 0 22px;
 }
 
@@ -16989,7 +16987,7 @@ blockquote {
 }
 
 .key-number-2 {
-  color: #2e2e2e;
+  color: #000;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--iconsize--xl);
@@ -17736,6 +17734,7 @@ blockquote {
 
 .interactive-base-map {
   opacity: 1;
+  margin-top: -33px;
   padding-right: 0;
 }
 
@@ -29879,7 +29878,7 @@ blockquote {
   grid-column-gap: 5rem;
   grid-row-gap: 5rem;
   mix-blend-mode: multiply;
-  background-image: url('../images/1-About-Number-BG.png');
+  background-image: url('../images/TheWing.ai.png');
   background-position: 0 0;
   background-size: cover;
   flex-flow: column;
@@ -30067,7 +30066,7 @@ blockquote {
 }
 
 .container-106 {
-  background-image: url('../images/1-About-Number-BG.png');
+  background-image: url('../images/TheWing.ai.png');
   background-position: 50%;
   background-size: cover;
   max-width: 1440px;
@@ -30337,6 +30336,13 @@ blockquote {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
+}
+
+.fsize-body-large-5.primary-color-emphasis {
+  color: #fff;
+  text-align: center;
+  font-size: .9rem;
+  line-height: 1.2;
 }
 
 .section-50.home1-sticky {
@@ -31002,7 +31008,7 @@ blockquote {
 
 .container-3 {
   background-color: #111;
-  background-image: url('../images/1-About-Number-BG.png'), linear-gradient(182deg, #000000d1, #ffffff17);
+  background-image: url('../images/TheWing.ai.png'), linear-gradient(182deg, #000000d1, #ffffff17);
   background-position: 50% 5%, 0 0;
   background-size: cover, auto;
   max-width: 1440px;
@@ -31115,7 +31121,7 @@ blockquote {
 
 .features-description-copy {
   text-align: center;
-  width: 121%;
+  width: 115%;
   max-width: none;
   font-weight: 400;
 }
@@ -31130,7 +31136,7 @@ blockquote {
   align-items: center;
   width: 100%;
   max-width: 92%;
-  margin-top: 45px;
+  margin-top: 40px;
   margin-bottom: 42px;
   margin-left: 47px;
   line-height: 1;
@@ -31145,7 +31151,7 @@ blockquote {
   width: 95%;
   max-width: 90%;
   margin-top: 129px;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
   margin-left: 0;
 }
 
@@ -31890,11 +31896,14 @@ blockquote {
 
 .about-01-second-number-card-2 {
   opacity: 1;
+  outline-offset: 0px;
+  background-color: #0000;
   background-image: url('../images/star.png');
   background-position: 0 0;
   background-size: auto;
   border: 1px solid #3c3c3c;
-  border-radius: 12px;
+  border-radius: 14px;
+  outline: 3px #2e2e2e;
   padding: 12px;
 }
 
@@ -31906,6 +31915,7 @@ blockquote {
 
 .about-01-first-number-card-2 {
   opacity: 1;
+  mix-blend-mode: lighten;
   background-image: url('../images/Tabs-Icon-2.png');
   background-position: 50%;
   background-repeat: no-repeat;
@@ -32098,7 +32108,7 @@ blockquote {
 .supporting-section {
   opacity: .99;
   background-color: #ece7e4;
-  background-image: url('../images/1-About-Number-BG.png');
+  background-image: url('../images/TheWing.ai.png');
   background-position: 0 100%;
   background-size: cover;
   margin-top: 0;
@@ -33337,6 +33347,86 @@ blockquote {
 
 .code-embed-77 {
   margin-top: 117px;
+}
+
+.key-figures-card-4 {
+  color: #2e2e2e;
+  --_theme---bodybackground: var(--colors--light-100);
+  --_theme---textcolor--primarytext: var(--colors--dark-70);
+  --_theme---textcolor--secondarytext: var(--colors--dark-60);
+  --_theme---textcolor--accenttext2: var(--colors--dark-70);
+  --_theme---border--fullalpha: var(--colors--dark-70);
+  --_theme---background--secondarybackground: var(--colors--light-90);
+  --_theme---background--primarybackground: var(--colors--light-100);
+  --_theme---border--lightalpha: color-mix(in srgb, var(--_theme---border--fullalpha) var(--opacity--extralight), transparent);
+  --_theme---border--mediumalpha: color-mix(in srgb, var(--_theme---border--fullalpha) var(--opacity--medium), transparent);
+  --_theme---textcolor--accenttext1: var(--colors--01-accent);
+  --_theme---background--tertiarybackground: var(--colors--light-80);
+  --_theme---textcolor--tertiarytext: var(--colors--dark-40);
+  background-color: #eaeaea;
+  border-radius: 1rem;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  display: flex;
+}
+
+.key-figures-card-4.blur-bg {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  mix-blend-mode: soft-light;
+  --_theme---bodybackground: var(--colors--dark-70);
+  --_theme---textcolor--primarytext: var(--colors--light-100);
+  --_theme---textcolor--secondarytext: var(--colors--light-80);
+  --_theme---textcolor--accenttext2: var(--colors--dark-70);
+  --_theme---border--fullalpha: var(--colors--light-100);
+  --_theme---background--secondarybackground: var(--colors--dark-80);
+  --_theme---background--primarybackground: var(--colors--dark-70);
+  --_theme---border--lightalpha: color-mix(in srgb, var(--_theme---border--fullalpha) var(--opacity--extralight), transparent);
+  --_theme---border--mediumalpha: color-mix(in srgb, var(--_theme---border--fullalpha) var(--opacity--medium), transparent);
+  --_theme---textcolor--accenttext1: var(--colors--01-accent);
+  --_theme---background--tertiarybackground: var(--colors--dark-50);
+  --_theme---textcolor--tertiarytext: var(--colors--dark-30);
+  background-color: #ffffff4d;
+  border: 2px solid #a3aab7;
+  border-radius: 1rem;
+  min-height: 300px;
+  margin-top: 135px;
+  margin-left: 86px;
+  padding-top: 0;
+  box-shadow: 0 2px 7px 1px #0f1115;
+}
+
+.key-figures-grid-6 {
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 1.5rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  place-items: stretch stretch;
+  width: 100%;
+  position: relative;
+}
+
+.key-figures-grid-6.vertical {
+  grid-template-columns: 1fr;
+  justify-content: end;
+  max-width: 500px;
+}
+
+.bold-text {
+  color: #fff;
+}
+
+.text-block-52 {
+  text-align: center;
+  margin-top: -27px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -36153,6 +36243,14 @@ blockquote {
 
   .slider-for-info-page {
     margin-left: 0;
+  }
+
+  .key-figures-card-4.blur-bg {
+    margin-left: 10px;
+  }
+
+  .key-figures-grid-6.vertical {
+    margin-left: 92px;
   }
 }
 
@@ -41164,7 +41262,7 @@ blockquote {
   }
 
   .section-49 {
-    background-image: url('../images/1-About-Number-BG.png');
+    background-image: url('../images/TheWing.ai.png');
     background-position: 0 0;
     background-size: cover;
     margin-top: 0;
@@ -41649,7 +41747,7 @@ blockquote {
     margin-bottom: 0;
   }
 
-  .slider-for-info-page {
+  .slider-for-info-page, .key-figures-card-4.blur-bg {
     margin-left: 0;
   }
 }
@@ -42755,6 +42853,11 @@ blockquote {
     width: 110%;
   }
 
+  .home-01-about-button-wrapper {
+    margin-top: 39px;
+    margin-left: 0;
+  }
+
   .nav-menu-wrapper-7 {
     margin-left: 11px;
   }
@@ -42889,6 +42992,10 @@ blockquote {
 
   .sliderinblack-4, .sliderinblack-6, .sliderinblack-copyx {
     margin-bottom: 10px;
+  }
+
+  .key-figures-card-4.blur-bg {
+    margin-top: 220px;
   }
 }
 
@@ -47392,6 +47499,17 @@ blockquote {
     margin-top: 0;
     display: block;
   }
+
+  .key-figures-card-4.blur-bg {
+    min-height: 230px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .key-figures-grid-6 {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -49984,6 +50102,10 @@ blockquote {
   .sliderinblack-4, .sliderinblack-6, .sliderinblack-copyx {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .key-figures-grid-6 {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -55851,6 +55973,7 @@ blockquote {
   .heading-188 {
     width: 122%;
     max-width: 124%;
+    margin-top: 87px;
   }
 
   .features-description-copy {
@@ -56305,6 +56428,10 @@ blockquote {
     margin-left: -47px;
     padding-top: .5rem;
     padding-bottom: .5rem;
+  }
+
+  .key-figures-card-4.blur-bg {
+    margin-left: 20px;
   }
 }
 
