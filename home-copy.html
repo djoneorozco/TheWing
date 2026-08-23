@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Fri Aug 21 2026 15:27:15 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sun Aug 23 2026 14:17:31 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a840352c6bb5b420d42690e" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -303,698 +303,9 @@
                     <div class="hero-01-card-wrapper">
                       <div class="hero-01-card-holder">
                         <div class="hero-01-animated-card">
-                          <div class="w-embed w-script"><!--  ============================================================
-  THEWING • AURORA INTELLIGENCE HUD
-  TRUE TRANSPARENT GLASS PLATFORM BRIEF
-  Full Webflow Embed
-  Version 2.2.0
-  UPDATES
-  - Refined messaging for TheWing master brand
-  - Uses "Military Decision Intelligence"
-  - Clarifies Wing Intelligence and Amy relationship
-  - Changes status to "Intelligence Online"
-  - Expands capability labels beyond PCS and housing
-  - Preserves true transparent glass appearance
-  - Automatically appears 3 seconds after full page load
-  - No click, hover, scroll, or user trigger
-===============================================================  -->
-                            <div id="thewing-aurora-intelligence-hud" aria-hidden="true" style="
-    all:initial;
-    display:none;
-    opacity:0;
-    visibility:hidden;
-    transform:translate3d(0,24px,0) scale(.97);
-  ">
-                              <link rel="preconnect" href="https://fonts.googleapis.com">
-                              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-                              <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-                              <style>
-    #thewing-aurora-intelligence-hud,
-    #thewing-aurora-intelligence-hud *{
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
-    }
-    #thewing-aurora-intelligence-hud{
-      --tw-ink:#eef3ff;
-      --tw-muted:#d4daea;
-      --tw-line:rgba(255,255,255,.18);
-      --tw-teal:#39f3df;
-      --tw-sapphire:#69a7ff;
-      --tw-warm:#f2aa6b;
-      position:relative;
-      z-index:20;
-      width:min(790px, calc(100% - 48px));
-      margin:22px auto 0;
-      color:var(--tw-ink);
-      font-family:
-        Inter,
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
-      pointer-events:none;
-      filter:blur(10px);
-      transition:
-        opacity .95s cubic-bezier(.22,1,.36,1),
-        transform .95s cubic-bezier(.22,1,.36,1),
-        filter .8s ease;
-    }
-    #thewing-aurora-intelligence-hud.tw-aurora-visible{
-      opacity:1 !important;
-      visibility:visible !important;
-      transform:
-        translate3d(0,0,0)
-        scale(1) !important;
-      filter:blur(0);
-      pointer-events:auto;
-    }
-    /* ============================================================
-       TRUE TRANSPARENT GLASS PANEL
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-panel{
-      position:relative;
-      isolation:isolate;
-      overflow:hidden;
-      width:100%;
-      padding:24px 28px 22px;
-      border:1px solid var(--tw-line);
-      border-radius:28px;
-      background:
-        linear-gradient(
-          180deg,
-          rgba(255,255,255,.022),
-          rgba(255,255,255,.008)
-        ),
-        rgba(8,12,24,.045);
-      box-shadow:
-        0 24px 60px rgba(0,0,0,.20),
-        0 8px 22px rgba(0,0,0,.10),
-        inset 0 1px 0 rgba(255,255,255,.15),
-        inset 0 -1px 0 rgba(255,255,255,.025);
-      backdrop-filter:
-        blur(7px)
-        saturate(125%)
-        brightness(1.04);
-      -webkit-backdrop-filter:
-        blur(7px)
-        saturate(125%)
-        brightness(1.04);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-panel::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      z-index:0;
-      pointer-events:none;
-      background:
-        radial-gradient(
-          360px 150px at 0% 0%,
-          rgba(57,243,223,.050),
-          transparent 72%
-        ),
-        radial-gradient(
-          340px 150px at 100% 0%,
-          rgba(105,167,255,.040),
-          transparent 74%
-        ),
-        radial-gradient(
-          280px 130px at 84% 100%,
-          rgba(242,170,107,.022),
-          transparent 76%
-        );
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-panel::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      z-index:0;
-      border-radius:inherit;
-      pointer-events:none;
-      background:
-        linear-gradient(
-          135deg,
-          rgba(255,255,255,.065),
-          transparent 22%,
-          transparent 78%,
-          rgba(105,167,255,.016)
-        );
-      opacity:.52;
-    }
-    /* ============================================================
-       SUBTLE AMBIENT AURORA
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-glow{
-      position:absolute;
-      inset:-30%;
-      z-index:0;
-      pointer-events:none;
-      background:
-        radial-gradient(
-          22% 18% at 18% 28%,
-          rgba(57,243,223,.070),
-          transparent 74%
-        ),
-        radial-gradient(
-          20% 18% at 78% 26%,
-          rgba(105,167,255,.055),
-          transparent 74%
-        ),
-        radial-gradient(
-          18% 15% at 76% 76%,
-          rgba(242,170,107,.030),
-          transparent 76%
-        );
-      filter:blur(24px);
-      opacity:.30;
-      animation:
-        twAuroraDrift 12s ease-in-out infinite alternate;
-    }
-    /* ============================================================
-       LIGHT SWEEP
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-sweep{
-      position:absolute;
-      top:-45%;
-      bottom:-45%;
-      left:-42%;
-      z-index:1;
-      width:20%;
-      pointer-events:none;
-      opacity:0;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          rgba(255,255,255,.13),
-          rgba(105,167,255,.045),
-          transparent
-        );
-      filter:blur(9px);
-      transform:skewX(-17deg);
-    }
-    #thewing-aurora-intelligence-hud.tw-aurora-visible
-    .tw-aurora-sweep{
-      animation:
-        twAuroraSweep 1.8s .22s ease-out 1;
-    }
-    /* ============================================================
-       MINIMAL GLASS GRAIN
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-grain{
-      position:absolute;
-      inset:0;
-      z-index:1;
-      pointer-events:none;
-      opacity:.022;
-      background-image:
-        radial-gradient(
-          rgba(255,255,255,.18) .45px,
-          transparent .7px
-        );
-      background-size:11px 11px;
-      mix-blend-mode:soft-light;
-    }
-    /* ============================================================
-       CONTENT
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-content{
-      position:relative;
-      z-index:3;
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-topline{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      margin-bottom:16px;
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-kicker{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      min-width:0;
-      color:#e4e9f6;
-      font-size:10px;
-      line-height:1;
-      font-weight:800;
-      letter-spacing:.16em;
-      text-transform:uppercase;
-      text-shadow:
-        0 2px 10px rgba(0,0,0,.45);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-orb{
-      position:relative;
-      flex:0 0 auto;
-      width:10px;
-      height:10px;
-      border-radius:50%;
-      background:
-        linear-gradient(
-          135deg,
-          var(--tw-teal),
-          var(--tw-sapphire)
-        );
-      box-shadow:
-        0 0 0 5px rgba(57,243,223,.08),
-        0 0 18px rgba(57,243,223,.48);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-orb::after{
-      content:"";
-      position:absolute;
-      inset:-6px;
-      border:1px solid rgba(57,243,223,.28);
-      border-radius:50%;
-      animation:
-        twAuroraPulse 2.7s ease-out infinite;
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-status{
-      display:flex;
-      align-items:center;
-      gap:7px;
-      flex:0 0 auto;
-      color:#dbe5ff;
-      font-size:9px;
-      line-height:1;
-      font-weight:700;
-      letter-spacing:.13em;
-      text-transform:uppercase;
-      text-shadow:
-        0 2px 10px rgba(0,0,0,.45);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-status::before{
-      content:"";
-      width:5px;
-      height:5px;
-      border-radius:50%;
-      background:var(--tw-teal);
-      box-shadow:
-        0 0 9px rgba(57,243,223,.65);
-    }
-    /* ============================================================
-       DIVIDER
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-divider{
-      position:relative;
-      width:100%;
-      height:1px;
-      margin-bottom:18px;
-      overflow:hidden;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          rgba(255,255,255,.16) 18%,
-          rgba(255,255,255,.16) 82%,
-          transparent
-        );
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-divider::after{
-      content:"";
-      position:absolute;
-      top:0;
-      left:-25%;
-      width:22%;
-      height:100%;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          var(--tw-teal),
-          var(--tw-sapphire),
-          transparent
-        );
-      filter:blur(.4px);
-      animation:
-        twDividerFlow 5.5s ease-in-out infinite;
-    }
-    /* ============================================================
-       TEXT
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-copy{
-      max-width:700px;
-      margin:0 auto;
-      text-align:center;
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-title{
-      color:#ffffff;
-      font-size:clamp(17px, 1.6vw, 21px);
-      line-height:1.42;
-      font-weight:700;
-      letter-spacing:-.025em;
-      text-shadow:
-        0 2px 6px rgba(0,0,0,.75),
-        0 3px 18px rgba(0,0,0,.38);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-description{
-      max-width:650px;
-      margin:9px auto 0;
-      color:#e3e8f4;
-      font-size:clamp(12px, 1.05vw, 14px);
-      line-height:1.62;
-      font-weight:400;
-      text-shadow:
-        0 2px 6px rgba(0,0,0,.75),
-        0 2px 12px rgba(0,0,0,.32);
-    }
-    /* ============================================================
-       TRANSPARENT CAPABILITY CHIPS
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-chips{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:18px;
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-chip{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-height:31px;
-      padding:0 13px;
-      border:1px solid rgba(255,255,255,.15);
-      border-radius:999px;
-      background:
-        rgba(255,255,255,.025);
-      color:#f0f4ff;
-      font-size:10px;
-      line-height:1;
-      font-weight:700;
-      letter-spacing:.02em;
-      box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.07),
-        0 5px 14px rgba(0,0,0,.08);
-      backdrop-filter:
-        blur(4px)
-        saturate(115%);
-      -webkit-backdrop-filter:
-        blur(4px)
-        saturate(115%);
-      text-shadow:
-        0 1px 5px rgba(0,0,0,.55);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-chip::before{
-      content:"";
-      width:5px;
-      height:5px;
-      margin-right:7px;
-      border-radius:50%;
-      background:
-        linear-gradient(
-          135deg,
-          var(--tw-teal),
-          var(--tw-sapphire)
-        );
-      box-shadow:
-        0 0 8px rgba(57,243,223,.42);
-    }
-    #thewing-aurora-intelligence-hud
-    .tw-aurora-chip:nth-child(2)::before,
-    #thewing-aurora-intelligence-hud
-    .tw-aurora-chip:nth-child(5)::before{
-      background:
-        linear-gradient(
-          135deg,
-          var(--tw-sapphire),
-          #a689ff
-        );
-      box-shadow:
-        0 0 8px rgba(105,167,255,.45);
-    }
-    #thewing-aurora-intelligence-hud
-    .tw-aurora-chip:nth-child(3)::before{
-      background:
-        linear-gradient(
-          135deg,
-          var(--tw-warm),
-          #ffd09a
-        );
-      box-shadow:
-        0 0 8px rgba(242,170,107,.44);
-    }
-    /* ============================================================
-       ANIMATIONS
-    ============================================================ */
-    @keyframes twAuroraDrift{
-      0%{
-        transform:
-          scale(1.02)
-          translate3d(-10px,0,0);
-      }
-      100%{
-        transform:
-          scale(1.08)
-          translate3d(16px,-10px,0);
-      }
-    }
-    @keyframes twAuroraSweep{
-      0%{
-        left:-42%;
-        opacity:0;
-      }
-      20%{
-        opacity:.62;
-      }
-      72%{
-        opacity:.30;
-      }
-      100%{
-        left:120%;
-        opacity:0;
-      }
-    }
-    @keyframes twAuroraPulse{
-      0%{
-        opacity:.62;
-        transform:scale(.68);
-      }
-      72%,
-      100%{
-        opacity:0;
-        transform:scale(1.45);
-      }
-    }
-    @keyframes twDividerFlow{
-      0%{
-        left:-25%;
-        opacity:0;
-      }
-      20%{
-        opacity:.72;
-      }
-      75%{
-        opacity:.46;
-      }
-      100%{
-        left:105%;
-        opacity:0;
-      }
-    }
-    /* ============================================================
-       TABLET
-    ============================================================ */
-    @media (max-width:767px){
-      #thewing-aurora-intelligence-hud{
-        width:min(680px, calc(100% - 28px));
-        margin-top:18px;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-panel{
-        padding:21px 20px 19px;
-        border-radius:23px;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-kicker{
-        font-size:9px;
-        letter-spacing:.13em;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-status{
-        font-size:8px;
-        letter-spacing:.10em;
-      }
-    }
-    /* ============================================================
-       MOBILE
-    ============================================================ */
-    @media (max-width:480px){
-      #thewing-aurora-intelligence-hud{
-        width:calc(100% - 20px);
-        margin-top:14px;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-panel{
-        padding:19px 17px 17px;
-        border-radius:20px;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-topline{
-        align-items:flex-start;
-        flex-direction:column;
-        gap:10px;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-copy{
-        text-align:left;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-description{
-        margin-left:0;
-        margin-right:0;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-chips{
-        justify-content:flex-start;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-chip{
-        min-height:30px;
-        padding:0 11px;
-        font-size:9px;
-      }
-    }
-    /* ============================================================
-       REDUCED MOTION
-    ============================================================ */
-    @media (prefers-reduced-motion:reduce){
-      #thewing-aurora-intelligence-hud{
-        transform:none !important;
-        filter:none !important;
-        transition:
-          opacity .3s ease;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-glow,
-      #thewing-aurora-intelligence-hud .tw-aurora-sweep,
-      #thewing-aurora-intelligence-hud .tw-aurora-orb::after,
-      #thewing-aurora-intelligence-hud .tw-aurora-divider::after{
-        animation:none !important;
-      }
-    }
-  </style>
-                              <section class="tw-aurora-panel" aria-label="TheWing Military Decision Intelligence overview">
-                                <span class="tw-aurora-glow" aria-hidden="true"></span>
-                                <span class="tw-aurora-sweep" aria-hidden="true"></span>
-                                <span class="tw-aurora-grain" aria-hidden="true"></span>
-                                <div class="tw-aurora-content">
-                                  <div class="tw-aurora-topline">
-                                    <div class="tw-aurora-kicker">
-                                      <span class="tw-aurora-orb" aria-hidden="true"></span>
-                                      <span>
-                                        Wing Intelligence
-                                      </span>
-                                    </div>
-                                    <div class="tw-aurora-status">
-                                      Intelligence Online
-                                    </div>
-                                  </div>
-                                  <div class="tw-aurora-divider" aria-hidden="true"></div>
-                                  <div class="tw-aurora-copy">
-                                    <p class="tw-aurora-title">
-                                      TheWing transforms military compensation, housing, career,
-                                      readiness, and benefits data into clear decision intelligence.
-                                    </p>
-                                    <p class="tw-aurora-description">
-                                      Wing Intelligence calculates the outcomes. Amy explains what
-                                      they mean, helping military members and families understand
-                                      their options and move forward with greater confidence.
-                                    </p>
-                                  </div>
-                                  <div class="tw-aurora-chips" aria-label="TheWing intelligence capabilities">
-                                    <span class="tw-aurora-chip">
-                                      Financial
-                                    </span>
-                                    <span class="tw-aurora-chip">
-                                      Housing
-                                    </span>
-                                    <span class="tw-aurora-chip">
-                                      Career
-                                    </span>
-                                    <span class="tw-aurora-chip">
-                                      Readiness
-                                    </span>
-                                    <span class="tw-aurora-chip">
-                                      Benefits
-                                    </span>
-                                  </div>
-                                </div>
-                              </section>
-                              <script>
-    (() => {
-      "use strict";
-      const HUD_ID = "thewing-aurora-intelligence-hud";
-      const REVEAL_DELAY_MS = 3000;
-      const initializeTheWingAuroraHud = () => {
-        const hud = document.getElementById(HUD_ID);
-        if (
-          !hud ||
-          hud.dataset.twAuroraInitialized === "true"
-        ){
-          return;
-        }
-        hud.dataset.twAuroraInitialized = "true";
-        hud.style.setProperty(
-          "display",
-          "none",
-          "important"
-        );
-        hud.style.setProperty(
-          "opacity",
-          "0",
-          "important"
-        );
-        hud.style.setProperty(
-          "visibility",
-          "hidden",
-          "important"
-        );
-        hud.style.setProperty(
-          "transform",
-          "translate3d(0,24px,0) scale(.97)",
-          "important"
-        );
-        hud.setAttribute(
-          "aria-hidden",
-          "true"
-        );
-        window.setTimeout(() => {
-          hud.style.setProperty(
-            "display",
-            "block",
-            "important"
-          );
-          hud.style.setProperty(
-            "opacity",
-            "0",
-            "important"
-          );
-          hud.style.setProperty(
-            "visibility",
-            "hidden",
-            "important"
-          );
-          void hud.offsetHeight;
-          window.requestAnimationFrame(() => {
-            window.requestAnimationFrame(() => {
-              hud.style.removeProperty("opacity");
-              hud.style.removeProperty("visibility");
-              hud.style.removeProperty("transform");
-              hud.classList.add(
-                "tw-aurora-visible"
-              );
-              hud.setAttribute(
-                "aria-hidden",
-                "false"
-              );
-            });
-          });
-        }, REVEAL_DELAY_MS);
-      };
-      if (document.readyState === "complete"){
-        initializeTheWingAuroraHud();
-      } else {
-        window.addEventListener(
-          "load",
-          initializeTheWingAuroraHud,
-          { once:true }
-        );
-      }
-    })();
-  </script>
-                            </div>
+                          <div class="w-embed w-script">
+                            <div id="pcsu-bah-header-progression-widget" aria-label="Display Full Monthly Compensation"></div>
+                            <script src="https://thewing.netlify.app/BAH-Calculator/bah-header.js" defer=""></script>
                           </div>
                         </div>
                       </div>
@@ -1004,6 +315,50 @@
                     <div class="hero-01-intro-subtitle">Ovelen is a Webflow agency building scalable websites for modern brands.</div>
                   </div>
                   <div class="hero-01-divider hide-desktop"></div>
+                  <div class="w-embed w-script">
+                    <div id="pcsu-bah-header-progression-widget" aria-label="Display Full Monthly Compensation"></div>
+                    <script>
+(function () {
+  let attempts = 0;
+  const maxAttempts = 100;
+  function loadBahHeader() {
+    attempts += 1;
+    const calculator =
+      document.getElementById("pcsu-bah-shell");
+    const mount =
+      document.getElementById(
+        "pcsu-bah-header-progression-widget"
+      );
+    if (calculator && mount) {
+      const script =
+        document.createElement("script");
+      script.src =
+        "https://thewing.netlify.app/BAH-Calculator/bah-header.js?v=1.0.2";
+      script.onload = function () {
+        console.log(
+          "BAH Header loaded successfully."
+        );
+      };
+      script.onerror = function () {
+        console.error(
+          "BAH Header failed to load."
+        );
+      };
+      document.body.appendChild(script);
+      return;
+    }
+    if (attempts < maxAttempts) {
+      setTimeout(loadBahHeader, 100);
+    } else {
+      console.error(
+        "BAH Header: #pcsu-bah-shell was not found."
+      );
+    }
+  }
+  loadBahHeader();
+})();
+</script>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1575,8 +930,8 @@
           </div>
           <div class="features-image-wrapper-7">
             <div class="w-layout-hflex flex-features-image reverse-images-on-tab">
-              <div class="features-image-wrapper-9"><img src="images/frontimage.jpg" loading="lazy" sizes="(max-width: 1750px) 100vw, 1750px" srcset="images/frontimage-p-500.jpg 500w, images/frontimage-p-800.jpg 800w, images/frontimage-p-1080.jpg 1080w, images/frontimage-p-1600.jpg 1600w, images/frontimage.jpg 1750w" alt="" class="features-image-3"></div>
-              <div class="features-image-wrapper-8"><img src="images/Air-Force-Captain-Jennifer-Orozco.jpg" loading="lazy" sizes="(max-width: 2475px) 100vw, 2475px" srcset="images/us-p-500.jpg 500w, images/us-p-800.jpg 800w, images/us-p-1080.jpg 1080w, images/us-p-1600.jpg 1600w, images/us-p-2000.jpg 2000w, images/Air-Force-Captain-Jennifer-Orozco.jpg 2475w" alt="Air Force Capt. Jennifer Orozco, a clinical social worker assigned to the 60th Medical Operations Squadron, and her spouse, Josue, participate in the Military Spouse Appreciation Day campaign at Travis Air Force Base, Calif., April 7, 2022. The base is celebrating Military Spouse Appreciation Day, which falls on May 6 this year, by highlighting the resiliency and commitment of spouses in the military community." class="features-image-3"></div>
+              <div class="features-image-wrapper-9"><img src="images/frontimage.jpg" loading="lazy" sizes="100vw" srcset="images/frontimage-p-500.jpg 500w, images/frontimage-p-800.jpg 800w, images/frontimage-p-1080.jpg 1080w, images/frontimage-p-1600.jpg 1600w, images/frontimage.jpg 1750w" alt="" class="features-image-3"></div>
+              <div class="features-image-wrapper-8"><img src="images/Air-Force-Captain-Jennifer-Orozco.jpg" loading="lazy" sizes="100vw" srcset="images/us-p-500.jpg 500w, images/us-p-800.jpg 800w, images/us-p-1080.jpg 1080w, images/us-p-1600.jpg 1600w, images/us-p-2000.jpg 2000w, images/Air-Force-Captain-Jennifer-Orozco.jpg 2475w" alt="Air Force Capt. Jennifer Orozco, a clinical social worker assigned to the 60th Medical Operations Squadron, and her spouse, Josue, participate in the Military Spouse Appreciation Day campaign at Travis Air Force Base, Calif., April 7, 2022. The base is celebrating Military Spouse Appreciation Day, which falls on May 6 this year, by highlighting the resiliency and commitment of spouses in the military community." class="features-image-3"></div>
             </div>
             <div class="gradient-overlay-8"></div>
           </div>
@@ -1727,7 +1082,7 @@
           <div class="footer-content-wrapper-2">
             <a href="#" class="footer-logo-link w-inline-block">
               <div class="logo-footer-wrapper">
-                <div><img src="images/Home-01-About_1.png" loading="lazy" sizes="(max-width: 1260px) 100vw, 1260px" srcset="images/Home-01-About_1-p-500.png 500w, images/Home-01-About_1-p-800.png 800w, images/Home-01-About_1-p-1080.png 1080w, images/Home-01-About_1.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
+                <div><img src="images/Home-01-About_1.png" loading="lazy" sizes="100vw" srcset="images/Home-01-About_1-p-500.png 500w, images/Home-01-About_1-p-800.png 800w, images/Home-01-About_1-p-1080.png 1080w, images/Home-01-About_1.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
               </div>
             </a>
             <div class="space-text"></div>
