@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Sep 02 2026 01:17:44 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Sep 08 2026 00:08:19 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a928c79ffd1d7cd1ce4d078" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -520,1162 +520,1522 @@
           <div class="header-text-wrapper centered">
             <h2 line-split="true" class="heading-94">Create Your Account.</h2>
             <p line-split="hero-header">TheWing.ai membership is free, secure and confidential. <br>Your data will not be sold or distributed to any third-party or commercial entity without the explicit written consent by user.</p>
-            <div class="code-embed-18 w-embed w-script"><!--  ============================================================
-  THEWING • SUBSCRIBERS
-  CREATE ACCOUNT
-  Webflow Embed
-  Version 1.2.0
-  PURPOSE
-  - Creates the user's core TheWing account only
-  - Does NOT collect Military Profile information
-  - Does NOT collect financial / PCS / housing information
-  - Does NOT store password in localStorage or sessionStorage
-  - Calls the Subscribers Netlify backend directly
-  - Sends verification code after successful registration
-  - Redirects to Verify Account after verification code is sent
-  CANONICAL SUBSCRIBERS BACKEND
-  https://thewing-subscribers.netlify.app
-  DIRECT NETLIFY FUNCTION ENDPOINTS
-  POST https://thewing-subscribers.netlify.app/.netlify/functions/register
-  POST https://thewing-subscribers.netlify.app/.netlify/functions/send-code
-  ACCOUNT FLOW
-  CREATE ACCOUNT
-      ↓
-  register
-      ↓
-  Supabase Auth + minimal profile
-      ↓
-  send-code
-      ↓
-  verification email
-      ↓
-  /verify-account
-============================================================  -->
-              <div id="twsub-create-account" style="all:initial;">
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-                <link rel="preconnect" href="https://thewing-subscribers.netlify.app">
-                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-                <style>
-    #twsub-create-account,
-    #twsub-create-account * {
-      box-sizing:border-box;
+            <div class="code-embed-18 w-embed w-script">
+              <script>
+  window.PCSU_BASES_INDEX = {
+    version: "2.0",
+    bases: {
+      "Andrews AFB": { cityKey: "WashingtonDC", file: "Andrews", zip: "20762" },
+      "Barksdale AFB": { cityKey: "Shreveport", file: "Barksdale", zip: "71110" },
+      "Beale AFB": { cityKey: "YubaCity", file: "Beale", zip: "95903" },
+      "Cannon AFB": { cityKey: "Clovis", file: "Cannon", zip: "88103" },
+      "Charleston AFB": { cityKey: "Charleston", file: "Charleston", zip: "29404" },
+      "Davis-Monthan AFB": { cityKey: "Tucson", file: "Davis-Monthan", zip: "85707" },
+      "Dover AFB": { cityKey: "Dover", file: "Dover", zip: "19902" },
+      "Dyess AFB": { cityKey: "Abilene", file: "Dyess", zip: "79607" },
+      "Eglin AFB": { cityKey: "FortWaltonBeach", file: "Eglin", zip: "32542" },
+      "Elmendorf AFB": { cityKey: "Anchorage", file: "Elmendorf", zip: "99506" },
+      "F.E-Warren AFB": { cityKey: "Cheyenne", file: "F.E-Warren", zip: "82005" },
+      "Fairchild AFB": { cityKey: "Spokane", file: "Fairchild", zip: "99011" },
+      "Fort-Sam-Houston AFB": { cityKey: "SanAntonio", file: "Fort-Sam-Houston", zip: "78234" },
+      "Holloman AFB": { cityKey: "Alamogordo", file: "Holloman", zip: "88330" },
+      "Hurlburt AFB": { cityKey: "FortWaltonBeach", file: "Hurlburt", zip: "32544" },
+      "Keesler AFB": { cityKey: "Biloxi", file: "Keesler", zip: "39534" },
+      "Kirtland AFB": { cityKey: "Albuquerque", file: "Kirtland", zip: "87117" },
+      "Lackland AFB": { cityKey: "SanAntonio", file: "Lackland", zip: "78236" },
+      "Langley AFB": { cityKey: "Hampton", file: "Langley", zip: "23665" },
+      "Laughlin AFB": { cityKey: "DelRio", file: "Laughlin", zip: "78843" },
+      "Little-Rock AFB": { cityKey: "LittleRock", file: "Little-Rock", zip: "72099" },
+      "Luke AFB": { cityKey: "Phoenix", file: "Luke", zip: "85309" },
+      "MacDill AFB": { cityKey: "Tampa", file: "MacDill", zip: "33621" },
+      "Malmstrom AFB": { cityKey: "GreatFalls", file: "Malmstrom", zip: "59402" },
+      "Maxwell AFB": { cityKey: "Montgomery", file: "Maxwell", zip: "36112" },
+      "McConnell AFB": { cityKey: "Wichita", file: "McConnell", zip: "67221" },
+      "McGuire AFB": { cityKey: "Trenton", file: "McGuire", zip: "08641" },
+      "Minot AFB": { cityKey: "Minot", file: "Minot", zip: "58705" },
+      "Moody AFB": { cityKey: "Valdosta", file: "Moody", zip: "31699" },
+      "Mountain-Home AFB": { cityKey: "MountainHome", file: "Mountain-Home", zip: "83648" },
+      "Nellis AFB": { cityKey: "LasVegas", file: "Nellis", zip: "89191" },
+      "Offutt AFB": { cityKey: "Omaha", file: "Offutt", zip: "68113" },
+      "Peterson AFB": { cityKey: "ColoradoSprings", file: "Peterson", zip: "80914" },
+      "Randolph AFB": { cityKey: "SanAntonio", file: "Randolph", zip: "78150" },
+      "Robins AFB": { cityKey: "WarnerRobins", file: "Robins", zip: "31098" },
+      "Scott AFB": { cityKey: "Belleville", file: "Scott", zip: "62225" },
+      "Seymour-Johnson AFB": { cityKey: "Goldsboro", file: "Seymour-Johnson", zip: "27531" },
+      "Shaw AFB": { cityKey: "Sumter", file: "Shaw", zip: "29152" },
+      "Sheppard AFB": { cityKey: "WichitaFalls", file: "Sheppard", zip: "76311" },
+      "Tinker AFB": { cityKey: "OklahomaCity", file: "Tinker", zip: "73145" },
+      "Travis AFB": { cityKey: "Fairfield", file: "Travis", zip: "94535" },
+      "Tyndall AFB": { cityKey: "PanamaCity", file: "Tyndall", zip: "32403" },
+      "Whiteman AFB": { cityKey: "KnobNoster", file: "Whiteman", zip: "65305" },
+      "Wright-Patterson AFB": { cityKey: "Dayton", file: "Wright-Patterson", zip: "45433" }
+    },
+    aliases: {
+      "Andrews": "Andrews AFB",
+      "AndrewsAFB": "Andrews AFB",
+      "Joint Base Andrews": "Andrews AFB",
+      "JB Andrews": "Andrews AFB",
+      "Barksdale": "Barksdale AFB",
+      "BarksdaleAFB": "Barksdale AFB",
+      "Beale": "Beale AFB",
+      "BealeAFB": "Beale AFB",
+      "Cannon": "Cannon AFB",
+      "CannonAFB": "Cannon AFB",
+      "Charleston": "Charleston AFB",
+      "CharlestonAFB": "Charleston AFB",
+      "Joint Base Charleston": "Charleston AFB",
+      "Davis-Monthan": "Davis-Monthan AFB",
+      "DavisMonthan": "Davis-Monthan AFB",
+      "DavisMonthanAFB": "Davis-Monthan AFB",
+      "DMAFB": "Davis-Monthan AFB",
+      "Dover": "Dover AFB",
+      "DoverAFB": "Dover AFB",
+      "Dyess": "Dyess AFB",
+      "DyessAFB": "Dyess AFB",
+      "Eglin": "Eglin AFB",
+      "EglinAFB": "Eglin AFB",
+      "Elmendorf": "Elmendorf AFB",
+      "ElmendorfAFB": "Elmendorf AFB",
+      "Joint Base Elmendorf-Richardson": "Elmendorf AFB",
+      "JBER": "Elmendorf AFB",
+      "F.E-Warren": "F.E-Warren AFB",
+      "FEWarren": "F.E-Warren AFB",
+      "FEWarrenAFB": "F.E-Warren AFB",
+      "F E Warren": "F.E-Warren AFB",
+      "Fairchild": "Fairchild AFB",
+      "FairchildAFB": "Fairchild AFB",
+      "Fort-Sam-Houston": "Fort-Sam-Houston AFB",
+      "FortSamHouston": "Fort-Sam-Houston AFB",
+      "Fort Sam Houston": "Fort-Sam-Houston AFB",
+      "FortSamHoustonAFB": "Fort-Sam-Houston AFB",
+      "Fort Sam Houston AFB": "Fort-Sam-Houston AFB",
+      "JBSA-Fort-Sam-Houston": "Fort-Sam-Houston AFB",
+      "JBSA Fort Sam Houston": "Fort-Sam-Houston AFB",
+      "Holloman": "Holloman AFB",
+      "HollomanAFB": "Holloman AFB",
+      "Hurlburt": "Hurlburt AFB",
+      "HurlburtAFB": "Hurlburt AFB",
+      "Hurlburt Field": "Hurlburt AFB",
+      "Keesler": "Keesler AFB",
+      "KeeslerAFB": "Keesler AFB",
+      "Kirtland": "Kirtland AFB",
+      "KirtlandAFB": "Kirtland AFB",
+      "Lackland": "Lackland AFB",
+      "LacklandAFB": "Lackland AFB",
+      "JBSA-Lackland": "Lackland AFB",
+      "JBSA Lackland": "Lackland AFB",
+      "Joint Base San Antonio Lackland": "Lackland AFB",
+      "Langley": "Langley AFB",
+      "LangleyAFB": "Langley AFB",
+      "Joint Base Langley-Eustis": "Langley AFB",
+      "Laughlin": "Laughlin AFB",
+      "LaughlinAFB": "Laughlin AFB",
+      "Little-Rock": "Little-Rock AFB",
+      "LittleRock": "Little-Rock AFB",
+      "LittleRockAFB": "Little-Rock AFB",
+      "Little Rock": "Little-Rock AFB",
+      "Little Rock AFB": "Little-Rock AFB",
+      "Luke": "Luke AFB",
+      "LukeAFB": "Luke AFB",
+      "MacDill": "MacDill AFB",
+      "MacDillAFB": "MacDill AFB",
+      "Malmstrom": "Malmstrom AFB",
+      "MalmstromAFB": "Malmstrom AFB",
+      "Maxwell": "Maxwell AFB",
+      "MaxwellAFB": "Maxwell AFB",
+      "McConnell": "McConnell AFB",
+      "McConnellAFB": "McConnell AFB",
+      "McGuire": "McGuire AFB",
+      "McGuireAFB": "McGuire AFB",
+      "Joint Base McGuire-Dix-Lakehurst": "McGuire AFB",
+      "JBMDL": "McGuire AFB",
+      "Minot": "Minot AFB",
+      "MinotAFB": "Minot AFB",
+      "Moody": "Moody AFB",
+      "MoodyAFB": "Moody AFB",
+      "Mountain-Home": "Mountain-Home AFB",
+      "MountainHome": "Mountain-Home AFB",
+      "Mountain Home": "Mountain-Home AFB",
+      "MountainHomeAFB": "Mountain-Home AFB",
+      "Mountain Home AFB": "Mountain-Home AFB",
+      "Nellis": "Nellis AFB",
+      "NellisAFB": "Nellis AFB",
+      "Offutt": "Offutt AFB",
+      "OffuttAFB": "Offutt AFB",
+      "Peterson": "Peterson AFB",
+      "PetersonAFB": "Peterson AFB",
+      "Peterson Space Force Base": "Peterson AFB",
+      "Peterson SFB": "Peterson AFB",
+      "Randolph": "Randolph AFB",
+      "RandolphAFB": "Randolph AFB",
+      "JBSA-Randolph": "Randolph AFB",
+      "JBSA Randolph": "Randolph AFB",
+      "Joint Base San Antonio Randolph": "Randolph AFB",
+      "Robins": "Robins AFB",
+      "RobinsAFB": "Robins AFB",
+      "Scott": "Scott AFB",
+      "ScottAFB": "Scott AFB",
+      "Seymour-Johnson": "Seymour-Johnson AFB",
+      "SeymourJohnson": "Seymour-Johnson AFB",
+      "SeymourJohnsonAFB": "Seymour-Johnson AFB",
+      "Shaw": "Shaw AFB",
+      "ShawAFB": "Shaw AFB",
+      "Sheppard": "Sheppard AFB",
+      "SheppardAFB": "Sheppard AFB",
+      "Tinker": "Tinker AFB",
+      "TinkerAFB": "Tinker AFB",
+      "Travis": "Travis AFB",
+      "TravisAFB": "Travis AFB",
+      "Tyndall": "Tyndall AFB",
+      "TyndallAFB": "Tyndall AFB",
+      "Whiteman": "Whiteman AFB",
+      "WhitemanAFB": "Whiteman AFB",
+      "Wright-Patterson": "Wright-Patterson AFB",
+      "WrightPatterson": "Wright-Patterson AFB",
+      "WrightPattersonAFB": "Wright-Patterson AFB",
+      "WPAFB": "Wright-Patterson AFB"
     }
-    #twsub-create-account {
-      --tw-bg:rgba(13,18,28,.72);
-      --tw-panel:rgba(255,255,255,.055);
-      --tw-line:rgba(255,255,255,.12);
-      --tw-text:#f5f7fb;
-      --tw-muted:#aab2c2;
-      --tw-blue:#72aaff;
-      --tw-teal:#72e6d0;
-      --tw-gold:#d9b36a;
-      display:block;
-      width:100%;
+  };
+</script>
+            </div>
+            <div class="code-embed-18 w-embed w-script"><!--  =========================================================
+  THEWING.AI • PREMIUM ACCOUNT SIGNUP
+  v5.0.0 • SUBSCRIBERS BACKEND
+  ACTIVE DUTY + VETERAN
+  UI
+  - Preserves all existing signup fields
+  ACTIVE DUTY
+  - First Name
+  - Last Name
+  - Email
+  - Password
+  - Years of Service
+  - Rank
+  - Family Size
+  - Base Location
+  VETERAN
+  - First Name
+  - Last Name
+  - Email
+  - Password
+  - Years of Service
+  - Last Rank Held
+  - Family Size
+  - Base Location
+  - VA Disability %
+  - Retirement System
+  CURRENT BACKEND
+  - Subscribers /register
+  - Subscribers /send-code
+  - Custom TheWing six-digit verification workflow
+  IMPORTANT CURRENT BACKEND LIMIT
+  - register.js currently stores ACCOUNT identity only:
+      first_name
+      last_name
+      full_name
+      email
+      verification/status fields
+  - Military fields are collected here but require the upcoming
+    Subscribers Military Profile persistence layer before they
+    become server-side member data.
+  CANONICAL BACKEND
+  https://thewing-subscribers.netlify.app
+  REQUIRED SEPARATE BASE EMBED
+  window.PCSU_BASES_INDEX = {
+    version,
+    bases,
+    aliases
+  }
+=========================================================  -->
+              <div id="pcs-signup" style="all:initial;">
+                <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+                <style>
+    #pcs-signup,
+    #pcs-signup *{
+      box-sizing:border-box;
       font-family:
         Inter,
         system-ui,
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
+        Roboto,
+        Arial,
         sans-serif;
-      color:var(--tw-text);
     }
-    #twsub-create-account .twsub-shell {
-      width:min(620px, calc(100% - 28px));
-      margin:0 auto;
-      padding:24px 0 32px;
-    }
-    #twsub-create-account .twsub-panel {
-      position:relative;
-      overflow:hidden;
-      width:100%;
-      padding:30px;
-      border:1px solid var(--tw-line);
-      border-radius:26px;
-      background:
-        linear-gradient(
-          145deg,
-          rgba(255,255,255,.075),
-          rgba(255,255,255,.025)
-        ),
-        var(--tw-bg);
-      box-shadow:
-        0 28px 70px rgba(0,0,0,.30),
-        inset 0 1px 0 rgba(255,255,255,.10);
-      backdrop-filter:blur(18px) saturate(130%);
-      -webkit-backdrop-filter:blur(18px) saturate(130%);
-    }
-    #twsub-create-account .twsub-panel::before {
-      content:"";
-      position:absolute;
-      inset:-40%;
-      pointer-events:none;
-      background:
-        radial-gradient(
-          circle at 20% 15%,
-          rgba(114,170,255,.13),
-          transparent 26%
-        ),
-        radial-gradient(
-          circle at 82% 24%,
-          rgba(114,230,208,.09),
-          transparent 25%
-        );
-      filter:blur(30px);
-    }
-    #twsub-create-account .twsub-content {
-      position:relative;
-      z-index:2;
-    }
-    /* ==========================================================
-       HEADER
-    ========================================================== */
-    #twsub-create-account .twsub-kicker {
-      display:flex;
-      align-items:center;
-      gap:9px;
-      margin-bottom:13px;
-      color:var(--tw-teal);
-      font-size:10px;
-      font-weight:800;
-      line-height:1;
-      letter-spacing:.17em;
-      text-transform:uppercase;
-    }
-    #twsub-create-account .twsub-kicker-dot {
-      width:8px;
-      height:8px;
-      border-radius:50%;
-      background:var(--tw-teal);
-      box-shadow:
-        0 0 0 5px rgba(114,230,208,.07),
-        0 0 16px rgba(114,230,208,.50);
-    }
-    #twsub-create-account .twsub-title {
-      margin:0;
-      color:#fff;
-      font-size:clamp(30px, 6vw, 46px);
-      line-height:1.03;
-      font-weight:800;
-      letter-spacing:-.045em;
-    }
-    #twsub-create-account .twsub-description {
-      max-width:520px;
-      margin:14px 0 0;
-      color:var(--tw-muted);
-      font-size:14px;
-      line-height:1.65;
-      font-weight:400;
-    }
-    #twsub-create-account .twsub-value {
-      display:flex;
-      flex-wrap:wrap;
-      gap:7px;
-      margin-top:18px;
-    }
-    #twsub-create-account .twsub-value-pill {
-      display:inline-flex;
-      align-items:center;
-      min-height:28px;
-      padding:0 11px;
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:999px;
-      background:rgba(255,255,255,.035);
-      color:#dfe6f3;
-      font-size:10px;
-      font-weight:700;
-    }
-    /* ==========================================================
-       FORM
-    ========================================================== */
-    #twsub-create-account .twsub-form {
-      display:flex;
-      flex-direction:column;
-      gap:15px;
-      margin-top:28px;
-    }
-    #twsub-create-account .twsub-grid {
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-    }
-    #twsub-create-account .twsub-field {
-      min-width:0;
-    }
-    #twsub-create-account .twsub-label {
+    #pcs-signup{
       display:block;
-      margin:0 0 7px;
-      color:#c5cbd7;
-      font-size:10px;
-      font-weight:800;
-      line-height:1;
-      letter-spacing:.10em;
-      text-transform:uppercase;
-    }
-    #twsub-create-account .twsub-input {
       width:100%;
-      height:50px;
-      padding:0 15px;
-      border:1px solid rgba(255,255,255,.11);
-      border-radius:13px;
-      outline:none;
-      background:rgba(255,255,255,.055);
-      color:#fff;
-      font-family:inherit;
-      font-size:14px;
-      font-weight:500;
-      transition:
-        border-color .15s ease,
-        box-shadow .15s ease,
-        background .15s ease;
+      color:#0b0e1a;
     }
-    #twsub-create-account .twsub-input::placeholder {
-      color:#737c90;
+    #pcs-outer-wrapper{
+      width:100%;
+      max-width:980px;
+      margin:0 auto;
+      padding:18px 10px 28px;
+      background:transparent !important;
     }
-    #twsub-create-account .twsub-input:focus {
-      border-color:rgba(114,170,255,.65);
-      background:rgba(255,255,255,.075);
-      box-shadow:
-        0 0 0 3px rgba(114,170,255,.10);
+    #pcs-signup-container{
+      width:100%;
+      padding:0;
+      border-radius:16px;
+      background:transparent !important;
     }
-    /* ==========================================================
-       PASSWORD NOTE
-    ========================================================== */
-    #twsub-create-account .twsub-password-note {
-      margin-top:7px;
-      color:#7f899d;
-      font-size:10px;
-      line-height:1.4;
+    .pcs-signup-title{
+      margin:0;
+      padding:0;
+      font-size:0;
+      line-height:0;
     }
-    /* ==========================================================
-       PRIVACY
-    ========================================================== */
-    #twsub-create-account .twsub-privacy {
-      margin-top:1px;
-      padding:12px 13px;
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:12px;
-      background:rgba(255,255,255,.025);
-      color:#8e98aa;
-      font-size:10px;
+    .pcs-signup-desc{
+      max-width:760px;
+      margin:0 0 14px;
+      color:#444;
+      font-size:13px;
       line-height:1.55;
     }
-    #twsub-create-account .twsub-privacy strong {
-      color:#c9d0dc;
-      font-weight:700;
+    /* =========================================================
+       ACTIVE DUTY / VETERAN
+    ========================================================= */
+    #pcs-mode-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:0 0 16px;
     }
-    /* ==========================================================
-       BUTTON
-    ========================================================== */
-    #twsub-create-account .twsub-submit {
-      width:100%;
-      min-height:52px;
-      margin-top:2px;
-      padding:0 18px;
-      border:0;
-      border-radius:14px;
-      cursor:pointer;
-      background:
-        linear-gradient(
-          135deg,
-          var(--tw-teal),
-          var(--tw-blue)
-        );
-      color:#08101a;
-      font-family:inherit;
-      font-size:12px;
+    .pcs-mode-btn{
+      appearance:none;
+      -webkit-appearance:none;
+      padding:10px 16px;
+      border:1px solid rgba(0,0,0,.08);
+      border-radius:999px;
+      background:rgba(255,255,255,.72);
+      color:#0b0e1a;
+      font-size:11px;
       font-weight:900;
       letter-spacing:.08em;
       text-transform:uppercase;
+      cursor:pointer;
+      box-shadow:0 4px 12px rgba(0,0,0,.05);
+      backdrop-filter:blur(6px);
+      -webkit-backdrop-filter:blur(6px);
+      transition:
+        transform .15s ease,
+        filter .15s ease,
+        box-shadow .15s ease;
+    }
+    .pcs-mode-btn:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.02);
+    }
+    .pcs-mode-btn-active{
+      border-color:transparent;
+      background:
+        radial-gradient(
+          circle at top left,
+          #8ef3c5,
+          #6aa7ff
+        );
+      color:#050712 !important;
       box-shadow:
-        0 14px 34px rgba(0,0,0,.26);
+        0 8px 18px rgba(0,0,0,.10);
+    }
+    /* =========================================================
+       FORM
+    ========================================================= */
+    #pcs-signup-form{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .pcs-grid-2{
+      display:grid;
+      grid-template-columns:
+        repeat(2,minmax(0,1fr));
+      gap:12px;
+    }
+    .pcs-field-wrap{
+      min-width:0;
+    }
+    .pcs-field-label{
+      display:block;
+      margin:0 0 7px;
+      color:#7a7f96;
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.10em;
+      text-transform:uppercase;
+    }
+    /* =========================================================
+       INPUTS
+    ========================================================= */
+    .pcs-input,
+    .pcs-select{
+      width:100%;
+      min-width:0;
+      height:40px;
+      padding:10px 14px;
+      border:1px solid rgba(0,0,0,.07);
+      border-radius:12px;
+      outline:none;
+      background:rgba(255,255,255,.66);
+      color:#1a2238;
+      font-size:14px;
+      line-height:1.2;
+      box-shadow:
+        0 6px 16px rgba(0,0,0,.045);
+      backdrop-filter:blur(6px);
+      -webkit-backdrop-filter:blur(6px);
+      transition:
+        border-color .15s ease,
+        box-shadow .15s ease;
+      appearance:none;
+      -webkit-appearance:none;
+    }
+    .pcs-input::placeholder{
+      color:#8b90a6;
+    }
+    .pcs-input:focus,
+    .pcs-select:focus{
+      border-color:#6aa7ff;
+      box-shadow:
+        0 0 0 2px rgba(106,167,255,.14);
+    }
+    /* =========================================================
+       SELECT ARROW
+    ========================================================= */
+    .pcs-select{
+      padding-right:38px;
+      cursor:pointer;
+      background-image:
+        linear-gradient(
+          45deg,
+          transparent 50%,
+          #8ef3c5 50%
+        ),
+        linear-gradient(
+          135deg,
+          #8ef3c5 50%,
+          transparent 50%
+        );
+      background-position:
+        calc(100% - 18px) calc(50% - 2px),
+        calc(100% - 13px) calc(50% - 2px);
+      background-size:
+        5px 5px,
+        5px 5px;
+      background-repeat:no-repeat;
+    }
+    .pcs-hidden{
+      display:none !important;
+    }
+    /* =========================================================
+       BUTTON
+    ========================================================= */
+    #pcs-signup-btn{
+      width:100%;
+      margin-top:4px;
+      padding:14px;
+      appearance:none;
+      -webkit-appearance:none;
+      border:none;
+      border-radius:12px;
+      background:
+        radial-gradient(
+          circle at top left,
+          #8ef3c5,
+          #6aa7ff
+        );
+      color:#050712;
+      font-size:14px;
+      font-weight:900;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      cursor:pointer;
+      box-shadow:
+        0 14px 30px rgba(0,0,0,.15);
       transition:
         transform .15s ease,
         filter .15s ease,
         opacity .15s ease;
     }
-    #twsub-create-account .twsub-submit:hover {
+    #pcs-signup-btn:hover{
       transform:translateY(-1px);
-      filter:brightness(1.04);
+      filter:brightness(1.03);
     }
-    #twsub-create-account .twsub-submit:disabled {
-      opacity:.62;
+    #pcs-signup-btn:disabled{
+      opacity:.72;
       cursor:not-allowed;
       transform:none;
       filter:none;
     }
-    /* ==========================================================
-       MESSAGE
-    ========================================================== */
-    #twsub-create-account .twsub-message {
+    /* =========================================================
+       STATUS
+    ========================================================= */
+    #pcs-signup-error,
+    #pcs-signup-success{
       display:none;
-      margin-top:2px;
-      padding:11px 13px;
-      border-radius:11px;
-      font-size:11px;
-      line-height:1.5;
+      margin-top:10px;
+      padding:10px 12px;
+      border-radius:10px;
+      font-size:12px;
+      line-height:1.45;
     }
-    #twsub-create-account .twsub-message-error {
-      color:#ffc8c8;
-      border:1px solid rgba(255,110,110,.18);
-      background:rgba(255,70,70,.08);
+    #pcs-signup-error{
+      border:1px solid rgba(255,97,97,.18);
+      background:rgba(255,97,97,.10);
+      color:#8d1f1f;
     }
-    #twsub-create-account .twsub-message-success {
-      color:#baf4da;
-      border:1px solid rgba(114,230,208,.18);
-      background:rgba(114,230,208,.07);
+    #pcs-signup-success{
+      border:1px solid rgba(63,198,137,.18);
+      background:rgba(63,198,137,.10);
+      color:#11543d;
     }
-    /* ==========================================================
-       LOGIN
-    ========================================================== */
-    #twsub-create-account .twsub-login {
-      margin-top:18px;
-      text-align:center;
-      color:#8791a4;
-      font-size:11px;
-      line-height:1.5;
-    }
-    #twsub-create-account .twsub-login a {
-      color:#d7e5ff;
-      font-weight:700;
-      text-decoration:none;
-    }
-    #twsub-create-account .twsub-login a:hover {
-      text-decoration:underline;
-    }
-    /* ==========================================================
-       FOUNDING ACCESS
-    ========================================================== */
-    #twsub-create-account .twsub-founding {
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:7px;
-      margin-top:19px;
-      color:var(--tw-gold);
-      font-size:9px;
-      font-weight:800;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-    }
-    #twsub-create-account .twsub-founding::before,
-    #twsub-create-account .twsub-founding::after {
-      content:"";
-      width:24px;
-      height:1px;
-      background:rgba(217,179,106,.30);
-    }
-    /* ==========================================================
-       MOBILE
-    ========================================================== */
-    @media (max-width:600px) {
-      #twsub-create-account .twsub-shell {
-        width:calc(100% - 18px);
-        padding:12px 0 22px;
-      }
-      #twsub-create-account .twsub-panel {
-        padding:24px 18px 22px;
-        border-radius:21px;
-      }
-      #twsub-create-account .twsub-grid {
+    @media(max-width:700px){
+      .pcs-grid-2{
         grid-template-columns:1fr;
       }
-      #twsub-create-account .twsub-title {
-        font-size:36px;
-      }
-      #twsub-create-account .twsub-description {
-        font-size:13px;
-      }
-      #twsub-create-account .twsub-input {
-        height:52px;
-        font-size:16px;
-      }
-      #twsub-create-account .twsub-submit {
-        min-height:54px;
+      #pcs-outer-wrapper{
+        padding-left:4px;
+        padding-right:4px;
       }
     }
   </style>
-                <div class="twsub-shell">
-                  <section class="twsub-panel" aria-labelledby="twsub-create-title">
-                    <div class="twsub-content">
-                      <div class="twsub-kicker">
-                        <span class="twsub-kicker-dot"></span>
-                        <span>TheWing Account</span>
-                      </div>
-                      <h1 id="twsub-create-title" class="twsub-title">
-                        Create Your Account
-                      </h1>
-                      <p class="twsub-description">
-                        Create your free TheWing account. Your account will become
-                        the foundation for your Military Profile, saved results,
-                        personalized tools, and Amy.
-                      </p>
-                      <div class="twsub-value" aria-label="Account benefits">
-                        <span class="twsub-value-pill">
-                          Military Profile
-                        </span>
-                        <span class="twsub-value-pill">
-                          Saved Results
-                        </span>
-                        <span class="twsub-value-pill">
-                          Personalized Amy
-                        </span>
-                      </div>
-                      <form id="twsub-form" class="twsub-form" novalidate="">
-                        <div class="twsub-grid">
-                          <div class="twsub-field">
-                            <label class="twsub-label" for="twsub-first-name">
-                              First Name
-                            </label>
-                            <input id="twsub-first-name" class="twsub-input" type="text" autocomplete="given-name" placeholder="First name" required="">
-                          </div>
-                          <div class="twsub-field">
-                            <label class="twsub-label" for="twsub-last-name">
-                              Last Name
-                            </label>
-                            <input id="twsub-last-name" class="twsub-input" type="text" autocomplete="family-name" placeholder="Last name" required="">
-                          </div>
-                        </div>
-                        <div class="twsub-field">
-                          <label class="twsub-label" for="twsub-email">
-                            Email Address
-                          </label>
-                          <input id="twsub-email" class="twsub-input" type="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" placeholder="name@email.com" required="">
-                        </div>
-                        <div class="twsub-field">
-                          <label class="twsub-label" for="twsub-password">
-                            Password
-                          </label>
-                          <input id="twsub-password" class="twsub-input" type="password" autocomplete="new-password" minlength="8" placeholder="Create a password" required="">
-                          <div class="twsub-password-note">
-                            Use at least 8 characters.
-                          </div>
-                        </div>
-                        <div class="twsub-field">
-                          <label class="twsub-label" for="twsub-confirm-password">
-                            Confirm Password
-                          </label>
-                          <input id="twsub-confirm-password" class="twsub-input" type="password" autocomplete="new-password" minlength="8" placeholder="Confirm your password" required="">
-                        </div>
-                        <div class="twsub-privacy">
-                          <strong>
-                            Your profile belongs to you.
-                          </strong>
-                          Military and personalized information will be added separately
-                          after your account is verified. Your password is never stored by
-                          this page.
-                        </div>
-                        <button id="twsub-submit" class="twsub-submit" type="submit">
-                          Create Free Account
-                        </button>
-                        <div id="twsub-error" class="twsub-message twsub-message-error" role="alert" aria-live="assertive"></div>
-                        <div id="twsub-success" class="twsub-message twsub-message-success" role="status" aria-live="polite"></div>
-                      </form>
-                      <div class="twsub-login">
-                        Already have a TheWing account?
-                        <a href="/login">
-                          Sign in
-                        </a>
-                      </div>
-                      <div class="twsub-founding">
-                        Founding Access • Free
-                      </div>
+                <div id="pcs-outer-wrapper">
+                  <div id="pcs-signup-container">
+                    <div class="pcs-signup-title" aria-hidden="true">
+                      TheWing.ai Signup
                     </div>
-                  </section>
+                    <div class="pcs-signup-desc">
+                      Premium accounts are free for Veterans, Active Duty, and their immediate families.
+                      TheWing.ai will never request account fees.
+                    </div>
+                    <!--  =====================================================
+           MODE
+      ======================================================  -->
+                    <div id="pcs-mode-row">
+                      <button id="pcs-mode-ad" class="pcs-mode-btn pcs-mode-btn-active" type="button" aria-pressed="true">
+                        Active Duty
+                      </button>
+                      <button id="pcs-mode-vet" class="pcs-mode-btn" type="button" aria-pressed="false">
+                        Veteran
+                      </button>
+                    </div>
+                    <div id="pcs-signup-form">
+                      <!--  NAME  -->
+                      <div class="pcs-grid-2">
+                        <div class="pcs-field-wrap">
+                          <label class="pcs-field-label" for="pcs-first-name">
+                            First Name
+                          </label>
+                          <input id="pcs-first-name" class="pcs-input" type="text" autocomplete="given-name">
+                        </div>
+                        <div class="pcs-field-wrap">
+                          <label class="pcs-field-label" for="pcs-last-name">
+                            Last Name
+                          </label>
+                          <input id="pcs-last-name" class="pcs-input" type="text" autocomplete="family-name">
+                        </div>
+                      </div>
+                      <!--  EMAIL  -->
+                      <div class="pcs-field-wrap">
+                        <label class="pcs-field-label" for="pcs-email">
+                          Email Address
+                        </label>
+                        <input id="pcs-email" class="pcs-input" type="email" autocomplete="email">
+                      </div>
+                      <!--  PASSWORD  -->
+                      <div class="pcs-field-wrap">
+                        <label class="pcs-field-label" for="pcs-password">
+                          Password (8 characters minimum)
+                        </label>
+                        <input id="pcs-password" class="pcs-input" type="password" minlength="8" autocomplete="new-password">
+                      </div>
+                      <!--  ===================================================
+             YEARS OF SERVICE + RANK
+        ====================================================  -->
+                      <div class="pcs-grid-2">
+                        <div class="pcs-field-wrap">
+                          <label class="pcs-field-label" for="pcs-yos">
+                            Years of Service
+                          </label>
+                          <select id="pcs-yos" class="pcs-select">
+                            <option value="2">2 Years</option>
+                            <option value="4">4 Years</option>
+                            <option value="6">6 Years</option>
+                            <option value="8">8 Years</option>
+                            <option value="10">10 Years</option>
+                            <option value="12" selected="">
+                              12 Years
+                            </option>
+                            <option value="14">14 Years</option>
+                            <option value="16">16 Years</option>
+                            <option value="18">18 Years</option>
+                            <option value="20">20 Years</option>
+                            <option value="22">22 Years</option>
+                            <option value="24">24 Years</option>
+                            <option value="26">26 Years</option>
+                            <option value="28">28 Years</option>
+                            <option value="30">30 Years</option>
+                          </select>
+                        </div>
+                        <!--  ACTIVE DUTY RANK  -->
+                        <div id="pcs-rank-wrap" class="pcs-field-wrap">
+                          <label class="pcs-field-label" for="pcs-rank">
+                            Rank
+                          </label>
+                          <select id="pcs-rank" class="pcs-select">
+                            <optgroup label="Enlisted">
+                              <option value="E-1" selected="">E-1</option>
+                              <option value="E-2">E-2</option>
+                              <option value="E-3">E-3</option>
+                              <option value="E-4">E-4</option>
+                              <option value="E-5">E-5</option>
+                              <option value="E-6">E-6</option>
+                              <option value="E-7">E-7</option>
+                              <option value="E-8">E-8</option>
+                              <option value="E-9">E-9</option>
+                            </optgroup>
+                            <optgroup label="Officers">
+                              <option value="O-1">O-1</option>
+                              <option value="O-2">O-2</option>
+                              <option value="O-3">O-3</option>
+                              <option value="O-4">O-4</option>
+                              <option value="O-5">O-5</option>
+                              <option value="O-6">O-6</option>
+                              <option value="O-7">O-7</option>
+                              <option value="O-8">O-8</option>
+                              <option value="O-9">O-9</option>
+                              <option value="O-10">O-10</option>
+                            </optgroup>
+                          </select>
+                        </div>
+                        <!--  VETERAN LAST RANK  -->
+                        <div id="pcs-vet-rank-wrap" class="pcs-field-wrap pcs-hidden">
+                          <label class="pcs-field-label" for="pcs-vet-rank">
+                            Last Rank Held
+                          </label>
+                          <select id="pcs-vet-rank" class="pcs-select">
+                            <optgroup label="Enlisted">
+                              <option value="E-1" selected="">E-1</option>
+                              <option value="E-2">E-2</option>
+                              <option value="E-3">E-3</option>
+                              <option value="E-4">E-4</option>
+                              <option value="E-5">E-5</option>
+                              <option value="E-6">E-6</option>
+                              <option value="E-7">E-7</option>
+                              <option value="E-8">E-8</option>
+                              <option value="E-9">E-9</option>
+                            </optgroup>
+                            <optgroup label="Warrant Officers">
+                              <option value="W-1">W-1</option>
+                              <option value="W-2">W-2</option>
+                              <option value="W-3">W-3</option>
+                              <option value="W-4">W-4</option>
+                              <option value="W-5">W-5</option>
+                            </optgroup>
+                            <optgroup label="Officers">
+                              <option value="O-1">O-1</option>
+                              <option value="O-2">O-2</option>
+                              <option value="O-3">O-3</option>
+                              <option value="O-4">O-4</option>
+                              <option value="O-5">O-5</option>
+                              <option value="O-6">O-6</option>
+                              <option value="O-7">O-7</option>
+                              <option value="O-8">O-8</option>
+                              <option value="O-9">O-9</option>
+                              <option value="O-10">O-10</option>
+                            </optgroup>
+                          </select>
+                        </div>
+                      </div>
+                      <!--  FAMILY + BASE  -->
+                      <div class="pcs-grid-2">
+                        <div class="pcs-field-wrap">
+                          <label class="pcs-field-label" for="pcs-family">
+                            Family Size
+                          </label>
+                          <select id="pcs-family" class="pcs-select">
+                            <option value="1" selected="">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                          </select>
+                        </div>
+                        <div class="pcs-field-wrap">
+                          <label class="pcs-field-label" for="pcs-base">
+                            Base Location
+                          </label>
+                          <select id="pcs-base" class="pcs-select">
+                            <option value="">
+                              Loading bases...
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--  VETERAN EXTRAS  -->
+                      <div id="pcs-vet-extra-row" class="pcs-grid-2 pcs-hidden">
+                        <div id="pcs-va-wrap" class="pcs-field-wrap pcs-hidden">
+                          <label class="pcs-field-label" for="pcs-va">
+                            VA Disability %
+                          </label>
+                          <select id="pcs-va" class="pcs-select">
+                            <option value="0" selected="">0%</option>
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                            <option value="40">40%</option>
+                            <option value="50">50%</option>
+                            <option value="60">60%</option>
+                            <option value="70">70%</option>
+                            <option value="80">80%</option>
+                            <option value="90">90%</option>
+                            <option value="100">100%</option>
+                          </select>
+                        </div>
+                        <div id="pcs-retire-system-wrap" class="pcs-field-wrap pcs-hidden">
+                          <label class="pcs-field-label" for="pcs-retire-system">
+                            Retirement System
+                          </label>
+                          <select id="pcs-retire-system" class="pcs-select">
+                            <option value="high3" selected="">
+                              High-3 (2.5% / year)
+                            </option>
+                            <option value="brs">
+                              BRS (2.0% / year)
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                      <button id="pcs-signup-btn" type="button">
+                        Create Premium Account
+                      </button>
+                      <div id="pcs-signup-error" role="alert"></div>
+                      <div id="pcs-signup-success" aria-live="polite"></div>
+                    </div>
+                  </div>
                 </div>
                 <script>
-    (() => {
-      "use strict";
-      /* =========================================================
-         THEWING • SUBSCRIBERS
-         CREATE ACCOUNT CONTROLLER
-         Version 1.2.0
-      ========================================================= */
-      const CONTROLLER_VERSION =
-        "1.2.0";
-      /* =========================================================
-         CONFIGURATION
-         The Webflow frontend communicates directly with the
-         canonical Subscribers Netlify deployment.
-         DO NOT use:
-         https://subscribers.netlify.app
-      ========================================================= */
-      const SUBSCRIBERS_ORIGIN =
-        "https://thewing-subscribers.netlify.app";
-      const API_BASE =
-        SUBSCRIBERS_ORIGIN.replace(
-          /\/+$/,
-          ""
-        ) +
-        "/.netlify/functions";
-      const REGISTER_ENDPOINT =
-        API_BASE +
-        "/register";
-      const SEND_CODE_ENDPOINT =
-        API_BASE +
-        "/send-code";
-      const VERIFY_PAGE =
-        "/military/verify-account";
-      const REQUEST_SOURCE =
-        "thewing.subscribers.create-account.v1";
-      /* =========================================================
-         ELEMENTS
-      ========================================================= */
-      const root =
-        document.getElementById(
-          "twsub-create-account"
+(function(){
+  "use strict";
+  /* ==========================================================
+     #1 SUBSCRIBERS BACKEND
+  ========================================================== */
+  const API_BASE =
+    "https://thewing-subscribers.netlify.app/.netlify/functions";
+  /* ==========================================================
+     #2 VERIFY PAGE
+  ========================================================== */
+  const VERIFY_PAGE = (function(){
+    const hostname =
+      String(
+        location.hostname ||
+        ""
+      ).toLowerCase();
+    /*
+     * Webflow staging.
+     */
+    if (
+      hostname.includes(
+        "webflow.io"
+      )
+    ) {
+      return (
+        location.origin +
+        "/military/verify-account"
+      );
+    }
+    /*
+     * Production TheWing.ai.
+     */
+    return (
+      "/military/verify-account"
+    );
+  })();
+  /* ==========================================================
+     #3 LOCAL PENDING SIGNUP
+     DEVELOPMENT BRIDGE ONLY
+     These values are NOT treated as authenticated server data.
+     They exist only so the signup/verification flow can retain
+     what the member entered until Military Profile persistence
+     is implemented.
+     Password is NEVER stored.
+  ========================================================== */
+  const PENDING_SIGNUP_KEY =
+    "thewing.pending_signup.v1";
+  /* ==========================================================
+     #4 PAYGRADE TITLES
+  ========================================================== */
+  const PAYGRADE_TITLES = {
+    "E-1": "AB",
+    "E-2": "Amn",
+    "E-3": "A1C",
+    "E-4": "SrA",
+    "E-5": "SSgt",
+    "E-6": "TSgt",
+    "E-7": "MSgt",
+    "E-8": "SMSgt",
+    "E-9": "CMSgt",
+    "W-1": "WO1",
+    "W-2": "CWO2",
+    "W-3": "CWO3",
+    "W-4": "CWO4",
+    "W-5": "CWO5",
+    "O-1": "2nd Lt",
+    "O-2": "1st Lt",
+    "O-3": "Captain",
+    "O-4": "Major",
+    "O-5": "Lt Col",
+    "O-6": "Colonel",
+    "O-7": "Brig Gen",
+    "O-8": "Maj Gen",
+    "O-9": "Lt Gen",
+    "O-10": "Gen"
+  };
+  /* ==========================================================
+     #5 BASE INDEX
+  ========================================================== */
+  let BASES_INDEX = {
+    version:
+      "",
+    bases:
+      {},
+    aliases:
+      {}
+  };
+  /* ==========================================================
+     #6 DOM
+  ========================================================== */
+  const root =
+    document.getElementById(
+      "pcs-signup"
+    );
+  if (!root) {
+    return;
+  }
+  const $ =
+    function(selector){
+      return root.querySelector(
+        selector
+      );
+    };
+  const btnAD =
+    $("#pcs-mode-ad");
+  const btnVET =
+    $("#pcs-mode-vet");
+  const rankWrap =
+    $("#pcs-rank-wrap");
+  const vetRankWrap =
+    $("#pcs-vet-rank-wrap");
+  const vaWrap =
+    $("#pcs-va-wrap");
+  const retireWrap =
+    $("#pcs-retire-system-wrap");
+  const vetExtraRow =
+    $("#pcs-vet-extra-row");
+  const signupBtn =
+    $("#pcs-signup-btn");
+  const errEl =
+    $("#pcs-signup-error");
+  const successEl =
+    $("#pcs-signup-success");
+  let signupBusy =
+    false;
+  /* ==========================================================
+     #7 STORAGE HELPERS
+  ========================================================== */
+  function writePendingSignup(
+    value
+  ){
+    try {
+      localStorage.setItem(
+        PENDING_SIGNUP_KEY,
+        JSON.stringify(
+          value
+        )
+      );
+    } catch (_) {}
+  }
+  /* ==========================================================
+     #8 BASE NORMALIZATION
+  ========================================================== */
+  function normalizeBaseName(
+    name
+  ){
+    const raw =
+      String(
+        name ||
+        ""
+      ).trim();
+    if (!raw) {
+      return "";
+    }
+    if (
+      BASES_INDEX.bases &&
+      BASES_INDEX.bases[raw]
+    ) {
+      return raw;
+    }
+    if (
+      BASES_INDEX.aliases &&
+      BASES_INDEX.aliases[raw]
+    ) {
+      return BASES_INDEX.aliases[
+        raw
+      ];
+    }
+    const compact =
+      raw.replace(
+        /\s+/g,
+        ""
+      );
+    if (
+      BASES_INDEX.aliases &&
+      BASES_INDEX.aliases[
+        compact
+      ]
+    ) {
+      return BASES_INDEX.aliases[
+        compact
+      ];
+    }
+    return raw;
+  }
+  /* ==========================================================
+     #9 BASE SELECT
+  ========================================================== */
+  function populateBaseSelect(){
+    const baseSelect =
+      $("#pcs-base");
+    if (!baseSelect) {
+      return;
+    }
+    const externalIndex =
+      window.PCSU_BASES_INDEX ||
+      {};
+    BASES_INDEX = {
+      version:
+        externalIndex.version ||
+        "",
+      bases:
+        externalIndex.bases ||
+        {},
+      aliases:
+        externalIndex.aliases ||
+        {}
+    };
+    const baseNames =
+      Object.keys(
+        BASES_INDEX.bases ||
+        {}
+      )
+      .sort(
+        function(a,b){
+          return a.localeCompare(
+            b
+          );
+        }
+      );
+    if (!baseNames.length) {
+      baseSelect.innerHTML =
+        '<option value="">' +
+        'Base list unavailable' +
+        '</option>';
+      return;
+    }
+    baseSelect.innerHTML =
+      baseNames.map(
+        function(base){
+          const safe =
+            base.replace(
+              /"/g,
+              "&quot;"
+            );
+          return (
+            '<option value="' +
+            safe +
+            '">' +
+            base +
+            '</option>'
+          );
+        }
+      ).join("");
+    if (
+      baseNames.indexOf(
+        "Lackland AFB"
+      ) >= 0
+    ) {
+      baseSelect.value =
+        "Lackland AFB";
+      return;
+    }
+    baseSelect.value =
+      baseNames[0];
+  }
+  /* ==========================================================
+     #10 MESSAGES
+  ========================================================== */
+  function setError(
+    message
+  ){
+    errEl.style.display =
+      message
+        ? "block"
+        : "none";
+    errEl.textContent =
+      message ||
+      "";
+  }
+  function setSuccess(
+    message
+  ){
+    successEl.style.display =
+      message
+        ? "block"
+        : "none";
+    successEl.textContent =
+      message ||
+      "";
+  }
+  /* ==========================================================
+     #11 POST JSON
+  ========================================================== */
+  async function postJSON(
+    url,
+    body
+  ){
+    const response =
+      await fetch(
+        url,
+        {
+          method:
+            "POST",
+          mode:
+            "cors",
+          credentials:
+            "omit",
+          headers: {
+            "Accept":
+              "application/json",
+            "Content-Type":
+              "application/json"
+          },
+          body:
+            JSON.stringify(
+              body
+            )
+        }
+      );
+    const data =
+      await response
+        .json()
+        .catch(
+          function(){
+            return {};
+          }
         );
-      if (!root) {
-        console.warn(
-          "TheWing Subscribers: create-account root not found."
+    if (
+      !response.ok ||
+      data.ok === false
+    ) {
+      const error =
+        new Error(
+          data.error ||
+          (
+            "HTTP " +
+            response.status
+          )
         );
+      error.status =
+        response.status;
+      error.payload =
+        data;
+      throw error;
+    }
+    return data;
+  }
+  /* ==========================================================
+     #12 MODE
+  ========================================================== */
+  function isVeteranMode(){
+    return btnVET
+      .classList
+      .contains(
+        "pcs-mode-btn-active"
+      );
+  }
+  function syncModeVisibility(){
+    const isVet =
+      isVeteranMode();
+    if (isVet) {
+      rankWrap.classList.add(
+        "pcs-hidden"
+      );
+      vetRankWrap.classList.remove(
+        "pcs-hidden"
+      );
+      vetExtraRow.classList.remove(
+        "pcs-hidden"
+      );
+      vaWrap.classList.remove(
+        "pcs-hidden"
+      );
+      retireWrap.classList.remove(
+        "pcs-hidden"
+      );
+      btnAD.setAttribute(
+        "aria-pressed",
+        "false"
+      );
+      btnVET.setAttribute(
+        "aria-pressed",
+        "true"
+      );
+      return;
+    }
+    rankWrap.classList.remove(
+      "pcs-hidden"
+    );
+    vetRankWrap.classList.add(
+      "pcs-hidden"
+    );
+    vetExtraRow.classList.add(
+      "pcs-hidden"
+    );
+    vaWrap.classList.add(
+      "pcs-hidden"
+    );
+    retireWrap.classList.add(
+      "pcs-hidden"
+    );
+    btnAD.setAttribute(
+      "aria-pressed",
+      "true"
+    );
+    btnVET.setAttribute(
+      "aria-pressed",
+      "false"
+    );
+  }
+  btnAD.addEventListener(
+    "click",
+    function(){
+      btnAD.classList.add(
+        "pcs-mode-btn-active"
+      );
+      btnVET.classList.remove(
+        "pcs-mode-btn-active"
+      );
+      syncModeVisibility();
+    }
+  );
+  btnVET.addEventListener(
+    "click",
+    function(){
+      btnVET.classList.add(
+        "pcs-mode-btn-active"
+      );
+      btnAD.classList.remove(
+        "pcs-mode-btn-active"
+      );
+      syncModeVisibility();
+    }
+  );
+  syncModeVisibility();
+  setTimeout(
+    populateBaseSelect,
+    150
+  );
+  /* ==========================================================
+     #13 CREATE ACCOUNT
+  ========================================================== */
+  signupBtn.addEventListener(
+    "click",
+    async function(){
+      if (
+        signupBusy
+      ) {
         return;
       }
-      const form =
-        root.querySelector(
-          "#twsub-form"
+      setError(
+        ""
+      );
+      setSuccess(
+        ""
+      );
+      signupBusy =
+        true;
+      signupBtn.disabled =
+        true;
+      /* ======================================================
+         IDENTITY
+      ====================================================== */
+      const firstName =
+        String(
+          $("#pcs-first-name").value ||
+          ""
+        ).trim();
+      const lastName =
+        String(
+          $("#pcs-last-name").value ||
+          ""
+        ).trim();
+      const fullName =
+        [
+          firstName,
+          lastName
+        ]
+        .filter(Boolean)
+        .join(" ")
+        .trim();
+      const email =
+        String(
+          $("#pcs-email").value ||
+          ""
+        )
+        .trim()
+        .toLowerCase();
+      /*
+       * IMPORTANT:
+       * Do NOT trim passwords.
+       */
+      const password =
+        typeof $("#pcs-password").value ===
+          "string"
+          ? $("#pcs-password").value
+          : "";
+      /* ======================================================
+         MILITARY FORM VALUES
+      ====================================================== */
+      const yearsOfService =
+        Number(
+          $("#pcs-yos").value
         );
-      const firstNameInput =
-        root.querySelector(
-          "#twsub-first-name"
+      const familySize =
+        Number(
+          $("#pcs-family").value
         );
-      const lastNameInput =
-        root.querySelector(
-          "#twsub-last-name"
+      const base =
+        normalizeBaseName(
+          $("#pcs-base").value ||
+          ""
         );
-      const emailInput =
-        root.querySelector(
-          "#twsub-email"
+      const veteran =
+        isVeteranMode();
+      const rankPaygrade =
+        veteran
+          ? String(
+              $("#pcs-vet-rank").value ||
+              ""
+            ).trim()
+          : String(
+              $("#pcs-rank").value ||
+              ""
+            ).trim();
+      const rankTitle =
+        PAYGRADE_TITLES[
+          rankPaygrade
+        ] ||
+        rankPaygrade;
+      const vaDisability =
+        veteran
+          ? Number(
+              $("#pcs-va").value ||
+              0
+            )
+          : null;
+      const retirementSystem =
+        veteran
+          ? String(
+              $("#pcs-retire-system").value ||
+              "high3"
+            ).trim()
+          : null;
+      const militaryStatus =
+        veteran
+          ? "veteran"
+          : "active_duty";
+      /* ======================================================
+         VALIDATION
+      ====================================================== */
+      if (!firstName) {
+        setError(
+          "Please enter your first name."
         );
-      const passwordInput =
-        root.querySelector(
-          "#twsub-password"
+        signupBusy =
+          false;
+        signupBtn.disabled =
+          false;
+        return;
+      }
+      if (!lastName) {
+        setError(
+          "Please enter your last name."
         );
-      const confirmPasswordInput =
-        root.querySelector(
-          "#twsub-confirm-password"
-        );
-      const submitButton =
-        root.querySelector(
-          "#twsub-submit"
-        );
-      const errorElement =
-        root.querySelector(
-          "#twsub-error"
-        );
-      const successElement =
-        root.querySelector(
-          "#twsub-success"
-        );
+        signupBusy =
+          false;
+        signupBtn.disabled =
+          false;
+        return;
+      }
       if (
-        !form ||
-        !firstNameInput ||
-        !lastNameInput ||
-        !emailInput ||
-        !passwordInput ||
-        !confirmPasswordInput ||
-        !submitButton ||
-        !errorElement ||
-        !successElement
+        !/^[^@\s]+@[^@\s]+\.[^@\s]+$/
+          .test(
+            email
+          )
+      ) {
+        setError(
+          "Please enter a valid email address."
+        );
+        signupBusy =
+          false;
+        signupBtn.disabled =
+          false;
+        return;
+      }
+      if (
+        password.length <
+        8
+      ) {
+        setError(
+          "Password must be at least 8 characters."
+        );
+        signupBusy =
+          false;
+        signupBtn.disabled =
+          false;
+        return;
+      }
+      if (!rankPaygrade) {
+        setError(
+          veteran
+            ? "Please select your last rank held."
+            : "Please select your rank."
+        );
+        signupBusy =
+          false;
+        signupBtn.disabled =
+          false;
+        return;
+      }
+      if (!base) {
+        setError(
+          "Please select your base location."
+        );
+        signupBusy =
+          false;
+        signupBtn.disabled =
+          false;
+        return;
+      }
+      /* ======================================================
+         PENDING MILITARY PROFILE
+         Password is deliberately excluded.
+      ====================================================== */
+      const pendingSignup = {
+        email,
+        first_name:
+          firstName,
+        last_name:
+          lastName,
+        full_name:
+          fullName,
+        military_status:
+          militaryStatus,
+        years_of_service:
+          yearsOfService,
+        rank_paygrade:
+          rankPaygrade,
+        rank_title:
+          rankTitle,
+        family_size:
+          familySize,
+        base_location:
+          base,
+        va_disability:
+          vaDisability,
+        retirement_system:
+          retirementSystem,
+        source:
+          "thewing.signup.v5",
+        captured_at:
+          new Date()
+            .toISOString()
+      };
+      /*
+       * TEMPORARY.
+       *
+       * This keeps the member's form values available across the
+       * verification redirect, but these values are NOT yet the
+       * authenticated server-side Military Profile.
+       */
+      writePendingSignup(
+        pendingSignup
+      );
+/* ======================================================
+   REGISTER
+   Unified Subscribers profile:
+   account identity + military profile
+====================================================== */
+const registerPayload = {
+  /* ---------------------------------------------------
+     ACCOUNT
+  --------------------------------------------------- */
+  email:
+    email,
+  password:
+    password,
+  first_name:
+    firstName,
+  last_name:
+    lastName,
+  full_name:
+    fullName,
+  /* ---------------------------------------------------
+     MILITARY PROFILE
+  --------------------------------------------------- */
+  military_status:
+    militaryStatus,
+  branch:
+    "air_force",
+  years_of_service:
+    yearsOfService,
+  rank_paygrade:
+    rankPaygrade,
+  rank_title:
+    rankTitle,
+  family_size:
+    familySize,
+  base_location:
+    base,
+  /* ---------------------------------------------------
+     VETERAN FIELDS
+  --------------------------------------------------- */
+  va_disability:
+    veteran
+      ? vaDisability
+      : null,
+  /*
+   * Veteran does NOT automatically mean retired.
+   * We are not asking this question in the signup yet.
+   */
+  retired:
+    null,
+  retirement_system:
+    veteran
+      ? retirementSystem
+      : null,
+  /* ---------------------------------------------------
+     PROFILE VERSION / SOURCE
+  --------------------------------------------------- */
+  source:
+    "thewing.signup.v5"
+};
+      /* ======================================================
+         SEND CODE
+         Current Subscribers send-code.js expects these fields.
+      ====================================================== */
+      const sendCodePayload = {
+        email,
+        first_name:
+          firstName,
+        last_name:
+          lastName,
+        full_name:
+          fullName,
+        source:
+          "thewing.signup.v5"
+      };
+      try {
+        setSuccess(
+          "Creating your account…"
+        );
+        await postJSON(
+          API_BASE +
+          "/register",
+          registerPayload
+        );
+        setSuccess(
+          "Account created. Sending verification code…"
+        );
+        await postJSON(
+          API_BASE +
+          "/send-code",
+          sendCodePayload
+        );
+      } catch (
+        error
       ) {
         console.error(
-          "TheWing Subscribers: create-account form is missing required elements."
+          "TheWing Subscribers signup failed:",
+          error
         );
+        setSuccess(
+          ""
+        );
+        setError(
+          "Registration error: " +
+          (
+            error?.message ||
+            "Unknown error"
+          )
+        );
+        signupBusy =
+          false;
+        signupBtn.disabled =
+          false;
         return;
       }
-      let busy =
-        false;
-      /* =========================================================
-         HELPERS
-      ========================================================= */
-      const cleanString =
-        value =>
-          String(
-            value ?? ""
-          ).trim();
-      const cleanEmail =
-        value =>
-          cleanString(
-            value
-          ).toLowerCase();
-      const validEmail =
-        email =>
-          /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(
-            email
-          );
-      function showError(message) {
-        const safeMessage =
-          cleanString(
-            message
-          );
-        errorElement.textContent =
-          safeMessage;
-        errorElement.style.display =
-          safeMessage
-            ? "block"
-            : "none";
-      }
-      function showSuccess(message) {
-        const safeMessage =
-          cleanString(
-            message
-          );
-        successElement.textContent =
-          safeMessage;
-        successElement.style.display =
-          safeMessage
-            ? "block"
-            : "none";
-      }
-      function setBusy(
-        isBusy,
-        label = ""
-      ) {
-        busy =
-          Boolean(
-            isBusy
-          );
-        submitButton.disabled =
-          busy;
-        if (busy) {
-          submitButton.textContent =
-            label ||
-            "Creating Account…";
-        } else {
-          submitButton.textContent =
-            "Create Free Account";
-        }
-      }
-      function makeRequestError({
-        message,
-        status = 0,
-        code = "",
-        data = null,
-        endpoint = ""
-      }) {
-        const error =
-          new Error(
-            message ||
-            "The request failed."
-          );
-        error.status =
-          status;
-        error.code =
-          code;
-        error.data =
-          data;
-        error.endpoint =
-          endpoint;
-        return error;
-      }
-      /* =========================================================
-         API REQUEST
-         JSON POST requests use Content-Type: application/json.
-         Because this is a cross-origin request, the browser will
-         automatically perform an OPTIONS preflight before POST.
-         The frontend does NOT manually send the OPTIONS request.
-      ========================================================= */
-      async function postJSON(
-        endpoint,
-        payload
-      ) {
-        let response;
-        try {
-          response =
-            await fetch(
-              endpoint,
-              {
-                method:
-                  "POST",
-                mode:
-                  "cors",
-                credentials:
-                  "omit",
-                cache:
-                  "no-store",
-                headers: {
-                  "Accept":
-                    "application/json",
-                  "Content-Type":
-                    "application/json"
-                },
-                body:
-                  JSON.stringify(
-                    payload
-                  )
-              }
+      setSuccess(
+        "Account created. Verification code sent. Redirecting…"
+      );
+      setTimeout(
+        function(){
+          const verifyUrl =
+            new URL(
+              VERIFY_PAGE,
+              location.origin
             );
-        } catch (networkError) {
-          console.error(
-            "TheWing Subscribers network/CORS error:",
-            {
-              endpoint,
-              page_origin:
-                window.location.origin,
-              backend_origin:
-                SUBSCRIBERS_ORIGIN,
-              error:
-                networkError
-            }
-          );
-          throw makeRequestError({
-            message:
-              "TheWing account service could not be reached.",
-            code:
-              "NETWORK_OR_CORS_ERROR",
-            endpoint
-          });
-        }
-        let data =
-          {};
-        try {
-          const responseText =
-            await response.text();
-          if (responseText) {
-            try {
-              data =
-                JSON.parse(
-                  responseText
-                );
-            } catch (_) {
-              data = {
-                raw:
-                  responseText
-              };
-            }
-          }
-        } catch (_) {
-          data = {};
-        }
-        if (
-          !response.ok ||
-          data?.ok === false
-        ) {
-          throw makeRequestError({
-            message:
-              data?.error ||
-              data?.message ||
-              `Request failed (${response.status})`,
-            status:
-              response.status,
-            code:
-              data?.code ||
-              "",
-            data,
-            endpoint
-          });
-        }
-        return data;
-      }
-      /* =========================================================
-         ERROR MESSAGE HELPERS
-      ========================================================= */
-      function registrationErrorMessage(
-        error
-      ) {
-        const originalMessage =
-          cleanString(
-            error?.message
-          );
-        if (
-          error?.status === 409 ||
-          error?.code === "ACCOUNT_EXISTS" ||
-          error?.code === "PROFILE_EXISTS" ||
-          /already|registered|exists/i.test(
-            originalMessage
-          )
-        ) {
-          return (
-            "An account already exists for this email. " +
-            "Try signing in instead."
-          );
-        }
-        if (
-          error?.code ===
-          "NETWORK_OR_CORS_ERROR"
-        ) {
-          return (
-            "TheWing account service could not be reached. " +
-            "Please try again in a moment."
-          );
-        }
-        return (
-          originalMessage ||
-          "We couldn't create your account."
-        );
-      }
-      function verificationEmailErrorMessage(
-        error
-      ) {
-        if (
-          error?.code ===
-          "NETWORK_OR_CORS_ERROR"
-        ) {
-          return (
-            "Your account was created, but the verification " +
-            "email service could not be reached. " +
-            "Do not create another account."
-          );
-        }
-        return (
-          "Your account was created, but we could not send " +
-          "the verification code. Do not create another account. " +
-          "Please continue from Verify Account and request a new code."
-        );
-      }
-      /* =========================================================
-         REDIRECT
-      ========================================================= */
-      function redirectToVerification(
-        email
-      ) {
-        const verifyUrl =
-          new URL(
-            VERIFY_PAGE,
-            window.location.origin
-          );
-        /*
-         * This preserves the existing verification-page contract.
-         *
-         * Once verify-account is reviewed, we can decide whether
-         * the email should continue to be passed in the query
-         * string or handled differently.
-         */
-        verifyUrl.searchParams.set(
-          "email",
-          email
-        );
-        verifyUrl.searchParams.set(
-          "source",
-          "subscribers"
-        );
-        window.location.assign(
-          verifyUrl.toString()
-        );
-      }
-      /* =========================================================
-         SUBMIT
-      ========================================================= */
-      form.addEventListener(
-        "submit",
-        async event => {
-          event.preventDefault();
-          if (busy) {
-            return;
-          }
-          showError(
-            ""
-          );
-          showSuccess(
-            ""
-          );
-          /* =====================================================
-             READ VALUES
-          ===================================================== */
-          const firstName =
-            cleanString(
-              firstNameInput.value
-            );
-          const lastName =
-            cleanString(
-              lastNameInput.value
-            );
-          const email =
-            cleanEmail(
-              emailInput.value
-            );
-          /*
-           * Passwords are intentionally NOT trimmed.
-           *
-           * Spaces can legitimately be part of a user's password.
-           */
-          const password =
-            String(
-              passwordInput.value ||
-              ""
-            );
-          const confirmPassword =
-            String(
-              confirmPasswordInput.value ||
-              ""
-            );
-          const fullName =
-            [
-              firstName,
-              lastName
-            ]
-              .filter(Boolean)
-              .join(" ");
-          /* =====================================================
-             VALIDATION
-          ===================================================== */
-          if (!firstName) {
-            showError(
-              "Please enter your first name."
-            );
-            firstNameInput.focus();
-            return;
-          }
-          if (!lastName) {
-            showError(
-              "Please enter your last name."
-            );
-            lastNameInput.focus();
-            return;
-          }
-          if (
-            !validEmail(
+          verifyUrl
+            .searchParams
+            .set(
+              "email",
               email
-            )
-          ) {
-            showError(
-              "Please enter a valid email address."
             );
-            emailInput.focus();
-            return;
-          }
-          if (
-            password.length < 8
-          ) {
-            showError(
-              "Your password must contain at least 8 characters."
+          verifyUrl
+            .searchParams
+            .set(
+              "source",
+              "thewing"
             );
-            passwordInput.focus();
-            return;
-          }
-          if (
-            password !==
-            confirmPassword
-          ) {
-            showError(
-              "The passwords do not match."
-            );
-            confirmPasswordInput.focus();
-            return;
-          }
-          /* =====================================================
-             STEP 1
-             CREATE ACCOUNT
-             Do this separately from send-code so we can identify
-             exactly which backend boundary fails.
-          ===================================================== */
-          setBusy(
-            true,
-            "Creating Account…"
-          );
-          showSuccess(
-            "Creating your secure TheWing account…"
-          );
-          let registerResult;
-          try {
-            registerResult =
-              await postJSON(
-                REGISTER_ENDPOINT,
-                {
-                  email,
-                  password,
-                  first_name:
-                    firstName,
-                  last_name:
-                    lastName,
-                  full_name:
-                    fullName,
-                  source:
-                    REQUEST_SOURCE
-                }
-              );
-          } catch (registerError) {
-            console.error(
-              "TheWing Subscribers register failed:",
-              {
-                endpoint:
-                  REGISTER_ENDPOINT,
-                page_origin:
-                  window.location.origin,
-                status:
-                  registerError?.status ||
-                  0,
-                code:
-                  registerError?.code ||
-                  "",
-                error:
-                  registerError
-              }
-            );
-            showSuccess(
-              ""
-            );
-            showError(
-              registrationErrorMessage(
-                registerError
-              )
-            );
-            setBusy(
-              false
-            );
-            return;
-          }
-          /* =====================================================
-             ACCOUNT NOW EXISTS
-             From this point forward, a send-code failure must NOT
-             be presented as an account-creation failure.
-          ===================================================== */
-          const createdUserId =
-            registerResult
-              ?.user
-              ?.id ||
-            registerResult
-              ?.profile
-              ?.user_id ||
-            null;
-          console.log(
-            "TheWing Subscribers register succeeded:",
-            {
-              user_id:
-                createdUserId,
-              email,
-              backend_version:
-                registerResult
-                  ?.version ||
-                null
-            }
-          );
-          /*
-           * The password is no longer needed by this page.
-           *
-           * Remove it from the form once account creation has
-           * succeeded.
-           */
-          passwordInput.value =
-            "";
-          confirmPasswordInput.value =
-            "";
-          /* =====================================================
-             STEP 2
-             SEND VERIFICATION CODE
-          ===================================================== */
-          setBusy(
-            true,
-            "Sending Verification Code…"
-          );
-          showSuccess(
-            "Account created. Sending your verification code…"
-          );
-          let sendCodeResult;
-          try {
-            sendCodeResult =
-              await postJSON(
-                SEND_CODE_ENDPOINT,
-                {
-                  email,
-                  first_name:
-                    firstName,
-                  last_name:
-                    lastName,
-                  full_name:
-                    fullName,
-                  source:
-                    REQUEST_SOURCE
-                }
-              );
-          } catch (sendCodeError) {
-            console.error(
-              "TheWing Subscribers send-code failed AFTER account creation:",
-              {
-                endpoint:
-                  SEND_CODE_ENDPOINT,
-                page_origin:
-                  window.location.origin,
-                user_id:
-                  createdUserId,
-                email,
-                status:
-                  sendCodeError?.status ||
-                  0,
-                code:
-                  sendCodeError?.code ||
-                  "",
-                error:
-                  sendCodeError
-              }
-            );
-            showSuccess(
-              ""
-            );
-            showError(
-              verificationEmailErrorMessage(
-                sendCodeError
-              )
-            );
-            setBusy(
-              false
-            );
-            return;
-          }
-          /* =====================================================
-             STEP 3
-             SUCCESS
-          ===================================================== */
-          console.log(
-            "TheWing Subscribers verification code sent:",
-            {
-              user_id:
-                createdUserId,
-              email,
-              expires_at:
-                sendCodeResult
-                  ?.expires_at ||
-                null,
-              backend_version:
-                sendCodeResult
-                  ?.version ||
-                null
-            }
-          );
-          showError(
-            ""
-          );
-          showSuccess(
-            "Verification code sent. Redirecting…"
-          );
-          setBusy(
-            true,
-            "Verification Sent"
-          );
-          window.setTimeout(
-            () => {
-              redirectToVerification(
-                email
-              );
-            },
-            650
-          );
-        }
+          window.location.href =
+            verifyUrl.toString();
+        },
+        500
       );
-      /* =========================================================
-         STARTUP DEBUG
-         No passwords or sensitive credentials are logged.
-      ========================================================= */
-      console.log(
-        "TheWing Subscribers Create Account ready:",
-        {
-          controller_version:
-            CONTROLLER_VERSION,
-          page_origin:
-            window.location.origin,
-          subscribers_origin:
-            SUBSCRIBERS_ORIGIN,
-          register_endpoint:
-            REGISTER_ENDPOINT,
-          send_code_endpoint:
-            SEND_CODE_ENDPOINT,
-          verify_page:
-            VERIFY_PAGE
-        }
-      );
-    })();
-  </script>
+    }
+  );
+  console.log(
+    "TheWing Subscribers Signup ready:",
+    {
+      version:
+        "5.0.0",
+      api_base:
+        API_BASE,
+      register_endpoint:
+        API_BASE +
+        "/register",
+      send_code_endpoint:
+        API_BASE +
+        "/send-code"
+    }
+  );
+})();
+</script>
               </div>
             </div>
           </div>
@@ -1773,7 +2133,7 @@
           <div class="footer-content-wrapper-2">
             <a href="#" class="footer-logo-link w-inline-block">
               <div class="logo-footer-wrapper">
-                <div><img src="../images/Home-01-About_1.png" loading="lazy" sizes="(max-width: 1260px) 100vw, 1260px" srcset="../images/Home-01-About_1-p-500.png 500w, ../images/Home-01-About_1-p-800.png 800w, ../images/Home-01-About_1-p-1080.png 1080w, ../images/Home-01-About_1.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
+                <div><img src="../images/Home-01-About.png" loading="lazy" sizes="(max-width: 1260px) 100vw, 1260px" srcset="../images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-500.png 500w, ../images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-800.png 800w, ../images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-1080.png 1080w, ../images/Home-01-About.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
               </div>
             </a>
             <div class="space-text"></div>
