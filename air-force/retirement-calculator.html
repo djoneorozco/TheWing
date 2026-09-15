@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Sep 08 2026 00:08:19 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Sep 15 2026 06:46:06 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a9cf217e56031e290f8cd62" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -87,1358 +87,529 @@
     </div>
   </div>
   <div class="compensation-strip-3 w-embed w-script"><!--  ============================================================
- THEWING.AI • ASK AMY COMMAND CENTER v1.0
+ THEWING.AI • ASK AMY COMMAND CENTER v1.1
  RETIREMENT CALCULATOR • WEBFLOW EMBED
 ===============================================================  -->
-    <div id="ask-amy-launcher" role="button" tabindex="0" aria-label="Open Ask Amy" style="
-position:fixed;top:1rem;right:1rem;z-index:2147480000;padding:.75rem 1rem;border-radius:1rem;cursor:pointer;
-background:radial-gradient(180px 80px at 15% 0%,rgba(108,166,203,.14),transparent 68%),linear-gradient(180deg,rgba(23,48,73,.94),rgba(12,31,49,.94));
-backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);
-border:1px solid rgba(183,211,232,.18);color:#f2f7fb;font-family:Inter,system-ui,sans-serif;
-display:flex;align-items:center;gap:.75rem;box-shadow:inset 0 1px 0 rgba(220,237,247,.08),0 16px 38px rgba(2,12,24,.34);">
-      <img src="https://cdn.prod.website-files.com/69eb162337c57d450e0e19a3/6a524dfcbadbecf650bc173c_34bc5cfe7e876f9d6bee4af9c82536f4_CTA%20BG%20Image%201.jpg" alt="Amy, TheWing.ai AI Concierge" style="
-width:42px;height:42px;border-radius:50%;object-fit:cover;border:1px solid rgba(159,227,212,.42);
-box-shadow:0 0 0 3px rgba(159,227,212,.05),0 8px 18px rgba(2,12,24,.30);">
+    <div id="ask-amy-launcher" role="button" tabindex="0" aria-label="Open Ask Amy" style="position:fixed;top:1rem;right:1rem;z-index:2147480000;padding:.75rem 1rem;border-radius:1rem;cursor:pointer;background:radial-gradient(180px 80px at 15% 0%,rgba(108,166,203,.14),transparent 68%),linear-gradient(180deg,rgba(23,48,73,.94),rgba(12,31,49,.94));backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border:1px solid rgba(183,211,232,.18);color:#f2f7fb;font-family:Inter,system-ui,sans-serif;display:flex;align-items:center;gap:.75rem;box-shadow:inset 0 1px 0 rgba(220,237,247,.08),0 16px 38px rgba(2,12,24,.34)">
+      <img src="../images/Amy-Profile-2.jpg" alt="Amy, TheWing.ai Retirement Concierge" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:1px solid rgba(159,227,212,.42);box-shadow:0 0 0 3px rgba(159,227,212,.05),0 8px 18px rgba(2,12,24,.3)">
       <div style="display:flex;flex-direction:column;line-height:1.15">
         <div style="color:#f3f8fc;font-size:.8rem;font-weight:800">Ask Amy</div>
-        <div style="margin-top:2px;color:rgba(202,220,234,.76);font-size:.7rem;font-weight:500">
-          Retirement Concierge
-        </div>
+        <div style="margin-top:2px;color:rgba(202,220,234,.76);font-size:.7rem;font-weight:500">Retirement Concierge</div>
       </div>
     </div>
-    <div id="ask-amy-modal" role="dialog" aria-modal="true" aria-label="Ask Amy Retirement Concierge" style="
-position:fixed;inset:0;z-index:2147480001;display:none;align-items:flex-end;justify-content:flex-end;
-padding:18px;background:rgba(5,20,33,.32);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);">
-      <div id="ask-amy-panel" style="
-position:relative;width:min(1240px,calc(100vw - 36px));max-width:min(1240px,calc(100vw - 36px));
-max-height:calc(100vh - 36px);border:1px solid rgba(183,211,232,.13);border-radius:24px;overflow:hidden;
-box-shadow:0 32px 82px rgba(2,12,24,.52),0 0 0 1px rgba(159,227,212,.025);">
-        <button id="ask-amy-modal-close" type="button" aria-label="Close Ask Amy" style="
-position:absolute;top:14px;right:14px;z-index:30;appearance:none;border:1px solid rgba(183,211,232,.22);
-background:rgba(10,30,48,.84);color:#f2f7fb;font:800 12px/1 Barlow,Inter,sans-serif;letter-spacing:.08em;
-text-transform:uppercase;border-radius:999px;padding:10px 12px;cursor:pointer;backdrop-filter:blur(10px);
--webkit-backdrop-filter:blur(10px);box-shadow:inset 0 1px 0 rgba(220,237,247,.07),0 14px 30px rgba(2,12,24,.32);">
-          Close ✕
-        </button>
-        <div id="ask-amy-shell" data-endpoint="https://thewing.netlify.app/.netlify/functions/agent-amy-public" style="all:initial;">
+    <div id="ask-amy-modal" role="dialog" aria-modal="true" aria-label="Ask Amy Retirement Concierge" style="position:fixed;inset:0;z-index:2147480001;display:none;align-items:flex-end;justify-content:flex-end;padding:18px;background:rgba(5,20,33,.32);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)">
+      <div id="ask-amy-panel" style="position:relative;width:min(1240px,calc(100vw - 36px));max-width:min(1240px,calc(100vw - 36px));max-height:calc(100vh - 36px);border:1px solid rgba(183,211,232,.13);border-radius:24px;overflow:hidden;box-shadow:0 32px 82px rgba(2,12,24,.52),0 0 0 1px rgba(159,227,212,.025)">
+        <button id="ask-amy-modal-close" type="button" aria-label="Close Ask Amy" style="position:absolute;top:14px;right:14px;z-index:30;appearance:none;border:1px solid rgba(183,211,232,.22);background:rgba(10,30,48,.84);color:#f2f7fb;font:800 12px/1 Barlow,Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:10px 12px;cursor:pointer;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:inset 0 1px 0 rgba(220,237,247,.07),0 14px 30px rgba(2,12,24,.32)">Close ✕</button>
+        <div id="ask-amy-shell" data-endpoint="https://thewing.netlify.app/.netlify/functions/ask-amy-retirement" style="all:initial">
           <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
           <style>
-#ask-amy-shell,
-#ask-amy-shell *{
-box-sizing:border-box;
-font-family:Barlow,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif
-}
-#ask-amy-shell{
---aa-ink:#f2f7fb;
---aa-soft:#dce9f2;
---aa-muted:rgba(199,218,233,.72);
---aa-line:rgba(183,211,232,.16);
---aa-line2:rgba(159,227,212,.34);
---aa-mint:#9fe3d4;
---aa-gold:#efd18a;
---aa-cream:#f4f8fb;
-display:flex;
-justify-content:center;
-padding:40px 20px;
-color:var(--aa-ink);
-background:
-radial-gradient(1050px 620px at 12% 6%,rgba(57,139,181,.22),transparent 56%),
-radial-gradient(850px 520px at 92% 10%,rgba(117,140,174,.20),transparent 56%),
-radial-gradient(780px 500px at 70% 100%,rgba(228,192,113,.07),transparent 62%),
-linear-gradient(135deg,#0b2c44 0%,#264965 52%,#555969 100%);
-}
-#aa-container{
-width:100%;
-max-width:1400px;
-display:grid;
-grid-template-columns:280px minmax(0,1fr);
-gap:24px;
-position:relative;
-align-items:stretch
-}
-#aa-left,
-#aa-right{
-position:relative;
-overflow:hidden;
-border-radius:24px;
-border:1px solid var(--aa-line);
-box-shadow:0 22px 52px rgba(2,12,24,.35);
-backdrop-filter:blur(18px) saturate(145%);
--webkit-backdrop-filter:blur(18px) saturate(145%)
-}
-#aa-left{
-padding:28px 24px;
-background:
-radial-gradient(500px 250px at 50% 0%,rgba(93,151,190,.16),transparent 58%),
-linear-gradient(180deg,rgba(36,65,89,.90),rgba(13,35,54,.94))
-}
-#aa-right{
-display:flex;
-flex-direction:column;
-height:760px;
-min-height:760px;
-max-height:760px;
-min-width:0;
-background:
-radial-gradient(850px 320px at 18% 0%,rgba(74,139,178,.15),transparent 62%),
-radial-gradient(650px 260px at 92% 0%,rgba(173,185,208,.10),transparent 64%),
-linear-gradient(180deg,rgba(43,72,99,.86),rgba(18,42,64,.92))
-}
-#aa-left:before,
-#aa-right:before{
-content:"";
-position:absolute;
-inset:0;
-pointer-events:none;
-background:linear-gradient(180deg,rgba(220,237,247,.045),transparent 42%)
-}
-.aa-avatar-wrapper{
-width:168px;
-height:168px;
-margin:0 auto 18px;
-position:relative;
-border-radius:50%
-}
-.aa-avatar-wrapper:before{
-content:"";
-position:absolute;
-inset:-28px;
-border-radius:50%;
-background:
-radial-gradient(circle,rgba(159,227,212,.22),rgba(84,145,181,.18),transparent 72%);
-filter:blur(26px)
-}
-.aa-avatar{
-position:relative;
-z-index:2;
-width:168px;
-height:168px;
-border-radius:50%;
-background-image:
-url("https://cdn.prod.website-files.com/6a6ff0545aa01c93602db711/6a6ff0545aa01c93602dbaef_71ee0b32e361663ad3e7f08bce1bf271_B40AC845-C583-4723-8DAE-28891543EEB3.jpg");
-background-size:cover;
-background-position:center;
-border:2px solid rgba(202,226,240,.24);
-box-shadow:
-0 0 0 8px rgba(220,237,247,.025),
-0 18px 34px rgba(2,12,24,.32)
-}
-.aa-name{
-position:relative;
-z-index:1;
-margin-top:10px;
-text-align:center;
-font-family:"Gilda Display",Georgia,serif;
-font-size:28px;
-line-height:1.05;
-color:var(--aa-cream)
-}
-.aa-sub{
-position:relative;
-z-index:1;
-margin-top:6px;
-text-align:center;
-font-size:13px;
-color:var(--aa-muted);
-letter-spacing:.08em;
-text-transform:uppercase;
-font-weight:800
-}
-.aa-links{
-position:relative;
-z-index:1;
-margin-top:26px;
-display:flex;
-flex-direction:column;
-gap:10px
-}
-.aa-link-btn{
-display:block;
-padding:11px 14px;
-border:1px solid var(--aa-line);
-border-radius:999px;
-background:
-linear-gradient(180deg,rgba(102,137,165,.16),rgba(17,42,64,.24));
-color:var(--aa-ink);
-text-decoration:none;
-font-size:12px;
-font-weight:900;
-letter-spacing:.08em;
-text-transform:uppercase;
-box-shadow:
-inset 0 1px 0 rgba(220,237,247,.04),
-0 10px 22px rgba(2,12,24,.18);
-transition:.2s ease
-}
-.aa-link-btn:hover{
-transform:translateY(-1px);
-border-color:var(--aa-line2);
-background:rgba(159,227,212,.08);
-color:#fff
-}
-.aa-badge{
-position:relative;
-z-index:1;
-margin-top:28px;
-text-align:center;
-font-size:11px;
-line-height:1.45;
-color:var(--aa-gold);
-letter-spacing:.08em;
-text-transform:uppercase;
-font-weight:800
-}
-.aa-topbar{
-position:relative;
-z-index:1;
-flex:0 0 auto;
-padding:20px 76px 14px 20px;
-border-bottom:1px solid rgba(183,211,232,.11);
-background:
-linear-gradient(180deg,rgba(135,169,194,.10),rgba(26,55,80,.06))
-}
-.aa-topbar h2{
-margin:0;
-font-family:"Gilda Display",Georgia,serif;
-font-size:24px;
-line-height:1.05;
-color:var(--aa-cream)
-}
-.aa-topbar p{
-max-width:760px;
-margin:6px 0 0;
-color:var(--aa-muted);
-font-size:13px;
-line-height:1.4;
-font-weight:700
-}
-.aa-status-pill{
-display:inline-flex;
-align-items:center;
-gap:7px;
-margin-top:10px;
-padding:7px 10px;
-border:1px solid rgba(159,227,212,.22);
-border-radius:999px;
-background:rgba(159,227,212,.07);
-color:var(--aa-mint);
-font-size:10px;
-font-weight:900;
-letter-spacing:.09em;
-text-transform:uppercase
-}
-.aa-status-dot{
-width:7px;
-height:7px;
-border-radius:50%;
-background:var(--aa-mint);
-box-shadow:
-0 0 0 4px rgba(159,227,212,.06),
-0 0 12px rgba(159,227,212,.65)
-}
-.aa-quick-prompts{
-position:relative;
-z-index:1;
-flex:0 0 auto;
-padding:14px 18px 0;
-display:flex;
-flex-wrap:wrap;
-gap:8px
-}
-.aa-prompt-btn{
-appearance:none;
-padding:9px 12px;
-border:1px solid var(--aa-line);
-border-radius:999px;
-background:
-linear-gradient(180deg,rgba(113,151,181,.13),rgba(19,46,69,.18));
-color:var(--aa-soft);
-font-size:11px;
-line-height:1.2;
-font-weight:800;
-cursor:pointer;
-transition:.18s ease
-}
-.aa-prompt-btn:hover{
-transform:translateY(-1px);
-border-color:var(--aa-line2);
-background:rgba(159,227,212,.09);
-color:#fff
-}
-.aa-chat{
-position:relative;
-z-index:1;
-flex:1 1 auto;
-min-height:0;
-min-width:0;
-overflow-y:auto;
-overflow-x:hidden;
-padding:24px;
-display:flex;
-flex-direction:column;
-gap:14px;
-scroll-behavior:smooth;
-overscroll-behavior:contain
-}
-.aa-chat::-webkit-scrollbar{
-width:10px
-}
-.aa-chat::-webkit-scrollbar-track{
-background:rgba(8,27,43,.20)
-}
-.aa-chat::-webkit-scrollbar-thumb{
-border:3px solid transparent;
-border-radius:999px;
-background:rgba(159,196,220,.30);
-background-clip:padding-box
-}
-.aa-msg{
-flex:0 0 auto;
-max-width:82%;
-padding:13px 15px;
-border:1px solid rgba(183,211,232,.13);
-border-radius:16px;
-color:var(--aa-cream)!important;
-font-size:14px;
-line-height:1.55;
-white-space:pre-wrap;
-word-break:break-word;
-overflow-wrap:anywhere;
-backdrop-filter:blur(12px);
--webkit-backdrop-filter:blur(12px);
-box-shadow:
-inset 0 1px 0 rgba(220,237,247,.035),
-0 13px 28px rgba(2,12,24,.24)
-}
-.aa-user{
-align-self:flex-end;
-background:
-radial-gradient(260px 130px at 18% 10%,rgba(159,227,212,.14),transparent 68%),
-rgba(45,89,105,.38);
-border-color:rgba(159,227,212,.22)
-}
-.aa-bot{
-align-self:flex-start;
-background:
-radial-gradient(270px 130px at 18% 8%,rgba(112,174,211,.16),transparent 68%),
-rgba(38,70,98,.48)
-}
-.aa-typing{
-opacity:.92;
-color:var(--aa-soft)!important;
-font-size:12px!important
-}
-.aa-footer{
-position:relative;
-z-index:1;
-flex:0 0 auto;
-display:grid;
-grid-template-columns:minmax(0,1fr) auto;
-gap:10px;
-padding:18px;
-border-top:1px solid rgba(183,211,232,.11);
-background:
-linear-gradient(180deg,rgba(12,36,55,.18),rgba(8,27,43,.32))
-}
-.aa-input{
-width:100%;
-min-width:0;
-padding:14px;
-border:1px solid rgba(183,211,232,.18);
-border-radius:14px;
-outline:none;
-background:rgba(9,31,49,.46);
-color:var(--aa-cream)!important;
-font-size:14px;
-font-weight:800;
-box-shadow:
-inset 0 12px 26px rgba(2,12,24,.20);
-transition:.16s ease
-}
-.aa-input:focus{
-border-color:rgba(159,227,212,.52);
-box-shadow:
-inset 0 12px 26px rgba(2,12,24,.18),
-0 0 0 4px rgba(159,227,212,.10)
-}
-.aa-input::placeholder{
-color:rgba(195,214,229,.55)
-}
-.aa-btn{
-appearance:none;
-padding:14px 20px;
-border:none;
-border-radius:14px;
-background:
-linear-gradient(180deg,rgba(239,209,138,.99),rgba(196,155,79,.98));
-color:#172235;
-font-size:12px;
-font-weight:900;
-letter-spacing:.10em;
-text-transform:uppercase;
-cursor:pointer;
-box-shadow:
-inset 0 1px 0 rgba(255,255,255,.52),
-0 15px 28px rgba(2,12,24,.28);
-transition:.2s ease
-}
-.aa-btn:hover{
-filter:brightness(1.06);
-transform:translateY(-1px)
-}
-.aa-btn[disabled]{
-opacity:.60;
-cursor:not-allowed;
-transform:none
-}
-.aa-caret{
-display:inline-block;
-width:1px;
-height:1.2em;
-margin-left:2px;
-background:currentColor;
-animation:aa-blink 1s steps(1,end) infinite
-}
-@keyframes aa-blink{
-50%{opacity:0}
-}
-@media(max-width:980px){
-#aa-container{
-grid-template-columns:1fr
-}
-#aa-left{
-display:none
-}
-#aa-right{
-height:680px;
-min-height:680px;
-max-height:680px
-}
-}
-@media(max-width:767px){
-#ask-amy-modal{
-padding:8px!important
-}
-#ask-amy-panel{
-width:calc(100vw - 16px)!important;
-max-width:calc(100vw - 16px)!important;
-max-height:calc(100dvh - 16px)!important
-}
-#ask-amy-shell{
-padding:8px
-}
-#aa-right{
-height:calc(100dvh - 32px);
-min-height:calc(100dvh - 32px);
-max-height:calc(100dvh - 32px);
-border-radius:18px
-}
-.aa-topbar{
-padding:18px 66px 12px 16px
-}
-.aa-topbar p{
-font-size:12px
-}
-.aa-quick-prompts{
-padding:12px 14px 0;
-flex-wrap:nowrap;
-overflow-x:auto
-}
-.aa-prompt-btn{
-flex:0 0 auto
-}
-.aa-chat{
-padding:18px 14px
-}
-.aa-msg{
-max-width:90%
-}
-.aa-footer{
-padding:12px
-}
-.aa-btn{
-padding:14px 15px
-}
-}
+#ask-amy-shell,#ask-amy-shell *{box-sizing:border-box;font-family:Barlow,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+#ask-amy-shell{--aa-ink:#f2f7fb;--aa-soft:#dce9f2;--aa-muted:rgba(199,218,233,.72);--aa-line:rgba(183,211,232,.16);--aa-line2:rgba(159,227,212,.34);--aa-mint:#9fe3d4;--aa-gold:#efd18a;--aa-cream:#f4f8fb;display:flex;justify-content:center;padding:40px 20px;color:var(--aa-ink);background:radial-gradient(1050px 620px at 12% 6%,rgba(57,139,181,.22),transparent 56%),radial-gradient(850px 520px at 92% 10%,rgba(117,140,174,.2),transparent 56%),radial-gradient(780px 500px at 70% 100%,rgba(228,192,113,.07),transparent 62%),linear-gradient(135deg,#0b2c44 0%,#264965 52%,#555969 100%)}
+#aa-container{width:100%;max-width:1400px;display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;position:relative;align-items:stretch}
+#aa-left,#aa-right{position:relative;overflow:hidden;border-radius:24px;border:1px solid var(--aa-line);box-shadow:0 22px 52px rgba(2,12,24,.35);backdrop-filter:blur(18px) saturate(145%);-webkit-backdrop-filter:blur(18px) saturate(145%)}
+#aa-left{padding:28px 24px;background:radial-gradient(500px 250px at 50% 0%,rgba(93,151,190,.16),transparent 58%),linear-gradient(180deg,rgba(36,65,89,.9),rgba(13,35,54,.94))}
+#aa-right{display:flex;flex-direction:column;height:760px;min-height:760px;max-height:760px;min-width:0;background:radial-gradient(850px 320px at 18% 0%,rgba(74,139,178,.15),transparent 62%),radial-gradient(650px 260px at 92% 0%,rgba(173,185,208,.1),transparent 64%),linear-gradient(180deg,rgba(43,72,99,.86),rgba(18,42,64,.92))}
+#aa-left:before,#aa-right:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(220,237,247,.045),transparent 42%)}
+.aa-avatar-wrapper{width:168px;height:168px;margin:0 auto 18px;position:relative;border-radius:50%}
+.aa-avatar-wrapper:before{content:"";position:absolute;inset:-28px;border-radius:50%;background:radial-gradient(circle,rgba(159,227,212,.22),rgba(84,145,181,.18),transparent 72%);filter:blur(26px)}
+.aa-avatar{position:relative;z-index:2;width:168px;height:168px;border-radius:50%;background-image:url("https://cdn.prod.website-files.com/6a6ff0545aa01c93602db711/6a6ff0545aa01c93602dbaef_71ee0b32e361663ad3e7f08bce1bf271_B40AC845-C583-4723-8DAE-28891543EEB3.jpg");background-size:cover;background-position:center;border:2px solid rgba(202,226,240,.24);box-shadow:0 0 0 8px rgba(220,237,247,.025),0 18px 34px rgba(2,12,24,.32)}
+.aa-name{position:relative;z-index:1;margin-top:10px;text-align:center;font-family:"Gilda Display",Georgia,serif;font-size:28px;line-height:1.05;color:var(--aa-cream)}
+.aa-sub{position:relative;z-index:1;margin-top:6px;text-align:center;font-size:13px;color:var(--aa-muted);letter-spacing:.08em;text-transform:uppercase;font-weight:800}
+.aa-links{position:relative;z-index:1;margin-top:26px;display:flex;flex-direction:column;gap:10px}
+.aa-link-btn{display:block;padding:11px 14px;border:1px solid var(--aa-line);border-radius:999px;background:linear-gradient(180deg,rgba(102,137,165,.16),rgba(17,42,64,.24));color:var(--aa-ink);text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;box-shadow:inset 0 1px 0 rgba(220,237,247,.04),0 10px 22px rgba(2,12,24,.18);transition:.2s ease}
+.aa-link-btn:hover{transform:translateY(-1px);border-color:var(--aa-line2);background:rgba(159,227,212,.08);color:#fff}
+.aa-badge{position:relative;z-index:1;margin-top:28px;text-align:center;font-size:11px;line-height:1.45;color:var(--aa-gold);letter-spacing:.08em;text-transform:uppercase;font-weight:800}
+.aa-topbar{position:relative;z-index:1;flex:0 0 auto;padding:20px 76px 14px 20px;border-bottom:1px solid rgba(183,211,232,.11);background:linear-gradient(180deg,rgba(135,169,194,.1),rgba(26,55,80,.06))}
+.aa-topbar h2{margin:0;font-family:"Gilda Display",Georgia,serif;font-size:24px;line-height:1.05;color:var(--aa-cream)}
+.aa-topbar p{max-width:760px;margin:6px 0 0;color:var(--aa-muted);font-size:13px;line-height:1.4;font-weight:700}
+.aa-status-pill{display:inline-flex;align-items:center;gap:7px;margin-top:10px;padding:7px 10px;border:1px solid rgba(159,227,212,.22);border-radius:999px;background:rgba(159,227,212,.07);color:var(--aa-mint);font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.aa-status-dot{width:7px;height:7px;border-radius:50%;background:var(--aa-mint);box-shadow:0 0 0 4px rgba(159,227,212,.06),0 0 12px rgba(159,227,212,.65)}
+.aa-quick-prompts{position:relative;z-index:1;flex:0 0 auto;padding:14px 18px 0;display:flex;flex-wrap:wrap;gap:8px}
+.aa-prompt-btn{appearance:none;padding:9px 12px;border:1px solid var(--aa-line);border-radius:999px;background:linear-gradient(180deg,rgba(113,151,181,.13),rgba(19,46,69,.18));color:var(--aa-soft);font-size:11px;line-height:1.2;font-weight:800;cursor:pointer;transition:.18s ease}
+.aa-prompt-btn:hover{transform:translateY(-1px);border-color:var(--aa-line2);background:rgba(159,227,212,.09);color:#fff}
+.aa-chat{position:relative;z-index:1;flex:1 1 auto;min-height:0;min-width:0;overflow-y:auto;overflow-x:hidden;padding:24px;display:flex;flex-direction:column;gap:14px;scroll-behavior:smooth;overscroll-behavior:contain}
+.aa-chat::-webkit-scrollbar{width:10px}
+.aa-chat::-webkit-scrollbar-track{background:rgba(8,27,43,.2)}
+.aa-chat::-webkit-scrollbar-thumb{border:3px solid transparent;border-radius:999px;background:rgba(159,196,220,.3);background-clip:padding-box}
+.aa-retirement-brief-container{display:none;flex:0 0 auto;align-self:stretch;width:100%;min-width:0}
+.aa-retirement-brief-container[data-visible="1"]{display:block}
+.aa-msg{flex:0 0 auto;max-width:82%;padding:13px 15px;border:1px solid rgba(183,211,232,.13);border-radius:16px;color:var(--aa-cream)!important;font-size:14px;line-height:1.55;white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 rgba(220,237,247,.035),0 13px 28px rgba(2,12,24,.24)}
+.aa-user{align-self:flex-end;background:radial-gradient(260px 130px at 18% 10%,rgba(159,227,212,.14),transparent 68%),rgba(45,89,105,.38);border-color:rgba(159,227,212,.22)}
+.aa-bot{align-self:flex-start;background:radial-gradient(270px 130px at 18% 8%,rgba(112,174,211,.16),transparent 68%),rgba(38,70,98,.48)}
+.aa-typing{opacity:.92;color:var(--aa-soft)!important;font-size:12px!important}
+.aa-footer{position:relative;z-index:1;flex:0 0 auto;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:18px;border-top:1px solid rgba(183,211,232,.11);background:linear-gradient(180deg,rgba(12,36,55,.18),rgba(8,27,43,.32))}
+.aa-input{width:100%;min-width:0;padding:14px;border:1px solid rgba(183,211,232,.18);border-radius:14px;outline:none;background:rgba(9,31,49,.46);color:var(--aa-cream)!important;font-size:14px;font-weight:800;box-shadow:inset 0 12px 26px rgba(2,12,24,.2);transition:.16s ease}
+.aa-input:focus{border-color:rgba(159,227,212,.52);box-shadow:inset 0 12px 26px rgba(2,12,24,.18),0 0 0 4px rgba(159,227,212,.1)}
+.aa-input::placeholder{color:rgba(195,214,229,.55)}
+.aa-btn{appearance:none;padding:14px 20px;border:none;border-radius:14px;background:linear-gradient(180deg,rgba(239,209,138,.99),rgba(196,155,79,.98));color:#172235;font-size:12px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.52),0 15px 28px rgba(2,12,24,.28);transition:.2s ease}
+.aa-btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.aa-btn[disabled]{opacity:.6;cursor:not-allowed;transform:none}
+.aa-caret{display:inline-block;width:1px;height:1.2em;margin-left:2px;background:currentColor;animation:aa-blink 1s steps(1,end) infinite}
+@keyframes aa-blink{50%{opacity:0}}
+@media(max-width:980px){#aa-container{grid-template-columns:1fr}#aa-left{display:none}#aa-right{height:680px;min-height:680px;max-height:680px}}
+@media(max-width:767px){#ask-amy-modal{padding:8px!important}#ask-amy-panel{width:calc(100vw - 16px)!important;max-width:calc(100vw - 16px)!important;max-height:calc(100dvh - 16px)!important}#ask-amy-shell{padding:8px}#aa-right{height:calc(100dvh - 32px);min-height:calc(100dvh - 32px);max-height:calc(100dvh - 32px);border-radius:18px}.aa-topbar{padding:18px 66px 12px 16px}.aa-topbar p{font-size:12px}.aa-quick-prompts{padding:12px 14px 0;flex-wrap:nowrap;overflow-x:auto}.aa-prompt-btn{flex:0 0 auto}.aa-chat{padding:18px 14px}.aa-msg{max-width:90%}.aa-footer{padding:12px}.aa-btn{padding:14px 15px}}
 </style>
           <div id="aa-container">
-            <!--  ============================================================
- LEFT PANEL
-===============================================================  -->
             <aside id="aa-left">
               <div class="aa-avatar-wrapper">
-                <div class="aa-avatar" role="img" aria-label="Amy, TheWing.ai AI Concierge">
-                </div>
+                <div class="aa-avatar" role="img" aria-label="Amy, TheWing.ai Retirement Concierge"></div>
               </div>
-              <div class="aa-name">
-                Amy
-              </div>
-              <div class="aa-sub">
-                Retirement Concierge
-              </div>
+              <div class="aa-name">Amy</div>
+              <div class="aa-sub">Retirement Concierge</div>
               <div class="aa-links">
-                <a class="aa-link-btn" href="https://militarypay.defense.gov/Pay/Retirement/" target="_blank" rel="noopener noreferrer">
-                  DoD Retirement
-                </a>
-                <a class="aa-link-btn" href="https://militarypay.defense.gov/BlendedRetirement/" target="_blank" rel="noopener noreferrer">
-                  Blended Retirement System
-                </a>
-                <a class="aa-link-btn" href="https://www.dfas.mil/retiredmilitary/plan/estimate/" target="_blank" rel="noopener noreferrer">
-                  DFAS Retired Pay
-                </a>
+                <a class="aa-link-btn" href="https://militarypay.defense.gov/Pay/Retirement/" target="_blank" rel="noopener noreferrer">DoD Retirement</a>
+                <a class="aa-link-btn" href="https://militarypay.defense.gov/BlendedRetirement/" target="_blank" rel="noopener noreferrer">Blended Retirement System</a>
+                <a class="aa-link-btn" href="https://www.dfas.mil/retiredmilitary/plan/estimate/" target="_blank" rel="noopener noreferrer">DFAS Retired Pay</a>
               </div>
-              <div class="aa-badge">
-                High-3 • BRS • 36-Month Pay Base
-              </div>
+              <div class="aa-badge">High-3 • BRS • 36-Month Pay Base</div>
             </aside>
-            <!--  ============================================================
- RIGHT PANEL
-===============================================================  -->
             <section id="aa-right">
               <div class="aa-topbar">
-                <h2>
-                  Ask Amy
-                </h2>
-                <p>
-                  Understand your projected retirement pay, High-3 average,
-                  service multiplier, 36-month pay window, and the assumptions
-                  used for future military basic pay.
-                </p>
-                <div class="aa-status-pill">
-                  <span class="aa-status-dot"></span>
-                  Public Session • Live Retirement Context
-                </div>
+                <h2>Ask Amy</h2>
+                <p>Understand your projected retirement pay, High-3 average, service multiplier, 36-month pay window, rank timing, and future military basic-pay assumptions.</p>
+                <div class="aa-status-pill"><span class="aa-status-dot"></span>Public Session • Live Retirement Context</div>
               </div>
-              <!--  ============================================================
- QUICK QUESTIONS
-===============================================================  -->
               <div class="aa-quick-prompts" aria-label="Suggested questions">
-                <button type="button" class="aa-prompt-btn" data-question="Analyze my current Retirement Calculator result using the live calculator state. Explain my projected monthly retired pay, projected yearly retired pay, High-3 average, years of service, retirement multiplier, retirement system, and the High-36 window. Use the calculator and deterministic retirement engine as the source of truth.">
-                  Explain My Estimate
-                </button>
-                <button type="button" class="aa-prompt-btn" data-question="Explain how my current High-3 average was built. Use the live Retirement Calculator state, identify the 36-month window and the three 12-month periods, and explain which months use historical pay, official 2026 pay, or projected future pay. Do not invent numbers that are not in the calculator state.">
-                  Explain My High-3
-                </button>
-                <button type="button" class="aa-prompt-btn" data-question="Explain my retirement multiplier using the current Retirement Calculator result. Explain the retirement system and credited service shown by the calculator, but treat the calculator's returned multiplier as authoritative and do not replace it with an independently invented result.">
-                  Explain My Multiplier
-                </button>
-                <button type="button" class="aa-prompt-btn" data-question="Explain the future basic-pay assumptions used in my current retirement projection. Explain the 2027 through 2030 forecast schedule and the long-range assumption beginning in 2031, and clearly distinguish projected pay from published official pay.">
-                  Future Pay Forecast
-                </button>
-                <button type="button" class="aa-prompt-btn" data-question="Using my current Retirement Calculator state, explain what factors would change my estimated retirement pay if I retire later or earlier. Discuss service time, longevity pay steps, the High-36 window, future pay assumptions, and rank timing. Do not invent a new retirement amount unless the calculator state contains it.">
-                  What Changes My Pay?
-                </button>
+                <button type="button" class="aa-prompt-btn" data-brief-intent="explain_estimate" data-question="Analyze my current Retirement Calculator result. Explain my projected monthly retired pay, projected yearly retired pay, High-3 average, credited service, retirement multiplier, retirement system, and High-36 window. Use the current calculator result as authoritative and do not recalculate the displayed values.">Explain My Estimate</button>
+                <button type="button" class="aa-prompt-btn" data-brief-intent="high3" data-question="Explain how my current High-3 result was built. Use the current Retirement Calculator result, identify the High-36 window and available 12-month periods, and distinguish reconstructed historical pay, official published pay, and projected future pay when those sources are present. Do not independently recalculate my High-3.">Explain My High-3</button>
+                <button type="button" class="aa-prompt-btn" data-brief-intent="multiplier" data-question="Explain my retirement multiplier using the current Retirement Calculator result. Explain how it relates to the retirement system and credited service shown by the calculator, but treat the returned multiplier as authoritative and do not independently recalculate it.">Explain My Multiplier</button>
+                <button type="button" class="aa-prompt-btn" data-brief-intent="rank_timing" data-question="Explain the rank timing in my current Retirement Calculator result. If I was promoted during the final 36 months, explain which months use my Previous Rank and which months use my Retirement Rank. Treat the calculator result as authoritative and remember that the promotion month itself uses Retirement Rank.">Explain My Rank Timing</button>
+                <button type="button" class="aa-prompt-btn" data-brief-intent="forecast" data-question="Explain the future basic-pay assumptions used in my current Retirement Calculator projection. Clearly distinguish projected future pay from published official pay and reconstructed historical pay, and use only the assumptions supplied by the calculator.">Future Pay Forecast</button>
               </div>
-              <!--  ============================================================
- CHAT
-===============================================================  -->
               <div class="aa-chat" id="aa-chat" aria-live="polite" aria-label="Ask Amy conversation">
+                <div id="aa-retirement-brief-container" class="aa-retirement-brief-container" data-visible="0"></div>
               </div>
-              <!--  ============================================================
- INPUT
-===============================================================  -->
               <div class="aa-footer">
-                <input id="aa-input" class="aa-input" type="text" maxlength="5000" autocomplete="off" placeholder="Ask about your High-3, multiplier, retirement date, or projected pay…" aria-label="Ask Amy">
-                <button id="aa-send" class="aa-btn" type="button">
-                  Send
-                </button>
+                <input id="aa-input" class="aa-input" type="text" maxlength="5000" autocomplete="off" placeholder="Ask about your High-3, multiplier, rank timing, or projected pay…" aria-label="Ask Amy">
+                <button id="aa-send" class="aa-btn" type="button">Send</button>
               </div>
             </section>
           </div>
-          <!--  ============================================================
- ASK AMY RUNTIME
-===============================================================  -->
+          <!--  RETIREMENT BRIEF RENDERER  -->
+          <script src="https://thewing.netlify.app/Retirement-Calculator/amy-retirement-brief.js?v=20260909-2"></script>
           <script>
 (()=>{
 "use strict";
-const root=
-document.getElementById("ask-amy-shell");
-if(
-!root ||
-root.__amyRetirementMounted
-){
-return;
-}
-root.__amyRetirementMounted=
-true;
-const ENDPOINT=
-String(
-root.getAttribute("data-endpoint") ||
-"https://thewing.netlify.app/.netlify/functions/agent-amy-public"
-).trim();
-const chat=
-document.getElementById("aa-chat");
-const input=
-document.getElementById("aa-input");
-const send=
-document.getElementById("aa-send");
-const prompts=
-Array.from(
-root.querySelectorAll(".aa-prompt-btn")
-);
-if(
-!chat ||
-!input ||
-!send
-){
-return;
-}
-const state={
-conversationId:
-createConversationId(),
-thread:[],
-memory:{},
-sending:false
-};
-let latestRetirement=
-null;
-let bridgeMounted=
-false;
-/* ============================================================
- HELPERS
-=============================================================== */
-function clean(v){
-return String(
-v == null
-? ""
-: v
-).trim();
-}
-function isObject(v){
-return !!v &&
-typeof v === "object" &&
-!Array.isArray(v);
-}
-function clone(
-v,
-fallback=null
-){
-try{
-return JSON.parse(
-JSON.stringify(v)
-);
-}catch(_){
-return fallback;
-}
-}
+const root=document.getElementById("ask-amy-shell");
+if(!root||root.__amyRetirementMounted)return;
+root.__amyRetirementMounted=true;
+const ENDPOINT=String(root.getAttribute("data-endpoint")||"https://thewing.netlify.app/.netlify/functions/ask-amy-retirement").trim();
+const chat=document.getElementById("aa-chat");
+const input=document.getElementById("aa-input");
+const send=document.getElementById("aa-send");
+const brief=document.getElementById("aa-retirement-brief-container");
+const prompts=Array.from(root.querySelectorAll(".aa-prompt-btn"));
+if(!chat||!input||!send)return;
+const state={conversationId:createConversationId(),thread:[],memory:{},sending:false};
+const BRIEF_INTENTS=new Set(["explain_estimate","high3","multiplier","service","rank_timing","forecast","retirement_system"]);
+let latestRetirement=null;
+let bridgeMounted=false;
+function clean(v){return String(v==null?"":v).trim()}
+function isObject(v){return!!v&&typeof v==="object"&&!Array.isArray(v)}
+function clone(v,fallback=null){try{return JSON.parse(JSON.stringify(v))}catch(_){return fallback}}
 function createConversationId(){
-try{
-if(
-window.crypto &&
-typeof window.crypto.randomUUID === "function"
-){
-return(
-"thewing-retirement-" +
-window.crypto.randomUUID()
-);
+try{if(window.crypto&&typeof window.crypto.randomUUID==="function")return"thewing-retirement-"+window.crypto.randomUUID()}catch(_){}
+return"thewing-retirement-"+Date.now()+"-"+Math.random().toString(36).slice(2,10)
 }
-}catch(_){}
-return(
-"thewing-retirement-" +
-Date.now() +
-"-" +
-Math.random()
-.toString(36)
-.slice(2,10)
-);
+/* ============================================================
+ RETIREMENT BRIEF
+=============================================================== */
+function briefApi(){
+return window.TheWingAmyRetirementBrief||null
+}
+function initBrief(){
+try{
+if(brief&&briefApi()?.initialize)briefApi().initialize(brief)
+}catch(e){
+console.warn("Ask Amy Retirement Brief initialization error:",e)
+}
+}
+function clearBrief(){
+try{briefApi()?.clear?.()}catch(_){}
+brief?.setAttribute("data-visible","0")
+}
+function mountBriefAtLatestExchange(){
+if(brief&&brief.parentNode===chat)chat.appendChild(brief)
+}
+function paintBriefIntent(intent,retirement){
+const api=briefApi();
+if(!api||!retirement||retirement.ok!==true)return null;
+mountBriefAtLatestExchange();
+let result=null;
+if(typeof api.renderFromIntent==="function"){
+result=api.renderFromIntent(intent,retirement);
+}else if(typeof api.render==="function"){
+result=api.render({type:intent,retirement});
+}
+if(result)brief?.setAttribute("data-visible","1");
+scrollBottom();
+return result;
+}
+function renderBriefIntent(value){
+const intent=clean(value).toLowerCase();
+if(!BRIEF_INTENTS.has(intent))return null;
+let retirement=hydrateRetirementSnapshot();
+if(retirement&&retirement.ok===true){
+return paintBriefIntent(intent,retirement);
+}
+requestRetirementSnapshot();
+setTimeout(()=>{
+retirement=hydrateRetirementSnapshot();
+if(retirement&&retirement.ok===true)paintBriefIntent(intent,retirement);
+},70);
+return null;
+}
+function renderBrief(data){
+const intent=clean(data?.intent).toLowerCase();
+if(!BRIEF_INTENTS.has(intent)){
+clearBrief();
+return null;
+}
+const retirement=hydrateRetirementSnapshot();
+const api=briefApi();
+if(!retirement||retirement.ok!==true||!api){
+clearBrief();
+return null;
+}
+try{
+mountBriefAtLatestExchange();
+let result=null;
+if(typeof api.renderFromResponse==="function"){
+result=api.renderFromResponse(data,retirement);
+}else if(typeof api.render==="function"){
+result=api.render({type:intent,retirement});
+}
+if(result)brief?.setAttribute("data-visible","1");
+scrollBottom();
+return result;
+}catch(e){
+console.warn("Ask Amy Retirement Brief render error:",e);
+clearBrief();
+return null;
+}
 }
 /* ============================================================
  RETIREMENT CALCULATOR BRIDGE
 =============================================================== */
 function setRetirementSnapshot(value){
-if(
-!isObject(value)
-){
-return null;
-}
-const copy=
-clone(value);
-if(
-!copy
-){
-return null;
-}
-latestRetirement=
-copy;
-window.THEWING_RETIREMENT_CURRENT=
-clone(copy);
+if(!isObject(value)||value.ok!==true)return null;
+const copy=clone(value);
+if(!copy)return null;
+latestRetirement=copy;
+window.THEWING_RETIREMENT_CURRENT=clone(copy);
 return clone(copy);
+}
+function clearRetirementSnapshot(){
+latestRetirement=null;
+window.THEWING_RETIREMENT_CURRENT=null;
+clearBrief();
 }
 function readRetirementSnapshot(){
 try{
-const api=
-window.THEWING_RETIREMENT;
-if(
-api &&
-typeof api.getState === "function"
-){
-const snapshot=
-clone(
-api.getState()
-);
-if(
-snapshot
-){
-return snapshot;
-}
+const calculator=document.getElementById("tw-retirement-shell");
+const api=window.THEWING_RETIREMENT;
+if(calculator&&calculator.dataset.hasResult==="true"&&api&&typeof api.getState==="function"){
+const snapshot=clone(api.getState());
+if(snapshot&&snapshot.ok===true)return snapshot;
 }
 }catch(_){}
+if(latestRetirement&&latestRetirement.ok===true)return clone(latestRetirement);
 try{
-const snapshot=
-clone(
-window.THEWING_RETIREMENT_CURRENT
-);
-if(
-snapshot
-){
-return snapshot;
-}
+const snapshot=clone(window.THEWING_RETIREMENT_CURRENT);
+if(snapshot&&snapshot.ok===true)return snapshot;
 }catch(_){}
 return null;
 }
 function hydrateRetirementSnapshot(){
-const live=
-readRetirementSnapshot();
-if(
-live
-){
-return setRetirementSnapshot(
-live
-);
-}
-return latestRetirement
-? clone(latestRetirement)
-: null;
+const live=readRetirementSnapshot();
+return live?setRetirementSnapshot(live):null;
 }
 function eventSnapshot(detail){
-if(
-!isObject(detail)
-){
+if(!isObject(detail))return null;
+if(detail.ok===true)return clone(detail);
+if(isObject(detail.state))return clone(detail.state);
+if(isObject(detail.detail))return clone(detail.detail);
 return null;
 }
-if(
-isObject(detail.retirement)
-){
-return clone(detail);
-}
-if(
-isObject(detail.state)
-){
-return clone(
-detail.state
-);
-}
-if(
-isObject(detail.detail)
-){
-return clone(
-detail.detail
-);
-}
-return clone(detail);
+function requestRetirementSnapshot(){
+const request={
+type:"thewing:retirement-request-state",
+source:"ask-amy-retirement"
+};
+document.querySelectorAll("iframe").forEach(frame=>{
+try{frame.contentWindow?.postMessage(request,"*")}catch(_){}
+});
 }
 function bindRetirementBridge(){
-if(
-bridgeMounted
-){
+if(bridgeMounted)return;
+bridgeMounted=true;
+window.addEventListener("thewing:retirement-updated",event=>{
+const snapshot=eventSnapshot(event?.detail);
+if(snapshot&&snapshot.ok===true)setRetirementSnapshot(snapshot);
+});
+window.addEventListener("thewing:retirement-cleared",clearRetirementSnapshot);
+window.addEventListener("message",event=>{
+const data=event?.data;
+if(!isObject(data)||data.source!=="thewing-retirement-calculator")return;
+if(data.type==="thewing:retirement-updated"&&isObject(data.retirement)&&data.retirement.ok===true){
+setRetirementSnapshot(data.retirement);
 return;
 }
-bridgeMounted=
-true;
-window.addEventListener(
-"thewing:retirement-updated",
-event=>{
-const snapshot=
-eventSnapshot(
-event &&
-event.detail
-);
-if(
-snapshot
-){
-setRetirementSnapshot(
-snapshot
-);
-}else{
+if(data.type==="thewing:retirement-cleared")clearRetirementSnapshot();
+});
 hydrateRetirementSnapshot();
-}
-}
-);
+requestRetirementSnapshot();
+[100,500,1200].forEach(delay=>setTimeout(()=>{
 hydrateRetirementSnapshot();
-[
-100,
-500,
-1200
-].forEach(
-delay=>
-setTimeout(
-hydrateRetirementSnapshot,
-delay
-)
-);
+requestRetirementSnapshot();
+},delay));
 window.THEWING_RETIREMENT_AMY_BRIDGE={
-getSnapshot:
-hydrateRetirementSnapshot,
-refresh:
-hydrateRetirementSnapshot
+getSnapshot:hydrateRetirementSnapshot,
+refresh(){
+requestRetirementSnapshot();
+return hydrateRetirementSnapshot();
+},
+request:requestRetirementSnapshot,
+clear:clearRetirementSnapshot
 };
 }
 bindRetirementBridge();
-/* ============================================================
- OPTIONAL PUBLIC PAGE CONTEXT
-=============================================================== */
-function firstObject(
-...values
-){
-for(
-const value
-of values
-){
-if(
-isObject(value) &&
-Object.keys(value).length
-){
-return clone(
-value,
-{}
-);
-}
-}
-return {};
-}
-function firstPacket(
-...values
-){
-for(
-const value
-of values
-){
-if(
-isObject(value) &&
-Object.keys(value).length
-){
-return clone(
-value,
-null
-);
-}
-}
-return null;
-}
-function collectPublicContext(){
-const brain=
-firstObject(
-window.PCSU_BASICBRAIN_CURRENT,
-window.PCSUnitedBasicBrain,
-window.PCSUnitedBasicBrainCurrent
-);
-const profile=
-firstObject(
-brain.profile,
-window.PCSUnitedPublicProfile,
-window.PCSUnitedProfile
-);
-const bridge=
-firstObject(
-brain.bridge,
-window.PCSU_BASICBRAIN_BRIDGE,
-window.PCSUnitedBridge
-);
-const compensation=
-firstPacket(
-brain.compensation,
-window.PCSU_COMPENSATION_CURRENT,
-window.PCSUnitedCompensation
-);
-return{
-profile,
-bridge,
-compensation
-};
-}
+initBrief();
 /* ============================================================
  CONVERSATION
 =============================================================== */
-function mergeMemory(
-current,
-patch
-){
-const next=
-isObject(current)
-? {...current}
-: {};
-if(
-!isObject(patch)
-){
-return next;
-}
-for(
-const [
-key,
-value
-]
-of Object.entries(patch)
-){
-if(
-value === undefined
-){
-continue;
-}
-if(
-value === null
-){
-delete next[key];
-}else{
-next[key]=value;
-}
+function mergeMemory(current,patch){
+const next=isObject(current)?{...current}:{};
+if(!isObject(patch))return next;
+for(const[key,value]of Object.entries(patch)){
+if(value===undefined)continue;
+if(value===null)delete next[key];
+else next[key]=value;
 }
 return next;
 }
 function reducedMotion(){
-return !!(
-window.matchMedia &&
-window.matchMedia(
-"(prefers-reduced-motion: reduce)"
-).matches
-);
+return!!(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)
 }
 function scrollBottom(){
-chat.scrollTop=
-chat.scrollHeight;
+chat.scrollTop=chat.scrollHeight
 }
-function remember(
-role,
-content
-){
-state.thread.push({
-role,
-content:
-clean(content)
-});
-state.thread=
-state.thread.slice(-12);
+function remember(role,content){
+state.thread.push({role,content:clean(content)});
+state.thread=state.thread.slice(-12);
 }
-function typewriter(
-element,
-text,
-speed=18,
-delay=80
-){
-return new Promise(
-resolve=>{
+function typewriter(element,text,speed=18,delay=80){
+return new Promise(resolve=>{
 element.textContent="";
-const caret=
-document.createElement("span");
-caret.className=
-"aa-caret";
-element.appendChild(
-caret
-);
+const caret=document.createElement("span");
+caret.className="aa-caret";
+element.appendChild(caret);
 let i=0;
 function tick(){
-if(
-i < text.length
-){
-caret.insertAdjacentText(
-"beforebegin",
-text.charAt(i++)
-);
+if(i<text.length){
+caret.insertAdjacentText("beforebegin",text.charAt(i++));
 scrollBottom();
-setTimeout(
-tick,
-speed
-);
+setTimeout(tick,speed);
 return;
 }
 caret.remove();
 resolve();
 }
-setTimeout(
-tick,
-delay
-);
+setTimeout(tick,delay);
+});
 }
-);
-}
-async function pushMessage(
-role,
-content,
-options={}
-){
-const text=
-clean(content);
-if(
-!text
-){
-return;
-}
-const msg=
-document.createElement("div");
-msg.className=
-"aa-msg " +
-(
-role === "user"
-? "aa-user"
-: "aa-bot"
-);
-const span=
-document.createElement("span");
-msg.appendChild(
-span
-);
-chat.appendChild(
-msg
-);
-if(
-options.remember !== false
-){
-remember(
-role === "user"
-? "user"
-: "assistant",
-text
-);
+async function pushMessage(role,content,options={}){
+const text=clean(content);
+if(!text)return;
+const msg=document.createElement("div");
+msg.className="aa-msg "+(role==="user"?"aa-user":"aa-bot");
+const span=document.createElement("span");
+msg.appendChild(span);
+chat.appendChild(msg);
+if(options.remember!==false){
+remember(role==="user"?"user":"assistant",text);
 }
 scrollBottom();
-if(
-options.typewriter === true &&
-role !== "user" &&
-!reducedMotion()
-){
-await typewriter(
-span,
-text,
-Number(
-options.speed || 18
-),
-Number(
-options.delay || 80
-)
-);
+if(options.typewriter===true&&role!=="user"&&!reducedMotion()){
+await typewriter(span,text,Number(options.speed||18),Number(options.delay||80));
 }else{
-span.textContent=
-text;
+span.textContent=text;
 }
 scrollBottom();
 }
 function showTyping(){
 hideTyping();
-const el=
-document.createElement("div");
-el.id=
-"aa-typing";
-el.className=
-"aa-msg aa-bot aa-typing";
-el.textContent=
-"Amy is reviewing your retirement projection…";
-chat.appendChild(
-el
-);
+const el=document.createElement("div");
+el.id="aa-typing";
+el.className="aa-msg aa-bot aa-typing";
+el.textContent="Amy is reviewing your retirement projection…";
+chat.appendChild(el);
 scrollBottom();
 }
 function hideTyping(){
-document
-.getElementById(
-"aa-typing"
-)
-?.remove();
+document.getElementById("aa-typing")?.remove()
 }
 /* ============================================================
- POST TO AMY
+ POST TO RETIREMENT AMY
 =============================================================== */
-async function postToAmy(
-userText
-){
-const publicContext=
-collectPublicContext();
-const retirement=
-hydrateRetirementSnapshot();
-const historicalThread=
-state.thread.slice(
-0,
--1
-);
+async function postToAmy(userText){
+requestRetirementSnapshot();
+await new Promise(resolve=>setTimeout(resolve,60));
+const retirement=hydrateRetirementSnapshot();
+const historicalThread=state.thread.slice(0,-1);
 const payload={
-message:
-userText,
-/* Current Retirement Calculator state */
+message:userText,
 retirement,
-profile:
-publicContext.profile,
-bridge:
-publicContext.bridge,
-compensation:
-publicContext.compensation ||
-undefined,
 context:{
-conversation_id:
-state.conversationId,
-thread:
-historicalThread,
-memory:
-state.memory,
-requested_mode:
-"education",
-/* Included again for compatibility */
-retirement,
+conversation_id:state.conversationId,
+thread:historicalThread,
+memory:state.memory,
+page:"retirement-calculator",
+widget:"ask-amy-retirement",
 response_limits:{
-max_chars:
-1100,
-greeting_max_chars:
-320,
-max_follow_up_questions:
-1
-},
-style_guide:{
-tone:
-"clear, warm, practical, military-retirement focused and educational",
-format:
-"Use the current TheWing Retirement Calculator state and deterministic retirement engine as authoritative for all displayed retirement numbers. Explain the member's retirement system, credited service, multiplier, High-3 average, exact High-36 window, projected monthly retired pay, and projected yearly retired pay without changing or inventing numbers. Clearly distinguish historical reconstruction, official published pay, and future projected pay. The current projection model uses TheWing planning assumptions of 3.6% for 2027, 3.3% for 2028, 3.2% for 2029, 3.0% for 2030, and the calculator-selected long-range assumption beginning in 2031. If the calculator state says the retirement rank is applied across the full High-36 period, disclose that assumption when relevant. Gross retired pay is before taxes, SBP, and other deductions. Do not add VA compensation, CRDP, CRSC, SBP, taxes, medical retirement, Reserve retirement, or other benefits unless the user explicitly asks and reliable context is available."
-},
-page:
-"TheWing.ai Military Retirement Calculator",
-widget:
-"retirement-calculator-ask-amy",
-product:
-"TheWing.ai",
-version:
-"1.0.0"
+max_chars:1100,
+greeting_max_chars:320,
+max_follow_up_questions:1
+}
 }
 };
-const response=
-await fetch(
-ENDPOINT,
-{
-method:
-"POST",
-mode:
-"cors",
-credentials:
-"omit",
+const response=await fetch(ENDPOINT,{
+method:"POST",
+mode:"cors",
+credentials:"omit",
 headers:{
-"Content-Type":
-"application/json",
-"X-PCSU-Client":
-"retirement-calculator-ask-amy-v1.0"
+"Content-Type":"application/json",
+"X-TheWing-Client":"retirement-calculator-ask-amy-v1.1"
 },
-body:
-JSON.stringify(
-payload
-)
-}
-);
-const raw=
-await response.text();
+body:JSON.stringify(payload)
+});
+const raw=await response.text();
 let data={};
 try{
-data=
-raw
-? JSON.parse(raw)
-: {};
+data=raw?JSON.parse(raw):{};
 }catch(_){
 data={};
 }
-if(
-!response.ok ||
-data.ok !== true
-){
+if(!response.ok||data.ok!==true){
 throw new Error(
 clean(
-data.error ||
-data.message ||
-(
-"HTTP " +
-response.status
-)
-)
-||
-"Request failed."
+data.error||
+data.message||
+("HTTP "+response.status)
+)||"Request failed."
 );
 }
-if(
-clean(
-data.conversation_id
-)
-){
-state.conversationId=
-clean(
-data.conversation_id
-);
+if(clean(data.conversation_id)){
+state.conversationId=clean(data.conversation_id);
 }
-if(
-isObject(
-data.memory_patch
-)
-){
-state.memory=
-mergeMemory(
-state.memory,
-data.memory_patch
-);
+if(isObject(data.memory_patch)){
+state.memory=mergeMemory(state.memory,data.memory_patch);
 }
 return data;
 }
 /* ============================================================
  SEND
 =============================================================== */
-async function callAmy(
-userText
-){
-if(
-state.sending
-){
-return;
-}
-state.sending=
-true;
-send.disabled=
-true;
-input.disabled=
-true;
+async function callAmy(userText){
+if(state.sending)return;
+state.sending=true;
+send.disabled=true;
+input.disabled=true;
 showTyping();
 try{
-const data=
-await postToAmy(
-userText
-);
+const data=await postToAmy(userText);
 hideTyping();
-const reply=
-clean(
-data.reply ||
-data.answer?.summary ||
-"I'm here. Ask me about your retirement estimate, High-3 average, multiplier, service time, or future pay assumptions."
+/* Server intent keeps typed questions and quick prompts synced. */
+renderBrief(data);
+const reply=clean(
+data.reply||
+"I'm here. Ask me about your retirement estimate, High-3, multiplier, credited service, rank timing, or future pay assumptions."
 );
-const ui=
-isObject(data.ui)
-? data.ui
-: {};
-await pushMessage(
-"assistant",
-reply,
-{
-typewriter:
-true,
-speed:
-Number(
-ui.speed || 18
-),
-delay:
-Number(
-ui.startDelay || 80
-),
-remember:
-true
-}
-);
+const ui=isObject(data.ui)?data.ui:{};
+await pushMessage("assistant",reply,{
+typewriter:true,
+speed:Number(ui.speed||18),
+delay:Number(ui.startDelay||80),
+remember:true
+});
 }catch(error){
 hideTyping();
 console.error(
-"Ask Amy retirement connection error:",
+"Ask Amy Retirement connection error:",
 error
 );
 await pushMessage(
 "assistant",
-"I hit a connection snag while reaching TheWing.ai. Please try again in a moment.",
+"I hit a connection snag while reaching the Retirement Concierge. Please try again in a moment.",
 {
-typewriter:
-true,
-speed:
-16,
-delay:
-60,
-remember:
-false
+typewriter:true,
+speed:16,
+delay:60,
+remember:false
 }
 );
 }finally{
-state.sending=
-false;
-send.disabled=
-false;
-input.disabled=
-false;
+state.sending=false;
+send.disabled=false;
+input.disabled=false;
 input.focus();
 }
 }
-async function trySend(
-override
-){
-const text=
-clean(
-override ||
-input.value
-);
-if(
-!text ||
-state.sending
-){
-return;
-}
+async function trySend(override,briefIntent=""){
+const text=clean(override||input.value);
+if(!text||state.sending)return;
 input.value="";
+/*
+ User question first.
+ Then instantly place the requested visual Brief directly
+ beneath it while Amy prepares the explanation.
+*/
 await pushMessage(
 "user",
 text,
-{
-remember:true
+{remember:true}
+);
+if(clean(briefIntent)){
+renderBriefIntent(briefIntent);
 }
-);
-await callAmy(
-text
-);
+await callAmy(text);
 }
-send.addEventListener(
-"click",
-()=>trySend()
-);
-input.addEventListener(
-"keydown",
-event=>{
-if(
-event.key === "Enter" &&
-!event.shiftKey
-){
+send.addEventListener("click",()=>{
+trySend();
+});
+input.addEventListener("keydown",event=>{
+if(event.key==="Enter"&&!event.shiftKey){
 event.preventDefault();
 trySend();
 }
-}
+});
+prompts.forEach(button=>{
+button.addEventListener("click",()=>{
+const question=clean(
+button.getAttribute("data-question")
 );
-prompts.forEach(
-button=>{
-button.addEventListener(
-"click",
-()=>{
-const question=
-clean(
-button.getAttribute(
-"data-question"
-)
+const briefIntent=clean(
+button.getAttribute("data-brief-intent")
 );
-if(
-question
-){
+if(question){
 trySend(
-question
+question,
+briefIntent
 );
 }
-}
-);
-}
-);
+});
+});
 /* ============================================================
  GREETING
 =============================================================== */
 pushMessage(
 "assistant",
-"Hey — I’m Amy, your Retirement Concierge. I can explain your projected monthly and yearly retired pay, your High-3 average, service multiplier, 36-month pay window, and the future-pay assumptions behind the estimate. TheWing calculates; I explain what it means.",
+"Hey — I’m Amy, your Retirement Concierge. I can explain your retirement estimate, High-3, service credit, multiplier, rank timing, High-36 window, and projected gross retired pay. TheWing calculates; I explain what it means.",
 {
-typewriter:
-true,
-speed:
-18,
-delay:
-220,
-remember:
-true
+typewriter:true,
+speed:18,
+delay:220,
+remember:true
 }
 );
 })();
@@ -1452,69 +623,35 @@ true
     <script>
 (()=>{
 "use strict";
-const launcher=
-document.getElementById(
-"ask-amy-launcher"
-);
-const modal=
-document.getElementById(
-"ask-amy-modal"
-);
-const close=
-document.getElementById(
-"ask-amy-modal-close"
-);
-const input=
-document.getElementById(
-"aa-input"
-);
-if(
-!launcher ||
-!modal ||
-!close ||
-launcher.__amyRetirementModalMounted
-){
-return;
-}
-launcher.__amyRetirementModalMounted=
-true;
+const launcher=document.getElementById("ask-amy-launcher");
+const modal=document.getElementById("ask-amy-modal");
+const close=document.getElementById("ask-amy-modal-close");
+const input=document.getElementById("aa-input");
+if(!launcher||!modal||!close||launcher.__amyRetirementModalMounted)return;
+launcher.__amyRetirementModalMounted=true;
 let htmlOverflow="";
 let bodyOverflow="";
 function refreshSnapshot(){
 try{
-window
-.THEWING_RETIREMENT_AMY_BRIDGE
-?.refresh
-?.();
+window.THEWING_RETIREMENT_AMY_BRIDGE?.refresh?.();
 }catch(_){}
 }
 function openAmy(){
-htmlOverflow=
-document.documentElement.style.overflow;
-bodyOverflow=
-document.body.style.overflow;
+htmlOverflow=document.documentElement.style.overflow;
+bodyOverflow=document.body.style.overflow;
 refreshSnapshot();
-modal.style.display=
-"flex";
-document.documentElement.style.overflow=
-"hidden";
-document.body.style.overflow=
-"hidden";
-setTimeout(
-()=>{
+modal.style.display="flex";
+document.documentElement.style.overflow="hidden";
+document.body.style.overflow="hidden";
+setTimeout(()=>{
 refreshSnapshot();
 input?.focus();
-},
-80
-);
+},80);
 }
 function closeAmy(){
-modal.style.display=
-"none";
-document.documentElement.style.overflow=
-htmlOverflow;
-document.body.style.overflow=
-bodyOverflow;
+modal.style.display="none";
+document.documentElement.style.overflow=htmlOverflow;
+document.body.style.overflow=bodyOverflow;
 launcher.focus();
 }
 launcher.addEventListener(
@@ -1524,10 +661,7 @@ openAmy
 launcher.addEventListener(
 "keydown",
 event=>{
-if(
-event.key === "Enter" ||
-event.key === " "
-){
+if(event.key==="Enter"||event.key===" "){
 event.preventDefault();
 openAmy();
 }
@@ -1540,9 +674,7 @@ closeAmy
 modal.addEventListener(
 "click",
 event=>{
-if(
-event.target === modal
-){
+if(event.target===modal){
 closeAmy();
 }
 }
@@ -1550,10 +682,7 @@ closeAmy();
 window.addEventListener(
 "keydown",
 event=>{
-if(
-event.key === "Escape" &&
-modal.style.display === "flex"
-){
+if(event.key==="Escape"&&modal.style.display==="flex"){
 closeAmy();
 }
 }
