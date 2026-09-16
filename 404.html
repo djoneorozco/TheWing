@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Sep 15 2026 06:46:06 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Sep 16 2026 08:42:24 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a6ff0545aa01c93602db9b1" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -47,28 +47,717 @@
 </script>
 </head>
 <body>
-  <div class="page-wrapper">
-    <div class="main">
-      <section class="section _404">
-        <div class="w-layout-blockcontainer container _404 w-container">
-          <div data-poster-url="https://cdn.prod.website-files.com/69eb162337c57d450e0e19a3%2F6a6abe61016d3844227834ea_404_1_poster.0000000.jpg" data-video-urls="videos/404_1_mp4.mp4,videos/404_1_webm.webm" data-autoplay="true" data-loop="false" data-wf-ignore="true" class="background-video-4 w-background-video w-background-video-atom"><video id="6a3e2b96-a2af-f0b0-7023-b59a74bdc34e-video" autoplay="" style="background-image:url(&quot;https://cdn.prod.website-files.com/69eb162337c57d450e0e19a3%2F6a6abe61016d3844227834ea_404_1_poster.0000000.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-              <source src="videos/404_1_mp4.mp4" data-wf-ignore="true">
-              <source src="videos/404_1_webm.webm" data-wf-ignore="true">
-            </video></div>
-          <h2 class="page-not-found">Page Not Found</h2>
-          <p class="paragraph-16">The page you are looking for doesn&#x27;t exist or has been moved</p>
-        </div>
-        <div class="_404-background"><img src="images/bg-pricing_1bg-pricing.avif" loading="lazy" sizes="(max-width: 1373px) 100vw, 1373px" srcset="images/bg-pricing_1-p-500.png 500w, images/bg-pricing_1-p-800.png 800w, images/bg-pricing_1bg-pricing.avif 1373w" alt="" class="pricing-v2-bg-img-copy"></div>
-        <div class="code-embed-39 w-embed w-script">
-          <script>
-window.addEventListener("load", function () {
-  const HOME_URL = "/";
-  const REDIRECT_DELAY = 4000;
-  setTimeout(function () {
-    window.location.href = HOME_URL;
-  }, REDIRECT_DELAY);
-});
-</script>
+  <div class="w-embed"><!--  =========================================================
+PCSUnited • 404 / PAGE NOT READY HUD
+Full Webflow Embed
+Version 1.1.0
+UPDATES
+- More transparent Apple-style glass HUD
+- Background image clearly visible through panel
+- Increased backdrop blur / saturation
+- Softer blue tint
+- Softer shadow
+- Brighter glass edge
+- Keeps PCSUnited muted-gold HUD details
+- Responsive desktop + mobile
+- No redirect / JavaScript required
+=========================================================  -->
+    <div id="pcsu-404-hud" style="all:initial;">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+      <style>
+    /* ======================================================
+       RESET / VARIABLES
+    ====================================================== */
+    #pcsu-404-hud,
+    #pcsu-404-hud *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+    #pcsu-404-hud{
+      --gold:#d7a85e;
+      --gold-soft:#f1c982;
+      --gold-dim:rgba(215,168,94,.35);
+      --ink:#f7f8fb;
+      --muted:#c3cad7;
+      --line:rgba(215,168,94,.26);
+      --hero-image:url("https://cdn.prod.website-files.com/6a6ff0545aa01c93602db711/6a6ff0545aa01c93602dbb27_4e107e350f1b9749b187d3adc9700c86_EFFD9662-41D5-4D50-A8E9-829357A2C8AF.png");
+      display:block;
+      width:100%;
+      color:var(--ink);
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    }
+    /* ======================================================
+       HERO
+    ====================================================== */
+    #pcsu-404-hud .pcsu-stage{
+      position:relative;
+      width:100%;
+      min-height:720px;
+      min-height:100svh;
+      overflow:hidden;
+      isolation:isolate;
+      background:
+        var(--hero-image)
+        center center /
+        cover
+        no-repeat;
+    }
+    /* ======================================================
+       CINEMATIC BACKGROUND OVERLAY
+    ====================================================== */
+    #pcsu-404-hud .pcsu-stage::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:0;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(3,7,14,.05) 0%,
+          rgba(3,7,14,.06) 35%,
+          rgba(3,7,14,.18) 60%,
+          rgba(3,7,14,.28) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(4,7,14,.03),
+          rgba(4,7,14,.08) 62%,
+          rgba(4,7,14,.20)
+        );
+      pointer-events:none;
+    }
+    /* ======================================================
+       SUBTLE GRAIN
+    ====================================================== */
+    #pcsu-404-hud .pcsu-grain{
+      position:absolute;
+      inset:0;
+      z-index:1;
+      pointer-events:none;
+      opacity:.045;
+      background-image:
+        radial-gradient(
+          rgba(255,255,255,.22) .55px,
+          transparent .75px
+        );
+      background-size:9px 9px;
+      mix-blend-mode:soft-light;
+    }
+    /* ======================================================
+       LAYOUT
+    ====================================================== */
+    #pcsu-404-hud .pcsu-inner{
+      position:relative;
+      z-index:2;
+      width:min(1440px, calc(100% - 64px));
+      min-height:720px;
+      min-height:100svh;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      padding:70px 0;
+    }
+    /* ======================================================
+       APPLE-STYLE TRANSPARENT GLASS HUD
+    ====================================================== */
+    #pcsu-404-hud .pcsu-panel{
+      position:relative;
+      width:min(720px, 54vw);
+      padding:34px 38px 32px;
+      overflow:hidden;
+      border-radius:28px;
+      /*
+        Highly transparent glass.
+        Background image remains clearly visible
+        through the HUD while blur separates text
+        from the photography.
+      */
+      background:
+        radial-gradient(
+          120% 90% at 10% 0%,
+          rgba(255,255,255,.105) 0%,
+          rgba(255,255,255,.025) 38%,
+          transparent 66%
+        ),
+        radial-gradient(
+          90% 75% at 100% 100%,
+          rgba(74,144,255,.065),
+          transparent 70%
+        ),
+        linear-gradient(
+          145deg,
+          rgba(26,45,70,.20) 0%,
+          rgba(10,25,45,.12) 48%,
+          rgba(4,15,30,.18) 100%
+        );
+      border:
+        1px solid
+        rgba(255,255,255,.22);
+      box-shadow:
+        0 32px 90px rgba(0,0,0,.27),
+        0 10px 34px rgba(0,0,0,.14),
+        inset 0 1px 0 rgba(255,255,255,.38),
+        inset 1px 0 0 rgba(255,255,255,.08),
+        inset -1px 0 0 rgba(255,255,255,.05),
+        inset 0 -1px 0 rgba(255,255,255,.04),
+        inset 0 0 50px rgba(85,151,255,.018);
+      backdrop-filter:
+        blur(15px)
+        saturate(165%)
+        brightness(1.025);
+      -webkit-backdrop-filter:
+        blur(10px)
+        saturate(165%)
+        brightness(1.025);
+      transform:translateZ(0);
+    }
+    /* ======================================================
+       GOLD HUD CORNERS
+    ====================================================== */
+    #pcsu-404-hud .pcsu-panel::before,
+    #pcsu-404-hud .pcsu-panel::after{
+      content:"";
+      position:absolute;
+      width:76px;
+      height:76px;
+      pointer-events:none;
+      opacity:.9;
+    }
+    #pcsu-404-hud .pcsu-panel::before{
+      top:10px;
+      left:10px;
+      border-top:
+        2px solid
+        var(--gold);
+      border-left:
+        2px solid
+        var(--gold);
+      border-radius:7px 0 0 0;
+    }
+    #pcsu-404-hud .pcsu-panel::after{
+      right:10px;
+      bottom:10px;
+      border-right:
+        2px solid
+        var(--gold);
+      border-bottom:
+        2px solid
+        var(--gold);
+      border-radius:0 0 7px 0;
+    }
+    /* ======================================================
+       HUD HEADER
+    ====================================================== */
+    #pcsu-404-hud .pcsu-header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding-bottom:18px;
+      margin-bottom:34px;
+      border-bottom:
+        1px solid
+        rgba(255,255,255,.12);
+    }
+    #pcsu-404-hud .pcsu-brand{
+      color:#e3e8f2;
+      font-size:14px;
+      font-weight:700;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      text-shadow:
+        0 1px 6px rgba(0,0,0,.35);
+    }
+    #pcsu-404-hud .pcsu-system{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:var(--gold-soft);
+      font-family:
+        Oswald,
+        sans-serif;
+      font-size:19px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-shadow:
+        0 2px 10px rgba(0,0,0,.34);
+    }
+    #pcsu-404-hud .pcsu-system::before{
+      content:"";
+      width:38px;
+      height:2px;
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          var(--gold)
+        );
+      box-shadow:
+        0 0 12px
+        rgba(215,168,94,.50);
+    }
+    /* ======================================================
+       MAIN CONTENT
+    ====================================================== */
+    #pcsu-404-hud .pcsu-eyebrow{
+      margin-bottom:10px;
+      color:var(--gold-soft);
+      font-family:
+        Oswald,
+        sans-serif;
+      font-size:clamp(34px, 4vw, 58px);
+      line-height:1;
+      font-weight:700;
+      letter-spacing:.025em;
+      text-transform:uppercase;
+      text-shadow:
+        0 3px 14px rgba(0,0,0,.38);
+    }
+    #pcsu-404-hud .pcsu-title{
+      max-width:580px;
+      color:#ffffff;
+      font-family:
+        Oswald,
+        sans-serif;
+      font-size:clamp(30px, 3.2vw, 48px);
+      line-height:1.14;
+      font-weight:500;
+      letter-spacing:.015em;
+      text-transform:uppercase;
+      text-shadow:
+        0 3px 14px rgba(0,0,0,.45);
+    }
+    /* ======================================================
+       404 SIGN
+    ====================================================== */
+    #pcsu-404-hud .pcsu-error-row{
+      display:flex;
+      align-items:center;
+      gap:22px;
+      margin-top:34px;
+    }
+    #pcsu-404-hud .pcsu-404-sign{
+      position:relative;
+      flex:0 0 auto;
+      min-width:190px;
+      padding:14px 22px 16px;
+      text-align:center;
+      transform:
+        rotate(-2deg);
+      border:
+        1px solid
+        rgba(255,255,255,.34);
+      border-radius:14px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(25,38,53,.48),
+          rgba(5,15,27,.36)
+        );
+      box-shadow:
+        0 14px 32px
+        rgba(0,0,0,.25),
+        inset 0 1px 0
+        rgba(255,255,255,.18);
+      backdrop-filter:
+        blur(18px)
+        saturate(150%);
+      -webkit-backdrop-filter:
+        blur(18px)
+        saturate(150%);
+    }
+    #pcsu-404-hud .pcsu-404-sign::before{
+      content:"";
+      position:absolute;
+      inset:5px;
+      border:
+        1px dashed
+        rgba(215,168,94,.35);
+      border-radius:9px;
+      pointer-events:none;
+    }
+    #pcsu-404-hud .pcsu-404-number{
+      position:relative;
+      z-index:1;
+      color:#f4f1e8;
+      font-family:
+        Oswald,
+        sans-serif;
+      font-size:76px;
+      line-height:.95;
+      font-weight:700;
+      letter-spacing:.02em;
+      text-shadow:
+        2px 3px 8px
+        rgba(0,0,0,.38);
+    }
+    #pcsu-404-hud .pcsu-404-label{
+      position:relative;
+      z-index:1;
+      margin-top:8px;
+      color:var(--gold-soft);
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.17em;
+      text-transform:uppercase;
+      text-shadow:
+        0 2px 8px
+        rgba(0,0,0,.35);
+    }
+    /* ======================================================
+       SUPPORTING COPY
+    ====================================================== */
+    #pcsu-404-hud .pcsu-message{
+      max-width:300px;
+    }
+    #pcsu-404-hud .pcsu-message strong{
+      display:block;
+      margin-bottom:7px;
+      color:#ffffff;
+      font-size:16px;
+      font-weight:700;
+      text-shadow:
+        0 2px 8px
+        rgba(0,0,0,.40);
+    }
+    #pcsu-404-hud .pcsu-message span{
+      display:block;
+      color:#e1e6ef;
+      font-size:14px;
+      line-height:1.55;
+      text-shadow:
+        0 2px 8px
+        rgba(0,0,0,.40);
+    }
+    /* ======================================================
+       STATUS BAR
+    ====================================================== */
+    #pcsu-404-hud .pcsu-status{
+      display:grid;
+      grid-template-columns:
+        repeat(4, 1fr);
+      margin-top:34px;
+      padding-top:22px;
+      border-top:
+        1px solid
+        rgba(255,255,255,.10);
+    }
+    #pcsu-404-hud .pcsu-status-item{
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:74px;
+      color:#d3d9e4;
+      text-align:center;
+      text-shadow:
+        0 2px 8px
+        rgba(0,0,0,.40);
+    }
+    #pcsu-404-hud .pcsu-status-item:not(:last-child)::after{
+      content:"";
+      position:absolute;
+      top:14px;
+      right:0;
+      bottom:14px;
+      width:1px;
+      background:
+        rgba(255,255,255,.09);
+    }
+    #pcsu-404-hud .pcsu-status-icon{
+      color:var(--gold-soft);
+      font-size:22px;
+      line-height:1;
+      filter:
+        drop-shadow(
+          0 2px 5px
+          rgba(0,0,0,.35)
+        );
+    }
+    #pcsu-404-hud .pcsu-status-label{
+      font-size:11px;
+      font-weight:700;
+      letter-spacing:.10em;
+      text-transform:uppercase;
+    }
+    /* ======================================================
+       SCAN LINE
+    ====================================================== */
+    #pcsu-404-hud .pcsu-scan{
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      height:1px;
+      opacity:.55;
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(215,168,94,.10),
+          var(--gold),
+          rgba(215,168,94,.10),
+          transparent
+        );
+      box-shadow:
+        0 0 14px
+        rgba(215,168,94,.26);
+      animation:
+        pcsuScan
+        5.5s
+        ease-in-out
+        infinite;
+    }
+    @keyframes pcsuScan{
+      0%{
+        transform:
+          translateY(14px);
+        opacity:0;
+      }
+      12%{
+        opacity:.55;
+      }
+      88%{
+        opacity:.42;
+      }
+      100%{
+        transform:
+          translateY(470px);
+        opacity:0;
+      }
+    }
+    /* ======================================================
+       TABLET
+    ====================================================== */
+    @media(max-width:980px){
+      #pcsu-404-hud .pcsu-stage{
+        background-position:
+          center center;
+      }
+      #pcsu-404-hud .pcsu-stage::before{
+        background:
+          linear-gradient(
+            180deg,
+            rgba(3,7,14,.06),
+            rgba(3,7,14,.14) 50%,
+            rgba(3,7,14,.30)
+          );
+      }
+      #pcsu-404-hud .pcsu-inner{
+        width:min(100% - 32px, 760px);
+        align-items:flex-end;
+        justify-content:center;
+        padding:42px 0;
+      }
+      #pcsu-404-hud .pcsu-panel{
+        width:100%;
+        padding:
+          28px 26px 26px;
+      }
+    }
+    /* ======================================================
+       PHONE
+    ====================================================== */
+    @media(max-width:560px){
+      #pcsu-404-hud .pcsu-stage{
+        min-height:100svh;
+        background-position:
+          center top;
+      }
+      #pcsu-404-hud .pcsu-inner{
+        width:
+          calc(100% - 20px);
+        min-height:100svh;
+        padding:
+          24px 0 20px;
+      }
+      /* MORE TRANSPARENT MOBILE GLASS */
+      #pcsu-404-hud .pcsu-panel{
+        padding:
+          24px 18px 20px;
+        border-radius:24px;
+        background:
+          radial-gradient(
+            120% 80% at 10% 0%,
+            rgba(255,255,255,.09),
+            transparent 58%
+          ),
+          radial-gradient(
+            100% 80% at 100% 100%,
+            rgba(76,148,255,.045),
+            transparent 70%
+          ),
+          linear-gradient(
+            145deg,
+            rgba(24,44,70,.17),
+            rgba(7,20,39,.13)
+          );
+        border:
+          1px solid
+          rgba(255,255,255,.19);
+        box-shadow:
+          0 20px 60px
+          rgba(0,0,0,.23),
+          inset 0 1px 0
+          rgba(255,255,255,.27);
+        backdrop-filter:
+          blur(23px)
+          saturate(155%);
+        -webkit-backdrop-filter:
+          blur(23px)
+          saturate(155%);
+      }
+      #pcsu-404-hud .pcsu-header{
+        margin-bottom:24px;
+        padding-bottom:14px;
+      }
+      #pcsu-404-hud .pcsu-brand{
+        font-size:11px;
+      }
+      #pcsu-404-hud .pcsu-system{
+        font-size:16px;
+      }
+      #pcsu-404-hud .pcsu-system::before{
+        width:20px;
+      }
+      #pcsu-404-hud .pcsu-eyebrow{
+        font-size:34px;
+      }
+      #pcsu-404-hud .pcsu-title{
+        font-size:29px;
+      }
+      #pcsu-404-hud .pcsu-error-row{
+        align-items:flex-start;
+        gap:14px;
+      }
+      #pcsu-404-hud .pcsu-404-sign{
+        min-width:125px;
+        padding:
+          12px 12px 14px;
+      }
+      #pcsu-404-hud .pcsu-404-number{
+        font-size:52px;
+      }
+      #pcsu-404-hud .pcsu-404-label{
+        font-size:8px;
+      }
+      #pcsu-404-hud .pcsu-message strong{
+        font-size:14px;
+      }
+      #pcsu-404-hud .pcsu-message span{
+        font-size:12px;
+      }
+      #pcsu-404-hud .pcsu-status{
+        grid-template-columns:
+          repeat(2, 1fr);
+        row-gap:10px;
+      }
+      #pcsu-404-hud
+      .pcsu-status-item:nth-child(2)::after{
+        display:none;
+      }
+      #pcsu-404-hud .pcsu-status-item{
+        min-height:58px;
+      }
+    }
+  </style>
+      <!--  ======================================================
+       HERO
+  ======================================================  -->
+      <section class="pcsu-stage" aria-label="PCSUnited page under construction">
+        <div class="pcsu-grain" aria-hidden="true"></div>
+        <div class="pcsu-inner">
+          <!--  ==================================================
+           GLASS HUD
+      ===================================================  -->
+          <article class="pcsu-panel" role="status">
+            <div class="pcsu-scan" aria-hidden="true"></div>
+            <!--  HEADER  -->
+            <header class="pcsu-header">
+              <div class="pcsu-brand">
+                PCSUNITED
+              </div>
+              <div class="pcsu-system">
+                404
+              </div>
+            </header>
+            <!--  MESSAGE  -->
+            <div class="pcsu-eyebrow">
+              Sorry Sir,
+            </div>
+            <h1 class="pcsu-title">
+              Seems This Page<br>
+              Is Not Ready Yet.
+            </h1>
+            <!--  404  -->
+            <div class="pcsu-error-row">
+              <div class="pcsu-404-sign" aria-label="404 Page Not Found">
+                <div class="pcsu-404-number">
+                  404
+                </div>
+                <div class="pcsu-404-label">
+                  Page Not Found
+                </div>
+              </div>
+              <div class="pcsu-message">
+                <strong>
+                  But don't worry.
+                </strong>
+                <span>
+                  We're still building,
+                  updating, and improving
+                  this section for you.
+                </span>
+              </div>
+            </div>
+            <!--  STATUS  -->
+            <div class="pcsu-status" aria-label="Page development status">
+              <div class="pcsu-status-item">
+                <div class="pcsu-status-icon">
+                  ⚙
+                </div>
+                <div class="pcsu-status-label">
+                  Building
+                </div>
+              </div>
+              <div class="pcsu-status-item">
+                <div class="pcsu-status-icon">
+                  ◇
+                </div>
+                <div class="pcsu-status-label">
+                  Updating
+                </div>
+              </div>
+              <div class="pcsu-status-item">
+                <div class="pcsu-status-icon">
+                  ◉
+                </div>
+                <div class="pcsu-status-label">
+                  Improving
+                </div>
+              </div>
+              <div class="pcsu-status-item">
+                <div class="pcsu-status-icon">
+                  ↗
+                </div>
+                <div class="pcsu-status-label">
+                  For You
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </div>
@@ -78,5 +767,66 @@ window.addEventListener("load", function () {
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
+  <style>
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+  }
+  #pcsu-404-video {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    object-position: center center;
+    background: #000;
+    z-index: 999999;
+  }
+  /* Desktop / wide screens */
+  @media (min-width: 768px) {
+    #pcsu-404-video {
+      object-fit: cover;
+    }
+  }
+  /* Phones */
+  @media (max-width: 767px) {
+    #pcsu-404-video {
+      object-fit: contain;
+    }
+  }
+</style>
+  <video id="pcsu-404-video" autoplay="" muted="" playsinline="" webkit-playsinline="" preload="auto"></video>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById("pcsu-404-video");
+  const HOME_URL = "/";
+  const MOBILE_VIDEO =
+    "https://raw.githubusercontent.com/djoneorozco/TheWing.ai/main/images/Amyiphone.mp4";
+  const DESKTOP_VIDEO =
+    "https://raw.githubusercontent.com/djoneorozco/TheWing.ai/main/images/404Video.mp4";
+  if (!video) return;
+  const isPhone = window.matchMedia("(max-width: 767px)").matches;
+  video.src = isPhone ? MOBILE_VIDEO : DESKTOP_VIDEO;
+  video.muted = true;
+  video.defaultMuted = true;
+  video.playsInline = true;
+  video.addEventListener("loadedmetadata", function () {
+    video.currentTime = 0;
+  }, { once: true });
+  video.play().catch(function (error) {
+    console.error("Video autoplay failed:", error);
+  });
+  video.addEventListener("playing", function () {
+    setTimeout(function () {
+      window.location.href = HOME_URL;
+    }, 5250);
+  }, { once: true });
+});
+</script>
 </body>
 </html>

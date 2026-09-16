@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Sep 15 2026 06:46:06 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Sep 16 2026 08:42:24 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a6ff0545aa01c93602db759" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -940,6 +940,631 @@
 </script>
 </head>
 <body class="body-3">
+  <div class="page-wrapper">
+    <div data-animation="default" data-collapse="small" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="user-s-login user-login w-nav">
+      <div class="user-navbar">
+        <div class="code-embed-42 w-embed w-script"><!--  THEWING.AI • MEMBER HEADER COMP + FITNESS v3.2.1  -->
+          <div id="thewing-header-comp" style="all:initial;">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+            <style>
+    #thewing-header-comp,
+    #thewing-header-comp *{
+      box-sizing:border-box;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    #thewing-header-comp{
+      display:block;
+      width:100%;
+      color:#f5f5f5;
+    }
+    #thewing-header-comp .tw-wrap,
+    #thewing-header-comp .tw-inner{
+      width:100%;
+    }
+    #thewing-header-comp .tw-grid{
+      display:grid;
+      grid-template-columns:repeat(5,minmax(105px,1fr));
+      gap:10px;
+      width:min(700px,100%);
+    }
+    #thewing-header-comp .tw-tile{
+      position:relative;
+      overflow:hidden;
+      min-height:52px;
+      padding:10px 12px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:10px;
+      background:
+        linear-gradient(180deg,rgba(255,255,255,.032),rgba(255,255,255,.012)),
+        rgba(10,14,26,.70);
+      backdrop-filter:blur(12px) saturate(135%);
+      -webkit-backdrop-filter:blur(12px) saturate(135%);
+      transition:.18s ease;
+    }
+    #thewing-header-comp .tw-tile::before{
+      content:"";
+      position:absolute;
+      inset:0 0 auto 0;
+      height:1px;
+      background:linear-gradient(90deg,rgba(142,243,197,.24),rgba(106,167,255,.18),transparent);
+    }
+    #thewing-header-comp .tw-fitness{
+      border-color:rgba(142,243,197,.16);
+      background:
+        radial-gradient(140px 65px at 20% 0%,rgba(142,243,197,.08),transparent 72%),
+        linear-gradient(180deg,rgba(255,255,255,.036),rgba(255,255,255,.012)),
+        rgba(10,14,26,.72);
+    }
+    #thewing-header-comp .tw-fitness::before{
+      background:linear-gradient(90deg,#8ef3c5,#6aa7ff,transparent);
+      opacity:.55;
+    }
+    #thewing-header-comp .tw-fitness.is-error{
+      border-color:rgba(255,159,176,.30);
+      background:
+        radial-gradient(140px 65px at 20% 0%,rgba(255,159,176,.08),transparent 72%),
+        rgba(10,14,26,.72);
+    }
+    #thewing-header-comp .tw-label{
+      display:block;
+      margin-bottom:5px;
+      color:#a8a8a8;
+      font-size:.66rem;
+      line-height:1;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.13em;
+      white-space:nowrap;
+    }
+    #thewing-header-comp .tw-value{
+      display:block;
+      color:#fff;
+      font-size:.95rem;
+      line-height:1.15;
+      font-weight:800;
+      letter-spacing:-.02em;
+      white-space:nowrap;
+      transition:opacity .18s ease;
+    }
+    #thewing-header-comp .tw-total,
+    #thewing-header-comp .tw-fitness-value{
+      background:linear-gradient(90deg,#8ef3c5,#6aa7ff);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      font-weight:900;
+    }
+    #thewing-header-comp .tw-fitness-value.is-error{
+      background:none;
+      color:#ffb1bf;
+    }
+    #thewing-header-comp .tw-support{
+      display:block;
+      margin-top:3px;
+      overflow:hidden;
+      color:rgba(211,220,239,.58);
+      font-size:9px;
+      line-height:1.1;
+      font-weight:600;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+    }
+    #thewing-header-comp .is-excellent{color:#8ef3c5;}
+    #thewing-header-comp .is-satisfactory{color:#c7ddff;}
+    #thewing-header-comp .is-warning{color:#ecd79e;}
+    #thewing-header-comp .is-danger{color:#ff9fb0;}
+    #thewing-header-comp .tw-tile.is-loading .tw-value{
+      opacity:.45;
+    }
+    #thewing-header-comp .tw-tile.is-missing{
+      opacity:.62;
+    }
+    #thewing-header-comp .tw-foot{
+      display:none;
+      margin-top:8px;
+      color:rgba(233,236,255,.58);
+      font-size:10px;
+      line-height:1.35;
+      font-weight:600;
+    }
+    #thewing-header-comp .tw-foot.is-visible{
+      display:block;
+    }
+    @media(max-width:980px){
+      #thewing-header-comp .tw-grid{
+        grid-template-columns:repeat(5,minmax(90px,1fr));
+        gap:8px;
+        width:min(640px,100%);
+      }
+      #thewing-header-comp .tw-tile{
+        min-height:48px;
+        padding:9px 10px;
+      }
+      #thewing-header-comp .tw-label{
+        font-size:.60rem;
+        letter-spacing:.11em;
+      }
+      #thewing-header-comp .tw-value{
+        font-size:.88rem;
+      }
+    }
+    @media(max-width:760px){
+      #thewing-header-comp .tw-grid{
+        grid-template-columns:repeat(2,minmax(112px,1fr));
+        width:100%;
+      }
+      #tw-header-tile-fitness{
+        grid-column:1/-1;
+      }
+    }
+    @media(max-width:480px){
+      #thewing-header-comp .tw-grid{
+        grid-template-columns:1fr 1fr;
+        gap:7px;
+      }
+      #thewing-header-comp .tw-tile{
+        min-height:46px;
+        padding:8px 10px;
+      }
+    }
+  </style>
+            <div class="tw-wrap" aria-label="Current military compensation and fitness score">
+              <div class="tw-inner">
+                <div class="tw-grid">
+                  <div class="tw-tile tw-comp-tile is-loading">
+                    <span class="tw-label">Base Pay</span>
+                    <span class="tw-value" id="tw-header-base">—</span>
+                  </div>
+                  <div class="tw-tile tw-comp-tile is-loading">
+                    <span class="tw-label">BAS</span>
+                    <span class="tw-value" id="tw-header-bas">—</span>
+                  </div>
+                  <div class="tw-tile tw-comp-tile is-loading">
+                    <span class="tw-label">BAH</span>
+                    <span class="tw-value" id="tw-header-bah">—</span>
+                  </div>
+                  <div class="tw-tile tw-comp-tile is-loading">
+                    <span class="tw-label">Total Monthly</span>
+                    <span class="tw-value tw-total" id="tw-header-total">—</span>
+                  </div>
+                  <div class="tw-tile tw-fitness is-missing" id="tw-header-tile-fitness">
+                    <span class="tw-label">Fitness Score</span>
+                    <span class="tw-value tw-fitness-value" id="tw-header-fitness">—</span>
+                    <span class="tw-support" id="tw-header-fitness-status">Calculate PT score</span>
+                  </div>
+                </div>
+                <div class="tw-foot" id="tw-header-comp-foot" aria-live="polite">
+                  Loading member compensation...
+                </div>
+              </div>
+            </div>
+            <script>
+    (function(){
+      "use strict";
+      function init(){
+        const root=document.getElementById("thewing-header-comp");
+        if(!root||root.dataset.mounted==="true") return;
+        root.dataset.mounted="true";
+        const VERSION="thewing-header-comp-3.2.1";
+        const API="https://thewing-subscribers.netlify.app/.netlify/functions/member-dashboard";
+        const SESSION_KEY="pcsunited.session.v1";
+        const FITNESS_TIMEOUT=5000;
+        const els={
+          base:root.querySelector("#tw-header-base"),
+          bas:root.querySelector("#tw-header-bas"),
+          bah:root.querySelector("#tw-header-bah"),
+          total:root.querySelector("#tw-header-total"),
+          fitness:root.querySelector("#tw-header-fitness"),
+          fitnessStatus:root.querySelector("#tw-header-fitness-status"),
+          fitnessTile:root.querySelector("#tw-header-tile-fitness"),
+          foot:root.querySelector("#tw-header-comp-foot")
+        };
+        const compTiles=[...root.querySelectorAll(".tw-comp-tile")];
+        if(!els.base||!els.bas||!els.bah||!els.total||!els.fitness||!els.fitnessStatus||!els.fitnessTile){
+          console.warn("TheWing Header: required DOM missing.");
+          return;
+        }
+        let requestSequence=0;
+        let refreshTimer=null;
+        let fitnessTimer=null;
+        let latestFitness=null;
+        let ptEngineReady=Boolean(window.THEWING_PT_ENGINE);
+        function isObj(v){
+          return !!(v&&typeof v==="object"&&!Array.isArray(v));
+        }
+        function parse(raw){
+          try{return raw?JSON.parse(raw):null;}
+          catch(_){return null;}
+        }
+        function num(v){
+          const n=Number(v);
+          return Number.isFinite(n)?n:null;
+        }
+        function money(v){
+          const n=num(v);
+          return n===null?"—":"$"+n.toLocaleString("en-US",{maximumFractionDigits:0});
+        }
+        function setFoot(msg,show){
+          els.foot.textContent=msg||"";
+          els.foot.classList.toggle("is-visible",!!show);
+        }
+        function setCompLoading(v){
+          compTiles.forEach(t=>t.classList.toggle("is-loading",!!v));
+        }
+        function setCompMissing(v){
+          compTiles.forEach(t=>t.classList.toggle("is-missing",!!v));
+        }
+        function clearComp(){
+          els.base.textContent="—";
+          els.bas.textContent="—";
+          els.bah.textContent="—";
+          els.total.textContent="—";
+        }
+        function clearFitnessTimer(){
+          clearTimeout(fitnessTimer);
+          fitnessTimer=null;
+        }
+        function clearFitnessTone(){
+          els.fitnessStatus.classList.remove(
+            "is-excellent",
+            "is-satisfactory",
+            "is-warning",
+            "is-danger"
+          );
+          els.fitnessTile.classList.remove("is-error");
+          els.fitness.classList.remove("is-error");
+        }
+        function readStorage(storage){
+          try{
+            const x=parse(storage.getItem(SESSION_KEY));
+            return isObj(x)?x:null;
+          }catch(_){
+            return null;
+          }
+        }
+        function getStoredSession(){
+          const local=readStorage(localStorage);
+          const session=readStorage(sessionStorage);
+          if(local&&!session) return local;
+          if(session&&!local) return session;
+          if(!local&&!session) return null;
+          const lt=Date.parse(local?.login_at||"")||0;
+          const st=Date.parse(session?.login_at||"")||0;
+          return st>lt?session:local;
+        }
+        function getAccessToken(){
+          const s=getStoredSession();
+          if(!s) return "";
+          return String(
+            s?.session?.access_token||
+            s?.access_token||
+            s?.accessToken||
+            ""
+          ).trim();
+        }
+        function paintSignedOut(){
+          clearComp();
+          setCompLoading(false);
+          setCompMissing(true);
+          setFoot("Sign in to load your current military compensation.",true);
+        }
+        function paintCompError(msg){
+          clearComp();
+          setCompLoading(false);
+          setCompMissing(true);
+          setFoot(msg||"Member compensation could not be loaded.",true);
+        }
+        function paintFitnessMissing(){
+          clearFitnessTimer();
+          latestFitness=null;
+          clearFitnessTone();
+          els.fitnessTile.classList.add("is-missing");
+          els.fitness.textContent="—";
+          els.fitnessStatus.textContent="Calculate PT score";
+        }
+        function paintFitnessCalculating(){
+          clearFitnessTimer();
+          clearFitnessTone();
+          els.fitnessTile.classList.remove("is-missing");
+          els.fitness.textContent="…";
+          els.fitnessStatus.textContent="Calculating…";
+          fitnessTimer=setTimeout(()=>{
+            paintFitnessError("PT engine did not return a result.");
+          },FITNESS_TIMEOUT);
+        }
+        function paintFitnessError(msg){
+          clearFitnessTimer();
+          latestFitness=null;
+          clearFitnessTone();
+          els.fitnessTile.classList.remove("is-missing");
+          els.fitnessTile.classList.add("is-error");
+          els.fitness.classList.add("is-error");
+          els.fitness.textContent="—";
+          els.fitnessStatus.textContent=msg||"PT calculation failed";
+          els.fitnessStatus.classList.add("is-danger");
+        }
+        function categoryLabel(category){
+          switch(String(category||"")){
+            case "Excellent":return "Excellent";
+            case "Satisfactory":return "Satisfactory";
+            case "Unsatisfactory":return "Unsatisfactory";
+            case "Unresolved-90":return "Verify Rating";
+            case "Walk-Pass":
+            case "Walk-Fail":return "2 km Walk";
+            default:return "";
+          }
+        }
+        function normalizeFitness(raw){
+          if(!raw||typeof raw!=="object") return null;
+          const d=isObj(raw.detail)?raw.detail:raw;
+          const cardioMode=String(d.cardioMode||"").trim();
+          const category=String(d.category||"").trim();
+          const walkPassed=typeof d.walkPassed==="boolean"?d.walkPassed:null;
+          if(cardioMode==="walk"){
+            return {...d,cardioMode,category,walkPassed,total:null};
+          }
+          if(d.total===null||d.total===undefined||d.total==="") return null;
+          const total=Number(d.total);
+          if(!Number.isFinite(total)) return null;
+          return {...d,total,cardioMode,category,walkPassed};
+        }
+        function paintFitness(snapshot){
+          if(!snapshot) return false;
+          clearFitnessTimer();
+          clearFitnessTone();
+          latestFitness=snapshot;
+          els.fitnessTile.classList.remove("is-missing");
+          if(snapshot.cardioMode==="walk"){
+            const pass=snapshot.walkPassed===true;
+            els.fitness.textContent=pass?"PASS":"FAIL";
+            els.fitnessStatus.textContent="2 km Walk";
+            els.fitnessStatus.classList.add(pass?"is-excellent":"is-danger");
+            return true;
+          }
+          const total=Number(snapshot.total);
+          if(!Number.isFinite(total)) return false;
+          els.fitness.textContent=total.toFixed(1);
+          const label=categoryLabel(snapshot.category);
+          els.fitnessStatus.textContent=label||"Estimated PFRA";
+          switch(snapshot.category){
+            case "Excellent":
+              els.fitnessStatus.classList.add("is-excellent");
+              break;
+            case "Satisfactory":
+              els.fitnessStatus.classList.add("is-satisfactory");
+              break;
+            case "Unresolved-90":
+              els.fitnessStatus.classList.add("is-warning");
+              break;
+            case "Unsatisfactory":
+              els.fitnessStatus.classList.add("is-danger");
+              break;
+          }
+          return true;
+        }
+        function receiveFitness(raw){
+          const snap=normalizeFitness(raw);
+          return snap?paintFitness(snap):false;
+        }
+        function hydrateFitness(){
+          if(window.THEWING_PT_CURRENT_RESULT&&receiveFitness(window.THEWING_PT_CURRENT_RESULT)){
+            return true;
+          }
+          if(window.PCSU_PT_SCORE_CURRENT&&receiveFitness(window.PCSU_PT_SCORE_CURRENT)){
+            return true;
+          }
+          return false;
+        }
+        function normalizeComp(data){
+          const summary=isObj(data?.summary)?data.summary:{};
+          const comp=isObj(data?.compensation)?data.compensation:{};
+          const monthly=isObj(comp?.monthly)?comp.monthly:{};
+          const basePay=num(summary.base_pay??monthly.base_pay);
+          const bas=num(summary.bas??monthly.bas);
+          const bah=num(summary.bah??monthly.bah);
+          let total=num(summary.total_monthly_pay??monthly.total_pay);
+          if(total===null&&basePay!==null&&bas!==null&&bah!==null){
+            total=basePay+bas+bah;
+          }
+          return {basePay,bas,bah,total};
+        }
+        function paintComp(data){
+          const c=normalizeComp(data);
+          els.base.textContent=money(c.basePay);
+          els.bas.textContent=money(c.bas);
+          els.bah.textContent=money(c.bah);
+          els.total.textContent=money(c.total);
+          const has=[c.basePay,c.bas,c.bah,c.total].some(v=>v!==null);
+          setCompLoading(false);
+          setCompMissing(!has);
+          const m=isObj(data?.member)?data.member:{};
+          const rank=String(m.rank_paygrade||m.rank_title||"").trim();
+          const yos=Number.isInteger(m.years_of_service)?m.years_of_service+" YoS":"";
+          const base=String(m.base_location||"").trim();
+          const context=[rank,yos,base].filter(Boolean).join(" • ");
+          if(has&&context){
+            setFoot(context,true);
+          }else if(has){
+            setFoot("",false);
+          }else{
+            setFoot("Compensation is not available for the current member profile.",true);
+          }
+        }
+        async function fetchDashboard(token){
+          const r=await fetch(API,{
+            method:"GET",
+            mode:"cors",
+            credentials:"omit",
+            cache:"no-store",
+            headers:{
+              Accept:"application/json",
+              Authorization:"Bearer "+token
+            }
+          });
+          const data=await r.json().catch(()=>({}));
+          if(!r.ok||data.ok===false){
+            const e=new Error(data.error||("HTTP "+r.status));
+            e.status=r.status;
+            e.payload=data;
+            throw e;
+          }
+          return data;
+        }
+        async function run(reason){
+          const seq=++requestSequence;
+          const token=getAccessToken();
+          if(!token){
+            paintSignedOut();
+            return false;
+          }
+          setCompLoading(true);
+          setCompMissing(false);
+          setFoot("Loading member compensation...",true);
+          try{
+            const data=await fetchDashboard(token);
+            if(seq!==requestSequence) return true;
+            paintComp(data);
+            console.log("TheWing Member Header loaded:",{
+              reason:reason||"unknown",
+              total_monthly_pay:data?.summary?.total_monthly_pay??null,
+              fitness_score:latestFitness?.total??null,
+              frontend_version:VERSION
+            });
+            return true;
+          }catch(error){
+            if(seq!==requestSequence) return true;
+            console.error("TheWing Header Compensation failed:",error);
+            const status=Number(error?.status||0);
+            const code=String(error?.payload?.code||"");
+            if(
+              status===401||
+              code==="AUTH_REQUIRED"||
+              code==="INVALID_SESSION"
+            ){
+              paintCompError("Your member session has expired. Sign in again to load compensation.");
+              return false;
+            }
+            if(code==="ACCOUNT_NOT_ACTIVE"){
+              paintCompError("Your account must be verified before compensation can be loaded.");
+              return true;
+            }
+            paintCompError(error?.message||"Member compensation could not be loaded.");
+            return true;
+          }
+        }
+        function scheduleRun(reason,delay){
+          clearTimeout(refreshTimer);
+          refreshTimer=setTimeout(
+            ()=>run(reason),
+            typeof delay==="number"?delay:120
+          );
+        }
+        /* PT EVENTS */
+        window.addEventListener("thewing:pt-calculate",()=>{
+          paintFitnessCalculating();
+        });
+        window.addEventListener("thewing:pt-result",event=>{
+          if(!receiveFitness(event)){
+            paintFitnessError("Invalid PT result.");
+          }
+        });
+        window.addEventListener("thewing:pt-error",event=>{
+          paintFitnessError(
+            String(event?.detail?.message||"PT calculation failed.")
+          );
+        });
+        window.addEventListener("pcsunited:pt-score-updated",event=>{
+          receiveFitness(event);
+        });
+        window.addEventListener("thewing:pt-engine-ready",event=>{
+          ptEngineReady=true;
+          console.log("TheWing Header detected PT Engine:",{
+            version:event?.detail?.version||window.THEWING_PT_ENGINE?.version||null
+          });
+        });
+        window.addEventListener("thewing:pt-cleared",()=>{
+          paintFitnessMissing();
+        });
+        /* AUTH EVENTS */
+        window.addEventListener("pcsunited:logged-in",()=>{
+          scheduleRun("logged-in",100);
+        });
+        window.addEventListener("storage",event=>{
+          if(event?.key===SESSION_KEY){
+            scheduleRun("session-storage-change",100);
+          }
+        });
+        window.addEventListener("thewing:member-session-ready",()=>{
+          scheduleRun("member-session-ready",100);
+        });
+        /* STARTUP */
+        paintFitnessMissing();
+        run("initial");
+        setTimeout(hydrateFitness,50);
+        setTimeout(hydrateFitness,500);
+        setTimeout(hydrateFitness,1200);
+        setTimeout(()=>{
+          ptEngineReady=Boolean(window.THEWING_PT_ENGINE);
+        },100);
+        let attempts=0;
+        const startupInterval=setInterval(async()=>{
+          attempts++;
+          const loaded=await run("startup-poll");
+          if(loaded||attempts>=12){
+            clearInterval(startupInterval);
+          }
+        },350);
+        /* PUBLIC API */
+        window.THEWING_HEADER_COMP=Object.freeze({
+          version:VERSION,
+          endpoint:API,
+          refresh(){
+            return run("manual-refresh");
+          },
+          hasSession(){
+            return Boolean(getAccessToken());
+          },
+          isPTEngineReady(){
+            return Boolean(
+              ptEngineReady||
+              (
+                window.THEWING_PT_ENGINE&&
+                typeof window.THEWING_PT_ENGINE.calculateAndEmit==="function"
+              )
+            );
+          },
+          getFitnessScore(){
+            return latestFitness||null;
+          },
+          setFitnessScore(snapshot){
+            return receiveFitness(snapshot);
+          },
+          clearFitnessScore(){
+            paintFitnessMissing();
+            return true;
+          }
+        });
+        console.log("TheWing Member Header ready:",{
+          version:VERSION,
+          endpoint:API,
+          session_key:SESSION_KEY,
+          pt_engine_ready:Boolean(window.THEWING_PT_ENGINE)
+        });
+      }
+      if(document.readyState==="loading"){
+        document.addEventListener("DOMContentLoaded",init);
+      }else{
+        init();
+      }
+    })();
+  </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="sg-outer-wrapper max-width-1440px">
     <div class="sg-left-top-wrapper-4">
       <div class="sg-brand-wrapper-3">
@@ -5696,637 +6321,6 @@ UPDATES
           </div>
         </div>
       </section>
-    </div>
-  </div>
-  <div class="page-wrapper">
-    <div data-animation="default" data-collapse="small" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="pcus-header pcsu-header w-nav">
-      <div class="navbar-wrapper-12">
-        <a href="index.html" class="link-block-7 w-inline-block"><img src="images/photograph-frame.png" loading="lazy" sizes="(max-width: 900px) 100vw, 900px" srcset="images/cb297939acd30443e449e686de86b710_photograph-frame-p-500.png 500w, images/cb297939acd30443e449e686de86b710_photograph-frame-p-800.png 800w, images/photograph-frame.png 900w" alt="photograph frame icon" class="image-130"></a>
-        <div class="code-embed-42 w-embed w-script"><!--  THEWING.AI • MEMBER HEADER COMP + FITNESS v3.2.1  -->
-          <div id="thewing-header-comp" style="all:initial;">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-            <style>
-    #thewing-header-comp,
-    #thewing-header-comp *{
-      box-sizing:border-box;
-      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    }
-    #thewing-header-comp{
-      display:block;
-      width:100%;
-      color:#f5f5f5;
-    }
-    #thewing-header-comp .tw-wrap,
-    #thewing-header-comp .tw-inner{
-      width:100%;
-    }
-    #thewing-header-comp .tw-grid{
-      display:grid;
-      grid-template-columns:repeat(5,minmax(105px,1fr));
-      gap:10px;
-      width:min(700px,100%);
-    }
-    #thewing-header-comp .tw-tile{
-      position:relative;
-      overflow:hidden;
-      min-height:52px;
-      padding:10px 12px;
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:10px;
-      background:
-        linear-gradient(180deg,rgba(255,255,255,.032),rgba(255,255,255,.012)),
-        rgba(10,14,26,.70);
-      backdrop-filter:blur(12px) saturate(135%);
-      -webkit-backdrop-filter:blur(12px) saturate(135%);
-      transition:.18s ease;
-    }
-    #thewing-header-comp .tw-tile::before{
-      content:"";
-      position:absolute;
-      inset:0 0 auto 0;
-      height:1px;
-      background:linear-gradient(90deg,rgba(142,243,197,.24),rgba(106,167,255,.18),transparent);
-    }
-    #thewing-header-comp .tw-fitness{
-      border-color:rgba(142,243,197,.16);
-      background:
-        radial-gradient(140px 65px at 20% 0%,rgba(142,243,197,.08),transparent 72%),
-        linear-gradient(180deg,rgba(255,255,255,.036),rgba(255,255,255,.012)),
-        rgba(10,14,26,.72);
-    }
-    #thewing-header-comp .tw-fitness::before{
-      background:linear-gradient(90deg,#8ef3c5,#6aa7ff,transparent);
-      opacity:.55;
-    }
-    #thewing-header-comp .tw-fitness.is-error{
-      border-color:rgba(255,159,176,.30);
-      background:
-        radial-gradient(140px 65px at 20% 0%,rgba(255,159,176,.08),transparent 72%),
-        rgba(10,14,26,.72);
-    }
-    #thewing-header-comp .tw-label{
-      display:block;
-      margin-bottom:5px;
-      color:#a8a8a8;
-      font-size:.66rem;
-      line-height:1;
-      font-weight:700;
-      text-transform:uppercase;
-      letter-spacing:.13em;
-      white-space:nowrap;
-    }
-    #thewing-header-comp .tw-value{
-      display:block;
-      color:#fff;
-      font-size:.95rem;
-      line-height:1.15;
-      font-weight:800;
-      letter-spacing:-.02em;
-      white-space:nowrap;
-      transition:opacity .18s ease;
-    }
-    #thewing-header-comp .tw-total,
-    #thewing-header-comp .tw-fitness-value{
-      background:linear-gradient(90deg,#8ef3c5,#6aa7ff);
-      -webkit-background-clip:text;
-      background-clip:text;
-      color:transparent;
-      font-weight:900;
-    }
-    #thewing-header-comp .tw-fitness-value.is-error{
-      background:none;
-      color:#ffb1bf;
-    }
-    #thewing-header-comp .tw-support{
-      display:block;
-      margin-top:3px;
-      overflow:hidden;
-      color:rgba(211,220,239,.58);
-      font-size:9px;
-      line-height:1.1;
-      font-weight:600;
-      white-space:nowrap;
-      text-overflow:ellipsis;
-    }
-    #thewing-header-comp .is-excellent{color:#8ef3c5;}
-    #thewing-header-comp .is-satisfactory{color:#c7ddff;}
-    #thewing-header-comp .is-warning{color:#ecd79e;}
-    #thewing-header-comp .is-danger{color:#ff9fb0;}
-    #thewing-header-comp .tw-tile.is-loading .tw-value{
-      opacity:.45;
-    }
-    #thewing-header-comp .tw-tile.is-missing{
-      opacity:.62;
-    }
-    #thewing-header-comp .tw-foot{
-      display:none;
-      margin-top:8px;
-      color:rgba(233,236,255,.58);
-      font-size:10px;
-      line-height:1.35;
-      font-weight:600;
-    }
-    #thewing-header-comp .tw-foot.is-visible{
-      display:block;
-    }
-    @media(max-width:980px){
-      #thewing-header-comp .tw-grid{
-        grid-template-columns:repeat(5,minmax(90px,1fr));
-        gap:8px;
-        width:min(640px,100%);
-      }
-      #thewing-header-comp .tw-tile{
-        min-height:48px;
-        padding:9px 10px;
-      }
-      #thewing-header-comp .tw-label{
-        font-size:.60rem;
-        letter-spacing:.11em;
-      }
-      #thewing-header-comp .tw-value{
-        font-size:.88rem;
-      }
-    }
-    @media(max-width:760px){
-      #thewing-header-comp .tw-grid{
-        grid-template-columns:repeat(2,minmax(112px,1fr));
-        width:100%;
-      }
-      #tw-header-tile-fitness{
-        grid-column:1/-1;
-      }
-    }
-    @media(max-width:480px){
-      #thewing-header-comp .tw-grid{
-        grid-template-columns:1fr 1fr;
-        gap:7px;
-      }
-      #thewing-header-comp .tw-tile{
-        min-height:46px;
-        padding:8px 10px;
-      }
-    }
-  </style>
-            <div class="tw-wrap" aria-label="Current military compensation and fitness score">
-              <div class="tw-inner">
-                <div class="tw-grid">
-                  <div class="tw-tile tw-comp-tile is-loading">
-                    <span class="tw-label">Base Pay</span>
-                    <span class="tw-value" id="tw-header-base">—</span>
-                  </div>
-                  <div class="tw-tile tw-comp-tile is-loading">
-                    <span class="tw-label">BAS</span>
-                    <span class="tw-value" id="tw-header-bas">—</span>
-                  </div>
-                  <div class="tw-tile tw-comp-tile is-loading">
-                    <span class="tw-label">BAH</span>
-                    <span class="tw-value" id="tw-header-bah">—</span>
-                  </div>
-                  <div class="tw-tile tw-comp-tile is-loading">
-                    <span class="tw-label">Total Monthly</span>
-                    <span class="tw-value tw-total" id="tw-header-total">—</span>
-                  </div>
-                  <div class="tw-tile tw-fitness is-missing" id="tw-header-tile-fitness">
-                    <span class="tw-label">Fitness Score</span>
-                    <span class="tw-value tw-fitness-value" id="tw-header-fitness">—</span>
-                    <span class="tw-support" id="tw-header-fitness-status">Calculate PT score</span>
-                  </div>
-                </div>
-                <div class="tw-foot" id="tw-header-comp-foot" aria-live="polite">
-                  Loading member compensation...
-                </div>
-              </div>
-            </div>
-            <script>
-    (function(){
-      "use strict";
-      function init(){
-        const root=document.getElementById("thewing-header-comp");
-        if(!root||root.dataset.mounted==="true") return;
-        root.dataset.mounted="true";
-        const VERSION="thewing-header-comp-3.2.1";
-        const API="https://thewing-subscribers.netlify.app/.netlify/functions/member-dashboard";
-        const SESSION_KEY="pcsunited.session.v1";
-        const FITNESS_TIMEOUT=5000;
-        const els={
-          base:root.querySelector("#tw-header-base"),
-          bas:root.querySelector("#tw-header-bas"),
-          bah:root.querySelector("#tw-header-bah"),
-          total:root.querySelector("#tw-header-total"),
-          fitness:root.querySelector("#tw-header-fitness"),
-          fitnessStatus:root.querySelector("#tw-header-fitness-status"),
-          fitnessTile:root.querySelector("#tw-header-tile-fitness"),
-          foot:root.querySelector("#tw-header-comp-foot")
-        };
-        const compTiles=[...root.querySelectorAll(".tw-comp-tile")];
-        if(!els.base||!els.bas||!els.bah||!els.total||!els.fitness||!els.fitnessStatus||!els.fitnessTile){
-          console.warn("TheWing Header: required DOM missing.");
-          return;
-        }
-        let requestSequence=0;
-        let refreshTimer=null;
-        let fitnessTimer=null;
-        let latestFitness=null;
-        let ptEngineReady=Boolean(window.THEWING_PT_ENGINE);
-        function isObj(v){
-          return !!(v&&typeof v==="object"&&!Array.isArray(v));
-        }
-        function parse(raw){
-          try{return raw?JSON.parse(raw):null;}
-          catch(_){return null;}
-        }
-        function num(v){
-          const n=Number(v);
-          return Number.isFinite(n)?n:null;
-        }
-        function money(v){
-          const n=num(v);
-          return n===null?"—":"$"+n.toLocaleString("en-US",{maximumFractionDigits:0});
-        }
-        function setFoot(msg,show){
-          els.foot.textContent=msg||"";
-          els.foot.classList.toggle("is-visible",!!show);
-        }
-        function setCompLoading(v){
-          compTiles.forEach(t=>t.classList.toggle("is-loading",!!v));
-        }
-        function setCompMissing(v){
-          compTiles.forEach(t=>t.classList.toggle("is-missing",!!v));
-        }
-        function clearComp(){
-          els.base.textContent="—";
-          els.bas.textContent="—";
-          els.bah.textContent="—";
-          els.total.textContent="—";
-        }
-        function clearFitnessTimer(){
-          clearTimeout(fitnessTimer);
-          fitnessTimer=null;
-        }
-        function clearFitnessTone(){
-          els.fitnessStatus.classList.remove(
-            "is-excellent",
-            "is-satisfactory",
-            "is-warning",
-            "is-danger"
-          );
-          els.fitnessTile.classList.remove("is-error");
-          els.fitness.classList.remove("is-error");
-        }
-        function readStorage(storage){
-          try{
-            const x=parse(storage.getItem(SESSION_KEY));
-            return isObj(x)?x:null;
-          }catch(_){
-            return null;
-          }
-        }
-        function getStoredSession(){
-          const local=readStorage(localStorage);
-          const session=readStorage(sessionStorage);
-          if(local&&!session) return local;
-          if(session&&!local) return session;
-          if(!local&&!session) return null;
-          const lt=Date.parse(local?.login_at||"")||0;
-          const st=Date.parse(session?.login_at||"")||0;
-          return st>lt?session:local;
-        }
-        function getAccessToken(){
-          const s=getStoredSession();
-          if(!s) return "";
-          return String(
-            s?.session?.access_token||
-            s?.access_token||
-            s?.accessToken||
-            ""
-          ).trim();
-        }
-        function paintSignedOut(){
-          clearComp();
-          setCompLoading(false);
-          setCompMissing(true);
-          setFoot("Sign in to load your current military compensation.",true);
-        }
-        function paintCompError(msg){
-          clearComp();
-          setCompLoading(false);
-          setCompMissing(true);
-          setFoot(msg||"Member compensation could not be loaded.",true);
-        }
-        function paintFitnessMissing(){
-          clearFitnessTimer();
-          latestFitness=null;
-          clearFitnessTone();
-          els.fitnessTile.classList.add("is-missing");
-          els.fitness.textContent="—";
-          els.fitnessStatus.textContent="Calculate PT score";
-        }
-        function paintFitnessCalculating(){
-          clearFitnessTimer();
-          clearFitnessTone();
-          els.fitnessTile.classList.remove("is-missing");
-          els.fitness.textContent="…";
-          els.fitnessStatus.textContent="Calculating…";
-          fitnessTimer=setTimeout(()=>{
-            paintFitnessError("PT engine did not return a result.");
-          },FITNESS_TIMEOUT);
-        }
-        function paintFitnessError(msg){
-          clearFitnessTimer();
-          latestFitness=null;
-          clearFitnessTone();
-          els.fitnessTile.classList.remove("is-missing");
-          els.fitnessTile.classList.add("is-error");
-          els.fitness.classList.add("is-error");
-          els.fitness.textContent="—";
-          els.fitnessStatus.textContent=msg||"PT calculation failed";
-          els.fitnessStatus.classList.add("is-danger");
-        }
-        function categoryLabel(category){
-          switch(String(category||"")){
-            case "Excellent":return "Excellent";
-            case "Satisfactory":return "Satisfactory";
-            case "Unsatisfactory":return "Unsatisfactory";
-            case "Unresolved-90":return "Verify Rating";
-            case "Walk-Pass":
-            case "Walk-Fail":return "2 km Walk";
-            default:return "";
-          }
-        }
-        function normalizeFitness(raw){
-          if(!raw||typeof raw!=="object") return null;
-          const d=isObj(raw.detail)?raw.detail:raw;
-          const cardioMode=String(d.cardioMode||"").trim();
-          const category=String(d.category||"").trim();
-          const walkPassed=typeof d.walkPassed==="boolean"?d.walkPassed:null;
-          if(cardioMode==="walk"){
-            return {...d,cardioMode,category,walkPassed,total:null};
-          }
-          if(d.total===null||d.total===undefined||d.total==="") return null;
-          const total=Number(d.total);
-          if(!Number.isFinite(total)) return null;
-          return {...d,total,cardioMode,category,walkPassed};
-        }
-        function paintFitness(snapshot){
-          if(!snapshot) return false;
-          clearFitnessTimer();
-          clearFitnessTone();
-          latestFitness=snapshot;
-          els.fitnessTile.classList.remove("is-missing");
-          if(snapshot.cardioMode==="walk"){
-            const pass=snapshot.walkPassed===true;
-            els.fitness.textContent=pass?"PASS":"FAIL";
-            els.fitnessStatus.textContent="2 km Walk";
-            els.fitnessStatus.classList.add(pass?"is-excellent":"is-danger");
-            return true;
-          }
-          const total=Number(snapshot.total);
-          if(!Number.isFinite(total)) return false;
-          els.fitness.textContent=total.toFixed(1);
-          const label=categoryLabel(snapshot.category);
-          els.fitnessStatus.textContent=label||"Estimated PFRA";
-          switch(snapshot.category){
-            case "Excellent":
-              els.fitnessStatus.classList.add("is-excellent");
-              break;
-            case "Satisfactory":
-              els.fitnessStatus.classList.add("is-satisfactory");
-              break;
-            case "Unresolved-90":
-              els.fitnessStatus.classList.add("is-warning");
-              break;
-            case "Unsatisfactory":
-              els.fitnessStatus.classList.add("is-danger");
-              break;
-          }
-          return true;
-        }
-        function receiveFitness(raw){
-          const snap=normalizeFitness(raw);
-          return snap?paintFitness(snap):false;
-        }
-        function hydrateFitness(){
-          if(window.THEWING_PT_CURRENT_RESULT&&receiveFitness(window.THEWING_PT_CURRENT_RESULT)){
-            return true;
-          }
-          if(window.PCSU_PT_SCORE_CURRENT&&receiveFitness(window.PCSU_PT_SCORE_CURRENT)){
-            return true;
-          }
-          return false;
-        }
-        function normalizeComp(data){
-          const summary=isObj(data?.summary)?data.summary:{};
-          const comp=isObj(data?.compensation)?data.compensation:{};
-          const monthly=isObj(comp?.monthly)?comp.monthly:{};
-          const basePay=num(summary.base_pay??monthly.base_pay);
-          const bas=num(summary.bas??monthly.bas);
-          const bah=num(summary.bah??monthly.bah);
-          let total=num(summary.total_monthly_pay??monthly.total_pay);
-          if(total===null&&basePay!==null&&bas!==null&&bah!==null){
-            total=basePay+bas+bah;
-          }
-          return {basePay,bas,bah,total};
-        }
-        function paintComp(data){
-          const c=normalizeComp(data);
-          els.base.textContent=money(c.basePay);
-          els.bas.textContent=money(c.bas);
-          els.bah.textContent=money(c.bah);
-          els.total.textContent=money(c.total);
-          const has=[c.basePay,c.bas,c.bah,c.total].some(v=>v!==null);
-          setCompLoading(false);
-          setCompMissing(!has);
-          const m=isObj(data?.member)?data.member:{};
-          const rank=String(m.rank_paygrade||m.rank_title||"").trim();
-          const yos=Number.isInteger(m.years_of_service)?m.years_of_service+" YoS":"";
-          const base=String(m.base_location||"").trim();
-          const context=[rank,yos,base].filter(Boolean).join(" • ");
-          if(has&&context){
-            setFoot(context,true);
-          }else if(has){
-            setFoot("",false);
-          }else{
-            setFoot("Compensation is not available for the current member profile.",true);
-          }
-        }
-        async function fetchDashboard(token){
-          const r=await fetch(API,{
-            method:"GET",
-            mode:"cors",
-            credentials:"omit",
-            cache:"no-store",
-            headers:{
-              Accept:"application/json",
-              Authorization:"Bearer "+token
-            }
-          });
-          const data=await r.json().catch(()=>({}));
-          if(!r.ok||data.ok===false){
-            const e=new Error(data.error||("HTTP "+r.status));
-            e.status=r.status;
-            e.payload=data;
-            throw e;
-          }
-          return data;
-        }
-        async function run(reason){
-          const seq=++requestSequence;
-          const token=getAccessToken();
-          if(!token){
-            paintSignedOut();
-            return false;
-          }
-          setCompLoading(true);
-          setCompMissing(false);
-          setFoot("Loading member compensation...",true);
-          try{
-            const data=await fetchDashboard(token);
-            if(seq!==requestSequence) return true;
-            paintComp(data);
-            console.log("TheWing Member Header loaded:",{
-              reason:reason||"unknown",
-              total_monthly_pay:data?.summary?.total_monthly_pay??null,
-              fitness_score:latestFitness?.total??null,
-              frontend_version:VERSION
-            });
-            return true;
-          }catch(error){
-            if(seq!==requestSequence) return true;
-            console.error("TheWing Header Compensation failed:",error);
-            const status=Number(error?.status||0);
-            const code=String(error?.payload?.code||"");
-            if(
-              status===401||
-              code==="AUTH_REQUIRED"||
-              code==="INVALID_SESSION"
-            ){
-              paintCompError("Your member session has expired. Sign in again to load compensation.");
-              return false;
-            }
-            if(code==="ACCOUNT_NOT_ACTIVE"){
-              paintCompError("Your account must be verified before compensation can be loaded.");
-              return true;
-            }
-            paintCompError(error?.message||"Member compensation could not be loaded.");
-            return true;
-          }
-        }
-        function scheduleRun(reason,delay){
-          clearTimeout(refreshTimer);
-          refreshTimer=setTimeout(
-            ()=>run(reason),
-            typeof delay==="number"?delay:120
-          );
-        }
-        /* PT EVENTS */
-        window.addEventListener("thewing:pt-calculate",()=>{
-          paintFitnessCalculating();
-        });
-        window.addEventListener("thewing:pt-result",event=>{
-          if(!receiveFitness(event)){
-            paintFitnessError("Invalid PT result.");
-          }
-        });
-        window.addEventListener("thewing:pt-error",event=>{
-          paintFitnessError(
-            String(event?.detail?.message||"PT calculation failed.")
-          );
-        });
-        window.addEventListener("pcsunited:pt-score-updated",event=>{
-          receiveFitness(event);
-        });
-        window.addEventListener("thewing:pt-engine-ready",event=>{
-          ptEngineReady=true;
-          console.log("TheWing Header detected PT Engine:",{
-            version:event?.detail?.version||window.THEWING_PT_ENGINE?.version||null
-          });
-        });
-        window.addEventListener("thewing:pt-cleared",()=>{
-          paintFitnessMissing();
-        });
-        /* AUTH EVENTS */
-        window.addEventListener("pcsunited:logged-in",()=>{
-          scheduleRun("logged-in",100);
-        });
-        window.addEventListener("storage",event=>{
-          if(event?.key===SESSION_KEY){
-            scheduleRun("session-storage-change",100);
-          }
-        });
-        window.addEventListener("thewing:member-session-ready",()=>{
-          scheduleRun("member-session-ready",100);
-        });
-        /* STARTUP */
-        paintFitnessMissing();
-        run("initial");
-        setTimeout(hydrateFitness,50);
-        setTimeout(hydrateFitness,500);
-        setTimeout(hydrateFitness,1200);
-        setTimeout(()=>{
-          ptEngineReady=Boolean(window.THEWING_PT_ENGINE);
-        },100);
-        let attempts=0;
-        const startupInterval=setInterval(async()=>{
-          attempts++;
-          const loaded=await run("startup-poll");
-          if(loaded||attempts>=12){
-            clearInterval(startupInterval);
-          }
-        },350);
-        /* PUBLIC API */
-        window.THEWING_HEADER_COMP=Object.freeze({
-          version:VERSION,
-          endpoint:API,
-          refresh(){
-            return run("manual-refresh");
-          },
-          hasSession(){
-            return Boolean(getAccessToken());
-          },
-          isPTEngineReady(){
-            return Boolean(
-              ptEngineReady||
-              (
-                window.THEWING_PT_ENGINE&&
-                typeof window.THEWING_PT_ENGINE.calculateAndEmit==="function"
-              )
-            );
-          },
-          getFitnessScore(){
-            return latestFitness||null;
-          },
-          setFitnessScore(snapshot){
-            return receiveFitness(snapshot);
-          },
-          clearFitnessScore(){
-            paintFitnessMissing();
-            return true;
-          }
-        });
-        console.log("TheWing Member Header ready:",{
-          version:VERSION,
-          endpoint:API,
-          session_key:SESSION_KEY,
-          pt_engine_ready:Boolean(window.THEWING_PT_ENGINE)
-        });
-      }
-      if(document.readyState==="loading"){
-        document.addEventListener("DOMContentLoaded",init);
-      }else{
-        init();
-      }
-    })();
-  </script>
-          </div>
-        </div>
-        <div class="navbar-wrapper-11">
-          <div class="style-three-nav-brand">
-            <a href="#" role="link" class="home-three-nav-menu-brand rezoid w-nav-brand"></a>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6a6ff0545aa01c93602db711" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
