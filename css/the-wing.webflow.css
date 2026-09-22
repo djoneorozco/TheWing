@@ -25135,6 +25135,10 @@ blockquote {
   padding-bottom: 120px;
 }
 
+.slider-slide-2 {
+  margin-bottom: 40px;
+}
+
 .section-32 {
   justify-content: center;
   align-items: center;
@@ -28670,8 +28674,8 @@ blockquote {
 .container-103 {
   flex: 1;
   max-width: 1160px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .space-192 {
@@ -28687,13 +28691,15 @@ blockquote {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   flex-flow: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
 }
 
 .slider-10 {
   background-color: #0000;
+  width: 100%;
   height: auto;
   margin-bottom: 40px;
   padding-top: 0;
@@ -28705,6 +28711,7 @@ blockquote {
   background-color: #ece7e4;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 100px;
@@ -33817,7 +33824,20 @@ blockquote {
   display: flex;
 }
 
-.pcsu-link, .fitness-calculator {
+.pcsu-link {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  background-color: #111;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 30px 24px;
+  display: flex;
+}
+
+.fitness-calculator {
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   background-color: #111;
@@ -59524,8 +59544,8 @@ blockquote {
   }
 
   .slider-mask {
-    height: 800px;
-    margin-bottom: -168px;
+    height: 100%;
+    margin-bottom: 0;
     margin-left: 0;
     padding-bottom: 0;
   }
@@ -59560,6 +59580,8 @@ blockquote {
   }
 
   .slider-icon.left {
+    justify-content: center;
+    align-items: flex-start;
     margin-top: 0;
   }
 
@@ -60333,8 +60355,9 @@ blockquote {
 
   .slider-slide-2 {
     width: 100%;
-    max-width: 100%;
-    margin-bottom: 33px;
+    max-width: none;
+    height: 100%;
+    margin-bottom: 0;
     padding-bottom: 0;
   }
 
@@ -61191,6 +61214,8 @@ blockquote {
 
   .slider-10 {
     width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
     padding-bottom: 100px;
   }
 
@@ -62210,12 +62235,18 @@ blockquote {
     min-height: 28px;
   }
 
+  .nav-main-pages-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
   .nav-bar-wrapper {
     padding-left: 0;
     padding-right: 0;
   }
 
   .nav-image-wrapper {
+    width: 0%;
     color: var(--_theme---background--tertiarybackground);
     background-color: #fafafa;
     border: 1px solid #fff;
@@ -62232,6 +62263,7 @@ blockquote {
   }
 
   .navbar-menu-grid {
+    text-align: center;
     grid-template-columns: 1fr;
   }
 
@@ -62282,7 +62314,8 @@ blockquote {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
-    padding: 16px;
+    justify-items: center;
+    padding: 16px 20px;
     display: grid;
   }
 
@@ -62406,6 +62439,7 @@ blockquote {
     background-color: #312e2e29;
     justify-content: center;
     align-items: center;
+    padding: 10px;
   }
 
   .hero-01-wrapper {
