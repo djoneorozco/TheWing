@@ -63,9 +63,9 @@
   --radius--m: 2rem;
   --radius--l: 3rem;
   --fontweight--semibold: 600;
+  --colors--dark-100: #000;
   --iconsize--m: 5rem;
   --fontweight--thin: 100;
-  --colors--dark-100: #000;
   --fontweight--bold: 700;
   --_size---fonts--body: 1rem;
   --_size---fonts--xl: 5em;
@@ -8571,6 +8571,10 @@ blockquote {
   overflow: hidden;
 }
 
+.card-item-home1 {
+  margin-bottom: 10px;
+}
+
 .blog-list-home1 {
   grid-column-gap: var(--_size---paddingsize--extrasmall);
   grid-row-gap: var(--_size---paddingsize--small);
@@ -9772,6 +9776,11 @@ blockquote {
   grid-row-gap: 30px;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+}
+
+.glow-wrapper.stroke.for--boxes {
+  width: 100%;
+  height: 99.9999%;
 }
 
 .text-align-center-14 {
@@ -28697,8 +28706,8 @@ blockquote {
   grid-row-gap: 16px;
   flex-flow: column;
   width: 100%;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
 }
 
@@ -31876,6 +31885,7 @@ blockquote {
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
+  padding-top: 20px;
 }
 
 .faq-1-tab-pane {
@@ -33669,7 +33679,9 @@ blockquote {
   --_theme---textcolor--accenttext1: var(--colors--01-accent);
   --_theme---background--tertiarybackground: var(--colors--dark-50);
   --_theme---textcolor--tertiarytext: var(--colors--dark-30);
-  margin-top: 20px;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
   box-shadow: 0 2px 5px #000000c4;
 }
 
@@ -36275,7 +36287,7 @@ blockquote {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: #1b1f27;
-  background-image: url('../images/CasaMexico_p019-house-14feb17-pr_b-1.png');
+  background-image: url('../images/Amy-A.I-Concierge-_2.png');
   background-position: 50%;
   background-size: cover;
   border: 1px solid #553014;
@@ -36285,6 +36297,7 @@ blockquote {
   align-items: center;
   width: 100%;
   height: 100%;
+  margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   display: flex;
@@ -36330,6 +36343,13 @@ blockquote {
   height: 30rem;
   position: relative;
   overflow: hidden;
+}
+
+.slider-container {
+  flex: 1;
+  max-width: 91%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media screen and (min-width: 1280px) {
@@ -38366,6 +38386,10 @@ blockquote {
     margin-left: 0;
   }
 
+  .slider-slide-2 {
+    margin-bottom: 60px;
+  }
+
   .pscu-resourcers-copy {
     text-align: center;
     background-color: #111;
@@ -38684,6 +38708,16 @@ blockquote {
 
   .heading-179 {
     margin-left: 0;
+  }
+
+  .content-17 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-41 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .office-bg-content-3 {
@@ -39177,6 +39211,11 @@ blockquote {
 
   .prfa-cabinet {
     margin-top: 114px;
+  }
+
+  .testimonial-card-bg-img-2.dark {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .us-base-map, .pcsu-link, .fitness-calculator {
@@ -44228,8 +44267,8 @@ blockquote {
   }
 
   .content-17 {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .slider-10 {
@@ -45898,6 +45937,12 @@ blockquote {
     border-color: #4d3d22;
     border-radius: 0;
   }
+
+  .slider-container {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -46926,6 +46971,8 @@ blockquote {
     grid-column-gap: 68px;
     grid-row-gap: 68px;
     text-align: center;
+    padding-left: 140px;
+    padding-right: 140px;
   }
 
   .section-41 {
@@ -46995,14 +47042,19 @@ blockquote {
   }
 
   .image-223 {
-    width: 731.703px;
-    max-width: 595px;
-    height: auto;
+    width: 100%;
+    max-width: none;
+    height: 550px;
     margin-top: 0;
   }
 
   .the-pt-calculator {
     height: 650px;
+  }
+
+  .opacity-80-6 {
+    margin-top: 0;
+    font-size: 24px;
   }
 
   .about-01-number-grid {
@@ -47347,6 +47399,10 @@ blockquote {
 
   .sliderwithiphone {
     margin-bottom: 10px;
+  }
+
+  .slider-container {
+    text-align: center;
   }
 }
 
@@ -48504,6 +48560,10 @@ blockquote {
 
   .button-overflow-hidden-2 {
     border-radius: 60px;
+  }
+
+  .button-overflow-hidden-2.for--blog {
+    box-shadow: 0 2px 5px 0 var(--colors--dark-100);
   }
 
   .code-for-create-account-2 {
@@ -50176,10 +50236,17 @@ blockquote {
   .slider-mask {
     width: 100%;
     max-width: 100%;
+    margin-bottom: 0;
   }
 
   .slider-h01-image-wrap {
     position: static;
+  }
+
+  .slider-icon.left {
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0;
   }
 
   .slider-bg-wrap {
@@ -50675,6 +50742,10 @@ blockquote {
 
   .slider-h01-image-wrap-2 {
     position: static;
+  }
+
+  .slider-slide-2 {
+    margin-bottom: 60px;
   }
 
   .slider-bg-wrap-2 {
@@ -51224,6 +51295,7 @@ blockquote {
     width: 100%;
     max-width: 100%;
     margin-top: 0;
+    margin-bottom: 60px;
     padding-bottom: 0;
   }
 
@@ -51290,12 +51362,18 @@ blockquote {
     height: 400px;
   }
 
+  .primary-glow-wrapper-25.blog-grid-child-copy.second-version {
+    width: 100%;
+    display: block;
+  }
+
   .primary-glow-wrapper-25.blog-grid-child-copy {
     height: 400px;
   }
 
   .primary-glow-wrapper-25.blog-grid-child-copy.second-version {
     width: 100%;
+    max-height: 68%;
     display: block;
   }
 
@@ -51343,6 +51421,7 @@ blockquote {
 
   .image-223 {
     height: 400px;
+    box-shadow: 0 2px 5px #000;
   }
 
   .the-pt-calculator {
@@ -51367,6 +51446,10 @@ blockquote {
     padding-top: 0;
   }
 
+  .full-size-3 {
+    box-shadow: 0 2px 5px #000;
+  }
+
   .heading-186 {
     color: #fff;
   }
@@ -51380,6 +51463,7 @@ blockquote {
     color: #e0dbdb;
     width: 100%;
     margin-top: 0;
+    margin-bottom: 10px;
     margin-left: 0;
     font-size: 20px;
   }
@@ -51717,7 +51801,13 @@ blockquote {
   }
 
   .navbar-4 {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
     min-height: 96px;
+    display: flex;
   }
 
   .hero-01-dark-title-2 {
@@ -51860,6 +51950,7 @@ blockquote {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding-top: 20px;
   }
 
   .faq-2-grid {
@@ -51877,8 +51968,12 @@ blockquote {
     align-items: flex-start;
   }
 
+  .container-111 {
+    padding-top: 0;
+  }
+
   .heading-195 {
-    padding-bottom: 37px;
+    padding-bottom: 0;
   }
 
   .about-01-first-number-card-2 {
@@ -52229,6 +52324,10 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
+  .testimonial-card-bg-img-2.dark {
+    margin-top: 0;
+  }
+
   .container-116 {
     position: relative;
   }
@@ -52272,6 +52371,7 @@ blockquote {
     grid-auto-columns: 1fr;
     width: 100%;
     max-width: 100%;
+    max-height: 100%;
     margin-bottom: 0;
     padding-bottom: 0;
     padding-left: 10px;
@@ -52791,6 +52891,12 @@ blockquote {
     height: 100%;
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  .slider-container {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -55713,6 +55819,10 @@ blockquote {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
+  .slider-container {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -56616,7 +56726,10 @@ blockquote {
   }
 
   .card-item-home1 {
+    border-radius: 20px;
     grid-template-columns: 1fr;
+    margin-bottom: 0;
+    box-shadow: 0 2px 5px #000000bf;
   }
 
   .blog-list-home1 {
@@ -61373,7 +61486,7 @@ blockquote {
   }
 
   .section-41 {
-    margin-top: 10px;
+    margin-top: 0;
     padding-top: 20px;
   }
 
@@ -61545,6 +61658,7 @@ blockquote {
 
   .primary-glow-wrapper-25.blog-grid-child-copy.second-version {
     height: 50%;
+    max-height: none;
     margin-top: 0;
   }
 
@@ -61735,8 +61849,10 @@ blockquote {
   .opacity-80-6 {
     color: #e2dfdf;
     width: 100%;
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin-top: -24px;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 18px;
   }
 
@@ -62278,6 +62394,7 @@ blockquote {
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: fixed;
+    padding-top: 20px;
   }
 
   .section-wrapper-2 {
@@ -62292,12 +62409,12 @@ blockquote {
   }
 
   .container-111 {
-    padding: 1rem .5rem 2rem;
+    padding: 0 .5rem 2rem;
   }
 
   .heading-195 {
     padding-top: 20px;
-    padding-bottom: 34px;
+    padding-bottom: 0;
     padding-left: 0;
   }
 
@@ -62317,13 +62434,15 @@ blockquote {
 
   .about-01-number-grid-2 {
     grid-template-columns: 1fr;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    margin-right: 10px;
   }
 
   .about-01-first-number-card-holder-2 {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: #ffffff14;
+    border-color: #1616156b;
     justify-content: center;
     align-items: center;
   }
@@ -62373,7 +62492,7 @@ blockquote {
   }
 
   .italic-text-9 {
-    margin-left: 0;
+    margin-left: -17px;
     padding-right: 0;
     font-size: 5.2rem;
   }
@@ -62560,9 +62679,9 @@ blockquote {
   }
 
   .hero-01-title-wrapper {
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-top: -90px;
+    margin-top: -200px;
   }
 
   .nav-content-holder {
@@ -62589,9 +62708,6 @@ blockquote {
 
   .section-60.hero-01 {
     background-color: #0000;
-    background-image: url('../images/1-About-Number-BG.png');
-    background-position: 50%;
-    background-size: auto;
   }
 
   .nav-right-content-wrapper {
@@ -62656,6 +62772,7 @@ blockquote {
 
   .text-xlarge-2 {
     text-align: center;
+    padding-top: 10px;
   }
 
   .home-01-about-button-wrapper-2 {
@@ -62747,6 +62864,9 @@ blockquote {
   }
 
   .testimonial-card-bg-img-2.dark {
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -62809,8 +62929,8 @@ blockquote {
     --_textstyle---lineheight: 1.5;
     --_textstyle---fontweight: var(--fontweight--light);
     --_textstyle---letterspacing: 0em;
-    margin-top: 18px;
-    padding-top: 10px;
+    margin-top: 10px;
+    padding-top: 0;
     font-family: Gilda Display, sans-serif;
   }
 
@@ -62843,7 +62963,7 @@ blockquote {
     max-width: 100%;
     margin-bottom: 0;
     margin-left: 0;
-    padding: 0 5px;
+    padding: 0 5px 10px;
   }
 
   .text-block-55 {
@@ -62866,8 +62986,8 @@ blockquote {
   .pcsu-link {
     margin-bottom: var(--spacing--1);
     padding-top: 0;
-    padding-left: 5px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .fitness-calculator {
@@ -62886,6 +63006,7 @@ blockquote {
   }
 
   .pcsu-words {
+    margin-top: 0;
     margin-bottom: 10px;
     padding-bottom: 10px;
   }
@@ -63670,6 +63791,10 @@ blockquote {
   .image-242 {
     max-width: 70%;
     height: auto;
+  }
+
+  .card-text-details-9 {
+    border-color: #50331d;
   }
 
   .card-item-7 {

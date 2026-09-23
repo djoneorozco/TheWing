@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Sep 23 2026 07:45:39 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Sep 23 2026 12:48:20 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a6ff0545aa01c93602db70c" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -525,791 +525,754 @@
                       <a href="military/new-user-account.html" class="nav-image-wrapper w-inline-block">
                         <div class="w-embed"><!--  =========================================================
      THEWING.AI • CREATE ACCOUNT HUD
-     iPHONE SAFE
-     Version 1.2.0
-     GOALS
-     - Restore original successful composition
-     - Keep full Amy visible
-     - Keep tall HUD on left
-     - Safari-safe glass treatment
+     iPHONE SAFE / PHYSICAL DEVICE VERSION
+     Version 1.3.0
+     PURPOSE
+     - Preserve current successful composition
+     - Fix physical iPhone / Safari rendering artifacts
+     - No animated layers crossing HUD text
      - No backdrop-filter
+     - No filters
      - No translateZ
      - No mix-blend-mode
-     - Real animated HUD scan
-     - Real animated CTA
-     - Create Account link active
+     - No isolation:isolate
+     - No moving scan line
+     - No sheen overlay above content
+     - Animation limited to CTA + Secure indicator
 =========================================================  -->
                           <div id="tw-create-hud">
                             <style>
-    /* ======================================================
-       RESET + VARIABLES
-    ====================================================== */
-    #tw-create-hud,
-    #tw-create-hud * {
-      box-sizing: border-box;
-    }
-    #tw-create-hud {
-      --gold: #d7a85e;
-      --gold-bright: #f2cc86;
-      --gold-soft: rgba(215,168,94,.38);
-      --white: #f7f8fb;
-      --muted: #c9ced7;
-      --image:
-        url("https://cdn.prod.website-files.com/6a6ff0545aa01c93602db711/6a8d915fa65ab682dafc84a3_6f0b2591585751af723b8595e6ff3171_Create%20Account%20TheWing.ai.png");
-      display: block;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      color: var(--white);
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Arial,
-        sans-serif;
-    }
-    /* ======================================================
-       STAGE
-       RESTORES ORIGINAL COMPOSITION
-    ====================================================== */
-    #tw-create-hud .tw-stage {
-      position: relative;
-      width: 100%;
-      min-height: 520px;
-      overflow: hidden;
-      isolation: isolate;
-      border-radius: 18px;
-      background-image:
-        var(--image);
-      background-position:
-        57% center;
-      background-size:
-        cover;
-      background-repeat:
-        no-repeat;
-      background-color:
-        #07101c;
-      box-shadow:
-        0 22px 60px rgba(0,0,0,.32),
-        0 5px 18px rgba(0,0,0,.22);
-    }
-    /* ======================================================
-       CINEMATIC SHADE
-       SAFARI SAFE
-    ====================================================== */
-    #tw-create-hud .tw-stage::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      background:
-        linear-gradient(
-          90deg,
-          rgba(3,7,13,.34) 0%,
-          rgba(3,7,13,.21) 43%,
-          rgba(3,7,13,.04) 73%,
-          rgba(3,7,13,0) 100%
-        ),
-        linear-gradient(
-          180deg,
-          rgba(0,0,0,.02) 0%,
-          rgba(0,0,0,0) 70%,
-          rgba(0,0,0,.18) 100%
-        );
-    }
-    /* ======================================================
-       INNER POSITIONING
-    ====================================================== */
-    #tw-create-hud .tw-inner {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      align-items: center;
-      width: 100%;
-      min-height: 520px;
-      padding: 18px;
-    }
-    /* ======================================================
-       GLASS HUD
-       SAFARI-SAFE FAUX GLASS
-       IMPORTANT:
-       No backdrop-filter.
-       No transform compositing.
-    ====================================================== */
-    #tw-create-hud .tw-panel {
-      position: relative;
-      width: 58%;
-      min-width: 0;
-      min-height: 480px;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      padding:
-        20px
-        14px
-        18px;
-      border-radius: 18px;
-      background:
-        radial-gradient(
-          120% 90% at 0% 0%,
-          rgba(110,124,148,.30) 0%,
-          rgba(66,78,98,.14) 34%,
-          transparent 62%
-        ),
-        radial-gradient(
-          100% 85% at 100% 100%,
-          rgba(36,77,126,.12) 0%,
-          transparent 68%
-        ),
-        linear-gradient(
-          145deg,
-          rgba(38,45,57,.91) 0%,
-          rgba(18,27,41,.94) 52%,
-          rgba(7,17,31,.97) 100%
-        );
-      border:
-        1px solid
-        rgba(255,255,255,.25);
-      box-shadow:
-        0 24px 55px
-        rgba(0,0,0,.30),
-        0 7px 22px
-        rgba(0,0,0,.18),
-        inset 0 1px 0
-        rgba(255,255,255,.25),
-        inset 1px 0 0
-        rgba(255,255,255,.06),
-        inset -1px 0 0
-        rgba(255,255,255,.035),
-        inset 0 -1px 0
-        rgba(255,255,255,.04);
-    }
-    /* ======================================================
-       SUBTLE HUD INNER SHEEN
-    ====================================================== */
-    #tw-create-hud .tw-sheen {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      pointer-events: none;
-      border-radius: inherit;
-      background:
-        linear-gradient(
-          125deg,
-          rgba(255,255,255,.08) 0%,
-          rgba(255,255,255,.025) 22%,
-          transparent 44%
-        );
-    }
-    /* ======================================================
-       GOLD HUD CORNERS
-    ====================================================== */
-    #tw-create-hud .tw-corner {
-      position: absolute;
-      z-index: 5;
-      width: 58px;
-      height: 58px;
-      pointer-events: none;
-    }
-    #tw-create-hud .tw-corner-top {
-      top: 8px;
-      left: 8px;
-      border-top:
-        2px solid var(--gold);
-      border-left:
-        2px solid var(--gold);
-      border-radius:
-        6px 0 0 0;
-    }
-    #tw-create-hud .tw-corner-bottom {
-      right: 8px;
-      bottom: 8px;
-      border-right:
-        2px solid var(--gold);
-      border-bottom:
-        2px solid var(--gold);
-      border-radius:
-        0 0 6px 0;
-    }
-    /* ======================================================
-       HUD SCAN
-       SAFARI SAFE
-       Animates "top" instead of translateY.
-    ====================================================== */
-    #tw-create-hud .tw-scan {
-      position: absolute;
-      z-index: 4;
-      top: 14px;
-      left: 6%;
-      right: 6%;
-      height: 1px;
-      pointer-events: none;
-      opacity: 0;
-      background:
-        linear-gradient(
-          90deg,
-          transparent 0%,
-          rgba(215,168,94,.08) 15%,
-          rgba(242,204,134,.90) 50%,
-          rgba(215,168,94,.08) 85%,
-          transparent 100%
-        );
-      box-shadow:
-        0 0 8px
-        rgba(215,168,94,.35),
-        0 0 18px
-        rgba(215,168,94,.14);
-      animation:
-        twHudScan
-        5.8s
-        ease-in-out
-        infinite;
-    }
-    @keyframes twHudScan {
-      0% {
-        top: 14px;
-        opacity: 0;
-      }
-      10% {
-        opacity: .65;
-      }
-      82% {
-        opacity: .45;
-      }
-      94% {
-        top: calc(100% - 18px);
-        opacity: 0;
-      }
-      100% {
-        top: calc(100% - 18px);
-        opacity: 0;
-      }
-    }
-    /* ======================================================
-       HEADER
-    ====================================================== */
-    #tw-create-hud .tw-header {
-      position: relative;
-      z-index: 6;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      padding-bottom: 11px;
-      margin-bottom: 20px;
-      border-bottom:
-        1px solid
-        rgba(255,255,255,.13);
-    }
-    #tw-create-hud .tw-brand {
-      color:
-        #edf0f5;
-      font-family:
-        Georgia,
-        serif;
-      font-size:
-        8px;
-      line-height:
-        1;
-      font-weight:
-        700;
-      letter-spacing:
-        .14em;
-      white-space:
-        nowrap;
-    }
-    /* ======================================================
-       SECURE STATUS
-    ====================================================== */
-    #tw-create-hud .tw-status {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      color:
-        var(--gold-bright);
-      font-size:
-        8px;
-      line-height:
-        1;
-      font-weight:
-        800;
-      letter-spacing:
-        .08em;
-      text-transform:
-        uppercase;
-      white-space:
-        nowrap;
-    }
-    #tw-create-hud .tw-status-dot {
-      width: 5px;
-      height: 5px;
-      flex:
-        0 0 auto;
-      border-radius:
-        50%;
-      background:
-        var(--gold-bright);
-      box-shadow:
-        0 0 8px
-        rgba(242,204,134,.75);
-      animation:
-        twStatusPulse
-        1.8s
-        ease-in-out
-        infinite;
-    }
-    @keyframes twStatusPulse {
-      0%,
-      100% {
-        opacity: .40;
-        box-shadow:
-          0 0 3px
-          rgba(242,204,134,.30);
-      }
-      50% {
-        opacity: 1;
-        box-shadow:
-          0 0 11px
-          rgba(242,204,134,.95);
-      }
-    }
-    /* ======================================================
-       MAIN CONTENT
-    ====================================================== */
-    #tw-create-hud .tw-content {
-      position: relative;
-      z-index: 6;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      min-height: 0;
-    }
-    /* ======================================================
-       EYEBROW
-    ====================================================== */
-    #tw-create-hud .tw-eyebrow {
-      margin-bottom: 6px;
-      color:
-        var(--gold-bright);
-      font-size:
-        11px;
-      line-height:
-        1;
-      font-weight:
-        800;
-      letter-spacing:
-        .07em;
-      text-transform:
-        uppercase;
-    }
-    /* ======================================================
-       TITLE
-    ====================================================== */
-    #tw-create-hud .tw-title {
-      margin: 0;
-      color:
-        #ffffff;
-      font-family:
-        Impact,
-        "Arial Narrow",
-        sans-serif;
-      font-size:
-        clamp(26px, 8vw, 35px);
-      line-height:
-        .92;
-      font-weight:
-        700;
-      letter-spacing:
-        -.01em;
-      text-transform:
-        uppercase;
-      text-shadow:
-        0 3px 10px
-        rgba(0,0,0,.35);
-    }
-    /* ======================================================
-       DESCRIPTION
-    ====================================================== */
-    #tw-create-hud .tw-copy {
-      margin:
-        12px 0 0;
-      color:
-        #e0e4eb;
-      font-size:
-        10px;
-      line-height:
-        1.5;
-      font-weight:
-        500;
-      text-shadow:
-        0 2px 6px
-        rgba(0,0,0,.30);
-    }
-    /* ======================================================
-       CTA
-    ====================================================== */
-    #tw-create-hud .tw-cta {
-      position: relative;
-      z-index: 7;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      min-height: 42px;
-      margin-top: 20px;
-      padding:
-        0 12px;
-      overflow: hidden;
-      border:
-        1px solid
-        rgba(215,168,94,.62);
-      border-radius:
-        9px;
-      color:
-        var(--gold-bright);
-      background:
-        linear-gradient(
-          180deg,
-          #172231 0%,
-          #091321 100%
-        );
-      box-shadow:
-        inset 0 1px 0
-        rgba(255,255,255,.10),
-        0 5px 14px
-        rgba(0,0,0,.27),
-        0 0 8px
-        rgba(215,168,94,.05);
-      font-size:
-        11px;
-      font-weight:
-        800;
-      letter-spacing:
-        .02em;
-      text-decoration:
-        none;
-      -webkit-tap-highlight-color:
-        transparent;
-      touch-action:
-        manipulation;
-    }
-    /* ======================================================
-       CTA SWEEP
-    ====================================================== */
-    #tw-create-hud .tw-cta::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: -45%;
-      width: 30%;
-      pointer-events: none;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          rgba(255,224,165,.10),
-          rgba(255,224,165,.72),
-          rgba(255,224,165,.10),
-          transparent
-        );
-      animation:
-        twButtonSweep
-        3.4s
-        ease-in-out
-        infinite;
-    }
-    @keyframes twButtonSweep {
-      0% {
-        left: -45%;
-        opacity: 0;
-      }
-      14% {
-        opacity: 0;
-      }
-      28% {
-        opacity: .85;
-      }
-      58% {
-        left: 120%;
-        opacity: .85;
-      }
-      70% {
-        opacity: 0;
-      }
-      100% {
-        left: 120%;
-        opacity: 0;
-      }
-    }
-    #tw-create-hud .tw-cta-text,
-    #tw-create-hud .tw-cta-arrow {
-      position: relative;
-      z-index: 2;
-    }
-    #tw-create-hud .tw-cta-arrow {
-      font-size:
-        19px;
-      line-height:
-        1;
-    }
-    /* ======================================================
-       CTA TAP
-    ====================================================== */
-    #tw-create-hud .tw-cta:active {
-      border-color:
-        var(--gold-bright);
-      background:
-        linear-gradient(
-          180deg,
-          #223248,
-          #0d1b2c
-        );
-      box-shadow:
-        inset 0 1px 0
-        rgba(255,255,255,.12),
-        0 0 15px
-        rgba(215,168,94,.30);
-    }
-    /* ======================================================
-       TRUST STRIP
-    ====================================================== */
-    #tw-create-hud .tw-trust {
-      position: relative;
-      z-index: 6;
-      display: grid;
-      grid-template-columns:
-        repeat(3, 1fr);
-      margin-top:
-        auto;
-      padding-top:
-        14px;
-      border-top:
-        1px solid
-        rgba(255,255,255,.10);
-    }
-    #tw-create-hud .tw-trust-item {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      min-height:
-        46px;
-      color:
-        #d5dae2;
-      text-align:
-        center;
-    }
-    #tw-create-hud
-    .tw-trust-item:not(:last-child)::after {
-      content: "";
-      position: absolute;
-      top: 5px;
-      right: 0;
-      bottom: 5px;
-      width: 1px;
-      background:
-        rgba(255,255,255,.10);
-    }
-    #tw-create-hud .tw-trust-icon {
-      color:
-        var(--gold-bright);
-      font-size:
-        15px;
-      line-height:
-        1;
-    }
-    #tw-create-hud .tw-trust-label {
-      color:
-        #d9dde4;
-      font-size:
-        6px;
-      line-height:
-        1.2;
-      font-weight:
-        800;
-      letter-spacing:
-        .04em;
-      text-transform:
-        uppercase;
-    }
-    /* ======================================================
-       TABLET / LARGER MOBILE
-    ====================================================== */
-    @media (min-width: 601px) {
-      #tw-create-hud .tw-stage {
-        min-height:
-          520px;
-        background-position:
-          57% center;
-      }
-      #tw-create-hud .tw-inner {
-        min-height:
-          520px;
-        padding:
-          18px;
-      }
-      #tw-create-hud .tw-panel {
-        width:
-          48%;
-        max-width:
-          380px;
-        min-height:
-          480px;
-        padding:
-          22px 20px 20px;
-      }
-      #tw-create-hud .tw-brand {
-        font-size:
-          10px;
-      }
-      #tw-create-hud .tw-status {
-        font-size:
-          10px;
-      }
-      #tw-create-hud .tw-eyebrow {
-        font-size:
-          13px;
-      }
-      #tw-create-hud .tw-title {
-        font-size:
-          40px;
-      }
-      #tw-create-hud .tw-copy {
-        font-size:
-          12px;
-      }
-      #tw-create-hud .tw-cta {
-        min-height:
-          46px;
-        font-size:
-          13px;
-      }
-      #tw-create-hud .tw-trust-label {
-        font-size:
-          7px;
-      }
-    }
-    /* ======================================================
-       SMALL iPHONES
-    ====================================================== */
-    @media (max-width: 390px) {
-      #tw-create-hud .tw-stage {
-        min-height:
-          500px;
-        background-position:
-          57% center;
-      }
-      #tw-create-hud .tw-inner {
-        min-height:
-          500px;
-        padding:
-          12px;
-      }
-      #tw-create-hud .tw-panel {
-        width:
-          62%;
-        min-height:
-          465px;
-        padding:
-          17px 11px 15px;
-        border-radius:
-          17px;
-      }
-      #tw-create-hud .tw-header {
-        margin-bottom:
-          17px;
-      }
-      #tw-create-hud .tw-eyebrow {
-        font-size:
-          9px;
-      }
-      #tw-create-hud .tw-title {
-        font-size:
-          27px;
-      }
-      #tw-create-hud .tw-copy {
-        font-size:
-          9px;
-      }
-      #tw-create-hud .tw-cta {
-        min-height:
-          39px;
-        margin-top:
-          16px;
-        font-size:
-          10px;
-      }
-      #tw-create-hud .tw-trust-label {
-        font-size:
-          5.5px;
-      }
-    }
-    /* ======================================================
-       ACCESSIBILITY
-    ====================================================== */
-    @media (prefers-reduced-motion: reduce) {
-      #tw-create-hud .tw-scan,
-      #tw-create-hud .tw-status-dot,
-      #tw-create-hud .tw-cta::before {
-        animation:
-          none;
-      }
-    }
-  </style>
-                            <!--  ======================================================
-       CREATE ACCOUNT EXPERIENCE
-  ======================================================  -->
+/* =========================================================
+   VARIABLES + ROOT
+========================================================= */
+#tw-create-hud {
+  --gold: #d7a85e;
+  --gold-bright: #f2cc86;
+  --white: #ffffff;
+  --text-soft: #e0e4eb;
+  --image:
+    url("https://cdn.prod.website-files.com/6a6ff0545aa01c93602db711/6a8d915fa65ab682dafc84a3_6f0b2591585751af723b8595e6ff3171_Create%20Account%20TheWing.ai.png");
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* =========================================================
+   LOCAL RESET
+========================================================= */
+#tw-create-hud *,
+#tw-create-hud *::before,
+#tw-create-hud *::after {
+  box-sizing: border-box;
+}
+/* =========================================================
+   STAGE
+   IMPORTANT:
+   No isolation:isolate.
+   No transform.
+   No filter.
+========================================================= */
+#tw-create-hud .tw-stage {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background-color: #07101c;
+  background-image: var(--image);
+  background-position: 57% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow:
+    0 22px 60px rgba(0,0,0,.32),
+    0 5px 18px rgba(0,0,0,.22);
+}
+/* =========================================================
+   CINEMATIC BACKGROUND SHADE
+   Static layer only.
+========================================================= */
+#tw-create-hud .tw-stage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3,7,13,.34) 0%,
+      rgba(3,7,13,.21) 43%,
+      rgba(3,7,13,.04) 73%,
+      rgba(3,7,13,0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,.02) 0%,
+      rgba(0,0,0,0) 70%,
+      rgba(0,0,0,.18) 100%
+    );
+}
+/* =========================================================
+   INNER LAYOUT
+========================================================= */
+#tw-create-hud .tw-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 520px;
+  padding: 18px;
+}
+/* =========================================================
+   HUD PANEL
+   STATIC.
+   This is intentionally "fake glass."
+   We do NOT ask Safari to blur the content behind it.
+   Gold corner detailing is also built directly into the
+   background instead of floating animated/absolute layers.
+========================================================= */
+#tw-create-hud .tw-panel {
+  position: relative;
+  width: 58%;
+  min-width: 0;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding:
+    20px
+    14px
+    18px;
+  border-radius: 18px;
+  border:
+    1px solid rgba(255,255,255,.25);
+  background:
+    /* TOP LEFT GOLD HORIZONTAL */
+    linear-gradient(
+      90deg,
+      var(--gold),
+      var(--gold)
+    )
+    20px 18px /
+    115px 2px
+    no-repeat,
+    /* TOP LEFT GOLD VERTICAL */
+    linear-gradient(
+      180deg,
+      var(--gold),
+      var(--gold)
+    )
+    20px 18px /
+    2px 105px
+    no-repeat,
+    /* BOTTOM RIGHT GOLD HORIZONTAL */
+    linear-gradient(
+      90deg,
+      var(--gold),
+      var(--gold)
+    )
+    calc(100% - 20px)
+    calc(100% - 18px) /
+    115px 2px
+    no-repeat,
+    /* BOTTOM RIGHT GOLD VERTICAL */
+    linear-gradient(
+      180deg,
+      var(--gold),
+      var(--gold)
+    )
+    calc(100% - 18px)
+    calc(100% - 18px) /
+    2px 105px
+    no-repeat,
+    /* SUBTLE TOP LIGHT */
+    radial-gradient(
+      120% 90% at 0% 0%,
+      rgba(110,124,148,.30) 0%,
+      rgba(66,78,98,.14) 34%,
+      transparent 62%
+    ),
+    /* SUBTLE BLUE DEPTH */
+    radial-gradient(
+      100% 85% at 100% 100%,
+      rgba(36,77,126,.12) 0%,
+      transparent 68%
+    ),
+    /* MAIN HUD */
+    linear-gradient(
+      145deg,
+      rgba(38,45,57,.94) 0%,
+      rgba(18,27,41,.96) 52%,
+      rgba(7,17,31,.98) 100%
+    );
+  box-shadow:
+    0 24px 55px rgba(0,0,0,.30),
+    0 7px 22px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.22),
+    inset 1px 0 0 rgba(255,255,255,.05),
+    inset -1px 0 0 rgba(255,255,255,.03),
+    inset 0 -1px 0 rgba(255,255,255,.04);
+}
+/* =========================================================
+   CONTENT STACK
+   This is intentionally a single normal document flow.
+   No overlay sits above this content.
+========================================================= */
+#tw-create-hud .tw-content-stack {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+}
+/* =========================================================
+   HEADER
+========================================================= */
+#tw-create-hud .tw-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+  gap: 8px;
+  padding:
+    0 0 11px;
+  margin:
+    0 0 20px;
+  border-bottom:
+    1px solid rgba(255,255,255,.13);
+}
+/* =========================================================
+   BRAND
+========================================================= */
+#tw-create-hud .tw-brand {
+  display: block;
+  margin: 0;
+  color: #edf0f5;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+  font-size: 8px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: .14em;
+  white-space: nowrap;
+}
+/* =========================================================
+   SECURE STATUS
+========================================================= */
+#tw-create-hud .tw-status {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 5px;
+  margin: 0;
+  color: var(--gold-bright);
+  font-size: 8px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* =========================================================
+   SECURE DOT
+   Small opacity animation only.
+========================================================= */
+#tw-create-hud .tw-status-dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--gold-bright);
+  animation:
+    twSecurePulse
+    2s
+    ease-in-out
+    infinite;
+}
+@keyframes twSecurePulse {
+  0%,
+  100% {
+    opacity: .40;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* =========================================================
+   PRIMARY CONTENT
+========================================================= */
+#tw-create-hud .tw-main {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+/* =========================================================
+   EYEBROW
+========================================================= */
+#tw-create-hud .tw-eyebrow {
+  display: block;
+  margin:
+    0 0 6px;
+  color: var(--gold-bright);
+  font-size: 11px;
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+/* =========================================================
+   TITLE
+   No filter.
+   No text shadow.
+   No transform.
+========================================================= */
+#tw-create-hud .tw-title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family:
+    Impact,
+    "Arial Narrow",
+    Arial,
+    sans-serif;
+  font-size:
+    clamp(26px, 8vw, 35px);
+  line-height: .92;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  text-transform: uppercase;
+}
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+#tw-create-hud .tw-copy {
+  display: block;
+  width: 100%;
+  margin:
+    12px 0 0;
+  padding: 0;
+  color: var(--text-soft);
+  font-size: 10px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+/* =========================================================
+   CTA
+========================================================= */
+#tw-create-hud .tw-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 42px;
+  margin:
+    20px 0 0;
+  padding:
+    0 12px;
+  overflow: hidden;
+  border:
+    1px solid rgba(215,168,94,.62);
+  border-radius: 9px;
+  color: var(--gold-bright);
+  background:
+    linear-gradient(
+      180deg,
+      #172231 0%,
+      #091321 100%
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.10),
+    0 5px 14px rgba(0,0,0,.27);
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .02em;
+  text-decoration: none;
+  -webkit-tap-highlight-color:
+    transparent;
+  touch-action:
+    manipulation;
+  cursor: pointer;
+}
+/* =========================================================
+   CTA GOLD SWEEP
+   IMPORTANT:
+   Animation exists ONLY inside button.
+========================================================= */
+#tw-create-hud .tw-cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -45%;
+  width: 28%;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255,224,165,.08) 20%,
+      rgba(255,224,165,.58) 50%,
+      rgba(255,224,165,.08) 80%,
+      transparent 100%
+    );
+  animation:
+    twButtonSweep
+    4.2s
+    ease-in-out
+    infinite;
+}
+@keyframes twButtonSweep {
+  0% {
+    left: -45%;
+    opacity: 0;
+  }
+  15% {
+    left: -45%;
+    opacity: 0;
+  }
+  25% {
+    opacity: .8;
+  }
+  50% {
+    left: 120%;
+    opacity: .8;
+  }
+  60% {
+    left: 120%;
+    opacity: 0;
+  }
+  100% {
+    left: 120%;
+    opacity: 0;
+  }
+}
+/* =========================================================
+   CTA CONTENT
+========================================================= */
+#tw-create-hud .tw-cta-text,
+#tw-create-hud .tw-cta-arrow {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+#tw-create-hud .tw-cta-arrow {
+  font-size: 19px;
+  line-height: 1;
+  animation:
+    twArrow
+    4.2s
+    ease-in-out
+    infinite;
+}
+/* Arrow gets a tiny attention movement.
+   It stays entirely inside the button. */
+@keyframes twArrow {
+  0%,
+  35%,
+  65%,
+  100% {
+    margin-right: 0;
+  }
+  48% {
+    margin-right: -3px;
+  }
+}
+/* =========================================================
+   TAP FEEDBACK
+========================================================= */
+#tw-create-hud .tw-cta:active {
+  border-color:
+    var(--gold-bright);
+  background:
+    linear-gradient(
+      180deg,
+      #223248 0%,
+      #0d1b2c 100%
+    );
+}
+/* =========================================================
+   TRUST STRIP
+   Normal flow.
+   No absolute layers.
+========================================================= */
+#tw-create-hud .tw-trust {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+  width: 100%;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top:
+    1px solid rgba(255,255,255,.10);
+}
+/* =========================================================
+   TRUST ITEM
+========================================================= */
+#tw-create-hud .tw-trust-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 46px;
+  gap: 5px;
+  color: #d5dae2;
+  text-align: center;
+}
+/* separators only */
+#tw-create-hud
+.tw-trust-item + .tw-trust-item {
+  border-left:
+    1px solid rgba(255,255,255,.10);
+}
+/* =========================================================
+   TRUST ICON
+========================================================= */
+#tw-create-hud .tw-trust-icon {
+  display: block;
+  color: var(--gold-bright);
+  font-size: 15px;
+  line-height: 1;
+}
+/* =========================================================
+   TRUST LABEL
+========================================================= */
+#tw-create-hud .tw-trust-label {
+  display: block;
+  margin: 0;
+  color: #d9dde4;
+  font-size: 6px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+/* =========================================================
+   iPHONE / MOBILE
+========================================================= */
+@media screen and (max-width: 600px) {
+  #tw-create-hud {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  #tw-create-hud .tw-stage {
+    min-height: 520px;
+    border-radius: 17px;
+    background-position:
+      57% center;
+  }
+  #tw-create-hud .tw-inner {
+    min-height: 520px;
+    padding: 18px;
+  }
+  #tw-create-hud .tw-panel {
+    width: 58%;
+    min-height: 480px;
+    padding:
+      20px
+      14px
+      18px;
+    border-radius: 18px;
+  }
+  #tw-create-hud .tw-header {
+    margin-bottom: 20px;
+  }
+  #tw-create-hud .tw-brand {
+    font-size: 8px;
+  }
+  #tw-create-hud .tw-status {
+    font-size: 8px;
+  }
+  #tw-create-hud .tw-eyebrow {
+    font-size: 11px;
+  }
+  #tw-create-hud .tw-title {
+    font-size:
+      clamp(26px, 8vw, 35px);
+  }
+  #tw-create-hud .tw-copy {
+    font-size: 10px;
+  }
+  #tw-create-hud .tw-cta {
+    min-height: 42px;
+    margin-top: 20px;
+    font-size: 11px;
+  }
+  #tw-create-hud .tw-trust-label {
+    font-size: 6px;
+  }
+}
+/* =========================================================
+   SMALL iPHONES
+========================================================= */
+@media screen and (max-width: 390px) {
+  #tw-create-hud .tw-stage {
+    min-height: 500px;
+    background-position:
+      57% center;
+  }
+  #tw-create-hud .tw-inner {
+    min-height: 500px;
+    padding: 12px;
+  }
+  #tw-create-hud .tw-panel {
+    width: 62%;
+    min-height: 465px;
+    padding:
+      17px
+      11px
+      15px;
+    border-radius: 17px;
+  }
+  #tw-create-hud .tw-header {
+    margin-bottom: 17px;
+  }
+  #tw-create-hud .tw-eyebrow {
+    font-size: 9px;
+  }
+  #tw-create-hud .tw-title {
+    font-size: 27px;
+  }
+  #tw-create-hud .tw-copy {
+    font-size: 9px;
+  }
+  #tw-create-hud .tw-cta {
+    min-height: 39px;
+    margin-top: 16px;
+    font-size: 10px;
+  }
+  #tw-create-hud .tw-trust-label {
+    font-size: 5.5px;
+  }
+}
+/* =========================================================
+   DESKTOP / TABLET
+========================================================= */
+@media screen and (min-width: 601px) {
+  #tw-create-hud .tw-panel {
+    width: 48%;
+    max-width: 380px;
+    min-height: 480px;
+    padding:
+      22px
+      20px
+      20px;
+  }
+  #tw-create-hud .tw-brand {
+    font-size: 10px;
+  }
+  #tw-create-hud .tw-status {
+    font-size: 10px;
+  }
+  #tw-create-hud .tw-eyebrow {
+    font-size: 13px;
+  }
+  #tw-create-hud .tw-title {
+    font-size: 40px;
+  }
+  #tw-create-hud .tw-copy {
+    font-size: 12px;
+  }
+  #tw-create-hud .tw-cta {
+    min-height: 46px;
+    font-size: 13px;
+  }
+  #tw-create-hud .tw-trust-label {
+    font-size: 7px;
+  }
+}
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+@media (prefers-reduced-motion: reduce) {
+  #tw-create-hud .tw-status-dot,
+  #tw-create-hud .tw-cta::before,
+  #tw-create-hud .tw-cta-arrow {
+    animation: none;
+  }
+}
+</style>
+                            <!--  =========================================================
+     CREATE ACCOUNT EXPERIENCE
+=========================================================  -->
                             <section class="tw-stage" aria-label="Create a TheWing.ai account">
                               <div class="tw-inner">
-                                <!--  =================================================
-           LIVE HUD
-      ==================================================  -->
+                                <!--  =====================================================
+         HUD
+    ======================================================  -->
                                 <article class="tw-panel">
-                                  <!--  SAFE GLASS SHEEN  -->
-                                  <div class="tw-sheen" aria-hidden="true"></div>
-                                  <!--  GOLD CORNERS  -->
-                                  <span class="tw-corner tw-corner-top" aria-hidden="true"></span>
-                                  <span class="tw-corner tw-corner-bottom" aria-hidden="true"></span>
-                                  <!--  ANIMATED SCAN  -->
-                                  <span class="tw-scan" aria-hidden="true"></span>
-                                  <!--  HEADER  -->
-                                  <header class="tw-header">
-                                    <div class="tw-brand">
-                                      THEWING.AI
-                                    </div>
-                                    <div class="tw-status">
-                                      <span class="tw-status-dot" aria-hidden="true"></span>
-                                      SECURE
-                                    </div>
-                                  </header>
-                                  <!--  MAIN CONTENT  -->
-                                  <div class="tw-content">
-                                    <div class="tw-eyebrow">
-                                      Personalized Intelligence
-                                    </div>
-                                    <h2 class="tw-title">
-                                      Create an<br>
-                                      Account
-                                    </h2>
-                                    <p class="tw-copy">
-                                      Unlock personalized military decision intelligence built around you.
-                                    </p>
-                                    <!--  =============================================
-               REAL CREATE ACCOUNT BUTTON
-          ==============================================  -->
-                                    <a class="tw-cta" href="https://the-wing.webflow.io/military/new-user-account" aria-label="Create your TheWing.ai account">
-                                      <span class="tw-cta-text">
-                                        Get Started
-                                      </span>
-                                      <span class="tw-cta-arrow" aria-hidden="true">
-                                        →
-                                      </span>
-                                    </a>
-                                    <!--  TRUST STRIP  -->
+                                  <!--  ===================================================
+           SINGLE CONTENT STACK
+      ====================================================  -->
+                                  <div class="tw-content-stack">
+                                    <!--  HEADER  -->
+                                    <header class="tw-header">
+                                      <div class="tw-brand">
+                                        THEWING.AI
+                                      </div>
+                                      <div class="tw-status">
+                                        <span class="tw-status-dot" aria-hidden="true"></span>
+                                        <span>
+                                          SECURE
+                                        </span>
+                                      </div>
+                                    </header>
+                                    <!--  =================================================
+             MAIN COPY
+        ==================================================  -->
+                                    <main class="tw-main">
+                                      <div class="tw-eyebrow">
+                                        Personalized Intelligence
+                                      </div>
+                                      <h2 class="tw-title">
+                                        Create an<br>
+                                        Account
+                                      </h2>
+                                      <p class="tw-copy">
+                                        Unlock personalized military decision intelligence built around you.
+                                      </p>
+                                      <!--  ===============================================
+               CREATE ACCOUNT CTA
+          ================================================  -->
+                                      <a class="tw-cta" href="https://the-wing.webflow.io/military/new-user-account" aria-label="Create your TheWing.ai account">
+                                        <span class="tw-cta-text">
+                                          Get Started
+                                        </span>
+                                        <span class="tw-cta-arrow" aria-hidden="true">
+                                          →
+                                        </span>
+                                      </a>
+                                    </main>
+                                    <!--  =================================================
+             TRUST STRIP
+        ==================================================  -->
                                     <div class="tw-trust" aria-label="TheWing.ai account benefits">
                                       <div class="tw-trust-item">
                                         <span class="tw-trust-icon" aria-hidden="true">
@@ -1488,7 +1451,7 @@
         </div>
       </div>
       <section class="section-41">
-        <div class="container-103">
+        <div class="slider-container">
           <div class="content-17">
             <h1 data-w-id="1121688c-3eff-3f12-af24-0e04cc38364b" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="suite-title">Military Decision Platform</h1>
             <p line-split="true" class="suite-subtitle center-align-2">Experience the versatility of TheWing.ai <br>From Fitness Assessments, VA calculations, to PCS housing analysis, TheWing.ai brings essential military decision tools together in one connected platform.</p>
@@ -1660,7 +1623,7 @@
   </style>
                               <div id="pcsu-premium-wrap">
                                 <a id="pcsu-premium-btn" href="https://thewing.ai/air-force/disability-calculator.html" aria-label="Create Account">
-                                  Launch Application
+                                  See Your VA Rating
                                 </a>
                               </div>
                             </div>
@@ -1855,7 +1818,7 @@
   </style>
                               <div id="pcsu-premium-wrap">
                                 <a id="pcsu-premium-btn" href="https://thewing.ai/air-force/base-map.html" aria-label="Create Account">
-                                  Launch Application
+                                  See Your VA Rating
                                 </a>
                               </div>
                             </div>
@@ -1952,7 +1915,7 @@
   </style>
                               <div id="pcsu-premium-wrap">
                                 <a id="pcsu-premium-btn" href="https://pcsunited.com" aria-label="Create Account">
-                                  Launch Application
+                                  Go to PCSUnited.com
                                 </a>
                               </div>
                             </div>
@@ -2030,6 +1993,16 @@
         </div>
       </div>
       <section class="section-58 faq">
+        <div class="testimonial-card-bg-img-2 dark">
+          <div parallax-container="true" class="testimonial-bg-wrapper-2">
+            <div class="gradient-testimonall-2">
+              <div class="text-block-53"><strong class="testimonial-author">TheWing.ai | Military Decision Intelligence Platform</strong></div>
+            </div><img class="testimonial-bg-img parallax" src="images/Message-BG.webp" alt="Black gradient background fading from dark to lighter shades in the center." sizes="(max-width: 638px) 100vw, 638px" loading="lazy" srcset="images/FAQ-Card-BG-p-500.webp 500w, images/Message-BG.webp 638w">
+          </div>
+          <div class="testimonial-content-2">
+            <div class="testimonial-quote-2">Military decisions require more than numbers. TheWing calculates the data. Amy helps you understand what it means, what matters, and what to consider next.</div>
+          </div>
+        </div>
         <h2 class="heading-195">TheWing Calculates <br> <span class="section-secondary-h2"><em class="italic-text-9">Amy Explains</em></span></h2>
         <div class="w-layout-blockcontainer container-111 w-container">
           <div fade-in="true" class="card-item-home1">
@@ -2057,17 +2030,6 @@
                   </div>
                   <div style="opacity:1" class="card-text-details-9"></div>
                 </div>
-              </div>
-            </div>
-            <div class="card-text-content-home1-3"></div>
-            <div class="testimonial-card-bg-img-2 dark">
-              <div parallax-container="true" class="testimonial-bg-wrapper-2">
-                <div class="gradient-testimonall-2">
-                  <div class="text-block-53"><strong class="testimonial-author">TheWing.ai | Military Decision Intelligence Platform</strong></div>
-                </div><img class="testimonial-bg-img parallax" src="images/Message-BG.webp" alt="Black gradient background fading from dark to lighter shades in the center." sizes="(max-width: 638px) 100vw, 638px" loading="lazy" srcset="images/FAQ-Card-BG-p-500.webp 500w, images/Message-BG.webp 638w">
-              </div>
-              <div class="testimonial-content-2">
-                <div class="testimonial-quote-2">Military decisions require more than numbers. TheWing calculates the data. Amy helps you understand what it means, what matters, and what to consider next.</div>
               </div>
             </div>
           </div>
@@ -2896,7 +2858,7 @@
           </div>
         </div>
       </div>
-      <h1 class="heading-7">Supporting Our Military Community</h1>
+      <h1 class="heading-7">Supporting Our Air Force Community</h1>
       <div class="w-layout-grid about-01-number-grid">
         <div data-scroll="fade_04" class="image-number-1"></div>
         <div data-scroll="fade_05" class="image-number-2"></div>
@@ -2925,7 +2887,7 @@
           <div class="footer-content-wrapper-2">
             <a href="#" class="footer-logo-link w-inline-block">
               <div class="logo-footer-wrapper">
-                <div><img src="images/Home-01-About.png" loading="lazy" sizes="(max-width: 1260px) 100vw, 1260px" srcset="images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-500.png 500w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-800.png 800w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-1080.png 1080w, images/Home-01-About.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
+                <div><img src="images/Home-01-About.png" loading="lazy" sizes="100vw" srcset="images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-500.png 500w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-800.png 800w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-1080.png 1080w, images/Home-01-About.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
               </div>
             </a>
             <div class="space-text"></div>
