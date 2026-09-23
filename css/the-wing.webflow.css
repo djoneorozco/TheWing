@@ -32011,7 +32011,7 @@ blockquote {
   color: var(--colors--01-accent);
   text-align: center;
   margin-left: 0;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-left: 5px;
   padding-right: 0;
 }
@@ -33680,8 +33680,8 @@ blockquote {
   --_theme---background--tertiarybackground: var(--colors--dark-50);
   --_theme---textcolor--tertiarytext: var(--colors--dark-30);
   margin-top: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
   box-shadow: 0 2px 5px #000000c4;
 }
 
@@ -51557,8 +51557,8 @@ blockquote {
   }
 
   .about-01-number-grid {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 11px;
+    grid-row-gap: 11px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -58077,6 +58077,11 @@ blockquote {
     width: 298px;
   }
 
+  .home-two-card-marquee-block {
+    justify-content: center;
+    align-items: flex-end;
+  }
+
   .code-for-create-account-3 {
     width: 100%;
     margin-top: 0;
@@ -61418,6 +61423,10 @@ blockquote {
     height: 24.8rem;
   }
 
+  .home-two-card-marquee-text {
+    font-size: 4.5rem;
+  }
+
   .home-two-section-two-left-block {
     flex-direction: column;
     align-items: center;
@@ -61922,8 +61931,8 @@ blockquote {
   }
 
   .about-01-number-grid {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
