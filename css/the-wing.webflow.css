@@ -25370,7 +25370,7 @@ blockquote {
 .suite-title {
   text-align: center;
   letter-spacing: -4px;
-  margin-top: -54px;
+  margin-top: 0;
   font-size: 64px;
   font-weight: 600;
   line-height: 72px;
@@ -28728,7 +28728,7 @@ blockquote {
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 100px;
+  padding-top: 40px;
   display: flex;
 }
 
@@ -29572,7 +29572,7 @@ blockquote {
   object-position: 50% 0%;
   border-radius: 6px;
   width: 100%;
-  height: 350px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -29892,7 +29892,7 @@ blockquote {
 .image-223 {
   width: 100%;
   max-width: 100%;
-  height: 354.891px;
+  height: 300px;
 }
 
 .the-pt-calculator {
@@ -51300,7 +51300,7 @@ blockquote {
   }
 
   .section-41 {
-    padding-top: 100px;
+    padding-top: 40px;
   }
 
   .slider-bg-wrap-6 {
@@ -51386,6 +51386,10 @@ blockquote {
     flex: 1;
   }
 
+  .video-for-va {
+    height: 525px;
+  }
+
   .style-guide-heading-main-wrapper-copy {
     padding-top: 25px;
     padding-bottom: 60px;
@@ -51420,7 +51424,8 @@ blockquote {
   }
 
   .image-223 {
-    height: 400px;
+    height: 525px;
+    padding-bottom: 0;
     box-shadow: 0 2px 5px #000;
   }
 
@@ -51434,6 +51439,7 @@ blockquote {
     grid-auto-columns: 1fr;
     width: 100%;
     max-width: 100%;
+    padding: 20px 20px 37px;
     display: flex;
   }
 
@@ -52358,6 +52364,7 @@ blockquote {
     grid-auto-columns: 1fr;
     width: 100%;
     max-width: 100%;
+    padding-bottom: 7px;
     display: flex;
   }
 
@@ -52389,6 +52396,7 @@ blockquote {
     grid-auto-columns: 1fr;
     width: 100%;
     max-width: 100%;
+    padding-bottom: 95px;
     display: flex;
   }
 
@@ -52399,6 +52407,8 @@ blockquote {
 
   .pcsu-words {
     color: #d3cdcd;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 
   .hero-01-holder-2 {
@@ -60674,7 +60684,7 @@ blockquote {
 
   .suite-title {
     text-align: center;
-    width: 202%;
+    width: 100%;
     max-width: 100%;
     margin-top: 0;
     font-size: 48px;
@@ -61482,7 +61492,7 @@ blockquote {
     width: 100%;
     height: 100%;
     margin-bottom: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 67px;
   }
 
   .section-41 {
@@ -61692,7 +61702,7 @@ blockquote {
   }
 
   .video-for-va {
-    height: 300px;
+    height: 225px;
   }
 
   .style-guide-heading-main-wrapper-copy {
@@ -61796,7 +61806,8 @@ blockquote {
 
   .image-223 {
     width: 100%;
-    height: 275px;
+    max-width: none;
+    height: 200px;
     margin-bottom: 0;
   }
 
@@ -61804,9 +61815,10 @@ blockquote {
     background-color: #111;
     width: 100%;
     max-width: 100%;
+    height: 100%;
     margin-bottom: 0;
     margin-left: 0;
-    padding: 0 5px 20px;
+    padding: 0 5px;
   }
 
   .space-213 {
@@ -61831,7 +61843,7 @@ blockquote {
   }
 
   .space-214 {
-    padding-top: 10px;
+    padding-top: 0;
   }
 
   .heading-186 {
@@ -61849,11 +61861,12 @@ blockquote {
   .opacity-80-6 {
     color: #e2dfdf;
     width: 100%;
-    margin-top: -24px;
+    margin-top: 0;
     margin-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 18px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 21px;
   }
 
   .text-block-51 {
@@ -62046,6 +62059,10 @@ blockquote {
   .container-nav-3 {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    min-height: 75px;
     padding-right: 0;
   }
 
@@ -62066,7 +62083,9 @@ blockquote {
   .cart-burger-wrapper-2 {
     background-color: #0000;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 0;
+    padding-top: 0;
     right: 8px;
   }
 
@@ -62086,9 +62105,10 @@ blockquote {
   }
 
   .image-228 {
-    max-width: 90%;
+    max-width: 80px;
     max-height: 90%;
     transform: scale3d(1none, 1none, 1none);
+    margin-top: 0;
     margin-left: 250px;
     padding-top: 0;
     padding-left: 0;
@@ -62102,6 +62122,11 @@ blockquote {
 
   .nav-menu-two-5 {
     flex-direction: column;
+  }
+
+  .navbar-4 {
+    height: 90px;
+    min-height: 80px;
   }
 
   .hero-01-dark-title-2 {
@@ -62492,7 +62517,7 @@ blockquote {
   }
 
   .italic-text-9 {
-    margin-left: -17px;
+    margin-left: -20px;
     padding-right: 0;
     font-size: 5.2rem;
   }
@@ -62963,7 +62988,7 @@ blockquote {
     max-width: 100%;
     margin-bottom: 0;
     margin-left: 0;
-    padding: 0 5px 10px;
+    padding: 0 5px;
   }
 
   .text-block-55 {
@@ -62984,31 +63009,33 @@ blockquote {
   }
 
   .pcsu-link {
+    height: 100%;
     margin-bottom: var(--spacing--1);
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 0 19px;
   }
 
   .fitness-calculator {
     background-color: #111;
     width: 100%;
     max-width: 100%;
+    height: 100%;
     margin-bottom: 0;
     margin-left: 0;
-    padding: 10px 5px 0;
+    padding: 0 5px;
   }
 
   .finess-words {
     margin-bottom: 0;
-    padding-top: 10px;
+    padding-top: 0;
     padding-bottom: 10px;
+    line-height: 21px;
   }
 
   .pcsu-words {
     margin-top: 0;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 21px;
   }
 
   .hero-01-sticky-wrapper-2 {
@@ -63763,6 +63790,7 @@ blockquote {
     background-position: 0%;
     background-size: cover;
     margin-top: 0;
+    margin-bottom: -15px;
     padding-left: 0;
     padding-right: 0;
   }
