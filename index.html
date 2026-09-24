@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Sep 24 2026 00:23:21 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Sep 24 2026 00:48:37 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a6ff0545aa01c93602db70c" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -525,253 +525,228 @@
                       <a href="military/new-user-account.html" class="nav-image-wrapper w-inline-block">
                         <div class="w-embed"><!--  =========================================================
      THEWING.AI — CREATE ACCOUNT
-     FINAL SIMPLE VERSION
-     ONLY:
-     1. AMYFinal image
-     2. Animated Get Started button
+     RESPONSIVE IMAGE + ANIMATED BUTTON
 =========================================================  -->
-                          <div id="tw-final-create-account">
-                            <!--  FINAL IMAGE  -->
-                            <img class="tw-final-image" src="images/Create-Account.jpg" alt="Create a TheWing.ai Account">
-                            <!--  ANIMATED GET STARTED BUTTON  -->
-                            <a class="tw-final-button" href="https://the-wing.webflow.io/military/new-user-account" aria-label="Create your TheWing.ai account">
-                              <span class="tw-final-button-text">
-                                Get Started
-                              </span>
-                              <span class="tw-final-button-arrow" aria-hidden="true">
-                                →
-                              </span>
+                          <div id="tw-account-card">
+                            <a id="tw-account-button" href="https://the-wing.webflow.io/military/new-user-account" aria-label="Create your TheWing.ai account">
+                              <span class="tw-account-text">Get Started</span>
+                              <span class="tw-account-arrow">→</span>
                             </a>
                           </div>
                           <style>
-  /* =========================================================
-     RESET — ONLY THIS COMPONENT
-  ========================================================= */
-  #tw-final-create-account,
-  #tw-final-create-account * {
-    box-sizing: border-box;
+/* =========================================================
+   CARD
+   Image is 1536 × 1024 = 3:2 ratio.
+   Desktop:
+   - Prevents image from becoming gigantic.
+   Mobile:
+   - Automatically becomes 100% of available width.
+========================================================= */
+#tw-account-card {
+  position: relative;
+  display: block;
+  width: min(100%, 900px);
+  aspect-ratio: 3 / 2;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  overflow: hidden;
+  background-image:
+    url("https://cdn.prod.website-files.com/6a6ff0545aa01c93602db711/6aab691a8397e29392e7caef_36554c73ff4dec753dea069322af30e8_Create%20Account.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+/* =========================================================
+   GET STARTED BUTTON
+   Everything is percentage based so the button follows
+   the image as the image becomes smaller or larger.
+========================================================= */
+#tw-account-button {
+  position: absolute;
+  z-index: 5;
+  /*
+     POSITION WITHIN THE HUD
+  */
+  left: 9.2%;
+  top: 50%;
+  width: 32.5%;
+  /*
+     Scale height with image rather than using fixed pixels.
+  */
+  height: 7%;
+  /* LAYOUT */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* APPEARANCE */
+  border:
+    1px solid
+    rgba(215, 168, 94, .82);
+  border-radius:
+    clamp(5px, .7vw, 9px);
+  background:
+    linear-gradient(
+      180deg,
+      #172231 0%,
+      #091321 100%
+    );
+  color:
+    #f2cc86;
+  box-shadow:
+    inset 0 1px 0
+    rgba(255,255,255,.10),
+    0 4px 12px
+    rgba(0,0,0,.22);
+  /* TYPOGRAPHY */
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+  font-size:
+    clamp(6px, 1.05vw, 13px);
+  line-height:
+    1;
+  font-weight:
+    800;
+  letter-spacing:
+    .02em;
+  text-decoration:
+    none;
+  -webkit-tap-highlight-color:
+    transparent;
+}
+/* =========================================================
+   ANIMATED GOLD SWEEP
+========================================================= */
+#tw-account-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -45%;
+  width: 30%;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255,224,165,.08) 15%,
+      rgba(255,224,165,.30) 35%,
+      rgba(255,224,165,.78) 50%,
+      rgba(255,224,165,.30) 65%,
+      rgba(255,224,165,.08) 85%,
+      transparent 100%
+    );
+  animation:
+    twAccountSweep
+    3.4s
+    ease-in-out
+    infinite;
+}
+@keyframes twAccountSweep {
+  0% {
+    left: -45%;
+    opacity: 0;
   }
-  /* =========================================================
-     IMAGE CONTAINER
-  ========================================================= */
-  #tw-final-create-account {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: transparent;
+  14% {
+    left: -45%;
+    opacity: 0;
   }
-  /* =========================================================
-     AMY FINAL IMAGE
-  ========================================================= */
-  #tw-final-create-account .tw-final-image {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    border: 0;
+  25% {
+    opacity: .9;
   }
-  /* =========================================================
-     GET STARTED BUTTON
-     Positioned over the empty area already contained
-     inside the HUD artwork in the image.
-  ========================================================= */
-  #tw-final-create-account .tw-final-button {
-    position: absolute;
-    z-index: 10;
+  58% {
+    left: 120%;
+    opacity: .9;
+  }
+  70% {
+    left: 120%;
+    opacity: 0;
+  }
+  100% {
+    left: 120%;
+    opacity: 0;
+  }
+}
+/* =========================================================
+   TEXT
+========================================================= */
+#tw-account-button .tw-account-text {
+  position: relative;
+  z-index: 2;
+}
+/* =========================================================
+   ARROW
+========================================================= */
+#tw-account-button .tw-account-arrow {
+  position: relative;
+  z-index: 2;
+  font-size:
+    clamp(10px, 1.6vw, 20px);
+  line-height:
+    1;
+}
+/* =========================================================
+   CLICK / TAP
+========================================================= */
+#tw-account-button:active {
+  border-color:
+    #f2cc86;
+  background:
+    linear-gradient(
+      180deg,
+      #223248 0%,
+      #0d1b2c 100%
+    );
+}
+/* =========================================================
+   iPHONE / MOBILE
+========================================================= */
+@media screen and (max-width: 600px) {
+  #tw-account-card {
     /*
-       BUTTON POSITION
+       Fill available mobile width,
+       but NEVER exceed the viewport.
+    */
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 3 / 2;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+  #tw-account-button {
+    /*
+       Same relative location in image.
     */
     left: 9.2%;
     top: 50%;
     width: 32.5%;
-    height: 46px;
-    /* LAYOUT */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:
-      0 14px;
-    overflow: hidden;
-    /* APPEARANCE */
-    border:
-      1px solid
-      rgba(215, 168, 94, .78);
-    border-radius:
-      9px;
-    background:
-      linear-gradient(
-        180deg,
-        #172231 0%,
-        #091321 100%
-      );
-    color:
-      #f2cc86;
-    box-shadow:
-      inset 0 1px 0
-      rgba(255, 255, 255, .10),
-      0 5px 14px
-      rgba(0, 0, 0, .25),
-      0 0 8px
-      rgba(215, 168, 94, .06);
-    /* TYPOGRAPHY */
-    font-family:
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Arial,
-      sans-serif;
-    font-size:
-      clamp(7px, .85vw, 13px);
-    line-height:
-      1;
-    font-weight:
-      800;
-    letter-spacing:
-      .02em;
-    text-decoration:
-      none;
-    /* MOBILE TAP */
-    -webkit-tap-highlight-color:
-      transparent;
-    touch-action:
-      manipulation;
+    height: 7%;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    border-radius: 5px;
+    font-size: 6px;
   }
-  /* =========================================================
-     ANIMATED GOLD SWEEP
-  ========================================================= */
-  #tw-final-create-account .tw-final-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -45%;
-    width: 30%;
-    pointer-events: none;
-    background:
-      linear-gradient(
-        90deg,
-        transparent 0%,
-        rgba(255, 224, 165, .10) 20%,
-        rgba(255, 224, 165, .72) 50%,
-        rgba(255, 224, 165, .10) 80%,
-        transparent 100%
-      );
-    animation:
-      twFinalGoldSweep
-      3.4s
-      ease-in-out
-      infinite;
+  #tw-account-button .tw-account-arrow {
+    font-size: 11px;
   }
-  @keyframes twFinalGoldSweep {
-    0% {
-      left: -45%;
-      opacity: 0;
-    }
-    14% {
-      opacity: 0;
-    }
-    28% {
-      opacity: .85;
-    }
-    58% {
-      left: 120%;
-      opacity: .85;
-    }
-    70% {
-      opacity: 0;
-    }
-    100% {
-      left: 120%;
-      opacity: 0;
-    }
+}
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+@media (prefers-reduced-motion: reduce) {
+  #tw-account-button::before {
+    animation: none;
   }
-  /* =========================================================
-     BUTTON TEXT
-  ========================================================= */
-  #tw-final-create-account .tw-final-button-text {
-    position: relative;
-    z-index: 2;
-  }
-  /* =========================================================
-     ARROW
-  ========================================================= */
-  #tw-final-create-account .tw-final-button-arrow {
-    position: relative;
-    z-index: 2;
-    font-size:
-      19px;
-    line-height:
-      1;
-  }
-  /* =========================================================
-     TAP / CLICK FEEDBACK
-  ========================================================= */
-  #tw-final-create-account .tw-final-button:active {
-    border-color:
-      #f2cc86;
-    background:
-      linear-gradient(
-        180deg,
-        #223248 0%,
-        #0d1b2c 100%
-      );
-    box-shadow:
-      inset 0 1px 0
-      rgba(255, 255, 255, .12),
-      0 0 15px
-      rgba(215, 168, 94, .30);
-  }
-  /* =========================================================
-     MOBILE
-  ========================================================= */
-  @media (max-width: 600px) {
-    #tw-final-create-account .tw-final-button {
-      height:
-        30px;
-      padding:
-        0 8px;
-      border-radius:
-        6px;
-      font-size:
-        7px;
-    }
-    #tw-final-create-account .tw-final-button-arrow {
-      font-size:
-        13px;
-    }
-  }
-  /* =========================================================
-     SMALL iPHONE
-  ========================================================= */
-  @media (max-width: 390px) {
-    #tw-final-create-account .tw-final-button {
-      height:
-        27px;
-      padding:
-        0 7px;
-      font-size:
-        6.5px;
-    }
-    #tw-final-create-account .tw-final-button-arrow {
-      font-size:
-        12px;
-    }
-  }
-  /* =========================================================
-     ACCESSIBILITY
-  ========================================================= */
-  @media (prefers-reduced-motion: reduce) {
-    #tw-final-create-account .tw-final-button::before {
-      animation:
-        none;
-    }
-  }
+}
 </style>
                         </div>
                       </a>
@@ -884,10 +859,10 @@
         <div data-w-id="fb42cc89-7674-38bc-3d74-7cd07989ca63" style="-webkit-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="highlight_marquee-2">
           <div class="highlight_marquee-group">
             <div class="highlight_marquee-texts">
-              <div class="highlight_marquee-box"><img sizes="(max-width: 800px) 100vw, 800px" srcset="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7-p-500.png 500w, images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png 800w" alt="" src="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png" loading="lazy" class="icon-height-large-2">
+              <div class="highlight_marquee-box"><img sizes="100vw" srcset="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7-p-500.png 500w, images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png 800w" alt="" src="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png" loading="lazy" class="icon-height-large-2">
                 <div class="heading-style-h4-3 text-color-alternate">Veteran-Owned</div>
               </div>
-              <div class="highlight_marquee-box"><img sizes="(max-width: 800px) 100vw, 800px" srcset="images/23F6295F-2530-4C86-9849-70534F5B1BE0-p-500.png 500w, images/23F6295F-2530-4C86-9849-70534F5B1BE0.png 800w" alt="" src="images/23F6295F-2530-4C86-9849-70534F5B1BE0.png" loading="lazy" class="icon-height-large-2">
+              <div class="highlight_marquee-box"><img sizes="100vw" srcset="images/23F6295F-2530-4C86-9849-70534F5B1BE0-p-500.png 500w, images/23F6295F-2530-4C86-9849-70534F5B1BE0.png 800w" alt="" src="images/23F6295F-2530-4C86-9849-70534F5B1BE0.png" loading="lazy" class="icon-height-large-2">
                 <div class="heading-style-h4-3 text-color-alternate">Artificial Intelligence</div>
               </div>
               <div class="highlight_marquee-box"><img width="100" height="100" alt="" src="images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4.png" loading="lazy" srcset="images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4-p-500.png 500w, images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4.png 800w" sizes="100px" class="icon-height-large-2">
@@ -1007,7 +982,7 @@
                         <div class="button-overflow-hidden-2 for--blog">
                           <div class="full-size-3">
                             <div class="pedding-stroke-13 big--size full-size">
-                              <div class="inside-button-14 none-padding full-size for--blog"><img src="images/BAH-CALCULATOR.png" loading="lazy" sizes="(max-width: 1671px) 100vw, 1671px" srcset="images/c61d8a6f32f3b74bfeb9aab78ca270a3_Tab-BG-Image-2-p-500.png 500w, images/c61d8a6f32f3b74bfeb9aab78ca270a3_Tab-BG-Image-2-p-800.png 800w, images/c61d8a6f32f3b74bfeb9aab78ca270a3_Tab-BG-Image-2-p-1080.png 1080w, images/c61d8a6f32f3b74bfeb9aab78ca270a3_Tab-BG-Image-2-p-1600.png 1600w, images/BAH-CALCULATOR.png 1671w" alt="BAH CALCULATOR" class="image-223"></div>
+                              <div class="inside-button-14 none-padding full-size for--blog"><img src="images/BAH-CALCULATOR.png" loading="lazy" sizes="100vw" srcset="images/c61d8a6f32f3b74bfeb9aab78ca270a3_Tab-BG-Image-2-p-500.png 500w, images/c61d8a6f32f3b74bfeb9aab78ca270a3_Tab-BG-Image-2-p-800.png 800w, images/c61d8a6f32f3b74bfeb9aab78ca270a3_Tab-BG-Image-2-p-1080.png 1080w, images/c61d8a6f32f3b74bfeb9aab78ca270a3_Tab-BG-Image-2-p-1600.png 1600w, images/BAH-CALCULATOR.png 1671w" alt="BAH CALCULATOR" class="image-223"></div>
                             </div>
                             <div class="glow-wrapper stroke for--boxes">
                               <div class="glow-item left"></div>
@@ -1103,7 +1078,7 @@
                         <div class="button-overflow-hidden-2 for--blog">
                           <div class="full-size-3">
                             <div class="pedding-stroke-13 big--size full-size">
-                              <div class="inside-button-14 none-padding full-size for--blog"><img src="images/Support-Image.png" loading="lazy" sizes="(max-width: 1545px) 100vw, 1545px" srcset="images/6f13e5f25635c71836c21100554ac061_Support-Image-p-500.png 500w, images/6f13e5f25635c71836c21100554ac061_Support-Image-p-800.png 800w, images/6f13e5f25635c71836c21100554ac061_Support-Image-p-1080.png 1080w, images/Support-Image.png 1545w" alt="Three credit cards floating on a blue background, one purple, one teal, and one gold." class="image-223"></div>
+                              <div class="inside-button-14 none-padding full-size for--blog"><img src="images/Support-Image.png" loading="lazy" sizes="100vw" srcset="images/6f13e5f25635c71836c21100554ac061_Support-Image-p-500.png 500w, images/6f13e5f25635c71836c21100554ac061_Support-Image-p-800.png 800w, images/6f13e5f25635c71836c21100554ac061_Support-Image-p-1080.png 1080w, images/Support-Image.png 1545w" alt="Three credit cards floating on a blue background, one purple, one teal, and one gold." class="image-223"></div>
                             </div>
                             <div class="glow-wrapper stroke for--boxes">
                               <div class="glow-item left"></div>
@@ -1201,7 +1176,7 @@
                         <div class="button-overflow-hidden-2 for--blog">
                           <div class="full-size-3">
                             <div class="pedding-stroke-13 big--size full-size">
-                              <div class="inside-button-14 none-padding full-size for--blog"><img src="images/Air-Force-Fitness-2026-.jpg" loading="lazy" sizes="(max-width: 1672px) 100vw, 1672px" srcset="images/218efb475fcd2552476ab7363f43fe87_Award-03-p-500.jpg 500w, images/218efb475fcd2552476ab7363f43fe87_Award-03-p-800.jpg 800w, images/218efb475fcd2552476ab7363f43fe87_Award-03-p-1080.jpg 1080w, images/218efb475fcd2552476ab7363f43fe87_Award-03-p-1600.jpg 1600w, images/Air-Force-Fitness-2026-.jpg 1672w" alt="Official Air Force Physical Fitness Model " class="image-223"></div>
+                              <div class="inside-button-14 none-padding full-size for--blog"><img src="images/Air-Force-Fitness-2026-.jpg" loading="lazy" sizes="100vw" srcset="images/218efb475fcd2552476ab7363f43fe87_Award-03-p-500.jpg 500w, images/218efb475fcd2552476ab7363f43fe87_Award-03-p-800.jpg 800w, images/218efb475fcd2552476ab7363f43fe87_Award-03-p-1080.jpg 1080w, images/218efb475fcd2552476ab7363f43fe87_Award-03-p-1600.jpg 1600w, images/Air-Force-Fitness-2026-.jpg 1672w" alt="Official Air Force Physical Fitness Model " class="image-223"></div>
                             </div>
                             <div class="glow-wrapper stroke for--boxes">
                               <div class="glow-item left"></div>
@@ -1297,7 +1272,7 @@
                         <div class="button-overflow-hidden-2 for--blog">
                           <div class="full-size-3">
                             <div class="pedding-stroke-13 big--size full-size">
-                              <div class="inside-button-14 none-padding full-size for--blog"><img src="images/Air-Force-Base-map.png" loading="lazy" sizes="(max-width: 1672px) 100vw, 1672px" srcset="images/12eb9ede054c3f97397ce2dc5251ad4b_Air-Force-Base-map-p-500.png 500w, images/12eb9ede054c3f97397ce2dc5251ad4b_Air-Force-Base-map-p-800.png 800w, images/12eb9ede054c3f97397ce2dc5251ad4b_Air-Force-Base-map-p-1080.png 1080w, images/12eb9ede054c3f97397ce2dc5251ad4b_Air-Force-Base-map-p-1600.png 1600w, images/Air-Force-Base-map.png 1672w" alt="Interactive Map of all Air Force Bases in United States. " class="image-223"></div>
+                              <div class="inside-button-14 none-padding full-size for--blog"><img src="images/Air-Force-Base-map.png" loading="lazy" sizes="100vw" srcset="images/12eb9ede054c3f97397ce2dc5251ad4b_Air-Force-Base-map-p-500.png 500w, images/12eb9ede054c3f97397ce2dc5251ad4b_Air-Force-Base-map-p-800.png 800w, images/12eb9ede054c3f97397ce2dc5251ad4b_Air-Force-Base-map-p-1080.png 1080w, images/12eb9ede054c3f97397ce2dc5251ad4b_Air-Force-Base-map-p-1600.png 1600w, images/Air-Force-Base-map.png 1672w" alt="Interactive Map of all Air Force Bases in United States. " class="image-223"></div>
                             </div>
                             <div class="glow-wrapper stroke for--boxes">
                               <div class="glow-item left"></div>
@@ -1425,10 +1400,10 @@
         <div data-w-id="accbe22d-6c9c-f41e-bb9e-bae3d110dbd7" style="-webkit-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="highlight_marquee-2">
           <div class="highlight_marquee-group">
             <div class="highlight_marquee-texts">
-              <div class="highlight_marquee-box"><img sizes="(max-width: 800px) 100vw, 800px" srcset="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7-p-500.png 500w, images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png 800w" alt="" src="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png" loading="lazy" class="icon-height-large-2">
+              <div class="highlight_marquee-box"><img sizes="100vw" srcset="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7-p-500.png 500w, images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png 800w" alt="" src="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png" loading="lazy" class="icon-height-large-2">
                 <div class="heading-style-h4-3 text-color-alternate">Veteran-Owned</div>
               </div>
-              <div class="highlight_marquee-box"><img sizes="(max-width: 800px) 100vw, 800px" srcset="images/23F6295F-2530-4C86-9849-70534F5B1BE0-p-500.png 500w, images/23F6295F-2530-4C86-9849-70534F5B1BE0.png 800w" alt="" src="images/23F6295F-2530-4C86-9849-70534F5B1BE0.png" loading="lazy" class="icon-height-large-2">
+              <div class="highlight_marquee-box"><img sizes="100vw" srcset="images/23F6295F-2530-4C86-9849-70534F5B1BE0-p-500.png 500w, images/23F6295F-2530-4C86-9849-70534F5B1BE0.png 800w" alt="" src="images/23F6295F-2530-4C86-9849-70534F5B1BE0.png" loading="lazy" class="icon-height-large-2">
                 <div class="heading-style-h4-3 text-color-alternate">Artificial Intelligence</div>
               </div>
               <div class="highlight_marquee-box"><img width="100" height="100" alt="" src="images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4.png" loading="lazy" srcset="images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4-p-500.png 500w, images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4.png 800w" sizes="100px" class="icon-height-large-2">
@@ -1462,7 +1437,7 @@
           <div parallax-container="true" class="testimonial-bg-wrapper-2">
             <div class="gradient-testimonall-2">
               <div class="text-block-53"><strong class="testimonial-author">TheWing.ai | Military Decision Intelligence Platform</strong></div>
-            </div><img class="testimonial-bg-img parallax" src="images/Message-BG.webp" alt="Black gradient background fading from dark to lighter shades in the center." sizes="(max-width: 638px) 100vw, 638px" loading="lazy" srcset="images/FAQ-Card-BG-p-500.webp 500w, images/Message-BG.webp 638w">
+            </div><img class="testimonial-bg-img parallax" src="images/Message-BG.webp" alt="Black gradient background fading from dark to lighter shades in the center." sizes="100vw" loading="lazy" srcset="images/FAQ-Card-BG-p-500.webp 500w, images/Message-BG.webp 638w">
           </div>
           <div class="testimonial-content-2">
             <div class="testimonial-quote-2">Military decisions require more than numbers. TheWing calculates the data. Amy helps you understand what it means, what matters, and what to consider next.</div>
@@ -1560,10 +1535,10 @@
         <div data-w-id="4d2df682-5b13-cf04-e5f6-a1dcfbcb5449" style="-webkit-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="highlight_marquee-2">
           <div class="highlight_marquee-group">
             <div class="highlight_marquee-texts">
-              <div class="highlight_marquee-box"><img sizes="(max-width: 800px) 100vw, 800px" srcset="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7-p-500.png 500w, images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png 800w" alt="" src="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png" loading="lazy" class="icon-height-large-2">
+              <div class="highlight_marquee-box"><img sizes="100vw" srcset="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7-p-500.png 500w, images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png 800w" alt="" src="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png" loading="lazy" class="icon-height-large-2">
                 <div class="heading-style-h4-3 text-color-alternate">Veteran-Owned</div>
               </div>
-              <div class="highlight_marquee-box"><img sizes="(max-width: 800px) 100vw, 800px" srcset="images/23F6295F-2530-4C86-9849-70534F5B1BE0-p-500.png 500w, images/23F6295F-2530-4C86-9849-70534F5B1BE0.png 800w" alt="" src="images/23F6295F-2530-4C86-9849-70534F5B1BE0.png" loading="lazy" class="icon-height-large-2">
+              <div class="highlight_marquee-box"><img sizes="100vw" srcset="images/23F6295F-2530-4C86-9849-70534F5B1BE0-p-500.png 500w, images/23F6295F-2530-4C86-9849-70534F5B1BE0.png 800w" alt="" src="images/23F6295F-2530-4C86-9849-70534F5B1BE0.png" loading="lazy" class="icon-height-large-2">
                 <div class="heading-style-h4-3 text-color-alternate">Artificial Intelligence</div>
               </div>
               <div class="highlight_marquee-box"><img width="100" height="100" alt="" src="images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4.png" loading="lazy" srcset="images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4-p-500.png 500w, images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4.png 800w" sizes="100px" class="icon-height-large-2">
@@ -2291,10 +2266,10 @@
         <div data-w-id="bdb76a2c-90bb-56d1-28a2-6e42e2c2a957" style="-webkit-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 1.5rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="highlight_marquee-2">
           <div class="highlight_marquee-group">
             <div class="highlight_marquee-texts">
-              <div class="highlight_marquee-box"><img sizes="(max-width: 800px) 100vw, 800px" srcset="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7-p-500.png 500w, images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png 800w" alt="" src="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png" loading="lazy" class="icon-height-large-2">
+              <div class="highlight_marquee-box"><img sizes="100vw" srcset="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7-p-500.png 500w, images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png 800w" alt="" src="images/FD3D91A4-DF28-4384-BE8D-383A4DC7E6E7.png" loading="lazy" class="icon-height-large-2">
                 <div class="heading-style-h4-3 text-color-alternate">Veteran-Owned</div>
               </div>
-              <div class="highlight_marquee-box"><img sizes="(max-width: 800px) 100vw, 800px" srcset="images/23F6295F-2530-4C86-9849-70534F5B1BE0-p-500.png 500w, images/23F6295F-2530-4C86-9849-70534F5B1BE0.png 800w" alt="" src="images/23F6295F-2530-4C86-9849-70534F5B1BE0.png" loading="lazy" class="icon-height-large-2">
+              <div class="highlight_marquee-box"><img sizes="100vw" srcset="images/23F6295F-2530-4C86-9849-70534F5B1BE0-p-500.png 500w, images/23F6295F-2530-4C86-9849-70534F5B1BE0.png 800w" alt="" src="images/23F6295F-2530-4C86-9849-70534F5B1BE0.png" loading="lazy" class="icon-height-large-2">
                 <div class="heading-style-h4-3 text-color-alternate">Artificial Intelligence</div>
               </div>
               <div class="highlight_marquee-box"><img width="100" height="100" alt="" src="images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4.png" loading="lazy" srcset="images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4-p-500.png 500w, images/C0BCD46A-D476-4F87-AFE9-1B2D9B5474D4.png 800w" sizes="100px" class="icon-height-large-2">
@@ -2352,7 +2327,7 @@
           <div class="footer-content-wrapper-2">
             <a href="#" class="footer-logo-link w-inline-block">
               <div class="logo-footer-wrapper">
-                <div><img src="images/Home-01-About.png" loading="lazy" sizes="100vw" srcset="images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-500.png 500w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-800.png 800w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-1080.png 1080w, images/Home-01-About.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
+                <div><img src="images/Home-01-About.png" loading="lazy" sizes="(max-width: 1260px) 100vw, 1260px" srcset="images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-500.png 500w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-800.png 800w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-1080.png 1080w, images/Home-01-About.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
               </div>
             </a>
             <div class="space-text"></div>
