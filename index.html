@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Sep 23 2026 23:06:00 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Sep 24 2026 00:23:21 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a6ff0545aa01c93602db70c" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -523,24 +523,260 @@
                     </div>
                     <div id="w-node-_2c28dba6-e2cc-23d5-1b5a-01cacca7a6ba-602db70c" class="nav-right-content-wrapper">
                       <a href="military/new-user-account.html" class="nav-image-wrapper w-inline-block">
-                        <div class="w-embed w-script">
-                          <div style="
-  display:block !important;
-  width:100% !important;
-  min-height:520px !important;
-  background:red !important;
-  position:relative !important;
-  z-index:9999 !important;
-">
-                            <div id="thewing-create-account"></div>
+                        <div class="w-embed"><!--  =========================================================
+     THEWING.AI — CREATE ACCOUNT
+     FINAL SIMPLE VERSION
+     ONLY:
+     1. AMYFinal image
+     2. Animated Get Started button
+=========================================================  -->
+                          <div id="tw-final-create-account">
+                            <!--  FINAL IMAGE  -->
+                            <img class="tw-final-image" src="images/Create-Account.jpg" alt="Create a TheWing.ai Account">
+                            <!--  ANIMATED GET STARTED BUTTON  -->
+                            <a class="tw-final-button" href="https://the-wing.webflow.io/military/new-user-account" aria-label="Create your TheWing.ai account">
+                              <span class="tw-final-button-text">
+                                Get Started
+                              </span>
+                              <span class="tw-final-button-arrow" aria-hidden="true">
+                                →
+                              </span>
+                            </a>
                           </div>
-                          <script src="https://thewing.netlify.app/create-account-mobile.js?v=iphone-test-1"></script>
+                          <style>
+  /* =========================================================
+     RESET — ONLY THIS COMPONENT
+  ========================================================= */
+  #tw-final-create-account,
+  #tw-final-create-account * {
+    box-sizing: border-box;
+  }
+  /* =========================================================
+     IMAGE CONTAINER
+  ========================================================= */
+  #tw-final-create-account {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+  }
+  /* =========================================================
+     AMY FINAL IMAGE
+  ========================================================= */
+  #tw-final-create-account .tw-final-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  /* =========================================================
+     GET STARTED BUTTON
+     Positioned over the empty area already contained
+     inside the HUD artwork in the image.
+  ========================================================= */
+  #tw-final-create-account .tw-final-button {
+    position: absolute;
+    z-index: 10;
+    /*
+       BUTTON POSITION
+    */
+    left: 9.2%;
+    top: 50%;
+    width: 32.5%;
+    height: 46px;
+    /* LAYOUT */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:
+      0 14px;
+    overflow: hidden;
+    /* APPEARANCE */
+    border:
+      1px solid
+      rgba(215, 168, 94, .78);
+    border-radius:
+      9px;
+    background:
+      linear-gradient(
+        180deg,
+        #172231 0%,
+        #091321 100%
+      );
+    color:
+      #f2cc86;
+    box-shadow:
+      inset 0 1px 0
+      rgba(255, 255, 255, .10),
+      0 5px 14px
+      rgba(0, 0, 0, .25),
+      0 0 8px
+      rgba(215, 168, 94, .06);
+    /* TYPOGRAPHY */
+    font-family:
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Arial,
+      sans-serif;
+    font-size:
+      clamp(7px, .85vw, 13px);
+    line-height:
+      1;
+    font-weight:
+      800;
+    letter-spacing:
+      .02em;
+    text-decoration:
+      none;
+    /* MOBILE TAP */
+    -webkit-tap-highlight-color:
+      transparent;
+    touch-action:
+      manipulation;
+  }
+  /* =========================================================
+     ANIMATED GOLD SWEEP
+  ========================================================= */
+  #tw-final-create-account .tw-final-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -45%;
+    width: 30%;
+    pointer-events: none;
+    background:
+      linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 224, 165, .10) 20%,
+        rgba(255, 224, 165, .72) 50%,
+        rgba(255, 224, 165, .10) 80%,
+        transparent 100%
+      );
+    animation:
+      twFinalGoldSweep
+      3.4s
+      ease-in-out
+      infinite;
+  }
+  @keyframes twFinalGoldSweep {
+    0% {
+      left: -45%;
+      opacity: 0;
+    }
+    14% {
+      opacity: 0;
+    }
+    28% {
+      opacity: .85;
+    }
+    58% {
+      left: 120%;
+      opacity: .85;
+    }
+    70% {
+      opacity: 0;
+    }
+    100% {
+      left: 120%;
+      opacity: 0;
+    }
+  }
+  /* =========================================================
+     BUTTON TEXT
+  ========================================================= */
+  #tw-final-create-account .tw-final-button-text {
+    position: relative;
+    z-index: 2;
+  }
+  /* =========================================================
+     ARROW
+  ========================================================= */
+  #tw-final-create-account .tw-final-button-arrow {
+    position: relative;
+    z-index: 2;
+    font-size:
+      19px;
+    line-height:
+      1;
+  }
+  /* =========================================================
+     TAP / CLICK FEEDBACK
+  ========================================================= */
+  #tw-final-create-account .tw-final-button:active {
+    border-color:
+      #f2cc86;
+    background:
+      linear-gradient(
+        180deg,
+        #223248 0%,
+        #0d1b2c 100%
+      );
+    box-shadow:
+      inset 0 1px 0
+      rgba(255, 255, 255, .12),
+      0 0 15px
+      rgba(215, 168, 94, .30);
+  }
+  /* =========================================================
+     MOBILE
+  ========================================================= */
+  @media (max-width: 600px) {
+    #tw-final-create-account .tw-final-button {
+      height:
+        30px;
+      padding:
+        0 8px;
+      border-radius:
+        6px;
+      font-size:
+        7px;
+    }
+    #tw-final-create-account .tw-final-button-arrow {
+      font-size:
+        13px;
+    }
+  }
+  /* =========================================================
+     SMALL iPHONE
+  ========================================================= */
+  @media (max-width: 390px) {
+    #tw-final-create-account .tw-final-button {
+      height:
+        27px;
+      padding:
+        0 7px;
+      font-size:
+        6.5px;
+    }
+    #tw-final-create-account .tw-final-button-arrow {
+      font-size:
+        12px;
+    }
+  }
+  /* =========================================================
+     ACCESSIBILITY
+  ========================================================= */
+  @media (prefers-reduced-motion: reduce) {
+    #tw-final-create-account .tw-final-button::before {
+      animation:
+        none;
+    }
+  }
+</style>
                         </div>
                       </a>
                       <div class="nav-content-wrapper">
-                        <div class="nav-content-holder">
-                          <div class="nav-text">Military Decision Platform</div>
-                        </div>
+                        <div class="nav-content-holder"></div>
                         <div class="nav-content-wrapper">
                           <div class="content-tag-wrap-2">
                             <div class="create-your-account w-embed"><!--  =========================================================

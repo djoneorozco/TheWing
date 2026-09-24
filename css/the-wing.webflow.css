@@ -31885,7 +31885,7 @@ blockquote {
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .faq-1-tab-pane {
@@ -32011,7 +32011,7 @@ blockquote {
   color: var(--colors--01-accent);
   text-align: center;
   margin-left: 0;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-left: 5px;
   padding-right: 0;
 }
@@ -33680,8 +33680,8 @@ blockquote {
   --_theme---background--tertiarybackground: var(--colors--dark-50);
   --_theme---textcolor--tertiarytext: var(--colors--dark-30);
   margin-top: 0;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
   box-shadow: 0 2px 5px #000000c4;
 }
 
@@ -61506,7 +61506,7 @@ blockquote {
 
   .section-41 {
     margin-top: 0;
-    padding-top: 20px;
+    padding-top: 40px;
   }
 
   .slider-bg-content-7 {
