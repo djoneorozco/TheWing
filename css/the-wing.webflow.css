@@ -28706,8 +28706,8 @@ blockquote {
   grid-row-gap: 16px;
   flex-flow: column;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
   display: flex;
 }
 
@@ -30987,7 +30987,7 @@ blockquote {
 }
 
 .award-02-image-wrapper._03 {
-  background-image: url('../images/Air-Force-Fitness-2026-.jpg');
+  background-image: url('../images/Air-Force-Fitness-2026-.png');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30996,7 +30996,7 @@ blockquote {
 }
 
 .award-02-image-wrapper._02 {
-  background-image: url('../images/Award-02_1Award 02.webp');
+  background-image: url('../images/Award-02.png');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36352,6 +36352,11 @@ blockquote {
   margin-right: 0;
 }
 
+.ad-imbe {
+  width: 471.672px;
+  max-width: 464px;
+}
+
 @media screen and (min-width: 1280px) {
   h2 {
     width: 130%;
@@ -39586,6 +39591,10 @@ blockquote {
     border-width: 2px;
     border-color: #7e7a72;
   }
+
+  .ad-imbe {
+    box-shadow: 0 2px 5px #000000bf;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -42520,7 +42529,7 @@ blockquote {
   }
 
   .slider-mask {
-    padding-left: 20px;
+    padding-left: 0;
   }
 
   .container-83 {
@@ -44267,8 +44276,8 @@ blockquote {
   }
 
   .content-17 {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 140px;
+    padding-right: 140px;
   }
 
   .slider-10 {
@@ -44528,7 +44537,7 @@ blockquote {
   }
 
   .image-223 {
-    height: 500px;
+    height: 450px;
     box-shadow: 0 2px 5px #000;
   }
 
@@ -44775,7 +44784,7 @@ blockquote {
   }
 
   .award-02-image-wrapper._04 {
-    background-image: url('../images/Award-02_1Award 02.webp');
+    background-image: url('../images/Award-02.png');
   }
 
   .award-02-tab {
@@ -45942,6 +45951,10 @@ blockquote {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .ad-imbe {
+    box-shadow: 0 2px 5px #000;
   }
 }
 
@@ -47404,6 +47417,13 @@ blockquote {
   .slider-container {
     text-align: center;
   }
+
+  .ad-imbe {
+    width: 731.703px;
+    max-width: 595px;
+    height: auto;
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -48488,6 +48508,10 @@ blockquote {
 
   .inside-button-14.none-padding {
     border-radius: 60px;
+  }
+
+  .inside-button-14.none-padding.full-size.for--blog {
+    width: 100%;
   }
 
   .principle-second-block-copy.ai-child {
@@ -49832,6 +49856,17 @@ blockquote {
     align-items: flex-start;
   }
 
+  .full-size {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
+
   .section_heading-4 {
     margin-left: 131px;
   }
@@ -51010,6 +51045,11 @@ blockquote {
     background-color: #0000;
   }
 
+  .align-left-14 {
+    justify-content: center;
+    align-items: center;
+  }
+
   .side-nav-button-wrapper {
     display: none;
   }
@@ -51286,8 +51326,8 @@ blockquote {
   .content-17 {
     width: 100%;
     max-width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: block;
   }
 
@@ -51316,10 +51356,21 @@ blockquote {
     height: 400px;
   }
 
+  .primary-glow-wrapper-24.blog-grid-child.second-version {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
   .test-in-black {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     flex-flow: column;
+  }
+
+  .image-219 {
+    width: 100%;
+    max-width: 100%;
   }
 
   .iphones {
@@ -51387,7 +51438,7 @@ blockquote {
   }
 
   .video-for-va {
-    height: 525px;
+    height: 450px;
   }
 
   .style-guide-heading-main-wrapper-copy {
@@ -51395,10 +51446,23 @@ blockquote {
     padding-bottom: 60px;
   }
 
-  .test-in-black-copy, .the-future-is-pcsu-ad {
+  .test-in-black-copy {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     flex-flow: column;
+  }
+
+  .the-future-is-pcsu-ad {
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    text-align: center;
+    flex-flow: column;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    padding-bottom: 0;
+    display: grid;
+    box-shadow: 0 2px 5px 5px #cfc9c5;
   }
 
   .section-47 {
@@ -51424,7 +51488,7 @@ blockquote {
   }
 
   .image-223 {
-    height: 525px;
+    height: 450px;
     padding-bottom: 0;
     box-shadow: 0 2px 5px #000;
   }
@@ -51439,7 +51503,7 @@ blockquote {
     grid-auto-columns: 1fr;
     width: 100%;
     max-width: 100%;
-    padding: 20px 20px 37px;
+    padding: 20px;
     display: flex;
   }
 
@@ -52098,6 +52162,12 @@ blockquote {
     max-height: 28px;
   }
 
+  .nav-content-wrapper {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    display: block;
+  }
+
   .hero-client-image-wrapper {
     width: 2.25rem;
     height: 2.25rem;
@@ -52380,9 +52450,8 @@ blockquote {
     max-width: 100%;
     max-height: 100%;
     margin-bottom: 0;
-    padding-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 0;
+    padding: 10px 10px 20px;
     display: block;
   }
 
@@ -52396,7 +52465,7 @@ blockquote {
     grid-auto-columns: 1fr;
     width: 100%;
     max-width: 100%;
-    padding-bottom: 95px;
+    padding-bottom: 20px;
     display: flex;
   }
 
@@ -52907,6 +52976,12 @@ blockquote {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .ad-imbe {
+    width: 100%;
+    max-width: 100%;
+    display: block;
   }
 }
 
@@ -55878,6 +55953,7 @@ blockquote {
     --_theme---textcolor--accenttext1: var(--colors--01-accent);
     --_theme---background--tertiarybackground: var(--colors--dark-50);
     --_theme---textcolor--tertiarytext: var(--colors--dark-30);
+    height: 90px;
   }
 
   .navigation {
@@ -56316,10 +56392,12 @@ blockquote {
 
   .img-editorial.parallax {
     border-radius: 16px;
-    max-width: 100%;
+    width: 100%;
+    max-width: none;
     height: 100%;
     margin-left: 0;
     margin-right: 0;
+    transform: scale(1.1);
     box-shadow: 0 2px 5px 3px #0000005c;
   }
 
@@ -58519,8 +58597,8 @@ blockquote {
   }
 
   .home2-2cols-2 {
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
+    grid-column-gap: .4rem;
+    grid-row-gap: .4rem;
   }
 
   .home1_hero_video-2 {
@@ -58738,6 +58816,7 @@ blockquote {
   .header-text-wrapper-3.centered {
     margin-top: 0;
     margin-left: 0;
+    padding-bottom: 1rem;
   }
 
   ._3cols-heading-3 {
@@ -59341,7 +59420,7 @@ blockquote {
 
   .engineering-pcsus {
     background-color: #f4f4f4;
-    padding-left: 2rem;
+    padding-left: 0;
     padding-right: 0;
   }
 
@@ -60639,8 +60718,8 @@ blockquote {
   .slider-slide-2 {
     width: 100%;
     max-width: none;
-    height: 100%;
-    margin-bottom: 0;
+    height: 450px;
+    margin-bottom: 40px;
     padding-bottom: 0;
   }
 
@@ -60699,7 +60778,8 @@ blockquote {
   .suite-subtitle.center-align-2 {
     width: 100%;
     margin-left: 0;
-    padding: 10px 0 0;
+    padding: 0;
+    line-height: 1.3;
   }
 
   .slider-h01-image-wrap-3 {
@@ -61501,12 +61581,12 @@ blockquote {
     width: 100%;
     height: 100%;
     margin-bottom: 40px;
-    padding-bottom: 67px;
+    padding-bottom: 20px;
   }
 
   .section-41 {
     margin-top: 0;
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   .slider-bg-content-7 {
@@ -61676,7 +61756,8 @@ blockquote {
   }
 
   .primary-glow-wrapper-25.blog-grid-child-copy.second-version {
-    height: 50%;
+    height: 17%;
+    min-height: 44.905%;
     max-height: none;
     margin-top: 0;
   }
@@ -61824,10 +61905,12 @@ blockquote {
     background-color: #111;
     width: 100%;
     max-width: 100%;
-    height: 100%;
-    margin-bottom: 0;
+    height: 450px;
+    min-height: auto;
+    margin-bottom: 60px;
     margin-left: 0;
     padding: 0 5px;
+    display: flex;
   }
 
   .space-213 {
@@ -61871,7 +61954,7 @@ blockquote {
     color: #e2dfdf;
     width: 100%;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
     font-size: 16px;
@@ -62010,18 +62093,25 @@ blockquote {
   }
 
   .fsize-s-6 {
-    margin-left: -38px;
+    margin-left: 0;
     font-weight: 600;
   }
 
   .editorial-grid-5cols-3 {
-    width: 500px;
-    max-width: 400px;
-    margin-left: -35px;
+    grid-column-gap: .6rem;
+    grid-row-gap: .6rem;
+    text-align: justify;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    display: grid;
   }
 
   .container-108 {
-    padding-left: 4rem;
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -62031,11 +62121,27 @@ blockquote {
     padding-bottom: 1rem;
   }
 
+  .editorial-grid-3cols-5 {
+    text-align: center;
+  }
+
   .about-founder-img-wrapper-3 {
-    margin-left: -44px;
+    margin-left: 0;
+  }
+
+  .story-content-wrap-2 {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    text-align: justify;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: block;
   }
 
   .story-wrapper-3 {
+    grid-column-gap: 1.6rem;
+    grid-row-gap: 1.6rem;
     padding-bottom: 1rem;
   }
 
@@ -62369,7 +62475,17 @@ blockquote {
     transform: scale(.6);
   }
 
-  .image-number-3, .image-number-1, .image-number-2 {
+  .image-number-3 {
+    background-image: url('../images/Air-Force-Family.png');
+    height: 150px;
+  }
+
+  .image-number-1 {
+    background-image: url('../images/A1EB3C65-A1E3-4A1E-99A7-D2A4F508CD2E.jpg');
+    height: 150px;
+  }
+
+  .image-number-2 {
     height: 150px;
   }
 
@@ -62883,7 +62999,7 @@ blockquote {
   .paragraph-59 {
     width: 500px;
     max-width: 400px;
-    margin-left: -38px;
+    margin-left: 0;
   }
 
   .prfa-cabinet {
@@ -62997,7 +63113,7 @@ blockquote {
     max-width: 100%;
     margin-bottom: 0;
     margin-left: 0;
-    padding: 0 5px;
+    padding: 0 5px 10px;
   }
 
   .text-block-55 {
@@ -63018,9 +63134,9 @@ blockquote {
   }
 
   .pcsu-link {
-    height: 100%;
+    height: 97%;
     margin-bottom: var(--spacing--1);
-    padding: 0 0 19px;
+    padding: 0;
   }
 
   .fitness-calculator {
@@ -63845,6 +63961,11 @@ blockquote {
 
   .card-item-8 {
     height: 24.8rem;
+  }
+
+  .ad-imbe {
+    width: 100%;
+    position: static;
   }
 }
 
