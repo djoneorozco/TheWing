@@ -9,7 +9,7 @@
   --spacing--1-5: 0px;
   --colors--dark-40: #6b6b6b;
   --spacing--1: 0px;
-  --spacing--0-5: 10px;
+  --spacing--0-5: 0px;
   --_theme---textcolor--secondarytext: var(--colors--dark-60);
   --_theme---textcolor--accenttext2: var(--colors--dark-70);
   --spacing--2-5: 2.5rem;
@@ -173,7 +173,7 @@ h2 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--m);
+  --_textstyle---fontsize: var(--iconsize--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -203,7 +203,7 @@ h4 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1592,7 +1592,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1603,7 +1603,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1655,7 +1655,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--m);
+  --_textstyle---fontsize: var(--iconsize--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -1684,7 +1684,7 @@ blockquote {
   text-align: center;
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -2426,7 +2426,7 @@ blockquote {
 
 .header-title.l {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--m);
+  --_textstyle---fontsize: var(--iconsize--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -2669,7 +2669,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -3265,7 +3265,7 @@ blockquote {
 
 .docs-content-heading {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -4563,7 +4563,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -4928,7 +4928,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--m);
+  --_textstyle---fontsize: var(--iconsize--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -15312,7 +15312,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -16009,7 +16009,7 @@ blockquote {
 
 .header-subtitle-2.fsize-xl {
   color: #6b6b6b00;
-  margin-top: -24px;
+  margin-top: -12px;
 }
 
 .img-card-home1-2 {
@@ -16930,7 +16930,7 @@ blockquote {
 .fsize-s-3 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -16987,6 +16987,7 @@ blockquote {
   width: 100%;
   max-width: 100%;
   margin-left: 0;
+  padding-top: 19px;
 }
 
 .bento-image-bg-content {
@@ -17058,7 +17059,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--m);
+  --_textstyle---fontsize: var(--iconsize--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -17300,7 +17301,7 @@ blockquote {
 .header-2 {
   z-index: 1;
   background-color: #f4f4f4;
-  padding-top: 2rem;
+  padding-top: 0;
   position: relative;
 }
 
@@ -18784,10 +18785,8 @@ blockquote {
 
 .engineering-pcsus {
   max-width: 2100px;
-  margin-top: 40px;
-  padding-bottom: 0;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  margin-top: 0;
+  padding: 40px 4rem 0;
   position: relative;
 }
 
@@ -22866,7 +22865,7 @@ blockquote {
 
 .heading-148, .pcsu-010 {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -25016,7 +25015,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -29744,7 +29743,7 @@ blockquote {
   text-align: center;
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -30463,7 +30462,7 @@ blockquote {
 .fsize-s-5 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -30614,7 +30613,7 @@ blockquote {
 .fsize-s-6 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -34632,7 +34631,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--m);
+  --_textstyle---fontsize: var(--iconsize--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -35682,7 +35681,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -36753,8 +36752,8 @@ blockquote {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .section-200.home1-sticky {
@@ -36766,7 +36765,7 @@ blockquote {
 .fsize-s-8 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -37445,7 +37444,8 @@ blockquote {
 
 .updates-banner-4 {
   text-transform: uppercase;
-  background-color: #aeff6b;
+  background-color: #ff6f01;
+  background-image: linear-gradient(45deg, #b4e7cc 5%, #8da9f5);
   padding-left: 4rem;
   padding-right: 4rem;
   font-family: DM Sans, sans-serif;
@@ -37474,8 +37474,8 @@ blockquote {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .heading-211 {
@@ -37594,6 +37594,65 @@ blockquote {
   max-width: 100%;
   height: 100%;
   margin-top: 0;
+}
+
+.air-force-base-map {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  background-color: #111;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px 10px;
+  display: grid;
+}
+
+.title-about-us {
+  text-align: center;
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 0;
+}
+
+.gradient-overlay-bottom-copy-copy {
+  z-index: 99;
+  background-image: linear-gradient(0deg, #111, #0000 50%);
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  position: absolute;
+  inset: 0% auto auto 0%;
+}
+
+.header-text-wrapper-3-copy {
+  text-align: left;
+  padding-bottom: 4rem;
+}
+
+.header-text-wrapper-3-copy.blog-home-3 {
+  position: sticky;
+  inset: 2rem;
+}
+
+.header-text-wrapper-3-copy.centered {
+  text-align: center;
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: -17px;
+  padding-bottom: 2rem;
+}
+
+.header-text-wrapper-3-copy.centered-copy {
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: -17px;
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 1280px) {
@@ -40984,7 +41043,7 @@ blockquote {
 
   .blog-nae-wrapper-6 {
     background-color: #0000;
-    padding: 0 0 .2em 2em;
+    padding: 0 0 .2em;
   }
 
   .paragraph-71 {
@@ -41011,6 +41070,11 @@ blockquote {
   .blog-nae-wrapper-7 {
     background-color: #0000;
     padding: 0 0 .2em 2em;
+  }
+
+  .updates-banner-4 {
+    color: #131313;
+    background-image: linear-gradient(55deg, #b7e9ca 32%, #8eaaf5 94%);
   }
 
   .heading-211 {
@@ -41049,6 +41113,15 @@ blockquote {
 
   .mdi-container.amy-ad-container {
     margin-top: 0;
+  }
+
+  .air-force-base-map {
+    background-color: #111;
+  }
+
+  .title-about-us {
+    width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -43252,7 +43325,7 @@ blockquote {
 
   .center-align-4 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0;
     margin-left: 0;
   }
 
@@ -43281,6 +43354,10 @@ blockquote {
 
   .image-141 {
     height: 100%;
+  }
+
+  .top-section-pattern-2 {
+    padding-top: 0;
   }
 
   .cta-image-4 {
@@ -47552,6 +47629,10 @@ blockquote {
     box-shadow: 0 2px 5px #000;
   }
 
+  .services-h01-text-wrap-3 {
+    max-width: 100%;
+  }
+
   .blog-nae-wrapper-4-copy-copy {
     height: 50px;
   }
@@ -47673,9 +47754,9 @@ blockquote {
   }
 
   .blog-nae-wrapper-6 {
-    width: 98%;
-    margin-bottom: 3px;
-    margin-left: 5px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 
   .card-text-details-11 {
@@ -47738,6 +47819,34 @@ blockquote {
     height: 100%;
     margin-top: 0;
     padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .air-force-base-map {
+    height: 100%;
+  }
+
+  .title-about-us {
+    margin-left: 0;
+  }
+
+  .gradient-overlay-bottom-copy-copy {
+    background-image: linear-gradient(0deg, #111, #0000 50%);
+    margin-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .header-text-wrapper-3-copy.centered {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -128px;
+    padding-bottom: 0;
+  }
+
+  .header-text-wrapper-3-copy.centered-copy {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     padding-bottom: 0;
   }
 }
@@ -48967,6 +49076,16 @@ blockquote {
     align-items: center;
   }
 
+  .section-58.faq {
+    background-image: url('../images/Inner-Demo-Section-BG.svg');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
   .about-us-2 {
     margin-top: 102px;
   }
@@ -49260,7 +49379,7 @@ blockquote {
   }
 
   .sliderinblack-6-copy {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .create-your-account-2 {
@@ -49274,17 +49393,35 @@ blockquote {
     margin-top: 0;
   }
 
+  .home1-2cols-3 {
+    padding-bottom: 60px;
+  }
+
+  .container-125 {
+    padding-bottom: 100px;
+  }
+
   .opacity-80-9 {
     margin-top: 0;
     font-size: 24px;
   }
 
   .pcsu-link-2 {
-    height: 650px;
+    height: 100%;
   }
 
   .image-container.blog-grid-child.second-version, .image-container.blog-grid-child-copy.second-version, .image-container.blog-grid-child-copy.second-version, .image-container.blog-grid-child-copy.second-version, .image-container.image-holder.second-version, .image-container.image-holder.second-version {
     max-height: 100%;
+  }
+
+  .blog-nae-wrapper-6 {
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .heading-210 {
+    color: #d3d2cf;
   }
 
   .opacity-80-10 {
@@ -49312,6 +49449,14 @@ blockquote {
   .mdi-container.amy-ad-container {
     height: 100%;
     max-height: 100%;
+  }
+
+  .air-force-base-map {
+    height: 100%;
+  }
+
+  .title-about-us {
+    margin-top: -101px;
   }
 }
 
@@ -50940,6 +51085,11 @@ blockquote {
     left: 0;
   }
 
+  .gradient-overlay-bottom {
+    background-image: linear-gradient(337deg, #111 10%, #0000 50%);
+    margin-top: -15px;
+  }
+
   .cta-image-2 {
     min-width: 100%;
     max-width: 100%;
@@ -51504,6 +51654,17 @@ blockquote {
     grid-template-columns: .5fr;
   }
 
+  .image-2 {
+    border-radius: 14px;
+    margin-top: 0;
+    margin-left: 0;
+    transform: scale(1);
+  }
+
+  .exaplin-about-us {
+    text-align: center;
+  }
+
   .tryitnow-2 {
     justify-content: flex-start;
     width: 90%;
@@ -51605,6 +51766,10 @@ blockquote {
     height: 100%;
   }
 
+  .gradient-overlay-5 {
+    margin-left: 0;
+  }
+
   .container-69 {
     position: relative;
   }
@@ -51638,7 +51803,7 @@ blockquote {
   }
 
   .line-2 {
-    margin-top: -39px;
+    margin-top: 0;
   }
 
   .bento-bg-block {
@@ -52817,6 +52982,7 @@ blockquote {
   .about-us-image-copy {
     min-width: 100%;
     max-width: 100%;
+    margin-top: 0;
     margin-left: 0;
   }
 
@@ -53187,6 +53353,11 @@ blockquote {
     margin-top: 40px;
   }
 
+  .home-two-card-marquee-text {
+    font-size: 4.5rem;
+    line-height: 4rem;
+  }
+
   .cards-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -53553,7 +53724,7 @@ blockquote {
   }
 
   .about-01-number-subtitle {
-    font-size: .875rem;
+    font-size: .95rem;
   }
 
   .about-01-number-grid {
@@ -53561,6 +53732,10 @@ blockquote {
     grid-row-gap: 11px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .about-01-solid-number {
+    padding-top: 10px;
   }
 
   .home-01-about-button-wrapper {
@@ -53968,6 +54143,11 @@ blockquote {
     padding-top: 40px;
   }
 
+  .section-wrapper-2 {
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+  }
+
   .faq-2-grid {
     grid-column-gap: 48px;
     grid-row-gap: 48px;
@@ -53986,6 +54166,8 @@ blockquote {
   .container-111 {
     margin-bottom: -47px;
     padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .heading-195 {
@@ -53997,11 +54179,21 @@ blockquote {
     background-image: url('../images/home1.jpg');
     background-position: 50%;
     background-size: cover;
+    height: 170px;
     margin-bottom: 10px;
   }
 
+  .home-01-about-wrapper-2 {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
   .about-01-number-grid-2 {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
     display: block;
   }
 
@@ -54010,7 +54202,8 @@ blockquote {
     grid-row-gap: 21px;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    height: 150px;
+    padding: 0 20px;
     display: flex;
   }
 
@@ -54038,6 +54231,12 @@ blockquote {
 
   .about-us-image-2 {
     display: none;
+  }
+
+  .thee-glass {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    display: flex;
   }
 
   .amy-segment {
@@ -54921,10 +55120,10 @@ blockquote {
   }
 
   .card-text-details-9 {
-    opacity: .48;
+    opacity: 1;
     mix-blend-mode: normal;
     background-image: url('../images/Create-Account-TheWing.ai.png');
-    background-position: 50% 0;
+    background-position: 80% 0;
     background-size: auto;
   }
 
@@ -55182,7 +55381,7 @@ blockquote {
     grid-row-gap: 0rem;
     border-radius: 0;
     flex-flow: row;
-    width: calc(100% + 10.25rem);
+    width: auto;
     height: 700px;
     min-height: auto;
     margin-top: 0;
@@ -55269,6 +55468,12 @@ blockquote {
     height: 400px;
   }
 
+  .blog-nae-wrapper-6 {
+    grid-column-gap: 0em;
+    grid-row-gap: 0em;
+    height: 17%;
+  }
+
   .inside-button-36.none-padding, .inside-button-37.none-padding {
     border-radius: 60px;
   }
@@ -55296,6 +55501,10 @@ blockquote {
 
   .card-item-9 {
     height: 25rem;
+  }
+
+  .updates-banner-4 {
+    background-image: linear-gradient(80deg, #b3e4cd 18%, #8ca8f5);
   }
 
   .services-h01-wrap-5 {
@@ -55359,6 +55568,31 @@ blockquote {
 
   .mdi-container.no-max-width, .mdi-container.amy-ad-container {
     opacity: 1;
+  }
+
+  .air-force-base-map {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+    flex-flow: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 10px 10px 0;
+    display: block;
+  }
+
+  .gradient-overlay-bottom-copy-copy {
+    margin-top: 0;
+  }
+
+  .header-text-wrapper-3-copy.blog-home-3 {
+    padding-bottom: 0;
   }
 }
 
@@ -58419,6 +58653,21 @@ blockquote {
   .primary-glow-wrapper-30.blog-grid-child {
     height: 350px;
   }
+
+  .air-force-base-map {
+    text-align: center;
+    width: 100%;
+  }
+
+  .title-about-us {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .gradient-overlay-bottom-copy-copy {
+    margin-top: -15px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -58650,6 +58899,7 @@ blockquote {
     width: 100%;
     max-width: 100%;
     padding-top: var(--_size---paddingsize--small);
+    background-size: auto;
     margin-top: 0;
     padding-right: 0;
     display: flex;
@@ -60552,7 +60802,7 @@ blockquote {
   .cta-wrapper-2 {
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0;
     padding-bottom: 10px;
   }
 
@@ -61254,7 +61504,7 @@ blockquote {
 
   .header-subtitle-2.fsize-xl {
     width: 100%;
-    margin-top: -21px;
+    margin-top: -27px;
   }
 
   .img-card-home1-2 {
@@ -61295,7 +61545,7 @@ blockquote {
     border-radius: 15px;
     margin-top: 0;
     margin-left: 0;
-    transform: scale(1);
+    transform: scale(.9);
   }
 
   .top-tag-wrap {
@@ -61465,8 +61715,13 @@ blockquote {
   }
 
   .gradient-overlay-5 {
+    opacity: .78;
     background-image: linear-gradient(270deg, #111, #0000 50%);
-    margin-left: 68px;
+    margin-left: 23px;
+  }
+
+  .bento-image-bg-wrap {
+    margin-top: -18px;
   }
 
   .slide-in-from-left-animation-3 {
@@ -61504,6 +61759,10 @@ blockquote {
     grid-template-columns: 1fr 1fr;
   }
 
+  .line-2 {
+    margin-top: 0;
+  }
+
   .icon-in-about-us-copy {
     margin-top: 0;
     margin-bottom: 20px;
@@ -61511,8 +61770,7 @@ blockquote {
   }
 
   .bento-bg-block {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px 10px;
   }
 
   .key-number-2 {
@@ -61528,6 +61786,11 @@ blockquote {
     height: 120%;
     margin-top: 0;
     margin-left: 0;
+  }
+
+  .image-141 {
+    max-width: none;
+    margin-top: 0;
   }
 
   .top-section-pattern-2 {
@@ -61560,14 +61823,18 @@ blockquote {
   }
 
   .sub-heading-03---24px {
-    margin-top: -9px;
+    margin-top: 0;
   }
 
   .bento-bg-content {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bento-bg-content.three {
+    margin-top: -66px;
   }
 
   .space-mid-2 {
@@ -61589,7 +61856,7 @@ blockquote {
   }
 
   .black-bg-wrap {
-    margin-top: -24px;
+    margin-top: 0;
     padding-bottom: 40px;
     padding-left: 0;
     padding-right: 0;
@@ -61817,7 +62084,7 @@ blockquote {
   .engineering-pcsu {
     color: var(--colors--dark-80);
     background-color: #0000;
-    margin-top: 6px;
+    margin-top: 0;
     padding-bottom: 0;
   }
 
@@ -62400,6 +62667,8 @@ blockquote {
     margin-top: 72px;
     margin-left: 0;
     margin-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .section-6.hero {
@@ -63455,7 +63724,7 @@ blockquote {
     max-height: 100%;
     margin-top: 1px;
     margin-bottom: 0;
-    margin-left: -17px;
+    margin-left: 20px;
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
@@ -64595,14 +64864,14 @@ blockquote {
   }
 
   .big-card-home1.dark {
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
     justify-content: center;
     align-items: center;
     width: 70%;
     height: auto;
     margin-left: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: .5rem;
+    padding: 1rem .5rem;
   }
 
   .container-107 {
@@ -64675,11 +64944,15 @@ blockquote {
   .story-content-wrap-2 {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    text-align: justify;
+    text-align: center;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     display: block;
+  }
+
+  .fsize-xxs-4 {
+    text-align: center;
   }
 
   .story-wrapper-3 {
@@ -65116,8 +65389,14 @@ blockquote {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     background-image: url('../images/home1.jpg');
-    background-position: 50%;
+    background-position: 0 100%;
+    background-size: cover;
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 150px;
     margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
   }
 
   .home-01-about-wrapper-2 {
@@ -65126,18 +65405,26 @@ blockquote {
   }
 
   .about-01-number-grid-2 {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    grid-template-rows: auto;
     grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
     margin-bottom: 0;
-    margin-right: 10px;
+    margin-right: 0;
+    display: grid;
   }
 
   .about-01-first-number-card-holder-2 {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: #ffffff14;
     border-color: #1616156b;
     justify-content: center;
     align-items: center;
+    height: 130px;
   }
 
   .about-us-2 {
@@ -65177,6 +65464,10 @@ blockquote {
     min-height: 120px;
     max-height: 120px;
     bottom: -20%;
+  }
+
+  .thee-glass {
+    margin-top: 20px;
   }
 
   .amy-segment {
@@ -65541,8 +65832,8 @@ blockquote {
   }
 
   .paragraph-59 {
-    width: 500px;
-    max-width: 400px;
+    width: 100%;
+    max-width: none;
     margin-left: 0;
   }
 
@@ -65555,6 +65846,7 @@ blockquote {
     grid-column-gap: .4rem;
     grid-row-gap: .4rem;
     grid-template-columns: 1fr;
+    margin-top: 0;
   }
 
   .testimonial-card-bg-img-2.dark {
@@ -66455,8 +66747,8 @@ blockquote {
   }
 
   .about-half-wrapper-6 {
-    background-image: url('../images/a-modern-living-room-with-a-large-window_1.jpg');
-    background-position: 0%;
+    background-image: url('../images/o.jpg');
+    background-position: 95% 0;
     background-size: cover;
     margin-top: 0;
     margin-bottom: -15px;
@@ -66491,6 +66783,7 @@ blockquote {
   }
 
   .card-text-details-9 {
+    opacity: 1;
     background-position: 100% 0;
     background-size: cover;
     border-color: #50331d;
@@ -66662,8 +66955,8 @@ blockquote {
     margin-bottom: 0;
     margin-left: 0;
     padding-bottom: 0;
-    padding-left: 40px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .services-h01-wrap-4 {
@@ -66744,6 +67037,7 @@ blockquote {
   }
 
   .opacity-80-9 {
+    opacity: 1;
     color: #e2dfdf;
     width: 100%;
     margin-top: 0;
@@ -66884,10 +67178,13 @@ blockquote {
     -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
     width: 99%;
-    margin-left: 2px;
-    margin-right: 10px;
-    padding-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: .5em;
+    padding-bottom: .5em;
     padding-right: 1em;
+    font-size: .1px;
+    font-weight: 300;
   }
 
   .paragraph-71 {
@@ -66899,7 +67196,16 @@ blockquote {
     min-height: 100%;
   }
 
-  .inside-button-36.none-padding, .inside-button-37.none-padding {
+  .inside-button-36.none-padding {
+    border-radius: 60px;
+  }
+
+  .heading-210 {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inside-button-37.none-padding {
     border-radius: 60px;
   }
 
@@ -66935,6 +67241,12 @@ blockquote {
 
   .card-item-9 {
     height: 24.8rem;
+  }
+
+  .updates-banner-4 {
+    color: #101010;
+    background-color: #b3e3cf;
+    background-image: linear-gradient(114deg, #b7e8ca 5%, #8eaaf5);
   }
 
   .services-h01-wrap-5 {
@@ -67001,7 +67313,37 @@ blockquote {
   }
 
   .primary-glow-wrapper-30.blog-grid-child {
-    height: 192px;
+    height: 234px;
+  }
+
+  .air-force-base-map {
+    max-width: 100%;
+    height: 100%;
+    max-height: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 5px 10px;
+  }
+
+  .title-about-us {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .gradient-overlay-bottom-copy-copy {
+    margin-top: 21px;
+  }
+
+  .paragraph-72 {
+    text-align: center;
+  }
+
+  .header-text-wrapper-3-copy.centered, .header-text-wrapper-3-copy.centered-copy {
+    margin-top: 0;
+    margin-left: 0;
+    padding-bottom: 1rem;
   }
 }
 
@@ -67061,10 +67403,6 @@ blockquote {
   grid-area: 2 / 3 / 3 / 4;
 }
 
-#w-node-_78045406-6645-58b2-c24e-1f63cdea2506-602db9df {
-  grid-area: span 2 / span 2 / span 2 / span 2;
-}
-
 #w-node-d28b0724-bb28-d5e9-4eaf-90c909ff93c8-09ff93c1 {
   place-self: center;
 }
@@ -67110,10 +67448,6 @@ blockquote {
     grid-column-start: 1;
   }
 
-  #w-node-_78045406-6645-58b2-c24e-1f63cdea2506-602db9df {
-    grid-column: span 3 / span 3;
-  }
-
   #w-node-d28b0724-bb28-d5e9-4eaf-90c909ff93c8-09ff93c1 {
     place-self: start;
   }
@@ -67138,10 +67472,6 @@ blockquote {
 
   #w-node-_78045406-6645-58b2-c24e-1f63cdea24fb-602db9df {
     grid-area: 1 / 1 / 2 / 2;
-  }
-
-  #w-node-_78045406-6645-58b2-c24e-1f63cdea2506-602db9df {
-    grid-column: span 1 / span 1;
   }
 }
 
