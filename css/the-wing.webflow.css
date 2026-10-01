@@ -158,7 +158,7 @@ h1 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--spacing--4);
+  --_textstyle---fontsize: var(--iconsize--m);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -173,7 +173,7 @@ h2 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -203,7 +203,7 @@ h4 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1592,7 +1592,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1603,7 +1603,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1642,7 +1642,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--spacing--4);
+  --_textstyle---fontsize: var(--iconsize--m);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -1655,7 +1655,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -1684,7 +1684,7 @@ blockquote {
   text-align: center;
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -2426,7 +2426,7 @@ blockquote {
 
 .header-title.l {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -2669,7 +2669,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -3265,7 +3265,7 @@ blockquote {
 
 .docs-content-heading {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -4563,7 +4563,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -4928,7 +4928,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -9001,10 +9001,10 @@ blockquote {
   background-color: #161615;
   outline: 3px solid #161615;
   width: 100%;
-  margin-top: 0;
+  margin-top: -47px;
   margin-bottom: 0;
   margin-left: 0;
-  padding-top: 5px;
+  padding-top: 0;
   padding-bottom: 5px;
   box-shadow: 1px 4px 10px 3px #050c1de3;
 }
@@ -12746,7 +12746,7 @@ blockquote {
   background-image: linear-gradient(0deg, #111, #0000 50%);
   width: 100%;
   height: 100%;
-  margin-top: 50px;
+  margin-top: 0;
   position: absolute;
   inset: 0% auto auto 0%;
 }
@@ -15313,7 +15313,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -16933,7 +16933,7 @@ blockquote {
 .fsize-s-3 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -17063,7 +17063,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -18175,6 +18175,7 @@ blockquote {
   overflow-wrap: normal;
   margin-bottom: 0;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .link-2 {
@@ -22876,7 +22877,7 @@ blockquote {
 
 .heading-148, .pcsu-010 {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -25026,7 +25027,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -29755,7 +29756,7 @@ blockquote {
   text-align: center;
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -30474,7 +30475,7 @@ blockquote {
 .fsize-s-5 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -30625,7 +30626,7 @@ blockquote {
 .fsize-s-6 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -33068,6 +33069,7 @@ blockquote {
 .text-xlarge-2.bg-04 {
   color: #8f8e8e;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .home-01-about-button-wrapper-2 {
@@ -34650,7 +34652,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -35478,10 +35480,10 @@ blockquote {
 
 .gradient-overlay-bottom-copy {
   z-index: 99;
-  background-image: linear-gradient(0deg, #111, #0000 50%);
+  background-image: linear-gradient(345deg, #111, #0000 50%);
   width: 100%;
   height: 100%;
-  margin-top: 20px;
+  margin-top: -26px;
   position: absolute;
   inset: 0% auto auto 0%;
 }
@@ -35700,7 +35702,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -36784,7 +36786,7 @@ blockquote {
 .fsize-s-8 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--l);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -37642,10 +37644,10 @@ blockquote {
 
 .gradient-overlay-bottom-copy-copy {
   z-index: 99;
-  background-image: linear-gradient(0deg, #111, #0000 50%);
+  background-image: linear-gradient(343deg, #111, #0000 50%);
   width: 100%;
   height: 100%;
-  margin-top: 50px;
+  margin-top: -32px;
   position: absolute;
   inset: 0% auto auto 0%;
 }
@@ -37735,6 +37737,44 @@ blockquote {
   width: 100%;
   max-width: 100%;
   padding-bottom: 10px;
+}
+
+.subtitle-slider {
+  text-align: center;
+}
+
+.main-title-about-us {
+  text-align: left;
+  padding-bottom: 4rem;
+}
+
+.main-title-about-us.blog-home-3 {
+  position: sticky;
+  inset: 2rem;
+}
+
+.main-title-about-us.centered {
+  text-align: center;
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-bottom: 2rem;
+}
+
+.main-title-about-us.title-for-about-us {
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-bottom: 0;
+}
+
+.top-gradients {
+  z-index: 99;
+  background-image: linear-gradient(0deg, #0000 50%, #111);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0% auto auto 0%;
 }
 
 @media screen and (min-width: 1280px) {
@@ -37945,6 +37985,11 @@ blockquote {
 
   .home2_hero_image-2 {
     margin-top: 0;
+  }
+
+  .sliderinblack {
+    margin-top: -38px;
+    padding-top: 0;
   }
 
   .highlight_marquee-2 {
@@ -41234,6 +41279,16 @@ blockquote {
     color: var(--colors--dark-50);
     margin-left: 0;
   }
+
+  .subtitle-slider {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .top-gradients {
+    background-color: #0000;
+    background-image: linear-gradient(0deg, #0000 50%, #111);
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -42584,6 +42639,8 @@ blockquote {
   }
 
   .cta-wrapper-2 {
+    text-align: center;
+    place-items: center stretch;
     margin-top: 0;
   }
 
@@ -48020,6 +48077,29 @@ blockquote {
     width: 100%;
     max-width: none;
   }
+
+  .subtitle-slider {
+    width: 105%;
+    margin-left: 0;
+  }
+
+  .main-title-about-us.centered {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -128px;
+    padding-bottom: 0;
+  }
+
+  .main-title-about-us.title-for-about-us {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+
+  .top-gradients {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -51260,6 +51340,10 @@ blockquote {
     max-width: 100%;
   }
 
+  .gradient-overlay-top {
+    background-image: linear-gradient(58deg, #0000 67%, #111);
+  }
+
   .cta-text-wrapper {
     padding-left: 64px;
     padding-right: 64px;
@@ -51268,8 +51352,9 @@ blockquote {
   }
 
   .gradient-overlay-bottom {
-    background-image: linear-gradient(337deg, #111 10%, #0000 50%);
-    margin-top: -15px;
+    background-image: linear-gradient(349deg, #111 10%, #0000 50%);
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .financial-intro {
@@ -51859,7 +51944,7 @@ blockquote {
     border-radius: 20px;
     margin-top: 0;
     margin-left: 0;
-    transform: scale(1);
+    transform: scale(.9);
     box-shadow: 0 2px 9px 1px #42260db0;
   }
 
@@ -52019,6 +52104,7 @@ blockquote {
   }
 
   .line-2 {
+    color: var(--colors--dark-50);
     margin-top: 0;
   }
 
@@ -52233,6 +52319,7 @@ blockquote {
   }
 
   .engineering-pcsu {
+    margin-top: 0;
     margin-bottom: .8rem;
     padding-bottom: 10px;
   }
@@ -52598,7 +52685,8 @@ blockquote {
   }
 
   .pcsu-image {
-    margin-top: 10px;
+    margin-top: 0;
+    padding-top: 10px;
   }
 
   .slider-mask {
@@ -54079,6 +54167,7 @@ blockquote {
 
   .container-108 {
     background-color: #111;
+    padding-top: 0;
     padding-left: 2rem;
     padding-right: 2rem;
     position: relative;
@@ -54090,6 +54179,10 @@ blockquote {
     box-shadow: -15px 0 12px -1px #000;
   }
 
+  .about-founder-img-wrapper-3 {
+    margin-top: 0;
+  }
+
   .story-content-wrap-2 {
     display: block;
   }
@@ -54097,6 +54190,7 @@ blockquote {
   .story-wrapper-3 {
     grid-column-gap: 2.5rem;
     grid-row-gap: 2.5rem;
+    margin-top: 0;
   }
 
   .space-large {
@@ -54270,6 +54364,7 @@ blockquote {
 
   .hero-01-dark-title-2 {
     width: 100%;
+    margin-top: 240px;
   }
 
   .section-14-copy.home1-3col, .section-14-copy.home-3-blog {
@@ -54645,7 +54740,7 @@ blockquote {
 
   .hero-01-wrapper {
     min-height: 378px;
-    margin-top: 147px;
+    margin-top: 146px;
   }
 
   .hero-01-intro-wrapper {
@@ -55174,7 +55269,7 @@ blockquote {
   }
 
   .gradient-overlay-bottom-copy {
-    margin-top: 45px;
+    margin-top: 0;
   }
 
   .sendcong-container-2 {
@@ -55379,10 +55474,12 @@ blockquote {
     margin-top: -50px;
     padding-top: 0;
     padding-bottom: 0;
+    box-shadow: 1px 6px 10px 3px #050c1de3;
   }
 
   .about-half-wrapper-6 {
     height: 100%;
+    margin-bottom: -80px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -55775,6 +55872,7 @@ blockquote {
   .blog-nae-wrapper-7 {
     -webkit-backdrop-filter: blur(17px);
     backdrop-filter: blur(17px);
+    height: 12%;
   }
 
   .card-item-9 {
@@ -55871,7 +55969,9 @@ blockquote {
   }
 
   .gradient-overlay-bottom-copy-copy {
-    margin-top: 0;
+    background-image: linear-gradient(350deg, #111, #0000 50%);
+    margin-top: -5px;
+    margin-left: -7px;
   }
 
   .header-text-wrapper-3-copy.blog-home-3 {
@@ -55918,6 +56018,20 @@ blockquote {
 
   .image-247 {
     transform: scale(1.2);
+  }
+
+  .subtitle-slider {
+    text-align: center;
+    margin-top: -21px;
+    padding-bottom: 40px;
+  }
+
+  .main-title-about-us.blog-home-3, .main-title-about-us.centered, .main-title-about-us.title-for-about-us {
+    padding-bottom: 0;
+  }
+
+  .top-gradients {
+    background-image: linear-gradient(1deg, #0000 50%, #111);
   }
 }
 
@@ -61106,7 +61220,7 @@ blockquote {
   }
 
   .gradient-overlay-bottom {
-    background-image: linear-gradient(354deg, #111 10%, #0000 50%);
+    background-image: linear-gradient(354deg, #111, #0000 50%);
     margin-top: 0;
   }
 
@@ -61905,7 +62019,7 @@ blockquote {
   }
 
   .exaplin-about-us {
-    margin-top: 20px;
+    margin-top: 10px;
     padding-bottom: 0;
     padding-left: 10px;
     font-family: Montserrat, sans-serif;
@@ -62084,6 +62198,7 @@ blockquote {
     max-width: 98%;
     margin-left: 0;
     margin-right: 0;
+    padding-top: 0;
   }
 
   .interstital-content-4 {
@@ -62138,7 +62253,7 @@ blockquote {
   }
 
   .image-141 {
-    width: 85%;
+    width: 80%;
     max-width: none;
     height: 100%;
     margin-top: 0;
@@ -63030,7 +63145,7 @@ blockquote {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -65068,7 +65183,7 @@ blockquote {
     background-color: #111;
     width: 100%;
     max-width: 100%;
-    height: 450px;
+    height: 425px;
     min-height: auto;
     margin-bottom: 40px;
     margin-left: 0;
@@ -65290,6 +65405,7 @@ blockquote {
 
   .container-108 {
     box-shadow: none;
+    padding-top: 20px;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -67161,6 +67277,7 @@ blockquote {
     background-position: 100% 0;
     background-size: cover;
     border-color: #50331d;
+    margin-top: 10px;
   }
 
   .card-item-7 {
@@ -67749,7 +67866,7 @@ blockquote {
   }
 
   .flag-second-video {
-    height: 45px;
+    height: 55px;
     margin-top: 0;
     box-shadow: 0 -7px 10px -1px #000000eb;
   }
@@ -67780,6 +67897,25 @@ blockquote {
     width: 100%;
     max-width: 90%;
     margin-left: 137px;
+  }
+
+  .subtitle-slider {
+    font-weight: var(--fontweight--extralight);
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .main-title-about-us.centered, .main-title-about-us.title-for-about-us {
+    margin-top: 0;
+    margin-left: 0;
+    padding-bottom: 1rem;
+  }
+
+  .top-gradients {
+    background-image: linear-gradient(347deg, #0000 50%, #111);
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 
