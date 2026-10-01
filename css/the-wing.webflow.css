@@ -2,7 +2,7 @@
   --_theme---bodybackground: var(--colors--light-100);
   --_textstyle---font-family: var(--fonts--secondaryfont);
   --_theme---textcolor--primarytext: var(--colors--dark-70);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -158,7 +158,7 @@ h1 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--iconsize--xl);
+  --_textstyle---fontsize: var(--spacing--4);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -173,7 +173,7 @@ h2 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -203,7 +203,7 @@ h4 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -291,7 +291,7 @@ label {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--fontweight--normal);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -1592,7 +1592,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1603,7 +1603,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1642,7 +1642,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--iconsize--xl);
+  --_textstyle---fontsize: var(--spacing--4);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -1655,7 +1655,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -1684,7 +1684,7 @@ blockquote {
   text-align: center;
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -2199,7 +2199,7 @@ blockquote {
   padding-bottom: var(--spacing--0-5);
   font-size: var(--_textstyle---fontsize);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -2426,7 +2426,7 @@ blockquote {
 
 .header-title.l {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -2669,7 +2669,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -3179,7 +3179,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -3204,7 +3204,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -3265,7 +3265,7 @@ blockquote {
 
 .docs-content-heading {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -3431,7 +3431,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -3488,7 +3488,7 @@ blockquote {
 
 .docs-updates-list-summary.full {
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -3633,7 +3633,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -4563,7 +4563,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -4928,7 +4928,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -7288,7 +7288,7 @@ blockquote {
   --_theme---background--tertiarybackground: var(--colors--light-80);
   --_theme---textcolor--tertiarytext: var(--colors--dark-40);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -7751,7 +7751,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -8041,7 +8041,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -15313,7 +15313,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -16933,7 +16933,7 @@ blockquote {
 .fsize-s-3 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -16946,8 +16946,9 @@ blockquote {
 .container-70 {
   flex: 1;
   max-width: 1160px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 20px;
 }
 
 .figures-card-wrapper-2 {
@@ -17062,7 +17063,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -17114,16 +17115,16 @@ blockquote {
 .top-section-pattern-2 {
   z-index: 0;
   -webkit-text-fill-color: inherit;
-  background-color: #ebebeb;
-  background-image: linear-gradient(#fff0 82%, #fff), linear-gradient(225deg, #fff, #fff0 40% 60%, #fff), url('../images/Pattern.svg');
-  background-position: 0 0, 0 0, 53% 5%;
-  background-repeat: repeat, repeat, repeat;
-  background-size: auto, auto, auto;
-  background-attachment: scroll, scroll, scroll;
+  background-color: #111;
+  background-image: url('../images/Pattern.svg');
+  background-position: 53% 5%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: scroll;
   background-clip: border-box;
   width: 100%;
   height: 15rem;
-  margin-top: auto;
+  margin-top: 200px;
   padding-top: 4rem;
   padding-bottom: 0;
   position: absolute;
@@ -17352,7 +17353,7 @@ blockquote {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  padding-top: 0;
+  padding-top: 10px;
   padding-bottom: 120px;
   display: flex;
 }
@@ -18261,7 +18262,7 @@ blockquote {
   --_theme---background--tertiarybackground: var(--colors--light-80);
   --_theme---textcolor--tertiarytext: var(--colors--dark-40);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -18793,6 +18794,7 @@ blockquote {
 }
 
 .engineering-pcsus {
+  background-color: #111;
   max-width: 2100px;
   margin-top: 0;
   padding: 40px 4rem 0;
@@ -22822,7 +22824,7 @@ blockquote {
 
 .sendcong-container {
   max-width: 2100px;
-  margin-top: 60px;
+  margin-top: 10px;
   margin-bottom: 0;
   padding: 0 4rem;
   position: relative;
@@ -22874,7 +22876,7 @@ blockquote {
 
 .heading-148, .pcsu-010 {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -24959,7 +24961,7 @@ blockquote {
   --_theme---background--tertiarybackground: var(--colors--light-80);
   --_theme---textcolor--tertiarytext: var(--colors--dark-40);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -25024,7 +25026,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -26939,7 +26941,7 @@ blockquote {
   --_theme---background--tertiarybackground: var(--colors--light-80);
   --_theme---textcolor--tertiarytext: var(--colors--dark-40);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -29753,7 +29755,7 @@ blockquote {
   text-align: center;
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -30472,7 +30474,7 @@ blockquote {
 .fsize-s-5 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -30623,7 +30625,7 @@ blockquote {
 .fsize-s-6 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -30638,16 +30640,20 @@ blockquote {
   grid-row-gap: 6rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: block;
 }
 
 .container-108 {
   max-width: 1700px;
+  margin-top: 0;
+  padding-top: 40px;
   padding-left: 5.125rem;
   padding-right: 5.125rem;
   position: relative;
 }
 
 .section-51.about-team {
+  background-color: #111;
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -30659,6 +30665,7 @@ blockquote {
   grid-row-gap: 1.5rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
+  display: block;
 }
 
 .about-founder-img-wrapper-3 {
@@ -34643,7 +34650,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -35015,7 +35022,7 @@ blockquote {
   --_theme---background--tertiarybackground: var(--colors--light-80);
   --_theme---textcolor--tertiarytext: var(--colors--dark-40);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -35693,7 +35700,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -35749,7 +35756,7 @@ blockquote {
   --_theme---background--tertiarybackground: var(--colors--light-80);
   --_theme---textcolor--tertiarytext: var(--colors--dark-40);
   --_textstyle---font-family: var(--fonts--secondaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--iconsize--s);
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
@@ -36777,7 +36784,7 @@ blockquote {
 .fsize-s-8 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--radius--s);
+  --_textstyle---fontsize: var(--radius--l);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -37713,6 +37720,10 @@ blockquote {
   max-width: 380px;
   padding: 34px 24px;
   box-shadow: 0 2px 5px #000000fc;
+}
+
+.heading-213, .heading-214 {
+  color: var(--colors--dark-50);
 }
 
 .subtitle-in-about-us {
@@ -40318,6 +40329,18 @@ blockquote {
     padding-right: 20px;
   }
 
+  .editorial-grid-5cols-3 {
+    display: block;
+  }
+
+  .section-51.about-team {
+    background-color: #111;
+  }
+
+  .editorial-grid-3cols-5 {
+    display: block;
+  }
+
   .nav-menu-wrapper-7 {
     justify-content: center;
     align-items: center;
@@ -41199,6 +41222,17 @@ blockquote {
     margin-top: 1px;
     margin-bottom: 1px;
     box-shadow: 0 -10px 6px -2px #000000d6;
+  }
+
+  .heading-213 {
+    width: 100%;
+    color: var(--colors--dark-50);
+    margin-left: 0;
+  }
+
+  .heading-214 {
+    color: var(--colors--dark-50);
+    margin-left: 0;
   }
 }
 
@@ -43435,6 +43469,12 @@ blockquote {
   }
 
   .top-section-pattern-2 {
+    background-color: #111;
+    background-image: url('../images/Pattern.svg');
+    background-position: 53% 5%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: scroll;
     padding-top: 0;
   }
 
@@ -43466,6 +43506,10 @@ blockquote {
     text-align: center;
     margin-bottom: -3px;
     padding-right: 0;
+  }
+
+  .header-2 {
+    background-color: #111;
   }
 
   .button-yellow-6 {
@@ -46296,9 +46340,19 @@ blockquote {
     margin-left: 200px;
   }
 
+  .editorial-grid-5cols-3 {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
   .section-51.about-team {
+    background-color: #111;
     margin-top: 0;
     padding-left: 0;
+  }
+
+  .editorial-grid-3cols-5 {
+    display: block;
   }
 
   .section-52 {
@@ -47954,6 +48008,11 @@ blockquote {
     margin-bottom: 1px;
     padding-right: 10px;
     box-shadow: 0 -10px 20px 1px #000000ad;
+  }
+
+  .heading-213, .heading-214 {
+    color: var(--colors--dark-40);
+    margin-left: 0;
   }
 
   .subtitle-in-about-us {
@@ -50037,7 +50096,7 @@ blockquote {
     line-height: var(--_textstyle---lineheight);
     font-weight: var(--fontweight--normal);
     --_textstyle---font-family: var(--fonts--secondaryfont);
-    --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+    --_textstyle---fontsize: var(--iconsize--s);
     --_textstyle---lineheight: 1.5;
     --_textstyle---fontweight: var(--fontweight--light);
     --_textstyle---letterspacing: 0em;
@@ -50432,7 +50491,7 @@ blockquote {
   .btn-menu {
     font-size: var(--_textstyle---fontsize);
     --_textstyle---font-family: var(--fonts--secondaryfont);
-    --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+    --_textstyle---fontsize: var(--iconsize--s);
     --_textstyle---lineheight: 1.5;
     --_textstyle---fontweight: var(--fontweight--light);
     --_textstyle---letterspacing: 0em;
@@ -51826,7 +51885,7 @@ blockquote {
     position: relative;
   }
 
-  .header-text-wrapper-3.blog-home-3 {
+  .header-text-wrapper-3.blog-home-3, .header-text-wrapper-3.centered {
     padding-bottom: 0;
   }
 
@@ -52539,7 +52598,7 @@ blockquote {
   }
 
   .pcsu-image {
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .slider-mask {
@@ -54023,10 +54082,12 @@ blockquote {
     padding-left: 2rem;
     padding-right: 2rem;
     position: relative;
+    box-shadow: 1px 1px 14px 2px #000;
   }
 
   .section-51.about-team {
     background-color: #111;
+    box-shadow: -15px 0 12px -1px #000;
   }
 
   .story-content-wrap-2 {
@@ -59247,7 +59308,7 @@ blockquote {
 
   .blog-category-title.featured {
     --_textstyle---font-family: var(--fonts--secondaryfont);
-    --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+    --_textstyle---fontsize: var(--iconsize--s);
     --_textstyle---lineheight: 1.5;
     --_textstyle---fontweight: var(--fontweight--light);
     --_textstyle---letterspacing: 0em;
@@ -59259,7 +59320,7 @@ blockquote {
 
   .summary-text.featured {
     --_textstyle---font-family: var(--fonts--secondaryfont);
-    --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+    --_textstyle---fontsize: var(--iconsize--s);
     --_textstyle---lineheight: 1.5;
     --_textstyle---fontweight: var(--fontweight--light);
     --_textstyle---letterspacing: 0em;
@@ -59348,7 +59409,7 @@ blockquote {
   .card-articles-summary {
     font-size: var(--_textstyle---fontsize);
     --_textstyle---font-family: var(--fonts--secondaryfont);
-    --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+    --_textstyle---fontsize: var(--iconsize--s);
     --_textstyle---lineheight: 1.5;
     --_textstyle---fontweight: var(--fontweight--light);
     --_textstyle---letterspacing: 0em;
@@ -59671,7 +59732,7 @@ blockquote {
 
   .testimonial-quote {
     --_textstyle---font-family: var(--fonts--secondaryfont);
-    --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+    --_textstyle---fontsize: var(--iconsize--s);
     --_textstyle---lineheight: 1.5;
     --_textstyle---fontweight: var(--fontweight--light);
     --_textstyle---letterspacing: 0em;
@@ -61220,7 +61281,7 @@ blockquote {
 
   .descrbing-bse-demo {
     --_textstyle---font-family: var(--fonts--secondaryfont);
-    --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+    --_textstyle---fontsize: var(--iconsize--s);
     --_textstyle---lineheight: 1.5;
     --_textstyle---fontweight: var(--fontweight--light);
     --_textstyle---letterspacing: 0em;
@@ -62120,7 +62181,7 @@ blockquote {
   .bento-bg-content {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    padding-top: 20px;
+    padding-top: 0;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -62128,7 +62189,7 @@ blockquote {
   .bento-bg-content.three {
     grid-column-gap: 19px;
     grid-row-gap: 19px;
-    margin-top: -65px;
+    margin-top: -44px;
   }
 
   .space-mid-2 {
@@ -62386,7 +62447,7 @@ blockquote {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 20px;
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
 
   .text-block-40 {
@@ -65228,6 +65289,7 @@ blockquote {
   }
 
   .container-108 {
+    box-shadow: none;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -66223,7 +66285,7 @@ blockquote {
     opacity: 1;
     color: #ffffffa8;
     --_textstyle---font-family: var(--fonts--secondaryfont);
-    --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+    --_textstyle---fontsize: var(--iconsize--s);
     --_textstyle---lineheight: 1.5;
     --_textstyle---fontweight: var(--fontweight--light);
     --_textstyle---letterspacing: 0em;
@@ -66559,7 +66621,7 @@ blockquote {
     opacity: 1;
     color: #ffffffa8;
     --_textstyle---font-family: var(--fonts--secondaryfont);
-    --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+    --_textstyle---fontsize: var(--iconsize--s);
     --_textstyle---lineheight: 1.5;
     --_textstyle---fontweight: var(--fontweight--light);
     --_textstyle---letterspacing: 0em;
@@ -67709,6 +67771,7 @@ blockquote {
   .subtitle-in-about-us {
     color: #6b6b6bf2;
     text-align: center;
+    padding-left: 0;
   }
 
   .footer-sub-title {
