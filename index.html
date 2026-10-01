@@ -151,6 +151,91 @@
   gtag('js', new Date());
   gtag('config', 'AW-18301100020');
 </script>
+<style id="thewing-mobile-services-fix">
+/* TheWing services slider: content must not depend on scroll/hover on touch screens. */
+@media (max-width: 991px) {
+  .section-200.home1-sticky .home1-2cols-3 {
+    display: block;
+    min-width: 0;
+  }
+  .section-200.home1-sticky .home1-left-sticky-3 {
+    position: relative;
+    top: auto;
+    height: auto;
+  }
+  .section-200.home1-sticky .home1-cards-scroll-5 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 0 1rem 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .section-200.home1-sticky .home1-cards-scroll-5 > .big-card-home1 {
+    flex: 0 0 calc(100% - 1rem);
+    width: calc(100% - 1rem);
+    max-width: 28rem;
+    height: auto;
+    margin: 0;
+    align-self: stretch;
+    justify-content: flex-start;
+    scroll-snap-align: start;
+  }
+  /* Override both exported inline opacity:0 and Webflow's reveal animations. */
+  .section-200.home1-sticky .home1-cards-scroll-5 > .big-card-home1,
+  .section-200.home1-sticky .home1-cards-scroll-5 > .big-card-home1 > div,
+  .section-200.home1-sticky .home1-cards-scroll-5 [card="true"],
+  .section-200.home1-sticky .home1-cards-scroll-5 .card-item-9 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+  .section-200.home1-sticky .home1-cards-scroll-5 > .big-card-home1 > div {
+    height: auto;
+    min-width: 0;
+    width: 100%;
+  }
+  .section-200.home1-sticky .home1-cards-scroll-5 .heading-208,
+  .section-200.home1-sticky .home1-cards-scroll-5 .heading-212 {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+    line-height: 1.15;
+    overflow-wrap: break-word;
+  }
+  .section-200.home1-sticky .home1-cards-scroll-5 .primary-glow-wrapper-29.blog-grid-child,
+  .section-200.home1-sticky .home1-cards-scroll-5 .full-size-2,
+  .section-200.home1-sticky .home1-cards-scroll-5 .full-size,
+  .section-200.home1-sticky .home1-cards-scroll-5 .image-4 {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+  }
+  .section-200.home1-sticky .home1-cards-scroll-5 .image-4 {
+    display: block;
+    width: 100%;
+  }
+  .section-200.home1-sticky .home1-cards-scroll-5 .blog-nae-wrapper-6 {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: .75rem;
+    margin: 0;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  .section-200.home1-sticky .home1-cards-scroll-5 .heading-210 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+}
+</style>
 </head>
 <body>
   <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar-4 w-nav"><img src="images/TheWingIcon.png" loading="lazy" width="162" sizes="162px" alt="Logo" srcset="images/0a60464e6a5ffa7452136acee37a55e2_RS-p-500.png 500w, images/0a60464e6a5ffa7452136acee37a55e2_RS-p-800.png 800w, images/0a60464e6a5ffa7452136acee37a55e2_RS-p-1080.png 1080w, images/TheWingIcon.png 1100w" class="image-228">
@@ -899,7 +984,7 @@
               <h1 data-w-id="9dcec883-4ce5-248c-5ae5-6835074225d6" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="suite-title-2">Military Decision Platform</h1>
               <h2 line-split="true" class="heading-209">TheWING.ai is desgined specifically for the Air Force Community. Explore our<span class="tertiary-color-emphasis-13"> <br>Suite of Services.</span></h2>
             </div>
-            <div class="home1-cards-scroll-5">
+            <div class="home1-cards-scroll-5" role="region" aria-label="TheWing services: swipe to explore" tabindex="0">
               <div reveal-card="true" class="big-card-home1 dark">
                 <div data-w-id="7b86a1cf-6585-9843-6af1-ca33167ed7a6" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.9, 0.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="pcsu-link-2">
                   <div class="services-h01-wrap-4">
