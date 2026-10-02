@@ -3183,7 +3183,7 @@ blockquote {
   --_textstyle---lineheight: 1.5;
   --_textstyle---fontweight: var(--fontweight--light);
   --_textstyle---letterspacing: 0em;
-  background-image: url('../images/support-icon.svg');
+  background-image: url('../images/Amy-suit.png');
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -3517,7 +3517,7 @@ blockquote {
   --_theme---textcolor--accenttext1: var(--colors--01-accent);
   --_theme---background--tertiarybackground: var(--colors--dark-50);
   --_theme---textcolor--tertiarytext: var(--colors--dark-30);
-  background-image: url('../images/support-orvimo_1support-orvimo.avif');
+  background-image: url('../images/Amy-Suit_1.png');
   background-position: 50% 100%;
   background-size: cover;
   flex-flow: column;
@@ -24022,19 +24022,19 @@ blockquote {
 
 .container-91 {
   width: 100%;
-  max-width: 940px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .gallery-wrapper-2 {
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
   align-items: start;
-  display: grid;
+  display: block;
 }
 
 .gallery-sticky-2 {
@@ -24066,11 +24066,11 @@ blockquote {
 
 .gallery-grid-2 {
   grid-row-gap: 40px;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
   width: 120%;
-  display: grid;
+  display: block;
 }
 
 .gallery-image-wrapper-2 {
@@ -24079,6 +24079,10 @@ blockquote {
 
 .gallery-image-2 {
   width: 100%;
+}
+
+.gallery-image-2.shadow-two {
+  margin-bottom: 20px;
 }
 
 .gallery-image-text-2 {
@@ -24109,7 +24113,7 @@ blockquote {
   background-color: #f5f7fa;
   border-bottom: 1px solid #e4ebf3;
   margin-top: 10px;
-  padding: 0 30px 80px;
+  padding: 0 10px 80px 0;
   position: relative;
 }
 
@@ -55947,6 +55951,11 @@ blockquote {
     display: block;
   }
 
+  .nav-image-wrapper-2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .image-244 {
     width: 204.63%;
     max-width: none;
@@ -64447,6 +64456,7 @@ blockquote {
 
   .asdf-adf-asdf {
     text-align: center;
+    width: 100%;
     margin-top: 100px;
     padding: 40px 20px 0;
   }
@@ -67994,7 +68004,8 @@ blockquote {
     background-color: #fafafa;
     border: 1px solid #fff;
     border-radius: 20px;
-    width: 0%;
+    width: 100%;
+    max-width: 100%;
   }
 
   .nav-content-wrapper-2 {
@@ -68787,10 +68798,6 @@ blockquote {
   place-self: center end;
 }
 
-#w-node-_081a1576-aad8-3b09-a31a-cf0b239c8fb8-602dbaf5 {
-  grid-area: span 1 / span 1 / span 1 / span 1;
-}
-
 #w-node-_081a1576-aad8-3b09-a31a-cf0b239c8fc8-602dbaf5 {
   grid-area: span 1 / span 2 / span 1 / span 2;
 }
@@ -68823,10 +68830,6 @@ blockquote {
   #w-node-d28b0724-bb28-d5e9-4eaf-90c909ff93c8-09ff93c1 {
     place-self: start;
   }
-
-  #w-node-_081a1576-aad8-3b09-a31a-cf0b239c8fb8-602dbaf5 {
-    grid-area: span 1 / span 2 / span 1 / span 2;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -68856,7 +68859,7 @@ blockquote {
     grid-column: span 1 / span 1;
   }
 
-  #w-node-_0843b1d9-3394-c0f5-ecfc-c186feb5bb42-602db7e9, #w-node-_32bb5cd4-cfea-65b3-a0e5-eafd81a6cd8c-602db834, #w-node-_2bc1a546-c7ca-7ee2-26af-d16a9252ecc6-602db857, #w-node-bdee4e32-1034-9e73-b379-5b022c6e0aa6-602db8a9, #w-node-f4ef9468-c7b9-b20c-0717-4208a20f0e92-602db939, #w-node-_07c50369-d3f7-1634-b7c6-f713700ee950-602db983, #w-node-e024ea75-aead-bbb8-4b3e-76538d576279-602db9df, #w-node-_081a1576-aad8-3b09-a31a-cf0b239c8fb8-602dbaf5, #w-node-_081a1576-aad8-3b09-a31a-cf0b239c8fc8-602dbaf5 {
+  #w-node-_0843b1d9-3394-c0f5-ecfc-c186feb5bb42-602db7e9, #w-node-_32bb5cd4-cfea-65b3-a0e5-eafd81a6cd8c-602db834, #w-node-_2bc1a546-c7ca-7ee2-26af-d16a9252ecc6-602db857, #w-node-bdee4e32-1034-9e73-b379-5b022c6e0aa6-602db8a9, #w-node-f4ef9468-c7b9-b20c-0717-4208a20f0e92-602db939, #w-node-_07c50369-d3f7-1634-b7c6-f713700ee950-602db983, #w-node-e024ea75-aead-bbb8-4b3e-76538d576279-602db9df, #w-node-_081a1576-aad8-3b09-a31a-cf0b239c8fc8-602dbaf5 {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
