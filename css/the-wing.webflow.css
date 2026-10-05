@@ -66117,6 +66117,10 @@ blockquote {
     padding-right: 0;
   }
 
+  .main-2 {
+    margin-bottom: 0;
+  }
+
   .home1_hero_info-2 {
     outline-offset: 0px;
     outline: 1px solid #747776;
@@ -70490,7 +70494,15 @@ blockquote {
     min-height: 250px;
   }
 
-  .sliderinblack-4, .sliderinblack-6 {
+  .sliderinblack-4 {
+    width: 100%;
+    margin-top: -75px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .sliderinblack-6 {
     width: 100%;
     margin-top: 0;
     margin-left: 0;
@@ -70698,6 +70710,10 @@ blockquote {
     margin-bottom: 10px;
     padding-bottom: 0;
     line-height: 21px;
+  }
+
+  .hero-01-main-wrapper-2 {
+    width: 100%;
   }
 
   .hero-01-sticky-wrapper-2 {
@@ -72456,12 +72472,6 @@ blockquote {
     padding-right: 16px;
   }
 
-  .section-wrapper-7 {
-    background-image: url('../images/o.jpg');
-    background-position: 50% 0;
-    background-size: auto;
-  }
-
   .hero-01-card-wrapper-5 {
     max-height: 700px;
     margin-left: 0;
@@ -72770,6 +72780,8 @@ blockquote {
   .hero-01-animated-card-4 {
     justify-content: flex-end;
     align-items: flex-end;
+    margin-top: 0;
+    margin-left: 0;
   }
 
   .home1-cards-scroll-6 {
@@ -72809,6 +72821,7 @@ blockquote {
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 220px;
+    margin-left: -56px;
   }
 
   .create-your-account-5 {
@@ -72831,7 +72844,7 @@ blockquote {
     justify-content: flex-start;
     align-items: flex-end;
     max-height: 800px;
-    margin-top: 20px;
+    margin-top: 0;
     margin-left: 0;
     padding-left: 0;
   }
@@ -72863,7 +72876,7 @@ blockquote {
 
   .hero-01-sticky-wrapper-8 {
     background-image: linear-gradient(#201d1d00 16.2%, #201d1d 97.6%), linear-gradient(0deg, #201d1db8, #201d1db8), url('../images/FAQ-2-Image.jpg');
-    background-position: 0 0, 0 0, 50%;
+    background-position: 0 0, 0 0, 80% 0;
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, cover;
     justify-content: center;
@@ -72873,6 +72886,9 @@ blockquote {
   .hero-01-holder-8 {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
+    max-width: none;
+    margin-left: 38px;
+    padding-left: 0;
   }
 
   .updates-banner-5 {
@@ -72924,6 +72940,11 @@ blockquote {
     justify-content: center;
     align-items: center;
     height: 130px;
+  }
+
+  .hero-01-wrapper-7 {
+    margin-top: -84px;
+    padding-left: 40px;
   }
 
   .heading-220 {
