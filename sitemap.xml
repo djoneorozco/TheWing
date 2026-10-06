@@ -1,40 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- =========================================================
+       THEWING.AI — CORE PLATFORM
+       ========================================================= -->
 
   <url>
     <loc>https://thewing.ai/</loc>
-  </url>
-
-  <url>
-    <loc>https://thewing.ai/air-force/pt-calculator.html</loc>
-  </url>
-
-  <url>
-    <loc>https://thewing.ai/waps.html</loc>
-  </url>
-
-  <url>
-    <loc>https://thewing.ai/air-force/opb-generator.html</loc>
-  </url>
-
-  <url>
-    <loc>https://thewing.ai/air-force/bah-base-pay-calculator.html</loc>
-  </url>
-
-  <url>
-    <loc>https://thewing.ai/air-force/va-calculator.html</loc>
-  </url>
-
-  <url>
-    <loc>https://thewing.ai/air-force/base-map.html</loc>
-  </url>
-
-  <url>
-    <loc>https://thewing.ai/information-center.html</loc>
+    <lastmod>2026-10-06</lastmod>
   </url>
 
   <url>
     <loc>https://thewing.ai/about-us.html</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/information-center.html</loc>
+    <lastmod>2026-10-06</lastmod>
+  </url>
+
+
+  <!-- =========================================================
+       CAREER & READINESS
+       ========================================================= -->
+
+  <url>
+    <loc>https://thewing.ai/air-force/pt-calculator.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/waps.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/air-force/opb-generator.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+
+  <!-- =========================================================
+       MILITARY PAY & BENEFITS
+       ========================================================= -->
+
+  <url>
+    <loc>https://thewing.ai/air-force/bah-base-pay-calculator.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/air-force/retirement-calculator.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/air-force/disability-calculator.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/air-force/va-calculator.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+
+  <!-- =========================================================
+       MORTGAGE & FINANCIAL READINESS
+       ========================================================= -->
+
+  <url>
+    <loc>https://thewing.ai/air-force/mortgage-calculator.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/air-force/financial-dashboard.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+
+  <!-- =========================================================
+       PCS & HOUSING
+       ========================================================= -->
+
+  <url>
+    <loc>https://thewing.ai/air-force/pcs-snapshot.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/air-force/pcs-calculator.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/air-force/base-demographics-air-force.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/air-force/base-map.html</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://thewing.ai/air-force/housing-quiz.html</loc>
+    <lastmod>2026-10-04</lastmod>
   </url>
 
 </urlset>
