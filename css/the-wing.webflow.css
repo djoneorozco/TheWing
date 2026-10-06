@@ -174,7 +174,7 @@ h2 {
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--m);
-  --_textstyle---lineheight: .8;
+  --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
 }
@@ -1656,7 +1656,7 @@ blockquote {
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--m);
-  --_textstyle---lineheight: .8;
+  --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
 }
@@ -2427,7 +2427,7 @@ blockquote {
 .header-title.l {
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--m);
-  --_textstyle---lineheight: .8;
+  --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
 }
@@ -4929,7 +4929,7 @@ blockquote {
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--m);
-  --_textstyle---lineheight: .8;
+  --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
 }
@@ -12837,6 +12837,7 @@ blockquote {
 
 .aiou-wrapper {
   height: 100%;
+  margin-top: 15px;
   position: relative;
   overflow: hidden;
 }
@@ -17081,7 +17082,7 @@ blockquote {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--m);
-  --_textstyle---lineheight: .8;
+  --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
   font-family: Inter, sans-serif;
@@ -18622,7 +18623,7 @@ blockquote {
 }
 
 .content-bg-block.services {
-  background-color: #f6f9fb;
+  background-color: #fff;
   border-color: #ebebec;
   padding: 20px 10px;
   font-size: 14px;
@@ -18645,6 +18646,9 @@ blockquote {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
 }
 
@@ -20976,7 +20980,7 @@ blockquote {
 .global-container {
   text-align: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: none;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -21122,16 +21126,18 @@ blockquote {
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   width: 100%;
-  max-width: 100%;
+  max-width: none;
   margin-top: 0;
   margin-bottom: 40px;
-  padding: 0 20px 20px 10px;
+  padding: 0 5px;
   display: block;
   box-shadow: 0 2px 5px 7px #0003;
 }
 
 .subcrite-digital-media {
   color: var(--colors--01-accent);
+  margin-top: -51px;
+  padding-bottom: 40px;
 }
 
 .background-video-7 {
@@ -21359,7 +21365,7 @@ blockquote {
 .hero-tag-wrap {
   grid-column-gap: 8px;
   grid-row-gap: 8px;
-  background-color: #f4f4f4;
+  background-color: #ededed;
   border: 1px solid #fff;
   border-radius: 32px;
   justify-content: center;
@@ -27377,6 +27383,8 @@ blockquote {
 }
 
 .style-guide-heading-main-wrapper {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   opacity: 1;
   background-color: #ecebe4;
   border-bottom: 1px solid #e2e2e2;
@@ -27384,7 +27392,7 @@ blockquote {
   align-items: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 20px 2vw;
+  padding: 20px 2vw 60px;
   display: flex;
 }
 
@@ -27439,7 +27447,7 @@ blockquote {
 }
 
 .heading-160 {
-  color: var(--colors--dark-60);
+  color: var(--colors--dark-40);
   text-align: center;
   letter-spacing: -1px;
   padding-bottom: 20px;
@@ -27453,8 +27461,10 @@ blockquote {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 10px;
   padding-top: 20px;
   padding-bottom: 40px;
+  padding-right: 10px;
   display: flex;
   box-shadow: 1px 0 13px 1px #000000bd;
 }
@@ -27508,7 +27518,7 @@ blockquote {
 
 .faq-content {
   background-color: #f4f4f4;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 24px;
   flex-flow: column;
   padding: 28px 34px;
@@ -27591,7 +27601,7 @@ blockquote {
 }
 
 .actual-questions {
-  background-color: #fffffff7;
+  background-color: #ecebe4;
   justify-content: center;
   align-items: center;
   margin-top: 0;
@@ -27602,7 +27612,7 @@ blockquote {
 }
 
 .question-title {
-  background-color: #fffffff7;
+  background-color: #ecebe4;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
@@ -27924,12 +27934,13 @@ blockquote {
 }
 
 .bento-bg-block-2.h03 {
-  background-color: #f4f4f4;
+  background-color: #ededed;
   border-color: #fff;
   max-width: 371px;
 }
 
 .bento-bg-block-2.h03.line-hide {
+  background-color: #ededed;
   border-style: none;
   padding-left: 10px;
   padding-right: 0;
@@ -28109,14 +28120,14 @@ blockquote {
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  width: 120%;
+  width: 100%;
   max-width: 100%;
-  margin-top: 0;
+  margin-top: -30px;
   margin-bottom: 0;
-  padding: 0 64px 220px;
+  padding: 0 64px;
   display: block;
   transform: translate(0);
-  box-shadow: 0 2px 6px #0000005e;
+  box-shadow: 0 2px 9px -1px #0000005e;
 }
 
 .global-container-4 {
@@ -28882,6 +28893,7 @@ blockquote {
 }
 
 .section-42 {
+  background-color: #ecebe4;
   justify-content: center;
   align-items: center;
   margin-top: 0;
@@ -28926,6 +28938,7 @@ blockquote {
 .purpose-sub-title {
   width: 100%;
   margin-left: 0;
+  padding-top: 10px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -29129,9 +29142,7 @@ blockquote {
   text-align: center;
   width: 100%;
   max-width: none;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
   box-shadow: 0 2px 6px 3px #00000082;
 }
 
@@ -29480,6 +29491,7 @@ blockquote {
 }
 
 .paragraph-57 {
+  padding-top: 20px;
   display: block;
 }
 
@@ -29716,12 +29728,13 @@ blockquote {
 .the-future-is-pcsu-ad {
   grid-column-gap: 24px;
   grid-row-gap: 24px;
-  background-color: #fafafa;
+  background-color: #111;
   border: 1px solid #fff;
   border-radius: 24px;
   justify-content: space-between;
   padding: 30px 24px;
   display: flex;
+  box-shadow: 0 2px 5px #af9e9770;
 }
 
 .text-block-47, .text-block-48 {
@@ -29820,8 +29833,8 @@ blockquote {
 .gradiant-wrapper-2 {
   z-index: 0;
   flex-flow: row;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   display: flex;
@@ -34710,7 +34723,7 @@ blockquote {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--m);
-  --_textstyle---lineheight: .8;
+  --_textstyle---lineheight: 1;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
   font-size: 1.1rem;
@@ -36839,7 +36852,7 @@ blockquote {
 .section-200.home1-sticky {
   height: 36.6825%;
   margin-top: 10px;
-  padding-top: 1rem;
+  padding-top: 2.1rem;
 }
 
 .fsize-s-8 {
@@ -40455,6 +40468,42 @@ blockquote {
   display: flex;
 }
 
+.paragrpha-button {
+  text-align: center;
+}
+
+.heading-221 {
+  color: var(--colors--01-accent);
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.button-white-5 {
+  color: #111;
+  text-align: center;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin: .3125rem 1px;
+  padding: 12px 30px;
+  font-family: Barlow Condensed, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.42857;
+  text-decoration: none;
+  transition-property: background-color;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.button-white-5:hover {
+  color: #1e1e1e;
+}
+
 @media screen and (min-width: 1280px) {
   h2 {
     width: 130%;
@@ -42704,7 +42753,9 @@ blockquote {
   }
 
   .heading-160 {
+    width: 100%;
     color: var(--colors--dark-30);
+    margin-left: 0;
   }
 
   .section-34 {
@@ -48578,6 +48629,11 @@ blockquote {
     margin-bottom: 0;
     padding: 60px 10px 100px;
     box-shadow: 3px 15px 8px -18px #00000080;
+  }
+
+  .heading-160 {
+    width: 100%;
+    margin-left: 0;
   }
 
   .section-34 {
@@ -55217,8 +55273,11 @@ blockquote {
 
   .exaplin-about-us {
     text-align: center;
-    margin-top: 20px;
-    font-weight: 400;
+    margin-top: 10px;
+    padding-right: 0;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 500;
     line-height: 1;
   }
 
@@ -55422,6 +55481,10 @@ blockquote {
 
   .sub-heading-03---24px {
     padding-right: 0;
+  }
+
+  .section-5 {
+    padding-bottom: 60px;
   }
 
   .bento-bg-content {
@@ -56189,7 +56252,7 @@ blockquote {
   }
 
   .opacity-80-4 {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -56840,6 +56903,10 @@ blockquote {
     flex-flow: column;
   }
 
+  .section-34 {
+    margin-top: 9px;
+  }
+
   .blog-collection-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -57090,7 +57157,7 @@ blockquote {
     grid-row-gap: 40px;
     flex-flow: column;
     width: 100%;
-    padding-bottom: 0;
+    padding-bottom: 50px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -57183,8 +57250,8 @@ blockquote {
   }
 
   .the-future-is-pcsu-ad {
-    grid-column-gap: 28px;
-    grid-row-gap: 28px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     text-align: center;
     flex-flow: column;
     grid-template-rows: auto auto auto;
@@ -57199,17 +57266,38 @@ blockquote {
     margin-top: 0;
   }
 
+  .office-bg-wrap-4 {
+    margin-top: -200px;
+  }
+
   .hero2-top-row-2 {
+    justify-content: flex-start;
+    align-items: center;
     min-height: 50vh;
   }
 
   .hero2-content-2 {
+    background-image: url('../images/o.jpg');
+    background-position: 100%;
+    background-size: auto;
     justify-content: space-between;
     height: auto;
     min-height: 85vh;
   }
 
-  .hero-heading-2, .hero-heading-3 {
+  .hero-heading-2 {
+    letter-spacing: 0;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    position: relative;
+  }
+
+  .hero2-gradiant-2 {
+    width: 100%;
+  }
+
+  .hero-heading-3 {
     letter-spacing: 0;
     font-family: Inter, sans-serif;
     font-weight: 300;
@@ -57456,11 +57544,14 @@ blockquote {
   .editorial-grid-5cols-3 {
     grid-column-gap: 2.5rem;
     grid-row-gap: 2.5rem;
+    width: 100%;
   }
 
   .container-108 {
+    width: 100%;
+    max-width: none;
     margin-top: 40px;
-    padding-top: 20px;
+    padding-top: 53px;
     position: relative;
   }
 
@@ -57469,9 +57560,14 @@ blockquote {
     margin-top: 0;
   }
 
+  .story-content-wrap-2 {
+    width: 100%;
+  }
+
   .story-wrapper-3 {
     grid-column-gap: 2.5rem;
     grid-row-gap: 2.5rem;
+    width: 100%;
   }
 
   .space-large {
@@ -58788,6 +58884,8 @@ blockquote {
   }
 
   .about-half-wrapper-6 {
+    background-position: 90% 60%;
+    background-size: auto;
     height: 100%;
     min-height: 490px;
     padding-left: 60px;
@@ -59292,6 +59390,10 @@ blockquote {
 
   .gradient-overlay-bottom-copy-copy {
     margin-top: 0;
+  }
+
+  .paragraph-72 {
+    width: 100%;
   }
 
   .header-text-wrapper-3-copy.blog-home-3 {
@@ -60239,6 +60341,11 @@ blockquote {
     padding-right: 15px;
   }
 
+  .tw-about-principles {
+    margin-bottom: 60px;
+    padding-bottom: 0;
+  }
+
   .scrolling-words {
     opacity: 1;
     padding-top: 0;
@@ -60252,6 +60359,31 @@ blockquote {
 
   .paragraph-74 {
     text-align: center;
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .section-209 {
+    background-color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .paragrpha-button {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .paragraph-for-button {
+    color: var(--colors--dark-30);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .bold-text-5 {
+    color: var(--colors--dark-40);
   }
 }
 
@@ -69057,13 +69189,15 @@ blockquote {
   }
 
   .style-guide-heading-main-wrapper {
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     background-color: #ecebe4;
+    flex-flow: row;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     width: 100%;
+    padding-bottom: 10px;
     padding-left: 0;
     padding-right: 0;
     display: flex;
@@ -69467,7 +69601,7 @@ blockquote {
     width: 450px;
     height: 100%;
     margin-left: 0;
-    padding-bottom: 0;
+    padding-bottom: 46px;
   }
 
   .image-219 {
@@ -71793,8 +71927,8 @@ blockquote {
 
   .about-half-wrapper-6 {
     background-image: url('../images/o.jpg');
-    background-position: 87% 0;
-    background-size: cover;
+    background-position: 60%;
+    background-size: auto;
     height: 600px;
     margin-top: 0;
     margin-bottom: -15px;
@@ -73390,6 +73524,16 @@ blockquote {
   }
 
   .paragraph-74 {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .paragrpha-button {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .paragraph-for-button {
     text-align: center;
     margin-top: 60px;
   }
