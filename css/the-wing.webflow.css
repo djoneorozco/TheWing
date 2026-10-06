@@ -203,7 +203,7 @@ h4 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -233,7 +233,7 @@ h6 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -1592,7 +1592,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1603,7 +1603,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1684,7 +1684,7 @@ blockquote {
   text-align: center;
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -1715,7 +1715,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -2182,7 +2182,7 @@ blockquote {
   font-weight: var(--fontweight--normal);
   text-transform: uppercase;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -2276,7 +2276,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   text-transform: uppercase;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -2657,7 +2657,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -2669,7 +2669,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -2991,7 +2991,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -3265,7 +3265,7 @@ blockquote {
 
 .docs-content-heading {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -3273,7 +3273,7 @@ blockquote {
 
 .docs-content-summary {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -3380,7 +3380,7 @@ blockquote {
   font-size: var(--_textstyle---fontsize);
   font-weight: var(--fontweight--normal);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -4025,7 +4025,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -4209,7 +4209,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -4289,7 +4289,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   cursor: pointer;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -4563,7 +4563,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -4632,7 +4632,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -5380,7 +5380,7 @@ blockquote {
   grid-row-gap: var(--_size---paddingsize--micro);
   font-size: var(--_textstyle---fontsize);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -5404,7 +5404,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -5801,7 +5801,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -7207,7 +7207,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -12000,7 +12000,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--fontweight--normal);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -15327,7 +15327,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -16099,7 +16099,7 @@ blockquote {
 .fsize-xxs-2 {
   color: var(--colors--01-accent);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -16948,7 +16948,7 @@ blockquote {
 .fsize-s-3 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -18170,7 +18170,7 @@ blockquote {
 
 .main-para-in-our-story {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -18352,7 +18352,7 @@ blockquote {
 
 .fsize-xxs-3 {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -22017,7 +22017,7 @@ blockquote {
   color: #6b6b6b;
   text-transform: uppercase;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -22889,7 +22889,7 @@ blockquote {
 
 .heading-148, .pcsu-010 {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -25040,7 +25040,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -29774,7 +29774,7 @@ blockquote {
   text-align: center;
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -30200,7 +30200,7 @@ blockquote {
 }
 
 .about-01-first-number-card {
-  background-image: url('../images/lifestyle3_1lifestyle3.avif');
+  background-image: url('../images/lifestyle3.png');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30497,7 +30497,7 @@ blockquote {
 .fsize-s-5 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -30648,7 +30648,7 @@ blockquote {
 .fsize-s-6 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -30705,7 +30705,7 @@ blockquote {
 
 .fsize-xxs-4 {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -33864,7 +33864,7 @@ blockquote {
 
 .fsize-xxs-5 {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -34829,7 +34829,7 @@ blockquote {
 .fsize-xxs-6 {
   color: #ff6f00;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -35740,7 +35740,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -36826,7 +36826,7 @@ blockquote {
 .fsize-s-8 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--bodylarge);
+  --_textstyle---fontsize: var(--_size---fonts--body);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--bold);
   --_textstyle---letterspacing: -.03em;
@@ -37004,7 +37004,7 @@ blockquote {
 }
 
 .suite-title-2 {
-  color: var(--colors--02-accent);
+  color: var(--colors--01-accent);
   text-align: center;
   letter-spacing: -4px;
   margin-top: -3px;
@@ -37086,7 +37086,7 @@ blockquote {
   grid-row-gap: 1.5rem;
   flex-flow: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 100vh;
   display: flex;
   position: sticky;
@@ -38376,8 +38376,8 @@ blockquote {
 
 ._4 {
   z-index: -1;
-  background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/5635BB0C-1CC0-4CCF-ACAF-6623B117049F.jpg');
-  background-position: 0 0, 50%;
+  background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/82A1A94F-F343-4332-8DCB-83C052F42B54.png');
+  background-position: 0 0, 50% 20%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   background-attachment: scroll, scroll;
@@ -38418,8 +38418,8 @@ blockquote {
 
 ._7 {
   z-index: -1;
-  background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/smiling-man-in-sweater.png');
-  background-position: 0 0, 50% 0;
+  background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Amy-Blouse.jpg');
+  background-position: 0 0, 50% 30%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
   background-attachment: scroll, scroll;
@@ -40278,6 +40278,67 @@ blockquote {
   min-width: 100%;
   min-height: 100vh;
   position: absolute;
+}
+
+._16 {
+  z-index: -1;
+  background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/A7395889-8653-4A79-AC7C-6ED30BD01604.png');
+  background-position: 0 0, 50%;
+  background-repeat: repeat, repeat-x;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+}
+
+._13 {
+  z-index: -1;
+  background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/lifestyle3.png');
+  background-position: 0 0, 50% 25%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+}
+
+._14 {
+  z-index: -1;
+  background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Amy-A.I-Concierge-for-TheWing.ai.png');
+  background-position: 0 0, 50%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+}
+
+._15 {
+  z-index: -1;
+  background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Nascar-Model-for-Air-Force.jpg');
+  background-position: 0 0, 50% 0;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+}
+
+.image-4-copy {
+  width: 100%;
+  min-height: auto;
 }
 
 @media screen and (min-width: 1280px) {
@@ -43653,7 +43714,7 @@ blockquote {
   }
 
   .suite-title-2 {
-    color: var(--colors--02-accent);
+    color: var(--colors--01-accent);
   }
 
   .pcsu-link-2 {
@@ -50527,7 +50588,7 @@ blockquote {
   }
 
   .suite-title-2 {
-    color: var(--colors--02-accent);
+    color: var(--colors--01-accent);
     margin-top: 0;
   }
 
@@ -56383,18 +56444,39 @@ blockquote {
   }
 
   .footer-flex-wrapper-2 {
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
     flex-flow: column wrap;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
     display: grid;
+  }
+
+  .footer-links-wrapper-2 {
+    width: 60%;
+  }
+
+  .footer-links-title-2 {
+    margin-bottom: 18px;
+    line-height: 1;
+  }
+
+  .footer-links-text-2 {
+    grid-column-gap: 16px;
+    grid-row-gap: 9px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
   }
 
   .sg-anchor-links-wrapper-2 {
@@ -56601,7 +56683,9 @@ blockquote {
   }
 
   .style-guide-heading-main-wrapper {
-    padding: 25px 0 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
     display: flex;
   }
 
@@ -56852,7 +56936,7 @@ blockquote {
 
   .primary-glow-wrapper-24.blog-grid-child.second-version {
     width: 100%;
-    height: auto;
+    height: 722.047px;
     max-height: none;
   }
 
@@ -58812,7 +58896,7 @@ blockquote {
   }
 
   .suite-title-2 {
-    color: var(--colors--02-accent);
+    color: var(--colors--01-accent);
     margin-top: 0;
   }
 
@@ -59178,6 +59262,7 @@ blockquote {
     width: 100%;
     margin-bottom: 0;
     padding-top: 10px;
+    padding-bottom: 0;
     font-size: 3rem;
   }
 
@@ -59268,7 +59353,7 @@ blockquote {
   }
 
   ._1 {
-    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/FB28BBF6-55EF-4516-8461-3AF9D5FFA4FF.png');
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Sexy-Team-USA-Soccer-Model.jpg');
     background-position: 0 0, 50%;
     background-size: auto, cover;
     min-height: 100vh;
@@ -59322,9 +59407,9 @@ blockquote {
   }
 
   ._7 {
-    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/558CEE60-12C4-46FC-B727-AB15381DB223.png');
-    background-position: 0 0, 50%;
-    background-size: auto, cover;
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Award-04.jpg');
+    background-position: 0 0, 50% 20%;
+    background-size: auto, auto;
     min-height: 100vh;
     padding-left: 15px;
     padding-right: 15px;
@@ -59934,8 +60019,8 @@ blockquote {
   }
 
   ._9 {
-    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/brown-wooden-framed-orange-padded-armchair.png');
-    background-position: 0 0, 50%;
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Air-Force-PT-outfit.png');
+    background-position: 0 0, 50% 20%;
     background-size: auto, cover;
     min-height: 100vh;
     padding-left: 15px;
@@ -59943,8 +60028,8 @@ blockquote {
   }
 
   ._8 {
-    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/apuesto-joven-empresario-traje-Flip-Square.jpg');
-    background-position: 0 0, 50% 0;
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Hero-Tag-Wrap.png');
+    background-position: 0 0, 50%;
     background-size: auto, cover;
     min-height: 100vh;
     padding-left: 15px;
@@ -59952,7 +60037,7 @@ blockquote {
   }
 
   ._11 {
-    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Amy404.png');
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Nascar-Model-for-Air-Force.jpg');
     background-position: 0 0, 50% 0;
     background-size: auto, cover;
     min-height: 100vh;
@@ -59961,7 +60046,43 @@ blockquote {
   }
 
   ._12 {
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Bento-Icon-3.jpg');
+    background-position: 0 0, 50% 20%;
+    background-size: auto, auto;
+    min-height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  ._16 {
     background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/smiling-man-in-sweater.png');
+    background-position: 0 0, 50% 0;
+    background-size: auto, auto;
+    min-height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  ._13 {
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/apuesto-joven-empresario-traje-Flip-Square.jpg');
+    background-position: 0 0, 50% 0;
+    background-size: auto, auto;
+    min-height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  ._14 {
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Amy404.png');
+    background-position: 0 0, 50% 20%;
+    background-size: auto, auto;
+    min-height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  ._15 {
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Amy-HUD.png');
     background-position: 0 0, 50% 0;
     background-size: auto, auto;
     min-height: 100vh;
@@ -71782,7 +71903,7 @@ blockquote {
   .suite-title-2 {
     width: 110%;
     max-width: none;
-    color: var(--colors--02-accent);
+    color: var(--colors--01-accent);
     text-align: center;
     -webkit-text-stroke-color: var(--colors--02-accent);
     overflow-wrap: normal;
@@ -72308,7 +72429,21 @@ blockquote {
     overflow: hidden;
   }
 
-  .hero-image-slide-02, ._1, ._2, ._3, ._4, ._5, ._6, ._7 {
+  .hero-image-slide-02 {
+    min-height: 110vh;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  ._1 {
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Sexy-Team-USA-Soccer-Model.jpg');
+    background-position: 0 0, 50%;
+    min-height: 110vh;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  ._2, ._3, ._4, ._5, ._6, ._7 {
     min-height: 110vh;
     padding-left: 30px;
     padding-right: 30px;
@@ -72979,10 +73114,28 @@ blockquote {
     line-height: 18px;
   }
 
-  ._10a, ._9, ._8, ._11, ._12 {
+  ._10a, ._9, ._8, ._11 {
     min-height: 110vh;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  ._12 {
+    background-position: 0 0, 50% 30%;
+    background-size: auto, cover;
+    min-height: 110vh;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  ._16, ._13, ._14, ._15 {
+    min-height: 110vh;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .image-4-copy {
+    min-height: 100%;
   }
 }
 
