@@ -59802,8 +59802,8 @@ blockquote {
   .hero-01-animated-card-4 {
     flex-flow: row;
     justify-content: flex-end;
-    align-items: center;
-    margin-top: 100px;
+    align-items: flex-end;
+    margin-top: 220px;
   }
 
   .home1-cards-scroll-6 {
@@ -71863,7 +71863,7 @@ blockquote {
   }
 
   .container-125 {
-    width: auto;
+    width: 100%;
     padding-left: .25rem;
     padding-right: .25rem;
   }
@@ -72913,10 +72913,13 @@ blockquote {
   }
 
   .hero-01-animated-card-4 {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 0;
     margin-left: 0;
+    display: flex;
   }
 
   .home1-cards-scroll-6 {
@@ -72953,9 +72956,12 @@ blockquote {
   }
 
   .hero-01-card-holder-7 {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-top: 220px;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: -56px;
   }
 
@@ -72976,7 +72982,9 @@ blockquote {
   }
 
   .hero-01-card-wrapper-6 {
-    justify-content: flex-start;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: center;
     align-items: flex-end;
     max-height: 800px;
     margin-top: 0;
@@ -73010,7 +73018,7 @@ blockquote {
   }
 
   .hero-01-sticky-wrapper-8 {
-    background-image: linear-gradient(#201d1d00 16.2%, #201d1d 97.6%), linear-gradient(0deg, #201d1db8, #201d1db8), url('../images/FAQ-2-Image.jpg');
+    background-image: linear-gradient(#201d1d00 29%, #000), linear-gradient(0deg, #0000006b, #201d1db8), url('../images/FAQ-2-Image.jpg');
     background-position: 0 0, 0 0, 80% 0;
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, cover;
@@ -73022,7 +73030,7 @@ blockquote {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     max-width: none;
-    margin-left: 38px;
+    margin-left: 0;
     padding-left: 0;
   }
 
@@ -73078,8 +73086,13 @@ blockquote {
   }
 
   .hero-01-wrapper-7 {
+    grid-template-columns: 1fr;
+    place-items: stretch center;
+    width: 110%;
+    min-width: auto;
+    max-width: none;
     margin-top: -84px;
-    padding-left: 40px;
+    padding-left: 20px;
   }
 
   .heading-220 {
