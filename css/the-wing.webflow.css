@@ -174,7 +174,7 @@ h2 {
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--xs);
-  --_textstyle---lineheight: 1;
+  --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
 }
@@ -188,7 +188,7 @@ h3 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -218,7 +218,7 @@ h5 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -1656,7 +1656,7 @@ blockquote {
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--xs);
-  --_textstyle---lineheight: 1;
+  --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
 }
@@ -1668,7 +1668,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -1701,7 +1701,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -2163,7 +2163,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   text-align: center;
-  margin: -24px 0 0;
+  margin: 0;
   padding: 94px 0 22px;
 }
 
@@ -2427,7 +2427,7 @@ blockquote {
 .header-title.l {
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--xs);
-  --_textstyle---lineheight: 1;
+  --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
 }
@@ -2438,7 +2438,7 @@ blockquote {
 
 .header-subtitle.m {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -2763,7 +2763,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   text-align: center;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -2937,7 +2937,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -3331,7 +3331,7 @@ blockquote {
 
 .docs-separator-text {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -3533,7 +3533,7 @@ blockquote {
   line-height: var(--_textstyle---lineheight);
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -3995,7 +3995,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -4008,7 +4008,7 @@ blockquote {
   line-height: 1;
   font-weight: var(--_textstyle---fontweight);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -4640,7 +4640,7 @@ blockquote {
 
 .member-name.single {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -4929,7 +4929,7 @@ blockquote {
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--xs);
-  --_textstyle---lineheight: 1;
+  --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
 }
@@ -5574,7 +5574,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -7577,7 +7577,7 @@ blockquote {
   text-align: center;
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -9002,7 +9002,7 @@ blockquote {
   background-color: #161615;
   outline: 3px solid #161615;
   width: 100%;
-  margin-top: -51px;
+  margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   padding-top: 0;
@@ -9014,7 +9014,7 @@ blockquote {
   flex-flow: row;
   justify-content: flex-start;
   align-items: stretch;
-  margin-top: 50px;
+  margin-top: 0;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -11921,7 +11921,7 @@ blockquote {
 
 .header-subtitle-copy.m {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -15114,7 +15114,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -15374,7 +15374,9 @@ blockquote {
 .image-wrap.price-p03 {
   justify-content: flex-start;
   align-items: center;
-  max-width: 100%;
+  width: 96.1691%;
+  max-width: none;
+  height: 100%;
 }
 
 .image-wrap.tabs {
@@ -15634,7 +15636,7 @@ blockquote {
 }
 
 .tertiary-color-emphasis-2 {
-  color: #fff;
+  color: #ee5e01;
 }
 
 .title-info {
@@ -15803,7 +15805,7 @@ blockquote {
 }
 
 .heading-block.services.h01 {
-  max-width: 770px;
+  max-width: 100%;
 }
 
 .heading-block.hero-h03 {
@@ -16019,7 +16021,7 @@ blockquote {
 
 .header-subtitle-2.m {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -17079,7 +17081,7 @@ blockquote {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--xs);
-  --_textstyle---lineheight: 1;
+  --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
   font-family: Inter, sans-serif;
@@ -17247,6 +17249,7 @@ blockquote {
 }
 
 .section-5 {
+  background-color: #111;
   justify-content: center;
   align-items: center;
   padding-top: 0;
@@ -17580,7 +17583,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -17753,7 +17756,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -17931,7 +17934,7 @@ blockquote {
 .fsize-xs-2 {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--s);
   --_textstyle---lineheight: 1.2;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: 0em;
@@ -18653,6 +18656,7 @@ blockquote {
 }
 
 .body-01---18px-semi-bold {
+  text-align: center;
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
@@ -20774,7 +20778,7 @@ blockquote {
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   display: flex;
 }
 
@@ -20817,8 +20821,8 @@ blockquote {
 }
 
 .rtb {
-  margin-bottom: 220px;
-  padding-bottom: 220px;
+  margin-bottom: 0;
+  padding-bottom: 60px;
 }
 
 .space {
@@ -20973,7 +20977,7 @@ blockquote {
   text-align: center;
   width: 100%;
   max-width: 1200px;
-  margin-top: 10px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -21120,8 +21124,8 @@ blockquote {
   width: 100%;
   max-width: 100%;
   margin-top: 0;
-  margin-bottom: 220px;
-  padding: 0 20px 220px 10px;
+  margin-bottom: 40px;
+  padding: 0 20px 20px 10px;
   display: block;
   box-shadow: 0 2px 5px 7px #0003;
 }
@@ -22320,7 +22324,7 @@ blockquote {
   text-align: center;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
   min-height: 1px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -23458,7 +23462,7 @@ blockquote {
   opacity: .8;
   color: var(--colors--dark-50);
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .opacity-80-4.cta {
@@ -24872,7 +24876,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -25160,9 +25164,11 @@ blockquote {
 }
 
 .content-13 {
-  grid-column-gap: 64px;
-  grid-row-gap: 64px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   flex-flow: column;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
@@ -25242,7 +25248,7 @@ blockquote {
 
 .header-subtitle-2-copy.m {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -27371,13 +27377,14 @@ blockquote {
 }
 
 .style-guide-heading-main-wrapper {
+  opacity: 1;
   background-color: #ecebe4;
   border-bottom: 1px solid #e2e2e2;
   justify-content: center;
   align-items: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0 2vw 20px;
+  padding: 20px 2vw;
   display: flex;
 }
 
@@ -27445,11 +27452,11 @@ blockquote {
   background-color: #f7f7f7;
   justify-content: center;
   align-items: center;
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 20px;
+  padding-top: 20px;
   padding-bottom: 40px;
   display: flex;
-  box-shadow: 1px 6px 6px 2px #000000ab;
+  box-shadow: 1px 0 13px 1px #000000bd;
 }
 
 .space-172 {
@@ -27600,8 +27607,8 @@ blockquote {
   align-items: center;
   margin-top: 10px;
   margin-bottom: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
 }
 
@@ -27686,8 +27693,9 @@ blockquote {
 }
 
 .rtb-5 {
-  margin-bottom: 220px;
-  padding-bottom: 220px;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 40px;
 }
 
 .overview-paragraphs {
@@ -28005,8 +28013,8 @@ blockquote {
 
 .amy-table.image-tables {
   background-color: #f4f4f4;
-  background-image: url('../images/6966c986c8472ee377c2b9df_ffdcab38d6a982d23413fb95c1452762_PCSUnited.jpg');
-  background-position: 50%;
+  background-image: url('../images/Create-Account-TheWing.ai.png');
+  background-position: 50% 0;
   background-size: cover;
   border-color: #fff;
   width: 700px;
@@ -28052,7 +28060,7 @@ blockquote {
   text-align: center;
   width: 100%;
   padding-top: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .text-block-45 {
@@ -28060,7 +28068,8 @@ blockquote {
 }
 
 .heading-165 {
-  color: #e3af5a;
+  color: #ee5e01;
+  margin-top: -25px;
 }
 
 .row-utilities-3 {
@@ -28876,7 +28885,7 @@ blockquote {
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
 }
@@ -28915,8 +28924,10 @@ blockquote {
 }
 
 .purpose-sub-title {
-  width: 120%;
-  margin-left: -83px;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .main-page-title-info-copy {
@@ -28960,8 +28971,8 @@ blockquote {
 .p-and-v-copy {
   flex: 1;
   max-width: 120%;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .p-and-v-copy.full {
@@ -29117,7 +29128,7 @@ blockquote {
 .the-data-science-section {
   text-align: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: none;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -29441,12 +29452,13 @@ blockquote {
 .center-wrap-16 {
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
-  padding-bottom: 60px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   display: flex;
 }
 
 .heading-184 {
+  text-align: center;
   letter-spacing: -4px;
   font-size: 64px;
   font-weight: 600;
@@ -29579,6 +29591,8 @@ blockquote {
 
 .image-222 {
   border-radius: 11px;
+  max-width: none;
+  height: auto;
 }
 
 .code-embed-69 {
@@ -29861,8 +29875,8 @@ blockquote {
 }
 
 .office-bg-block-4 {
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   background-color: #fff6;
@@ -30193,7 +30207,7 @@ blockquote {
 }
 
 .about-01-number-subtitle {
-  color: var(--colors--01-accent);
+  color: var(--colors--light-80);
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
@@ -30294,7 +30308,7 @@ blockquote {
 }
 
 .about-01-solid-number {
-  color: #fff;
+  color: #f96f03;
   font-size: 3rem;
   font-weight: 500;
   line-height: 100%;
@@ -30640,9 +30654,14 @@ blockquote {
 }
 
 .paragraph-58 {
-  margin-top: 60px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
   padding-left: 220px;
   padding-right: 60px;
+  display: flex;
 }
 
 .fsize-s-6 {
@@ -30844,7 +30863,7 @@ blockquote {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1440px;
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -32174,7 +32193,7 @@ blockquote {
   border: .5px solid #5343376b;
   border-radius: 17px;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -33566,7 +33585,7 @@ blockquote {
   background-color: #161615;
   outline: 3px solid #161615;
   width: 100%;
-  margin-top: -93px;
+  margin-top: -52px;
   margin-bottom: 0;
   margin-left: 0;
   padding-top: 5px;
@@ -34691,7 +34710,7 @@ blockquote {
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
   --_textstyle---fontsize: var(--_size---fonts--xs);
-  --_textstyle---lineheight: 1;
+  --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
   font-size: 1.1rem;
@@ -35687,7 +35706,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -36289,7 +36308,7 @@ blockquote {
   background-color: #161615;
   outline: 3px solid #161615;
   width: 100%;
-  margin-top: -47px;
+  margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   padding-top: 0;
@@ -36797,7 +36816,7 @@ blockquote {
   background-color: #161615;
   outline: 3px solid #161615;
   width: 100%;
-  margin-top: -44px;
+  margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   padding-top: 0;
@@ -36819,8 +36838,8 @@ blockquote {
 
 .section-200.home1-sticky {
   height: 36.6825%;
-  margin-top: 0;
-  padding-top: 2rem;
+  margin-top: 10px;
+  padding-top: 1rem;
 }
 
 .fsize-s-8 {
@@ -37726,7 +37745,7 @@ blockquote {
 
 .about-wing-subheader.m {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xl);
+  --_textstyle---fontsize: var(--_size---fonts--xs);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -37984,7 +38003,7 @@ blockquote {
   width: 100%;
   color: var(--colors--dark-60);
   text-align: center;
-  background-color: #ece7e4;
+  background-color: #ecebe4;
   margin-top: 10px;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -40339,6 +40358,101 @@ blockquote {
 .image-4-copy {
   width: 100%;
   min-height: auto;
+}
+
+.tw-methodology-sources {
+  text-align: left;
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 24px 32px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.information-methodology-body {
+  text-align: left;
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  line-height: 1.6;
+}
+
+.image-250 {
+  height: 100px;
+}
+
+.paragraph-73 {
+  width: 100%;
+  margin-top: -19px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.tw-about-hero-copy {
+  color: #f4f4f4;
+  text-align: center;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 24px 36px;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.tw-about-principles {
+  color: #2e2e2e;
+  text-align: left;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px 24px;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.tw-about-principle {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.tw-about-principle-title {
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: DM Sans, sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.scrolling-words {
+  outline-offset: 0px;
+  width: 100%;
+  height: 60px;
+  color: var(--colors--dark-80);
+  background-color: #140f05;
+  outline: 3px solid #161615;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 5px 9px 1px #000000bf;
+}
+
+.scrollings {
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+  height: 100%;
+  color: var(--colors--dark-30);
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  display: flex;
 }
 
 @media screen and (min-width: 1280px) {
@@ -44026,6 +44140,11 @@ blockquote {
   .opacity-80-12 {
     width: 100%;
   }
+
+  .scrollings {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -44458,6 +44577,7 @@ blockquote {
   }
 
   .highlight_marquee-2 {
+    background-color: #1711077d;
     margin-top: 0;
   }
 
@@ -49142,6 +49262,10 @@ blockquote {
     margin-left: 200px;
   }
 
+  .editorial-grid-5cols-3 {
+    width: 100%;
+  }
+
   .section-51.about-team {
     margin-top: 0;
     padding-left: 0;
@@ -50767,6 +50891,10 @@ blockquote {
     padding-bottom: 0;
   }
 
+  .paragraph-72 {
+    width: 80%;
+  }
+
   .header-text-wrapper-3-copy.centered {
     margin-top: 0;
     margin-bottom: 0;
@@ -51109,6 +51237,18 @@ blockquote {
   .heading-220 {
     width: 105%;
     margin-left: 0;
+  }
+
+  .scrolling-words {
+    background-color: #191207;
+    margin-top: -56px;
+    margin-bottom: 0;
+    box-shadow: 0 5px 8px 1px #000000eb;
+  }
+
+  .scrollings {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -52820,6 +52960,11 @@ blockquote {
     margin-top: 0;
     font-size: 24px;
   }
+
+  .scrolling-words {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -53794,6 +53939,7 @@ blockquote {
   }
 
   .sliderinblack {
+    margin-bottom: 65px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -57138,6 +57284,7 @@ blockquote {
     background-size: auto;
     justify-content: center;
     align-items: center;
+    height: 450px;
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -57660,7 +57807,7 @@ blockquote {
   }
 
   .container-111 {
-    margin-bottom: -47px;
+    margin-bottom: 0;
     padding-top: 0;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -58635,7 +58782,7 @@ blockquote {
   }
 
   .sliderwithiphone {
-    margin-top: -50px;
+    margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -60046,7 +60193,7 @@ blockquote {
   }
 
   ._12 {
-    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Bento-Icon-3.jpg');
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Amy-A.I-Concierge-Digital-Art-Work.jpg');
     background-position: 0 0, 50% 20%;
     background-size: auto, auto;
     min-height: 100vh;
@@ -60088,6 +60235,17 @@ blockquote {
     min-height: 100vh;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .scrolling-words {
+    opacity: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .scrollings {
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 
@@ -63390,6 +63548,11 @@ blockquote {
 
   .hero-01-wrapper-7 {
     justify-content: center;
+  }
+
+  .scrolling-words {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -70199,7 +70362,7 @@ blockquote {
 
   .heading-195 {
     padding-top: 20px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     padding-left: 0;
   }
 
@@ -73150,6 +73313,18 @@ blockquote {
   .image-4-copy {
     min-height: 100%;
   }
+
+  .scrolling-words {
+    width: 100%;
+    margin-top: -75px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .scrollings {
+    margin-top: 0;
+  }
 }
 
 #w-node-_9ce6fb69-0ced-5d9c-58e3-8250564cd71f-602db70c {
@@ -73266,6 +73441,10 @@ blockquote {
   #w-node-_78045406-6645-58b2-c24e-1f63cdea24fb-602db9df {
     grid-area: 1 / 1 / 2 / 2;
   }
+
+  #w-node-_087b196d-b026-a298-5d40-c324b41ad81b-602db9df {
+    grid-column: span 2 / span 2;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -73279,6 +73458,10 @@ blockquote {
 
   #w-node-_0843b1d9-3394-c0f5-ecfc-c186feb5bb42-602db7e9, #w-node-_32bb5cd4-cfea-65b3-a0e5-eafd81a6cd8c-602db834, #w-node-_2bc1a546-c7ca-7ee2-26af-d16a9252ecc6-602db857, #w-node-bdee4e32-1034-9e73-b379-5b022c6e0aa6-602db8a9, #w-node-f4ef9468-c7b9-b20c-0717-4208a20f0e92-602db939, #w-node-_07c50369-d3f7-1634-b7c6-f713700ee950-602db983, #w-node-e024ea75-aead-bbb8-4b3e-76538d576279-602db9df {
     grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_087b196d-b026-a298-5d40-c324b41ad81b-602db9df {
+    grid-column: span 1 / span 1;
   }
 }
 
