@@ -173,7 +173,7 @@ h2 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--m);
   --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -1655,7 +1655,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--m);
   --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -2426,7 +2426,7 @@ blockquote {
 
 .header-title.l {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--m);
   --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -4928,7 +4928,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--m);
   --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -17080,7 +17080,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--m);
   --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -30689,7 +30689,7 @@ blockquote {
   background-color: #111;
   max-width: 1700px;
   margin-top: 51px;
-  padding-top: 40px;
+  padding-top: 91px;
   padding-left: 5.125rem;
   padding-right: 5.125rem;
   position: relative;
@@ -34709,7 +34709,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--xs);
+  --_textstyle---fontsize: var(--_size---fonts--m);
   --_textstyle---lineheight: .8;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -55114,8 +55114,8 @@ blockquote {
   }
 
   .tertiary-color-emphasis-2 {
-    color: #2a0707;
-    mix-blend-mode: color-burn;
+    color: #f96f03;
+    mix-blend-mode: normal;
   }
 
   .flag-video-in-main-page-2 {
@@ -55347,6 +55347,10 @@ blockquote {
     padding-right: 2.5rem;
   }
 
+  .center-align-4 {
+    padding-top: 10px;
+  }
+
   .bento-bg-wrap {
     grid-column-gap: 17px;
     grid-row-gap: 17px;
@@ -55403,11 +55407,6 @@ blockquote {
 
   .top-section-pattern-2 {
     background-color: #111;
-    background-image: url('../images/Pattern.svg');
-    background-position: 53% 5%;
-    background-repeat: repeat;
-    background-size: auto;
-    background-attachment: scroll;
     margin-bottom: 0;
     padding-top: 0;
   }
@@ -56831,7 +56830,7 @@ blockquote {
   .style-guide-heading-main-wrapper {
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 0 40px;
     display: flex;
   }
 
@@ -57091,6 +57090,7 @@ blockquote {
     grid-row-gap: 40px;
     flex-flow: column;
     width: 100%;
+    padding-bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -57459,7 +57459,7 @@ blockquote {
   }
 
   .container-108 {
-    margin-top: 60px;
+    margin-top: 40px;
     padding-top: 20px;
     position: relative;
   }
@@ -58789,6 +58789,7 @@ blockquote {
 
   .about-half-wrapper-6 {
     height: 100%;
+    min-height: 490px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -58932,7 +58933,7 @@ blockquote {
   }
 
   .sliderinblack-6-copy {
-    margin-top: -44px;
+    margin-top: 0;
     padding-top: 0;
     padding-bottom: 5px;
     position: relative;
@@ -59409,7 +59410,7 @@ blockquote {
     width: 100%;
     margin-bottom: 0;
     padding-top: 10px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
     font-size: 3rem;
   }
 
@@ -59951,6 +59952,7 @@ blockquote {
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 220px;
+    padding-top: 150px;
   }
 
   .home1-cards-scroll-6 {
@@ -60246,6 +60248,10 @@ blockquote {
   .scrollings {
     justify-content: center;
     align-items: flex-start;
+  }
+
+  .paragraph-74 {
+    text-align: center;
   }
 }
 
@@ -64043,6 +64049,7 @@ blockquote {
     width: 100%;
     max-width: none;
     height: 100%;
+    margin-top: 40px;
     margin-left: 0;
     margin-right: 0;
     transform: scale(1.1);
@@ -66296,7 +66303,7 @@ blockquote {
   }
 
   .tertiary-color-emphasis-2 {
-    color: #420505f2;
+    color: #f96f03;
     text-align: center;
   }
 
@@ -66667,9 +66674,10 @@ blockquote {
   }
 
   .center-align-4 {
+    margin-top: 0;
     margin-left: 0;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   .bento-bg-wrap {
@@ -66714,7 +66722,7 @@ blockquote {
   .image-141 {
     width: 85%;
     max-width: none;
-    height: 80%;
+    height: 100%;
     margin-top: 0;
   }
 
@@ -66750,6 +66758,10 @@ blockquote {
 
   .sub-heading-03---24px {
     margin-top: 0;
+  }
+
+  .section-5 {
+    padding-bottom: 0;
   }
 
   .bento-bg-content {
@@ -67022,7 +67034,7 @@ blockquote {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 
   .text-block-40 {
@@ -68089,6 +68101,10 @@ blockquote {
     grid-row-gap: 140px;
   }
 
+  .opacity-80-4 {
+    margin-bottom: 0;
+  }
+
   .opacity-80-2-copy {
     width: 100%;
     max-width: 100%;
@@ -69025,6 +69041,7 @@ blockquote {
   }
 
   .style-text-wrapper {
+    text-align: center;
     width: 100%;
   }
 
@@ -69040,10 +69057,16 @@ blockquote {
   }
 
   .style-guide-heading-main-wrapper {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    background-color: #ecebe4;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    display: block;
+    display: flex;
   }
 
   .global-section-copy {
@@ -69057,6 +69080,11 @@ blockquote {
     grid-row-gap: 30px;
     width: 460px;
     margin-left: 0;
+  }
+
+  .section-34 {
+    background-color: #ecebe4;
+    margin-top: 10px;
   }
 
   .heading-161 {
@@ -69439,7 +69467,7 @@ blockquote {
     width: 450px;
     height: 100%;
     margin-left: 0;
-    padding-bottom: 49px;
+    padding-bottom: 0;
   }
 
   .image-219 {
@@ -69589,9 +69617,9 @@ blockquote {
   }
 
   .office-bg-wrap-4 {
-    width: 500px;
-    max-width: 450px;
-    height: 480px;
+    width: 450px;
+    max-width: none;
+    height: 400px;
     margin-top: -54px;
     margin-left: -23px;
   }
@@ -69600,6 +69628,8 @@ blockquote {
     grid-column-gap: 0rem;
     grid-row-gap: 0rem;
     opacity: 1;
+    height: 100%;
+    min-height: auto;
     padding-top: 0;
   }
 
@@ -69617,8 +69647,8 @@ blockquote {
   }
 
   .office-bg-block-4 {
-    grid-column-gap: 41px;
-    grid-row-gap: 41px;
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     flex-flow: row;
@@ -69630,15 +69660,24 @@ blockquote {
     margin-left: 68px;
   }
 
+  .office-bg-content-4 {
+    justify-content: center;
+    align-items: center;
+  }
+
   .hero-heading-2 {
     color: #2e2e2e;
     letter-spacing: 0;
-    margin-top: -72px;
+    margin-top: 0;
     margin-left: 56px;
     font-family: Inter, sans-serif;
     font-size: 3rem;
     font-weight: 300;
     line-height: 1.5;
+  }
+
+  .hero2-gradiant-2 {
+    height: 100%;
   }
 
   .hero-heading-3 {
@@ -69916,6 +69955,7 @@ blockquote {
   }
 
   .about-founder-img-wrapper-3 {
+    margin-top: 20px;
     margin-left: 0;
   }
 
@@ -69936,7 +69976,7 @@ blockquote {
   .story-wrapper-3 {
     grid-column-gap: 1.6rem;
     grid-row-gap: 1.6rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
   }
 
   .section-52 {
@@ -71744,7 +71784,7 @@ blockquote {
 
   .sliderwithiphone {
     width: 100%;
-    margin-top: -44px;
+    margin-top: 6px;
     margin-bottom: 9px;
     margin-left: 0;
     padding-top: 0;
@@ -71949,7 +71989,7 @@ blockquote {
 
   .sliderinblack-6-copy {
     width: 100%;
-    margin-top: -45px;
+    margin-top: 0;
     margin-left: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -72386,8 +72426,9 @@ blockquote {
   }
 
   .flag-second-video {
-    height: 45px;
+    height: 55px;
     margin-top: 0;
+    margin-bottom: 0;
     box-shadow: 0 -7px 10px -1px #000000eb;
   }
 
@@ -72407,6 +72448,7 @@ blockquote {
 
   .subtitle-in-about-us {
     color: #6b6b6bf2;
+    font-weight: var(--fontweight--light);
     text-align: center;
     mix-blend-mode: normal;
   }
@@ -72516,8 +72558,16 @@ blockquote {
     font-size: 2.4rem;
   }
 
-  .about-us-center.centered, .about-us-center.centers {
+  .about-us-center.centered {
     mix-blend-mode: color-burn;
+    margin-top: 0;
+    margin-left: 0;
+    padding-bottom: 1rem;
+  }
+
+  .about-us-center.centers {
+    mix-blend-mode: color-burn;
+    width: 55%;
     margin-top: 0;
     margin-left: 0;
     padding-bottom: 1rem;
@@ -73181,12 +73231,14 @@ blockquote {
   }
 
   .hero-01-sticky-wrapper-8 {
+    text-align: center;
     background-image: linear-gradient(#201d1d00 29%, #000), linear-gradient(0deg, #0000006b, #201d1db8), url('../images/FAQ-2-Image.jpg');
     background-position: 0 0, 0 0, 80% 0;
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, cover;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
   }
 
   .hero-01-holder-8 {
@@ -73255,7 +73307,7 @@ blockquote {
     min-width: auto;
     max-width: none;
     margin-top: -84px;
-    padding-left: 20px;
+    padding-left: 0;
   }
 
   .heading-220 {
@@ -73314,6 +73366,17 @@ blockquote {
     min-height: 100%;
   }
 
+  .tw-about-hero-copy {
+    color: #f4f4f49e;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .tw-about-principles {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .scrolling-words {
     width: 100%;
     margin-top: -75px;
@@ -73324,6 +73387,11 @@ blockquote {
 
   .scrollings {
     margin-top: 0;
+  }
+
+  .paragraph-74 {
+    text-align: center;
+    margin-top: 60px;
   }
 }
 
