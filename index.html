@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Oct 07 2026 06:37:06 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Oct 08 2026 00:00:10 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a6ff0545aa01c93602db70c" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -443,877 +443,531 @@
             </div>
             <div class="hero-01-card-wrapper-6">
               <div class="hero-01-animated-card-4">
-                <div class="code-embed-93 w-embed w-script"><!--  ============================================================
-  THEWING.AI • ASK AMY INTELLIGENCE HUD
-  Homepage Embed
-  Version 3.0.0
-  DESIGN
-  - Thin professional intelligence console
-  - Desktop + iPhone responsive
-  - Executive muted-gold
-  - Transparent / frosted glass
-  - Minimal visual weight
-  BACKEND
-  - Netlify: netlify/functions/agent-amy.js
-  - POST: https://thewing.netlify.app/api/agent-amy
-  BEHAVIOR
-  - Memory only
-  - No localStorage
-  - No sessionStorage
-  - Maintains conversation thread in page memory
-  - Maintains Amy memory_echo in page memory
-  - Supports anonymous/public visitors
-  - Optional verified Bearer token support
-===============================================================  -->
-                  <div id="tw-amy-hud-v3">
+                <div class="code-embed-93 w-embed w-script"><!--  THEWING.AI • ASK AMY INTELLIGENCE HUD • V4.3  -->
+                  <div id="tw-amy-hud-v4">
                     <style>
-    /* ============================================================
-       RESET + TOKENS
-    ============================================================ */
-    #tw-amy-hud-v3,
-    #tw-amy-hud-v3 * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    #tw-amy-hud-v3 {
-      --amy-white: #f7f8fc;
-      --amy-ink: #eef1f8;
-      --amy-muted: #adb5c7;
-      --amy-muted-2: #7f899f;
-      --amy-gold: #e4c071;
-      --amy-gold-2: #c79c4f;
-      --amy-gold-soft: rgba(228, 192, 113, .09);
-      --amy-green: #78efb3;
-      --amy-border: rgba(255, 255, 255, .13);
-      --amy-border-soft: rgba(255, 255, 255, .075);
-      --amy-panel-top: rgba(20, 25, 38, .78);
-      --amy-panel-bottom: rgba(7, 11, 19, .72);
-      position: relative;
-      width: min(620px, calc(100% - 24px));
-      margin: 0 auto;
-      color: var(--amy-ink);
-      font-family:
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-    /* ============================================================
-       SHELL
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-shell {
-      position: relative;
-      isolation: isolate;
-      overflow: hidden;
-      width: 100%;
-      padding: 17px 18px 13px;
-      border:
-        1px solid
-        var(--amy-border);
-      border-radius: 22px;
-      background:
-        linear-gradient(
-          180deg,
-          var(--amy-panel-top),
-          var(--amy-panel-bottom)
-        );
-      box-shadow:
-        0 18px 45px rgba(0, 0, 0, .24),
-        inset 0 1px 0 rgba(255, 255, 255, .10);
-      backdrop-filter:
-        blur(15px)
-        saturate(125%);
-      -webkit-backdrop-filter:
-        blur(15px)
-        saturate(125%);
-    }
-    #tw-amy-hud-v3 .twamy-shell::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      background:
-        radial-gradient(
-          320px 120px at 0% 0%,
-          rgba(105, 167, 255, .055),
-          transparent 72%
-        ),
-        radial-gradient(
-          260px 120px at 100% 100%,
-          rgba(228, 192, 113, .045),
-          transparent 75%
-        );
-    }
-    #tw-amy-hud-v3 .twamy-shell::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      border-radius: inherit;
-      background:
-        linear-gradient(
-          115deg,
-          rgba(255,255,255,.055),
-          transparent 20%,
-          transparent 78%,
-          rgba(228,192,113,.018)
-        );
-    }
-    #tw-amy-hud-v3 .twamy-inner {
-      position: relative;
-      z-index: 2;
-    }
-    /* ============================================================
-       HEADER
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      margin-bottom: 13px;
-    }
-    #tw-amy-hud-v3 .twamy-brand {
-      display: flex;
-      align-items: center;
-      min-width: 0;
-      gap: 10px;
-    }
-    /* ============================================================
-       AMY MARK
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-mark {
-      position: relative;
-      display: grid;
-      place-items: center;
-      flex: 0 0 auto;
-      width: 34px;
-      height: 34px;
-      border:
-        1px solid
-        rgba(228, 192, 113, .28);
-      border-radius: 50%;
-      background:
-        radial-gradient(
-          circle,
-          rgba(228,192,113,.13),
-          rgba(228,192,113,.025) 60%,
-          transparent 72%
-        );
-    }
-    #tw-amy-hud-v3 .twamy-mark::before,
-    #tw-amy-hud-v3 .twamy-mark::after {
-      content: "";
-      position: absolute;
-      width: 15px;
-      height: 1px;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          var(--amy-gold),
-          transparent
-        );
-    }
-    #tw-amy-hud-v3 .twamy-mark::after {
-      transform: rotate(90deg);
-    }
-    #tw-amy-hud-v3 .twamy-mark-core {
-      width: 6px;
-      height: 6px;
-      transform:
-        rotate(45deg);
-      background:
-        var(--amy-gold);
-      box-shadow:
-        0 0 10px
-        rgba(228,192,113,.52);
-    }
-    /* ============================================================
-       TITLE
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-title {
-      color: #fff;
-      font-size: 23px;
-      line-height: 1.05;
-      font-weight: 750;
-      letter-spacing:
-        -.035em;
-    }
-    #tw-amy-hud-v3 .twamy-subtitle {
-      margin-top: 4px;
-      color:
-        var(--amy-muted);
-      font-size: 11.5px;
-      line-height: 1.35;
-    }
-    /* ============================================================
-       STATUS
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-status-wrap {
-      display: flex;
-      align-items: center;
-      flex: 0 0 auto;
-      gap: 8px;
-    }
-    #tw-amy-hud-v3 .twamy-status-label {
-      color:
-        var(--amy-muted-2);
-      font-size: 8px;
-      line-height: 1;
-      font-weight: 800;
-      letter-spacing:
-        .16em;
-      text-transform:
-        uppercase;
-      white-space:
-        nowrap;
-    }
-    #tw-amy-hud-v3 .twamy-status {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      height: 25px;
-      padding:
-        0 9px;
-      border:
-        1px solid
-        rgba(120,239,179,.25);
-      border-radius:
-        999px;
-      background:
-        rgba(120,239,179,.035);
-      color:
-        #92f1be;
-      font-size: 8px;
-      line-height: 1;
-      font-weight: 800;
-      letter-spacing:
-        .13em;
-      text-transform:
-        uppercase;
-    }
-    #tw-amy-hud-v3 .twamy-status-dot {
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background:
-        var(--amy-green);
-      box-shadow:
-        0 0 8px
-        rgba(120,239,179,.65);
-    }
-    #tw-amy-hud-v3
-    .twamy-status.is-thinking
-    .twamy-status-dot {
-      background:
-        var(--amy-gold);
-      box-shadow:
-        0 0 9px
-        rgba(228,192,113,.60);
-      animation:
-        twAmyPulse
-        1.1s ease-in-out
-        infinite;
-    }
-    #tw-amy-hud-v3
-    .twamy-status.is-error {
-      color:
-        #ffb5b5;
-      border-color:
-        rgba(255,140,140,.28);
-      background:
-        rgba(255,120,120,.04);
-    }
-    #tw-amy-hud-v3
-    .twamy-status.is-error
-    .twamy-status-dot {
-      background:
-        #ff9292;
-      box-shadow:
-        0 0 8px
-        rgba(255,110,110,.48);
-    }
-    /* ============================================================
-       ASK BAR
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-form {
-      display: grid;
-      grid-template-columns:
-        minmax(0,1fr)
-        42px;
-      align-items: center;
-      gap: 6px;
-      width: 100%;
-      padding: 5px;
-      border:
-        1px solid
-        rgba(255,255,255,.135);
-      border-radius: 13px;
-      background:
-        rgba(4,10,20,.30);
-      box-shadow:
-        inset 0 1px 0
-        rgba(255,255,255,.045);
-      transition:
-        border-color .18s ease,
-        box-shadow .18s ease,
-        background .18s ease;
-    }
-    #tw-amy-hud-v3
-    .twamy-form:focus-within {
-      border-color:
-        rgba(228,192,113,.34);
-      background:
-        rgba(5,11,21,.38);
-      box-shadow:
-        0 0 0 2px
-        rgba(228,192,113,.045),
-        inset 0 1px 0
-        rgba(255,255,255,.05);
-    }
-    #tw-amy-hud-v3 .twamy-input {
-      width: 100%;
-      min-width: 0;
-      height: 42px;
-      padding:
-        0 12px;
-      border: 0;
-      outline: 0;
-      background:
-        transparent;
-      color:
-        var(--amy-white);
-      font-family:
-        inherit;
-      font-size: 13px;
-      line-height: 1.2;
-      appearance: none;
-      -webkit-appearance: none;
-    }
-    #tw-amy-hud-v3
-    .twamy-input::placeholder {
-      color:
-        #aeb6c7;
-      opacity: .82;
-    }
-    /* ============================================================
-       SEND
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-send {
-      display: grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      border: 0;
-      border-radius: 10px;
-      cursor: pointer;
-      background:
-        linear-gradient(
-          135deg,
-          #efd084,
-          #cda451
-        );
-      color:
-        #09101b;
-      box-shadow:
-        0 5px 14px
-        rgba(199,156,79,.16);
-      transition:
-        transform .16s ease,
-        filter .16s ease,
-        opacity .16s ease;
-    }
-    #tw-amy-hud-v3
-    .twamy-send:hover {
-      transform:
-        translateY(-1px);
-      filter:
-        brightness(1.04);
-    }
-    #tw-amy-hud-v3
-    .twamy-send:active {
-      transform:
-        scale(.96);
-    }
-    #tw-amy-hud-v3
-    .twamy-send:disabled {
-      cursor:
-        wait;
-      opacity: .56;
-    }
-    #tw-amy-hud-v3 .twamy-send svg {
-      width: 18px;
-      height: 18px;
-    }
-    /* ============================================================
-       QUICK QUESTIONS
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-prompts {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 9px;
-    }
-    #tw-amy-hud-v3 .twamy-prompt {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 28px;
-      padding:
-        0 10px;
-      border:
-        1px solid
-        rgba(255,255,255,.11);
-      border-radius: 8px;
-      cursor:
-        pointer;
-      background:
-        rgba(255,255,255,.018);
-      color:
-        #cdd4e2;
-      font-family:
-        inherit;
-      font-size:
-        9px;
-      line-height: 1;
-      font-weight:
-        650;
-      white-space:
-        nowrap;
-      transition:
-        color .17s ease,
-        border-color .17s ease,
-        background .17s ease;
-    }
-    #tw-amy-hud-v3
-    .twamy-prompt:hover {
-      color:
-        #fff;
-      border-color:
-        rgba(228,192,113,.30);
-      background:
-        rgba(228,192,113,.055);
-    }
-    /* ============================================================
-       AMY RESPONSE
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-response {
-      display: none;
-      position: relative;
-      max-height: 152px;
-      margin-top: 10px;
-      padding:
-        12px 13px;
-      overflow-y: auto;
-      border:
-        1px solid
-        rgba(228,192,113,.15);
-      border-radius:
-        11px;
-      background:
-        linear-gradient(
-          135deg,
-          rgba(228,192,113,.045),
-          rgba(255,255,255,.012)
-        );
-      scrollbar-width:
-        thin;
-      scrollbar-color:
-        rgba(228,192,113,.30)
-        transparent;
-    }
-    #tw-amy-hud-v3
-    .twamy-response.is-visible {
-      display: block;
-      animation:
-        twAmyResponseIn
-        .30s ease both;
-    }
-    #tw-amy-hud-v3
-    .twamy-response-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 5px;
-    }
-    #tw-amy-hud-v3
-    .twamy-response-label {
-      color:
-        var(--amy-gold);
-      font-size: 8px;
-      line-height: 1;
-      font-weight: 800;
-      letter-spacing:
-        .15em;
-      text-transform:
-        uppercase;
-    }
-    #tw-amy-hud-v3
-    .twamy-response-intent {
-      color:
-        var(--amy-muted-2);
-      font-size:
-        8px;
-      line-height: 1;
-      letter-spacing:
-        .06em;
-      text-transform:
-        uppercase;
-    }
-    #tw-amy-hud-v3
-    .twamy-response-copy {
-      color:
-        #e8ebf3;
-      font-size:
-        11.5px;
-      line-height:
-        1.52;
-      white-space:
-        pre-line;
-    }
-    /* ============================================================
-       THIN PROCESS STRIP
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-process {
-      display: grid;
-      grid-template-columns:
-        1fr 16px
-        1fr 16px
-        1fr;
-      align-items:
-        center;
-      gap: 5px;
-      margin-top: 13px;
-      padding-top: 12px;
-      border-top:
-        1px solid
-        rgba(255,255,255,.075);
-    }
-    #tw-amy-hud-v3 .twamy-step {
-      display: flex;
-      align-items: center;
-      min-width: 0;
-      gap: 8px;
-    }
-    #tw-amy-hud-v3
-    .twamy-step-icon {
-      display: grid;
-      place-items: center;
-      flex: 0 0 auto;
-      width: 30px;
-      height: 30px;
-      border:
-        1px solid
-        rgba(228,192,113,.24);
-      border-radius:
-        9px;
-      background:
-        rgba(228,192,113,.025);
-      color:
-        var(--amy-gold);
-    }
-    #tw-amy-hud-v3
-    .twamy-step-icon svg {
-      width: 15px;
-      height: 15px;
-    }
-    #tw-amy-hud-v3
-    .twamy-step-body {
-      min-width: 0;
-    }
-    #tw-amy-hud-v3
-    .twamy-step-title {
-      color:
-        #fff;
-      font-size:
-        9.5px;
-      line-height:
-        1.15;
-      font-weight:
-        750;
-      white-space:
-        nowrap;
-    }
-    #tw-amy-hud-v3
-    .twamy-step-copy {
-      margin-top: 3px;
-      color:
-        #8f98ab;
-      font-size:
-        8px;
-      line-height:
-        1.25;
-    }
-    #tw-amy-hud-v3 .twamy-arrow {
-      display:
-        grid;
-      place-items:
-        center;
-      color:
-        rgba(255,255,255,.40);
-      font-size:
-        16px;
-      font-weight:
-        300;
-    }
-    /* ============================================================
-       FOOTER MICROCOPY
-    ============================================================ */
-    #tw-amy-hud-v3 .twamy-footer {
-      margin-top:
-        10px;
-      color:
-        rgba(190,198,213,.52);
-      text-align:
-        center;
-      font-size:
-        7.5px;
-      line-height:
-        1.25;
-      letter-spacing:
-        .025em;
-    }
-    #tw-amy-hud-v3
-    .twamy-footer strong {
-      color:
-        rgba(228,192,113,.67);
-      font-weight:
-        700;
-    }
-    /* ============================================================
-       TABLET / PHONE
-    ============================================================ */
-    @media (max-width: 640px) {
-      #tw-amy-hud-v3 {
-        width:
-          calc(100% - 16px);
-      }
-      #tw-amy-hud-v3
-      .twamy-shell {
-        padding:
-          15px 14px 12px;
-        border-radius:
-          19px;
-      }
-      #tw-amy-hud-v3
-      .twamy-title {
-        font-size:
-          21px;
-      }
-      #tw-amy-hud-v3
-      .twamy-subtitle {
-        max-width:
-          225px;
-        font-size:
-          10.5px;
-      }
-      #tw-amy-hud-v3
-      .twamy-status-label {
-        display:
-          none;
-      }
-      #tw-amy-hud-v3
-      .twamy-input {
-        font-size:
-          16px;
-      }
-      #tw-amy-hud-v3
-      .twamy-prompts {
-        flex-wrap:
-          nowrap;
-        overflow-x:
-          auto;
-        padding-bottom:
-          2px;
-        scrollbar-width:
-          none;
-      }
-      #tw-amy-hud-v3
-      .twamy-prompts::-webkit-scrollbar {
-        display:
-          none;
-      }
-    }
-    @media (max-width: 480px) {
-      #tw-amy-hud-v3
-      .twamy-header {
-        margin-bottom:
-          11px;
-      }
-      #tw-amy-hud-v3
-      .twamy-mark {
-        width:
-          31px;
-        height:
-          31px;
-      }
-      #tw-amy-hud-v3
-      .twamy-title {
-        font-size:
-          19px;
-      }
-      #tw-amy-hud-v3
-      .twamy-subtitle {
-        max-width:
-          190px;
-        font-size:
-          9.5px;
-      }
-      #tw-amy-hud-v3
-      .twamy-status {
-        height:
-          23px;
-        padding:
-          0 8px;
-        font-size:
-          7px;
-      }
-      #tw-amy-hud-v3
-      .twamy-form {
-        grid-template-columns:
-          minmax(0,1fr)
-          40px;
-        padding:
-          4px;
-      }
-      #tw-amy-hud-v3
-      .twamy-input {
-        height:
-          40px;
-      }
-      #tw-amy-hud-v3
-      .twamy-send {
-        width:
-          40px;
-        height:
-          40px;
-      }
-      #tw-amy-hud-v3
-      .twamy-process {
-        grid-template-columns:
-          repeat(3, minmax(0,1fr));
-        gap:
-          6px;
-      }
-      #tw-amy-hud-v3
-      .twamy-arrow {
-        display:
-          none;
-      }
-      #tw-amy-hud-v3
-      .twamy-step {
-        flex-direction:
-          column;
-        align-items:
-          center;
-        gap:
-          5px;
-        text-align:
-          center;
-      }
-      #tw-amy-hud-v3
-      .twamy-step-icon {
-        width:
-          28px;
-        height:
-          28px;
-      }
-      #tw-amy-hud-v3
-      .twamy-step-title {
-        font-size:
-          8.5px;
-      }
-      #tw-amy-hud-v3
-      .twamy-step-copy {
-        font-size:
-          7.5px;
-      }
-    }
-    /* ============================================================
-       MOTION
-    ============================================================ */
-    @keyframes twAmyPulse {
-      0%,
-      100% {
-        opacity: .52;
-        transform: scale(.82);
-      }
-      50% {
-        opacity: 1;
-        transform: scale(1.12);
-      }
-    }
-    @keyframes twAmyResponseIn {
-      from {
-        opacity: 0;
-        transform:
-          translateY(5px);
-      }
-      to {
-        opacity: 1;
-        transform:
-          translateY(0);
-      }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      #tw-amy-hud-v3 *,
-      #tw-amy-hud-v3 *::before,
-      #tw-amy-hud-v3 *::after {
-        animation:
-          none !important;
-        transition:
-          none !important;
-      }
-    }
-  </style>
-                    <!--  ============================================================
-       ASK AMY HUD
-  ============================================================  -->
+#tw-amy-hud-v4,
+#tw-amy-hud-v4 *{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+#tw-amy-hud-v4{
+  --amy-white:#f7f8fc;
+  --amy-ink:#eef1f8;
+  --amy-muted:#adb5c7;
+  --amy-muted-2:#7f899f;
+  --amy-gold:#e4c071;
+  --amy-gold-2:#c79c4f;
+  --amy-green:#78efb3;
+  --amy-border:rgba(255,255,255,.13);
+  --amy-border-soft:rgba(255,255,255,.075);
+  --amy-panel-top:rgba(20,25,38,.78);
+  --amy-panel-bottom:rgba(7,11,19,.72);
+  position:relative;
+  width:min(620px,calc(100% - 24px));
+  margin:0 auto;
+  color:var(--amy-ink);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+/* V3 SHELL */
+#tw-amy-hud-v4 .twamy-shell{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  width:100%;
+  padding:17px 18px 13px;
+  border:1px solid var(--amy-border);
+  border-radius:22px;
+  background:
+    linear-gradient(
+      180deg,
+      var(--amy-panel-top),
+      var(--amy-panel-bottom)
+    );
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.24),
+    inset 0 1px 0 rgba(255,255,255,.10);
+  backdrop-filter:
+    blur(15px)
+    saturate(125%);
+  -webkit-backdrop-filter:
+    blur(15px)
+    saturate(125%);
+}
+#tw-amy-hud-v4 .twamy-shell::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      320px 120px at 0% 0%,
+      rgba(105,167,255,.055),
+      transparent 72%
+    ),
+    radial-gradient(
+      260px 120px at 100% 100%,
+      rgba(228,192,113,.045),
+      transparent 75%
+    );
+}
+#tw-amy-hud-v4 .twamy-shell::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  border-radius:inherit;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(255,255,255,.055),
+      transparent 20%,
+      transparent 78%,
+      rgba(228,192,113,.018)
+    );
+}
+#tw-amy-hud-v4 .twamy-inner{
+  position:relative;
+  z-index:2;
+}
+/* AMY COMMUNICATION AREA */
+#tw-amy-hud-v4 .twamy-conversation{
+  position:relative;
+  min-height:89px;
+  margin-bottom:12px;
+}
+#tw-amy-hud-v4 .twamy-conversation-scroll{
+  max-height:150px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  padding-right:4px;
+  scrollbar-width:thin;
+  scrollbar-color:
+    rgba(228,192,113,.28)
+    transparent;
+}
+#tw-amy-hud-v4
+.twamy-conversation-scroll::-webkit-scrollbar{
+  width:4px;
+}
+#tw-amy-hud-v4
+.twamy-conversation-scroll::-webkit-scrollbar-thumb{
+  background:rgba(228,192,113,.26);
+  border-radius:20px;
+}
+#tw-amy-hud-v4 .twamy-kicker{
+  margin-bottom:8px;
+  color:var(--amy-gold);
+  font-size:8px;
+  line-height:1;
+  font-weight:800;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+#tw-amy-hud-v4 .twamy-message{
+  max-width:555px;
+  color:#fff;
+  font-size:23px;
+  line-height:1.12;
+  font-weight:750;
+  letter-spacing:-.035em;
+  white-space:pre-line;
+}
+#tw-amy-hud-v4 .twamy-detail{
+  max-width:540px;
+  margin-top:8px;
+  color:var(--amy-muted);
+  font-size:11px;
+  line-height:1.4;
+}
+/* ANSWER MODE */
+#tw-amy-hud-v4.is-answer
+.twamy-message{
+  color:#e8ebf3;
+  font-size:11.5px;
+  line-height:1.52;
+  font-weight:450;
+  letter-spacing:0;
+}
+#tw-amy-hud-v4.is-answer
+.twamy-detail{
+  font-size:9px;
+}
+/* THINKING */
+#tw-amy-hud-v4.is-thinking
+.twamy-message{
+  color:var(--amy-muted);
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:-.01em;
+}
+/* FOUR ELICITATION CHOICES */
+#tw-amy-hud-v4 .twamy-choices{
+  display:grid;
+  grid-template-columns:
+    repeat(2,minmax(0,1fr));
+  gap:8px;
+  width:100%;
+}
+#tw-amy-hud-v4 .twamy-choice{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  min-height:64px;
+  padding:11px 13px;
+  border:
+    1px solid
+    rgba(255,255,255,.12);
+  border-radius:12px;
+  cursor:pointer;
+  background:
+    rgba(255,255,255,.015);
+  font-family:inherit;
+  text-align:left;
+  transition:
+    border-color .17s ease,
+    background .17s ease,
+    transform .17s ease;
+}
+#tw-amy-hud-v4
+.twamy-choice:hover{
+  transform:translateY(-1px);
+  border-color:
+    rgba(228,192,113,.30);
+  background:
+    rgba(228,192,113,.045);
+}
+#tw-amy-hud-v4
+.twamy-choice:active{
+  transform:scale(.99);
+}
+#tw-amy-hud-v4
+.twamy-choice-title{
+  color:#fff;
+  font-size:10.5px;
+  line-height:1.2;
+  font-weight:700;
+}
+#tw-amy-hud-v4
+.twamy-choice-copy{
+  margin-top:5px;
+  color:#8f98ab;
+  font-size:8.5px;
+  line-height:1.3;
+}
+#tw-amy-hud-v4
+.twamy-choice.is-primary{
+  border-color:
+    rgba(228,192,113,.28);
+  background:
+    rgba(228,192,113,.035);
+}
+#tw-amy-hud-v4
+.twamy-choice.is-primary
+.twamy-choice-title{
+  color:var(--amy-gold);
+}
+/* START OVER */
+#tw-amy-hud-v4 .twamy-tools{
+  display:none;
+  justify-content:flex-end;
+  margin-top:8px;
+}
+#tw-amy-hud-v4
+.twamy-tools.is-visible{
+  display:flex;
+}
+#tw-amy-hud-v4 .twamy-reset{
+  border:0;
+  outline:0;
+  cursor:pointer;
+  background:transparent;
+  color:var(--amy-muted-2);
+  font-family:inherit;
+  font-size:8px;
+  font-weight:650;
+}
+#tw-amy-hud-v4
+.twamy-reset:hover{
+  color:var(--amy-gold);
+}
+/* DIVIDER */
+#tw-amy-hud-v4 .twamy-divider{
+  display:grid;
+  grid-template-columns:
+    minmax(0,1fr)
+    auto
+    minmax(0,1fr);
+  align-items:center;
+  gap:10px;
+  margin:
+    12px 0 9px;
+}
+#tw-amy-hud-v4
+.twamy-divider::before,
+#tw-amy-hud-v4
+.twamy-divider::after{
+  content:"";
+  height:1px;
+  background:
+    rgba(255,255,255,.075);
+}
+#tw-amy-hud-v4
+.twamy-divider span{
+  color:
+    rgba(190,198,213,.50);
+  font-size:7.5px;
+  line-height:1;
+  white-space:nowrap;
+}
+/* V3 ASK BAR */
+#tw-amy-hud-v4 .twamy-form{
+  display:grid;
+  grid-template-columns:
+    minmax(0,1fr)
+    42px;
+  align-items:center;
+  gap:6px;
+  width:100%;
+  padding:5px;
+  border:
+    1px solid
+    rgba(255,255,255,.135);
+  border-radius:13px;
+  background:
+    rgba(4,10,20,.30);
+  box-shadow:
+    inset 0 1px 0
+    rgba(255,255,255,.045);
+  transition:
+    border-color .18s ease,
+    box-shadow .18s ease,
+    background .18s ease;
+}
+#tw-amy-hud-v4
+.twamy-form:focus-within{
+  border-color:
+    rgba(228,192,113,.34);
+  background:
+    rgba(5,11,21,.38);
+  box-shadow:
+    0 0 0 2px
+    rgba(228,192,113,.045),
+    inset 0 1px 0
+    rgba(255,255,255,.05);
+}
+#tw-amy-hud-v4 .twamy-input{
+  width:100%;
+  min-width:0;
+  height:42px;
+  padding:
+    0 12px;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:var(--amy-white);
+  font-family:inherit;
+  font-size:13px;
+  line-height:1.2;
+  appearance:none;
+  -webkit-appearance:none;
+}
+#tw-amy-hud-v4
+.twamy-input::placeholder{
+  color:#aeb6c7;
+  opacity:.82;
+}
+/* V3 SEND */
+#tw-amy-hud-v4 .twamy-send{
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border:0;
+  border-radius:10px;
+  cursor:pointer;
+  background:
+    linear-gradient(
+      135deg,
+      #efd084,
+      #cda451
+    );
+  color:#09101b;
+  box-shadow:
+    0 5px 14px
+    rgba(199,156,79,.16);
+  transition:
+    transform .16s ease,
+    filter .16s ease,
+    opacity .16s ease;
+}
+#tw-amy-hud-v4
+.twamy-send:hover{
+  transform:translateY(-1px);
+  filter:brightness(1.04);
+}
+#tw-amy-hud-v4
+.twamy-send:active{
+  transform:scale(.96);
+}
+#tw-amy-hud-v4
+.twamy-send:disabled{
+  cursor:wait;
+  opacity:.56;
+}
+#tw-amy-hud-v4
+.twamy-send svg{
+  width:18px;
+  height:18px;
+}
+/* V3 FOOTER */
+#tw-amy-hud-v4 .twamy-footer{
+  margin-top:10px;
+  color:
+    rgba(190,198,213,.52);
+  text-align:center;
+  font-size:7.5px;
+  line-height:1.25;
+  letter-spacing:.025em;
+}
+#tw-amy-hud-v4
+.twamy-footer strong{
+  color:
+    rgba(228,192,113,.67);
+  font-weight:700;
+}
+/* MOBILE — KEEP SAME FOOTPRINT */
+@media(max-width:640px){
+  #tw-amy-hud-v4{
+    width:
+      calc(100% - 16px);
+  }
+  #tw-amy-hud-v4
+  .twamy-shell{
+    padding:
+      15px 14px 12px;
+    border-radius:19px;
+  }
+  #tw-amy-hud-v4
+  .twamy-message{
+    font-size:21px;
+  }
+  #tw-amy-hud-v4.is-answer
+  .twamy-message{
+    font-size:11.5px;
+  }
+  #tw-amy-hud-v4
+  .twamy-input{
+    font-size:16px;
+  }
+}
+@media(max-width:480px){
+  #tw-amy-hud-v4
+  .twamy-conversation{
+    min-height:80px;
+  }
+  #tw-amy-hud-v4
+  .twamy-message{
+    font-size:19px;
+  }
+  #tw-amy-hud-v4
+  .twamy-choice{
+    min-height:59px;
+    padding:10px;
+  }
+  #tw-amy-hud-v4
+  .twamy-choice-title{
+    font-size:9.5px;
+  }
+  #tw-amy-hud-v4
+  .twamy-choice-copy{
+    font-size:7.7px;
+  }
+  #tw-amy-hud-v4
+  .twamy-form{
+    grid-template-columns:
+      minmax(0,1fr)
+      40px;
+    padding:4px;
+  }
+  #tw-amy-hud-v4
+  .twamy-input{
+    height:40px;
+  }
+  #tw-amy-hud-v4
+  .twamy-send{
+    width:40px;
+    height:40px;
+  }
+}
+/* MOTION */
+@keyframes twAmyIn{
+  from{
+    opacity:0;
+    transform:translateY(4px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+#tw-amy-hud-v4
+.twamy-conversation,
+#tw-amy-hud-v4
+.twamy-choices{
+  animation:
+    twAmyIn
+    .25s ease both;
+}
+@media(prefers-reduced-motion:reduce){
+  #tw-amy-hud-v4 *,
+  #tw-amy-hud-v4 *::before,
+  #tw-amy-hud-v4 *::after{
+    animation:none!important;
+    transition:none!important;
+  }
+}
+</style>
                     <section class="twamy-shell" aria-label="Ask Amy Military Decision Intelligence">
                       <div class="twamy-inner">
-                        <!--  ========================================================
-           HEADER
-      =========================================================  -->
-                        <header class="twamy-header">
-                          <div class="twamy-brand">
-                            <div class="twamy-mark" aria-hidden="true">
-                              <span class="twamy-mark-core"></span>
+                        <!-- 
+      NO DUPLICATE ASK AMY HEADER.
+      THIS AREA IS AMY.
+     -->
+                        <section class="twamy-conversation" aria-live="polite" aria-label="Amy conversation">
+                          <div class="twamy-conversation-scroll">
+                            <div id="twamy-kicker" class="twamy-kicker">
+                              ASK AMY
                             </div>
-                            <div>
-                              <h2 class="twamy-title">
-                                Ask Amy
-                              </h2>
-                              <p class="twamy-subtitle">
-                                Your military decision intelligence partner.
-                              </p>
+                            <div id="twamy-message" class="twamy-message">
+                              What can I help you figure out today?
                             </div>
-                          </div>
-                          <div class="twamy-status-wrap">
-                            <span class="twamy-status-label">
-                              AI Concierge
-                            </span>
-                            <div id="twamy-status" class="twamy-status" aria-live="polite">
-                              <span class="twamy-status-dot" aria-hidden="true"></span>
-                              <span id="twamy-status-text">
-                                Online
-                              </span>
+                            <div id="twamy-detail" class="twamy-detail">
+                              Choose an area below, or ask me anything.
                             </div>
                           </div>
-                        </header>
-                        <!--  ========================================================
-           QUESTION
-      =========================================================  -->
+                        </section>
+                        <div id="twamy-choices" class="twamy-choices" aria-label="Ask Amy options"></div>
+                        <div id="twamy-tools" class="twamy-tools">
+                          <button id="twamy-reset" class="twamy-reset" type="button">
+                            Start over
+                          </button>
+                        </div>
+                        <div class="twamy-divider">
+                          <span>Or ask Amy anything...</span>
+                        </div>
                         <form id="twamy-form" class="twamy-form">
-                          <input id="twamy-input" class="twamy-input" type="text" autocomplete="off" inputmode="text" maxlength="5000" aria-label="Ask Amy a military question" placeholder="Ask about pay, PCS, housing, benefits or finances...">
+                          <input id="twamy-input" class="twamy-input" type="text" autocomplete="off" inputmode="text" maxlength="5000" aria-label="Ask Amy a military question" placeholder="Type your question here...">
                           <button id="twamy-send" class="twamy-send" type="submit" aria-label="Ask Amy">
                             <svg viewbox="0 0 24 24" fill="none" aria-hidden="true">
                               <path d="M21 3L10.4 13.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"></path>
@@ -1321,932 +975,1517 @@
                             </svg>
                           </button>
                         </form>
-                        <!--  ========================================================
-           QUICK PROMPTS
-      =========================================================  -->
-                        <div class="twamy-prompts" aria-label="Suggested questions">
-                          <button class="twamy-prompt" type="button" data-question="Help me understand my military pay and BAH.">
-                            Pay &amp; BAH
-                          </button>
-                          <button class="twamy-prompt" type="button" data-question="What should I financially plan for during my next PCS move?">
-                            PCS move
-                          </button>
-                          <button class="twamy-prompt" type="button" data-question="How much home can I realistically afford with my military compensation?">
-                            Home affordability
-                          </button>
-                          <button class="twamy-prompt" type="button" data-question="Help me understand a VA mortgage scenario.">
-                            VA mortgage
-                          </button>
-                        </div>
-                        <!--  ========================================================
-           RESPONSE
-      =========================================================  -->
-                        <section id="twamy-response" class="twamy-response" role="status" aria-live="polite" aria-label="Amy response">
-                          <div class="twamy-response-top">
-                            <span class="twamy-response-label">
-                              Amy
-                            </span>
-                            <span id="twamy-response-intent" class="twamy-response-intent"></span>
-                          </div>
-                          <div id="twamy-response-copy" class="twamy-response-copy"></div>
-                        </section>
-                        <!--  ========================================================
-           INTELLIGENCE PROCESS
-      =========================================================  -->
-                        <div class="twamy-process" aria-label="How TheWing and Amy work">
-                          <!--  CALCULATE  -->
-                          <div class="twamy-step">
-                            <div class="twamy-step-icon">
-                              <svg viewbox="0 0 24 24" fill="none" aria-hidden="true">
-                                <rect x="6" y="3" width="12" height="18" rx="2" stroke="currentColor" stroke-width="1.7"></rect>
-                                <path d="M8.5 7H15.5" stroke="currentColor" stroke-width="1.7"></path>
-                                <path d="M9 11H10M13 11H14M9 15H10M13 15H14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path>
-                              </svg>
-                            </div>
-                            <div class="twamy-step-body">
-                              <div class="twamy-step-title">
-                                1. Calculate
-                              </div>
-                              <div class="twamy-step-copy">
-                                Runs trusted numbers.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="twamy-arrow" aria-hidden="true">
-                            →
-                          </div>
-                          <!--  ANALYZE  -->
-                          <div class="twamy-step">
-                            <div class="twamy-step-icon">
-                              <svg viewbox="0 0 24 24" fill="none" aria-hidden="true">
-                                <path d="M6 19V13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
-                                <path d="M12 19V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
-                                <path d="M18 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
-                              </svg>
-                            </div>
-                            <div class="twamy-step-body">
-                              <div class="twamy-step-title">
-                                2. Analyze
-                              </div>
-                              <div class="twamy-step-copy">
-                                Compares trade-offs.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="twamy-arrow" aria-hidden="true">
-                            →
-                          </div>
-                          <!--  UNDERSTAND  -->
-                          <div class="twamy-step">
-                            <div class="twamy-step-icon">
-                              <svg viewbox="0 0 24 24" fill="none" aria-hidden="true">
-                                <path d="M9 18H15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path>
-                                <path d="M10 21H14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path>
-                                <path d="M8.5 15.2C6.9 14.1 6 12.3 6 10.3C6 6.8 8.7 4 12 4C15.3 4 18 6.8 18 10.3C18 12.3 17.1 14.1 15.5 15.2C14.8 15.7 14.4 16.2 14.2 17H9.8C9.6 16.2 9.2 15.7 8.5 15.2Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path>
-                              </svg>
-                            </div>
-                            <div class="twamy-step-body">
-                              <div class="twamy-step-title">
-                                3. Understand
-                              </div>
-                              <div class="twamy-step-copy">
-                                Amy explains what matters.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                         <div class="twamy-footer">
                           <strong>TheWing calculates.</strong>
                           Amy explains.
                         </div>
                       </div>
                     </section>
-                    <!--  ============================================================
-       JAVASCRIPT
-  ============================================================  -->
                     <script>
-    (() => {
-      "use strict";
-      /* ==========================================================
-         CONFIG
-      ========================================================== */
-      const ROOT_ID =
-        "tw-amy-hud-v3";
-      const API_URL =
-        "https://thewing.netlify.app/api/agent-amy";
-      const CLIENT_VERSION =
-        "thewing-home-amy-hud-3.0.0";
-      const MAX_THREAD_MESSAGES =
-        12;
-      /* ==========================================================
-         ROOT
-      ========================================================== */
-      const root =
-        document.getElementById(
-          ROOT_ID
-        );
-      if (
-        !root ||
-        root.dataset.twAmyInitialized === "true"
-      ) {
-        return;
+(()=>{
+"use strict";
+const ROOT_ID="tw-amy-hud-v4";
+const API_URL="https://thewing.netlify.app/api/agent-amy";
+const CLIENT_VERSION="thewing-home-amy-hud-4.3.1";
+const MAX_THREAD_MESSAGES=12;
+const root=document.getElementById(ROOT_ID);
+if(
+  !root ||
+  root.dataset.twAmyInitialized==="true"
+){
+  return;
+}
+root.dataset.twAmyInitialized="true";
+const kicker=root.querySelector("#twamy-kicker");
+const message=root.querySelector("#twamy-message");
+const detail=root.querySelector("#twamy-detail");
+const choices=root.querySelector("#twamy-choices");
+const tools=root.querySelector("#twamy-tools");
+const resetButton=root.querySelector("#twamy-reset");
+const form=root.querySelector("#twamy-form");
+const input=root.querySelector("#twamy-input");
+const sendButton=root.querySelector("#twamy-send");
+/* ============================================================
+   ROUTES
+============================================================ */
+const ROUTES={
+  bah:{
+    label:"BAH & Base Pay Calculator",
+    url:"/air-force/bah-base-pay-calculator.html"
+  },
+  retirement:{
+    label:"Retirement Calculator",
+    url:"/air-force/retirement-calculator.html"
+  },
+  disability:{
+    label:"VA Disability Calculator",
+    url:"/air-force/disability-calculator.html"
+  },
+  mortgage:{
+    label:"Mortgage Calculator",
+    url:"/air-force/mortgage-calculator.html"
+  },
+  financial:{
+    label:"Financial Readiness Dashboard",
+    url:"/air-force/financial-dashboard.html"
+  },
+  pcsSnapshot:{
+    label:"PCS Snapshot",
+    url:"/air-force/pcs-snapshot.html"
+  },
+  baseDemographics:{
+    label:"Base Demographics",
+    url:"/air-force/base-demographics-air-force.html"
+  },
+  baseMap:{
+    label:"Interactive Base Map",
+    url:"/air-force/base-map.html"
+  },
+  pt:{
+    label:"PT Calculator",
+    url:"/air-force/pt-calculator.html"
+  },
+  waps:{
+    label:"WAPS Calculator",
+    url:"/waps.html"
+  },
+  opb:{
+    label:"OPB Generator",
+    url:"/air-force/opb-generator.html"
+  },
+  information:{
+    label:"Information Center",
+    url:"/information-center.html"
+  },
+  about:{
+    label:"About TheWing",
+    url:"/about-us.html"
+  }
+};
+/* ============================================================
+   CONCIERGE SCREENS
+============================================================ */
+const SCREENS={
+  home:{
+    kicker:"ASK AMY",
+    message:
+      "What can I help you figure out today?",
+    detail:
+      "Choose an area below, or ask me anything.",
+    choices:[
+      {
+        title:"Pay & Benefits",
+        copy:"Base pay, BAH, retirement, VA benefits",
+        ask:"I want help with my military pay or benefits."
+      },
+      {
+        title:"PCS & Duty Station",
+        copy:"Orders, bases, relocation, local area",
+        ask:"I want help with a PCS or duty station."
+      },
+      {
+        title:"Housing & Finances",
+        copy:"Mortgage, affordability, buying decisions",
+        ask:"I want help with housing or my finances."
+      },
+      {
+        title:"Career & Readiness",
+        copy:"PT, WAPS, performance reports",
+        ask:"I want help with career or readiness."
       }
-      root.dataset.twAmyInitialized =
-        "true";
-      /* ==========================================================
-         ELEMENTS
-      ========================================================== */
-      const form =
-        root.querySelector(
-          "#twamy-form"
-        );
-      const input =
-        root.querySelector(
-          "#twamy-input"
-        );
-      const sendButton =
-        root.querySelector(
-          "#twamy-send"
-        );
-      const status =
-        root.querySelector(
-          "#twamy-status"
-        );
-      const statusText =
-        root.querySelector(
-          "#twamy-status-text"
-        );
-      const response =
-        root.querySelector(
-          "#twamy-response"
-        );
-      const responseCopy =
-        root.querySelector(
-          "#twamy-response-copy"
-        );
-      const responseIntent =
-        root.querySelector(
-          "#twamy-response-intent"
-        );
-      const promptButtons =
-        Array.from(
-          root.querySelectorAll(
-            ".twamy-prompt"
-          )
-        );
-      /* ==========================================================
-         HELPERS
-      ========================================================== */
-      const makeConversationId = () => {
-        try {
-          if (
-            window.crypto &&
-            typeof window.crypto.randomUUID === "function"
-          ) {
-            return (
-              "thewing-home-" +
-              window.crypto.randomUUID()
-            );
-          }
-        } catch (_) {}
-        return (
-          "thewing-home-" +
-          Date.now() +
-          "-" +
-          Math.random()
-            .toString(36)
-            .slice(2, 10)
-        );
-      };
-      const isPlainObject = value => {
-        return (
-          value &&
-          typeof value === "object" &&
-          !Array.isArray(value)
-        );
-      };
-      const deepMerge = (
-        target,
-        source
-      ) => {
-        const output =
-          isPlainObject(target)
-            ? { ...target }
-            : {};
-        if (
-          !isPlainObject(source)
-        ) {
-          return output;
-        }
-        Object.entries(
-          source
-        ).forEach(
-          ([key, value]) => {
-            if (
-              isPlainObject(value)
-            ) {
-              output[key] =
-                deepMerge(
-                  output[key],
-                  value
-                );
-            } else {
-              output[key] =
-                value;
-            }
-          }
-        );
-        return output;
-      };
-      const clamp = (
-        value,
-        min,
-        max
-      ) => {
-        const n =
-          Number(value);
-        if (
-          !Number.isFinite(n)
-        ) {
-          return min;
-        }
-        return Math.min(
-          max,
-          Math.max(
-            min,
-            n
-          )
-        );
-      };
-      /* ==========================================================
-         IN-MEMORY STATE
-      ========================================================== */
-      const state = {
-        conversationId:
-          makeConversationId(),
-        thread: [],
-        memory: {},
-        authToken: "",
-        controller: null,
-        context: {
-          profile: {},
-          bridge: {},
-          identity: {},
-          session: {},
-          compensation: null,
-          mortgage: null,
-          fad: {},
-          financial_intake: {},
-          kpi_overrides: {},
-          user_financial_inputs: {},
-          user_aiou_inputs: {}
-        }
-      };
-      /* ==========================================================
-         STATUS
-      ========================================================== */
-      const setStatus = (
-        mode
-      ) => {
-        status.classList.remove(
-          "is-thinking",
-          "is-error"
-        );
-        if (
-          mode === "thinking"
-        ) {
-          status.classList.add(
-            "is-thinking"
-          );
-          statusText.textContent =
-            "Thinking";
-          sendButton.disabled =
-            true;
-          return;
-        }
-        if (
-          mode === "error"
-        ) {
-          status.classList.add(
-            "is-error"
-          );
-          statusText.textContent =
-            "Retry";
-          sendButton.disabled =
-            false;
-          return;
-        }
-        statusText.textContent =
-          "Online";
-        sendButton.disabled =
-          false;
-      };
-      /* ==========================================================
-         RESPONSE UI
-      ========================================================== */
-      const showResponseShell = (
-        intent = ""
-      ) => {
-        responseIntent.textContent =
-          intent
-            ? String(intent)
-                .replace(/_/g, " ")
-            : "";
-        responseCopy.textContent =
-          "";
-        response.classList.add(
-          "is-visible"
-        );
-      };
-      const typeResponse = async (
-        text,
-        ui = {}
-      ) => {
-        const value =
-          String(text || "").trim();
-        if (!value) {
-          return;
-        }
-        showResponseShell();
-        const reduceMotion =
-          window.matchMedia &&
-          window.matchMedia(
-            "(prefers-reduced-motion: reduce)"
-          ).matches;
-        if (reduceMotion) {
-          responseCopy.textContent =
-            value;
-          return;
-        }
-        const speed =
-          clamp(
-            ui?.speed || 14,
-            7,
-            28
-          );
-        const startDelay =
-          clamp(
-            ui?.startDelay || 50,
-            0,
-            300
-          );
-        await new Promise(
-          resolve =>
-            window.setTimeout(
-              resolve,
-              startDelay
-            )
-        );
-        responseCopy.textContent =
-          "";
-        for (
-          let index = 0;
-          index < value.length;
-          index += 1
-        ) {
-          responseCopy.textContent +=
-            value[index];
-          if (
-            index % 7 === 0
-          ) {
-            response.scrollTop =
-              response.scrollHeight;
-          }
-          await new Promise(
-            resolve =>
-              window.setTimeout(
-                resolve,
-                speed
+    ]
+  },
+  firstTime:{
+    kicker:"WELCOME",
+    message:
+      "Is this your first time at TheWing?",
+    detail:
+      "I can help you find the right place.",
+    choices:[
+      {
+        title:"Yes — help me get started",
+        copy:"I'll narrow it down with you.",
+        next:"newUser"
+      },
+      {
+        title:"No — I know what I need",
+        copy:"Choose an area or ask me directly.",
+        next:"home"
+      },
+      {
+        title:"What does TheWing do?",
+        copy:"Learn about the platform.",
+        route:"about"
+      },
+      {
+        title:"How does the system work?",
+        copy:"See calculations and methodology.",
+        route:"information"
+      }
+    ]
+  },
+  newUser:{
+    kicker:"LET'S FIND YOUR NEXT STEP",
+    message:
+      "What are you trying to accomplish first?",
+    detail:
+      "Choose the closest match.",
+    choices:[
+      {
+        title:"Understand my pay or benefits",
+        next:"pay"
+      },
+      {
+        title:"Prepare for a PCS",
+        next:"pcs"
+      },
+      {
+        title:"Make a housing decision",
+        next:"housing"
+      },
+      {
+        title:"Work on career or readiness",
+        next:"career"
+      }
+    ]
+  },
+  pay:{
+    kicker:"PAY & BENEFITS",
+    message:
+      "What do you want to understand?",
+    detail:
+      "I’ll guide you to the right tool.",
+    choices:[
+      {
+        title:"My Base Pay or BAH",
+        copy:"Estimate military compensation",
+        route:"bah"
+      },
+      {
+        title:"My Retirement Pay",
+        copy:"High-3 or BRS planning",
+        route:"retirement"
+      },
+      {
+        title:"My VA Disability",
+        copy:"Combined disability rating",
+        route:"disability"
+      },
+      {
+        title:"Something else",
+        copy:"Tell me what you're trying to find.",
+        action:"focus"
+      }
+    ]
+  },
+  pcs:{
+    kicker:"PCS & DUTY STATION",
+    message:
+      "What do you want to understand about your PCS?",
+    detail:
+      "Choose the part of the move that matters most.",
+    choices:[
+      {
+        title:"My pay after the move",
+        copy:"Base Pay, BAH and compensation",
+        route:"bah"
+      },
+      {
+        title:"The base & surrounding area",
+        copy:"Housing, commute and local intelligence",
+        route:"baseDemographics"
+      },
+      {
+        title:"My overall PCS picture",
+        copy:"Start with a PCS Snapshot",
+        route:"pcsSnapshot"
+      },
+      {
+        title:"Housing at my next base",
+        next:"housing"
+      }
+    ]
+  },
+  housing:{
+    kicker:"HOUSING & FINANCES",
+    message:
+      "What are you trying to decide?",
+    detail:
+      "I’ll start with the calculation that matters most.",
+    choices:[
+      {
+        title:"What would my payment be?",
+        copy:"Estimate monthly housing cost",
+        route:"mortgage"
+      },
+      {
+        title:"Can I afford this home?",
+        copy:"Review financial readiness",
+        route:"financial"
+      },
+      {
+        title:"Should I buy before my PCS?",
+        copy:"Start with your PCS scenario",
+        route:"pcsSnapshot"
+      },
+      {
+        title:"Something else",
+        copy:"Tell me what you're trying to decide.",
+        action:"focus"
+      }
+    ]
+  },
+  career:{
+    kicker:"CAREER & READINESS",
+    message:
+      "What do you want to work on?",
+    detail:
+      "Choose the closest match.",
+    choices:[
+      {
+        title:"PT / Fitness",
+        copy:"Calculate and review your score",
+        route:"pt"
+      },
+      {
+        title:"Promotion / WAPS",
+        copy:"Calculate promotion scoring",
+        route:"waps"
+      },
+      {
+        title:"Officer Performance Brief",
+        copy:"Use the OPB Generator",
+        route:"opb"
+      },
+      {
+        title:"Something else",
+        copy:"Tell me what you're trying to find.",
+        action:"focus"
+      }
+    ]
+  }
+};
+/* ============================================================
+   HELPERS
+============================================================ */
+const makeConversationId=()=>{
+  try{
+    if(
+      window.crypto &&
+      typeof window.crypto.randomUUID==="function"
+    ){
+      return(
+        "thewing-home-" +
+        window.crypto.randomUUID()
+      );
+    }
+  }catch(_){}
+  return(
+    "thewing-home-" +
+    Date.now() +
+    "-" +
+    Math.random()
+      .toString(36)
+      .slice(2,10)
+  );
+};
+const isPlainObject=value=>
+  !!value &&
+  typeof value==="object" &&
+  !Array.isArray(value);
+const deepMerge=(target,source)=>{
+  const output=
+    isPlainObject(target)
+      ? {...target}
+      : {};
+  if(
+    !isPlainObject(source)
+  ){
+    return output;
+  }
+  Object.entries(source)
+    .forEach(
+      ([key,value])=>{
+        output[key]=
+          isPlainObject(value)
+            ? deepMerge(
+                output[key],
+                value
               )
-          );
+            : value;
+      }
+    );
+  return output;
+};
+const normalize=value=>
+  String(value||"")
+    .toLowerCase()
+    .trim();
+/* ============================================================
+   STATE
+============================================================ */
+const state={
+  conversationId:
+    makeConversationId(),
+  thread:[],
+  memory:{},
+  authToken:"",
+  controller:null,
+  generation:0,
+  currentScreen:"home",
+  context:{
+    profile:{},
+    bridge:{},
+    identity:{},
+    session:{},
+    compensation:null,
+    mortgage:null,
+    fad:{},
+    financial_intake:{},
+    kpi_overrides:{},
+    user_financial_inputs:{},
+    user_aiou_inputs:{}
+  }
+};
+/* ============================================================
+   UI
+============================================================ */
+const setMode=mode=>{
+  root.classList.remove(
+    "is-answer",
+    "is-thinking"
+  );
+  if(
+    mode==="answer"
+  ){
+    root.classList.add(
+      "is-answer"
+    );
+  }
+  if(
+    mode==="thinking"
+  ){
+    root.classList.add(
+      "is-thinking"
+    );
+  }
+};
+const showTools=value=>{
+  tools.classList.toggle(
+    "is-visible",
+    !!value
+  );
+};
+const clearChoices=()=>{
+  choices.innerHTML="";
+};
+const typeMessage=async(
+  text,
+  speed=8
+)=>{
+  const value=
+    String(text||"").trim();
+  if(!value){
+    return;
+  }
+  const generation=state.generation;
+  const reduceMotion=
+    window.matchMedia &&
+    window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+  if(reduceMotion){
+    message.textContent=value;
+    return;
+  }
+  message.textContent="";
+  for(
+    let i=0;
+    i<value.length;
+    i+=1
+  ){
+    if(generation!==state.generation) return;
+    message.textContent+=
+      value[i];
+    if(
+      i%2===0
+    ){
+      await new Promise(
+        resolve=>
+          setTimeout(
+            resolve,
+            speed
+          )
+      );
+    }
+  }
+};
+const renderChoices=list=>{
+  clearChoices();
+  (
+    Array.isArray(list)
+      ? list
+      : []
+  )
+  .forEach(choice=>{
+    const button=
+      document.createElement(
+        "button"
+      );
+    button.type=
+      "button";
+    button.className=
+      "twamy-choice" +
+      (
+        choice.primary
+          ? " is-primary"
+          : ""
+      );
+    const title=
+      document.createElement(
+        "span"
+      );
+    title.className=
+      "twamy-choice-title";
+    title.textContent=
+      choice.title ||
+      choice.label ||
+      "Continue";
+    button.appendChild(
+      title
+    );
+    if(
+      choice.copy ||
+      choice.description
+    ){
+      const copy=
+        document.createElement(
+          "span"
+        );
+      copy.className=
+        "twamy-choice-copy";
+      copy.textContent=
+        choice.copy ||
+        choice.description;
+      button.appendChild(
+        copy
+      );
+    }
+    button.addEventListener(
+      "click",
+      ()=>handleChoice(choice)
+    );
+    choices.appendChild(
+      button
+    );
+  });
+};
+const renderScreen=name=>{
+  const screen=
+    SCREENS[name];
+  if(!screen){
+    return;
+  }
+  state.currentScreen=
+    name;
+  setMode("");
+  kicker.textContent=
+    screen.kicker ||
+    "ASK AMY";
+  message.textContent=
+    screen.message ||
+    "";
+  detail.textContent=
+    screen.detail ||
+    "";
+  renderChoices(
+    screen.choices ||
+    []
+  );
+  showTools(
+    name!=="home"
+  );
+};
+const renderAnswer=async(
+  text,
+  options={}
+)=>{
+  const generation=state.generation;
+  setMode(
+    "answer"
+  );
+  kicker.textContent=
+    options.kicker ||
+    "AMY";
+  detail.textContent=
+    options.detail ||
+    "";
+  clearChoices();
+  showTools(
+    true
+  );
+  await typeMessage(
+    text,
+    options.speed || 7
+  );
+  if(generation!==state.generation) return;
+  if(
+    Array.isArray(
+      options.choices
+    )
+  ){
+    renderChoices(
+      options.choices
+    );
+  }
+};
+const focusFreeText=()=>{
+  setMode("");
+  kicker.textContent=
+    "ASK AMY";
+  message.textContent=
+    "What can I help you find?";
+  detail.textContent=
+    "Tell me what you're trying to accomplish.";
+  clearChoices();
+  showTools(
+    true
+  );
+  setTimeout(
+    ()=>input.focus(),
+    60
+  );
+};
+/* ============================================================
+   ROUTING
+============================================================ */
+const navigateTo=(
+  routeKey,
+  delay=360
+)=>{
+  const route=
+    ROUTES[routeKey];
+  if(!route){
+    return;
+  }
+  setMode("");
+  kicker.textContent=
+    "NEXT STEP";
+  message.textContent=
+    "I know where to take you.";
+  detail.textContent=
+    "Opening " +
+    route.label +
+    "…";
+  clearChoices();
+  showTools(
+    false
+  );
+  setTimeout(
+    ()=>{
+      window.location.href=
+        route.url;
+    },
+    delay
+  );
+};
+const handleChoice=choice=>{
+  if(
+    choice.next
+  ){
+    renderScreen(
+      choice.next
+    );
+    return;
+  }
+  if(
+    choice.route
+  ){
+    navigateTo(
+      choice.route
+    );
+    return;
+  }
+  if(
+    choice.url
+  ){
+    window.location.href=
+      choice.url;
+    return;
+  }
+  if(
+    choice.action==="focus"
+  ){
+    focusFreeText();
+    return;
+  }
+  if(
+    choice.ask
+  ){
+    askAmy(
+      choice.ask
+    );
+  }
+};
+/* ============================================================
+   SIMPLE DIRECT NAVIGATION DETECTION
+============================================================ */
+const getDirectRoute=text=>{
+  const q=
+    normalize(text);
+  if(
+    !/\b(open|take me to|go to|launch|show me)\b/
+      .test(q)
+  ){
+    return null;
+  }
+  const routes=[
+    [
+      "bah",
+      /\b(bah|base pay|military pay)\b/
+    ],
+    [
+      "retirement",
+      /\b(retirement|retiree|high[- ]?3|brs)\b/
+    ],
+    [
+      "disability",
+      /\b(va disability|disability rating|combined rating)\b/
+    ],
+    [
+      "mortgage",
+      /\b(mortgage|va loan|home payment)\b/
+    ],
+    [
+      "financial",
+      /\b(financial dashboard|financial readiness|affordability)\b/
+    ],
+    [
+      "pcsSnapshot",
+      /\b(pcs snapshot|pcs overview)\b/
+    ],
+    [
+      "baseDemographics",
+      /\b(base demographics|neighborhood|local area)\b/
+    ],
+    [
+      "baseMap",
+      /\b(base map|interactive map)\b/
+    ],
+    [
+      "pt",
+      /\b(pt|fitness calculator|fitness score)\b/
+    ],
+    [
+      "waps",
+      /\b(waps|promotion calculator|promotion score)\b/
+    ],
+    [
+      "opb",
+      /\b(opb|officer performance brief)\b/
+    ],
+    [
+      "information",
+      /\b(information center|how.*works)\b/
+    ],
+    [
+      "about",
+      /\b(about|our story|who built)\b/
+    ]
+  ];
+  for(
+    const [routeKey,pattern]
+    of routes
+  ){
+    if(
+      pattern.test(q)
+    ){
+      return routeKey;
+    }
+  }
+  return null;
+};
+const handleLocalIntent=text=>{
+  const q=
+    normalize(text);
+  const directRoute=
+    getDirectRoute(q);
+  if(directRoute){
+    navigateTo(
+      directRoute
+    );
+    return true;
+  }
+  if(
+    /\b(first time|new here|new to thewing|new to the wing)\b/
+      .test(q)
+  ){
+    renderScreen(
+      "firstTime"
+    );
+    return true;
+  }
+  if(
+    /^what is thewing\??$/
+      .test(q) ||
+    /^what is the wing\??$/
+      .test(q)
+  ){
+    renderAnswer(
+      "TheWing is a Military Decision Intelligence platform. TheWing's tools calculate the numbers, while Amy helps explain the results and guide you to the right application.",
+      {
+        choices:[
+          {
+            title:"Help me find a tool",
+            next:"home",
+            primary:true
+          },
+          {
+            title:"Learn more about TheWing",
+            route:"about"
+          }
+        ]
+      }
+    );
+    return true;
+  }
+  return false;
+};
+/* ============================================================
+   SERVER RESPONSE
+============================================================ */
+const getReplyText=data=>{
+  if(
+    typeof data==="string"
+  ){
+    return data;
+  }
+  if(
+    !data ||
+    typeof data!=="object"
+  ){
+    return "";
+  }
+  if(
+    typeof data.reply==="string"
+  ){
+    return data.reply;
+  }
+  if(
+    typeof data.message==="string"
+  ){
+    return data.message;
+  }
+  if(
+    typeof data.text==="string"
+  ){
+    return data.text;
+  }
+  if(
+    typeof data.answer==="string"
+  ){
+    return data.answer;
+  }
+  if(
+    typeof data.answer?.summary==="string"
+  ){
+    return data.answer.summary;
+  }
+  if(
+    typeof data.answer?.text==="string"
+  ){
+    return data.answer.text;
+  }
+  return "";
+};
+const intentRoute=intent=>{
+  const routes={
+    compensation:
+      "bah",
+    military_compensation:
+      "bah",
+    housing_affordability:
+      "financial",
+    mortgage_explanation:
+      "mortgage",
+    va_loan:
+      "mortgage",
+    pcs_housing_strategy:
+      "pcsSnapshot",
+    dashboard_interpretation:
+      "financial",
+    retirement:
+      "retirement",
+    va_disability:
+      "disability",
+    fitness:
+      "pt",
+    waps:
+      "waps"
+  };
+  return(
+    routes[
+      normalize(intent)
+    ] ||
+    null
+  );
+};
+/* ============================================================
+   SERVER-SIDE ELICITATION
+============================================================ */
+const renderServerElicitation=elicitation=>{
+  if(
+    !elicitation ||
+    typeof elicitation!=="object"
+  ){
+    return false;
+  }
+  const question=
+    elicitation.question ||
+    elicitation.prompt ||
+    "";
+  const options=
+    Array.isArray(
+      elicitation.options
+    )
+      ? elicitation.options
+      : [];
+  if(
+    !question
+  ){
+    return false;
+  }
+  setMode("");
+  kicker.textContent=
+    "ASK AMY";
+  message.textContent=
+    question;
+  detail.textContent=
+    elicitation.detail ||
+    "";
+  renderChoices(
+    options.map(option=>({
+      title:
+        option.label ||
+        option.title ||
+        option.text ||
+        option.id,
+      copy:
+        option.description ||
+        option.copy ||
+        "",
+      url:
+        option.url ||
+        null,
+      ask:
+        option.url
+          ? null
+          :
+          (
+            option.value ||
+            option.message ||
+            option.label ||
+            option.id
+          )
+    }))
+  );
+  showTools(
+    true
+  );
+  return true;
+};
+/* ============================================================
+   SERVER ACTION / ROUTING
+============================================================ */
+const renderServerAction=async(
+  action,
+  reply=""
+)=>{
+  if(
+    !action ||
+    typeof action!=="object" ||
+    action.type!=="navigate" ||
+    !action.url
+  ){
+    return false;
+  }
+  if(
+    action.auto===true
+  ){
+    const generation=state.generation;
+    kicker.textContent=
+      "NEXT STEP";
+    message.textContent=
+      reply ||
+      action.reason ||
+      "I found the right place for you.";
+    detail.textContent=
+      "Opening " +
+      (
+(action.label || "the recommended tool").replace(/^open\s+/i, "")
+      ) +
+      "…";
+    clearChoices();
+    setTimeout(
+      ()=>{
+        if(generation!==state.generation) return;
+        window.location.href=
+          action.url;
+      },
+      420
+    );
+    return true;
+  }
+  await renderAnswer(
+    reply ||
+    action.reason ||
+    "This is the best next step based on what you asked.",
+    {
+      detail: action.reason && action.reason!==reply ? action.reason : "",
+      choices:[
+        {
+          title:
+            action.label ||
+            "Open recommended tool",
+          url:
+            action.url,
+          primary:true
         }
-      };
-      /* ==========================================================
-         RESPONSE PARSER
-      ========================================================== */
-      const getReplyText = data => {
-        if (
-          typeof data === "string"
-        ) {
-          return data;
+      ]
+    }
+  );
+  return true;
+};
+/* ============================================================
+   PAYLOAD
+============================================================ */
+const buildPayload=userMessage=>({
+  message:
+    userMessage,
+  context:{
+    conversation_id:
+      state.conversationId,
+    thread:
+      state.thread.slice(
+        -MAX_THREAD_MESSAGES
+      ),
+    memory:
+      state.memory,
+    response_contract:
+      "ask-amy-response-v1",
+    requested_mode:
+      "member_guidance",
+    response_limits:{
+      max_chars:
+        620,
+      greeting_max_chars:
+        200,
+      max_follow_up_questions:
+        1
+    },
+    style_guide:{
+      surface:
+        "TheWing homepage intelligence HUD",
+      tone:
+        "concise, confident, clear",
+      bluf_first:
+        true,
+      elicitation_first:
+        true,
+      routing_goal:
+        "Understand what the visitor needs and guide them to the correct TheWing application when appropriate."
+    },
+    client_capabilities:{
+      elicitation:true,
+      navigation_actions:true,
+      dynamic_choices:true
+    },
+    page:
+      "thewing-main",
+    widget:
+      "ask-amy-hud-v4",
+    product:
+      "TheWing.ai",
+    version:
+      CLIENT_VERSION,
+    ...state.context
+  }
+});
+/* ============================================================
+   ASK AMY
+============================================================ */
+const askAmy=async rawQuestion=>{
+  const question=
+    String(
+      rawQuestion ||
+      ""
+    ).trim();
+  if(!question){
+    input.focus();
+    return;
+  }
+  /*
+    IMPORTANT:
+    Do not resolve typed user intent locally here.
+    Every user-entered request and every opening concierge
+    category is sent to /api/agent-amy.
+    agent-amy.js invokes _share/amy-elicitation.js and returns:
+    - ui.mode
+    - ui.elicitation
+    - ui.action
+    This keeps the browser as the renderer rather than
+    the decision-maker.
+  */
+  if(
+    state.controller
+  ){
+    state.controller.abort();
+  }
+  const generation=++state.generation;
+  state.controller=
+    new AbortController();
+  const priorThread=
+    state.thread.slice(
+      -MAX_THREAD_MESSAGES
+    );
+  setMode(
+    "thinking"
+  );
+  kicker.textContent=
+    "AMY";
+  message.textContent=
+    "Let me look at that.";
+  detail.textContent=
+    "I’ll answer here or guide you to the right place.";
+  clearChoices();
+  showTools(
+    true
+  );
+  input.disabled=
+    true;
+  sendButton.disabled=
+    true;
+  try{
+    const headers={
+      "Content-Type":
+        "application/json"
+    };
+    if(
+      state.authToken
+    ){
+      headers.Authorization=
+        "Bearer " +
+        state.authToken;
+    }
+    const payload=
+      buildPayload(
+        question
+      );
+    payload.context.thread=
+      priorThread;
+    const response=
+      await fetch(
+        API_URL,
+        {
+          method:"POST",
+          headers,
+          body:
+            JSON.stringify(
+              payload
+            ),
+          signal:
+            state.controller.signal
         }
-        if (
-          !data ||
-          typeof data !== "object"
-        ) {
-          return "";
+      );
+    let data={};
+    try{
+      data=
+        await response.json();
+    }catch(_){}
+    if(
+      !response.ok ||
+      data?.ok===false
+    ){
+      throw new Error(
+        data?.error ||
+        "Amy could not complete the request."
+      );
+    }
+    if(generation!==state.generation) return;
+    const reply=
+      getReplyText(
+        data
+      );
+    if(
+      data.memory_echo &&
+      typeof data.memory_echo==="object"
+    ){
+      state.memory=
+        {
+          ...data.memory_echo
+        };
+    }else if(isPlainObject(data.memory_patch)){
+      state.memory=deepMerge(state.memory,data.memory_patch);
+    }
+    if(
+      data.conversation_id
+    ){
+      state.conversationId=
+        String(
+          data.conversation_id
+        );
+    }
+    if(reply){
+      state.thread.push(
+        {
+          role:"user",
+          content:question
+        },
+        {
+          role:"assistant",
+          content:reply
         }
-        if (
-          typeof data.reply === "string"
-        ) {
-          return data.reply;
-        }
-        if (
-          typeof data.message === "string"
-        ) {
-          return data.message;
-        }
-        if (
-          typeof data.text === "string"
-        ) {
-          return data.text;
-        }
-        if (
-          typeof data.answer === "string"
-        ) {
-          return data.answer;
-        }
-        if (
-          typeof data.answer?.summary === "string"
-        ) {
-          return data.answer.summary;
-        }
-        if (
-          typeof data.answer?.text === "string"
-        ) {
-          return data.answer.text;
-        }
-        return "";
-      };
-      /* ==========================================================
-         BUILD AGENT-AMY REQUEST
-      ========================================================== */
-      const buildPayload = message => {
-        return {
-          message,
-          context: {
+      );
+      state.thread=
+        state.thread.slice(
+          -MAX_THREAD_MESSAGES
+        );
+    }
+    window.dispatchEvent(
+      new CustomEvent(
+        "thewing:amy-response",
+        {
+          detail:{
+            question,
+            reply,
+            intent:
+              data.intent ||
+              null,
+            concierge_mode:
+              data.concierge_mode ||
+              data?.ui?.mode ||
+              null,
+            truth_packet:
+              data.truth_packet ||
+              null,
+            warnings:
+              data.warnings ||
+              [],
+            latency_ms:
+              data.latency_ms ||
+              null,
             conversation_id:
               state.conversationId,
-            thread:
-              state.thread.slice(
-                -MAX_THREAD_MESSAGES
-              ),
-            memory:
-              state.memory,
-            response_contract:
-              "ask-amy-response-v1",
-            requested_mode:
-              "member_guidance",
-            response_limits: {
-              max_chars:
-                720,
-              greeting_max_chars:
-                220,
-              max_follow_up_questions:
-                1
-            },
-            style_guide: {
-              surface:
-                "TheWing homepage HUD",
-              tone:
-                "concise, confident, clear",
-              bluf_first:
-                true
-            },
-            page:
-              "thewing-main",
-            widget:
-              "ask-amy-hud",
-            product:
-              "TheWing.ai",
-            version:
-              CLIENT_VERSION,
-            ...state.context
+            action: data?.ui?.action || data?.action || null,
+            elicitation: data?.ui?.elicitation || data?.elicitation || null
           }
-        };
-      };
-      /* ==========================================================
-         REQUEST
-      ========================================================== */
-      const askAmy = async rawQuestion => {
-        const question =
-          String(
-            rawQuestion || ""
-          ).trim();
-        if (!question) {
-          input.focus();
-          return;
         }
-        if (
-          state.controller
-        ) {
-          state.controller.abort();
-        }
-        state.controller =
-          new AbortController();
-        setStatus(
-          "thinking"
-        );
-        response.classList.remove(
-          "is-visible"
-        );
-        const priorThread =
-          state.thread.slice(
-            -MAX_THREAD_MESSAGES
-          );
-        try {
-          const headers = {
-            "Content-Type":
-              "application/json"
-          };
-          /*
-            Logged-in environments may optionally provide
-            a verified Supabase access token:
-            window.TheWingAmyHUD.setAuthToken(token)
-          */
-          if (
-            state.authToken
-          ) {
-            headers.Authorization =
-              "Bearer " +
-              state.authToken;
-          }
-          const payload =
-            buildPayload(
-              question
-            );
-          /*
-            IMPORTANT:
-            thread in payload contains PRIOR turns only.
-            Current user message is supplied separately
-            as payload.message.
-          */
-          payload.context.thread =
-            priorThread;
-          const fetchResponse =
-            await fetch(
-              API_URL,
-              {
-                method:
-                  "POST",
-                headers,
-                body:
-                  JSON.stringify(
-                    payload
-                  ),
-                signal:
-                  state.controller.signal
-              }
-            );
-          let data = {};
-          try {
-            data =
-              await fetchResponse.json();
-          } catch (_) {
-            data = {};
-          }
-          if (
-            !fetchResponse.ok ||
-            data?.ok === false
-          ) {
-            throw new Error(
-              data?.error ||
-              "Amy could not complete the request."
-            );
-          }
-          const reply =
-            getReplyText(
-              data
-            );
-          if (!reply) {
-            throw new Error(
-              "Amy returned no readable reply."
-            );
-          }
-          /*
-            Server echoes the current memory plus the
-            deterministic memory patch.
-          */
-          if (
-            data.memory_echo &&
-            typeof data.memory_echo === "object"
-          ) {
-            state.memory =
-              { ...data.memory_echo };
-          }
-          if (
-            data.conversation_id
-          ) {
-            state.conversationId =
-              String(
-                data.conversation_id
-              );
-          }
-          /*
-            Add completed turn AFTER request so the current
-            question is not duplicated in OpenAI context.
-          */
-          state.thread.push(
-            {
-              role:
-                "user",
-              content:
-                question
-            },
-            {
-              role:
-                "assistant",
-              content:
-                reply
-            }
-          );
-          state.thread =
-            state.thread.slice(
-              -MAX_THREAD_MESSAGES
-            );
-          responseIntent.textContent =
-            data.intent
-              ? String(
-                  data.intent
-                ).replace(
-                  /_/g,
-                  " "
-                )
-              : "";
-          showResponseShell(
-            data.intent || ""
-          );
-          await typeResponse(
-            reply,
-            data.ui || {}
-          );
-          setStatus(
-            "online"
-          );
-          window.dispatchEvent(
-            new CustomEvent(
-              "thewing:amy-response",
-              {
-                detail: {
-                  question,
-                  reply,
-                  intent:
-                    data.intent || null,
-                  truth_packet:
-                    data.truth_packet || null,
-                  warnings:
-                    data.warnings || [],
-                  latency_ms:
-                    data.latency_ms || null,
-                  conversation_id:
-                    state.conversationId
-                }
-              }
-            )
-          );
-        } catch (error) {
-          if (
-            error?.name ===
-            "AbortError"
-          ) {
-            return;
-          }
-          console.error(
-            "[TheWing Ask Amy]",
-            error
-          );
-          showResponseShell(
-            "connection"
-          );
-          responseCopy.textContent =
-            "Amy is temporarily unable to reach TheWing intelligence. Please try again in a moment.";
-          setStatus(
-            "error"
-          );
-          window.dispatchEvent(
-            new CustomEvent(
-              "thewing:amy-error",
-              {
-                detail: {
-                  question,
-                  message:
-                    error?.message ||
-                    "Unknown error"
-                }
-              }
-            )
-          );
-          window.setTimeout(
-            () => {
-              if (
-                !status.classList.contains(
-                  "is-thinking"
-                )
-              ) {
-                setStatus(
-                  "online"
-                );
-              }
-            },
-            2600
-          );
-        } finally {
-          state.controller =
-            null;
-        }
-      };
-      /* ==========================================================
-         FORM
-      ========================================================== */
-      form.addEventListener(
-        "submit",
-        event => {
-          event.preventDefault();
-          askAmy(
-            input.value
-          );
-        }
+      )
+    );
+    /*
+      amy-elicitation.js -> agent-amy.js -> HUD
+    */
+    const elicitation=
+      data?.ui?.elicitation ||
+      data?.elicitation ||
+      null;
+    if(
+      (!data?.ui?.mode || data.ui.mode==="elicit") &&
+      renderServerElicitation(
+        elicitation
+      )
+    ){
+      if(generation!==state.generation) return;
+    input.value="";
+      return;
+    }
+    /*
+      amy-elicitation.js may instead recommend or perform
+      deterministic navigation.
+    */
+    const action=
+      data?.ui?.action ||
+      data?.action ||
+      null;
+    if(
+      (!data?.ui?.mode || data.ui.mode==="route") &&
+      action &&
+      await renderServerAction(
+        action,
+        reply
+      )
+    ){
+      if(generation!==state.generation) return;
+    input.value="";
+      return;
+    }
+    if(!reply){
+      throw new Error(
+        "Amy returned no readable reply."
       );
-      /* ==========================================================
-         QUICK PROMPTS
-      ========================================================== */
-      promptButtons.forEach(
-        button => {
-          button.addEventListener(
-            "click",
-            () => {
-              const question =
-                button.dataset.question || "";
-              if (!question) {
-                return;
-              }
-              input.value =
-                question;
-              askAmy(
-                question
-              );
-            }
-          );
-        }
-      );
-      /* ==========================================================
-         PUBLIC IN-MEMORY API
-      ========================================================== */
-      window.TheWingAmyHUD = {
-        ask(question) {
-          input.value =
-            String(
-              question || ""
-            );
-          return askAmy(
-            question
-          );
-        },
-        setContext(nextContext) {
-          if (
-            !isPlainObject(
-              nextContext
-            )
-          ) {
-            return;
-          }
-          state.context =
-            deepMerge(
-              state.context,
-              nextContext
-            );
-        },
-        setProfile(profile) {
-          if (
-            !isPlainObject(
-              profile
-            )
-          ) {
-            return;
-          }
-          state.context.profile =
-            deepMerge(
-              state.context.profile,
-              profile
-            );
-        },
-        setCompensation(
-          compensation
-        ) {
-          state.context.compensation =
-            compensation &&
-            typeof compensation ===
-            "object"
-              ? compensation
-              : null;
-        },
-        setMortgage(
-          mortgage
-        ) {
-          state.context.mortgage =
-            mortgage &&
-            typeof mortgage ===
-            "object"
-              ? mortgage
-              : null;
-        },
-        setAuthToken(token) {
-          state.authToken =
-            typeof token === "string"
-              ? token.trim()
-              : "";
-        },
-        resetConversation() {
-          state.conversationId =
-            makeConversationId();
-          state.thread =
-            [];
-          state.memory =
-            {};
-          response.classList.remove(
-            "is-visible"
-          );
-          responseCopy.textContent =
-            "";
-          responseIntent.textContent =
-            "";
-          setStatus(
-            "online"
-          );
-        }
-      };
-      /* ==========================================================
-         OPTIONAL THEWING / PCSUNited EVENT BRIDGE
-         MEMORY ONLY
-      ========================================================== */
-      window.addEventListener(
-        "pcsunited:profile-ready",
-        event => {
-          const detail =
-            event?.detail || {};
-          const profile =
-            detail.profile ||
-            detail;
-          window.TheWingAmyHUD
-            .setProfile(
-              profile
-            );
-        }
-      );
-      window.addEventListener(
-        "pcsunited:basicbrain-updated",
-        event => {
-          const detail =
-            event?.detail || {};
-          window.TheWingAmyHUD
-            .setContext({
-              profile:
-                detail
-          });
-        }
-      );
-      window.addEventListener(
-        "pcsunited:bridge-ready",
-        event => {
-          const detail =
-            event?.detail || {};
-          window.TheWingAmyHUD
-            .setContext({
-              bridge:
-                detail.bridge ||
-                detail
-            });
-        }
-      );
-      window.addEventListener(
-        "pcsunited:compensation-ready",
-        event => {
-          window.TheWingAmyHUD
-            .setCompensation(
-              event?.detail || null
-            );
-        }
-      );
-      window.addEventListener(
-        "pcsunited:mortgage-ready",
-        event => {
-          window.TheWingAmyHUD
-            .setMortgage(
-              event?.detail || null
-            );
-        }
-      );
-      /* ==========================================================
-         READY
-      ========================================================== */
-      setStatus(
-        "online"
-      );
-      window.dispatchEvent(
-        new CustomEvent(
-          "thewing:amy-hud-ready",
+    }
+    const replyChoices=[];
+    await renderAnswer(
+      reply,
+      {
+        kicker:"AMY",
+        choices:
+          replyChoices
+      }
+    );
+    if(generation!==state.generation) return;
+    input.value="";
+  }catch(error){
+    if(generation!==state.generation) return;
+    if(
+      error?.name===
+      "AbortError"
+    ){
+      return;
+    }
+    console.error(
+      "[TheWing Ask Amy]",
+      error
+    );
+    await renderAnswer(
+      "Amy is temporarily unable to reach TheWing intelligence. Please try again in a moment.",
+      {
+        kicker:
+          "CONNECTION",
+        choices:[
           {
-            detail: {
-              version:
-                CLIENT_VERSION,
-              endpoint:
-                API_URL
-            }
+            title:"Start over",
+            next:"home"
           }
-        )
+        ]
+      }
+    );
+    window.dispatchEvent(
+      new CustomEvent(
+        "thewing:amy-error",
+        {
+          detail:{
+            question,
+            message:
+              error?.message ||
+              "Unknown error"
+          }
+        }
+      )
+    );
+  }finally{
+    if(generation!==state.generation) return;
+    state.controller=
+      null;
+    input.disabled=
+      false;
+    sendButton.disabled=
+      false;
+    root.classList.remove(
+      "is-thinking"
+    );
+  }
+};
+/* ============================================================
+   FORM
+============================================================ */
+form.addEventListener(
+  "submit",
+  event=>{
+    event.preventDefault();
+    askAmy(
+      input.value
+    );
+  }
+);
+/* ============================================================
+   RESET
+============================================================ */
+resetButton.addEventListener(
+  "click",
+  ()=>window.TheWingAmyHUD.resetConversation()
+);
+/* ============================================================
+   PUBLIC API
+============================================================ */
+window.TheWingAmyHUD={
+  ask(question){
+    input.value=
+      String(
+        question ||
+        ""
       );
-    })();
-  </script>
+    return askAmy(
+      question
+    );
+  },
+  show(screenName){
+    if(
+      SCREENS[
+        screenName
+      ]
+    ){
+      renderScreen(
+        screenName
+      );
+    }
+  },
+  firstTime(){
+    renderScreen(
+      "firstTime"
+    );
+  },
+  setContext(nextContext){
+    if(
+      !isPlainObject(
+        nextContext
+      )
+    ){
+      return;
+    }
+    state.context=
+      deepMerge(
+        state.context,
+        nextContext
+      );
+  },
+  setProfile(profile){
+    if(
+      !isPlainObject(
+        profile
+      )
+    ){
+      return;
+    }
+    state.context.profile=
+      deepMerge(
+        state.context.profile,
+        profile
+      );
+  },
+  setCompensation(
+    compensation
+  ){
+    state.context.compensation=
+      compensation &&
+      typeof compensation==="object"
+        ? compensation
+        : null;
+  },
+  setMortgage(
+    mortgage
+  ){
+    state.context.mortgage=
+      mortgage &&
+      typeof mortgage==="object"
+        ? mortgage
+        : null;
+  },
+  setAuthToken(token){
+    state.authToken=
+      typeof token==="string"
+        ? token.trim()
+        : "";
+  },
+  resetConversation(){
+    state.generation++;
+    input.disabled=false;
+    sendButton.disabled=false;
+    if(state.controller) state.controller.abort();
+    state.conversationId=
+      makeConversationId();
+    state.thread=[];
+    state.memory={};
+    input.value="";
+    renderScreen(
+      "home"
+    );
+  }
+};
+/* ============================================================
+   EVENT BRIDGE
+============================================================ */
+window.addEventListener(
+  "pcsunited:profile-ready",
+  event=>{
+    const data=
+      event?.detail ||
+      {};
+    window.TheWingAmyHUD
+      .setProfile(
+        data.profile ||
+        data
+      );
+  }
+);
+window.addEventListener(
+  "pcsunited:basicbrain-updated",
+  event=>{
+    window.TheWingAmyHUD
+      .setContext({
+        profile:
+          event?.detail ||
+          {}
+      });
+  }
+);
+window.addEventListener(
+  "pcsunited:bridge-ready",
+  event=>{
+    const data=
+      event?.detail ||
+      {};
+    window.TheWingAmyHUD
+      .setContext({
+        bridge:
+          data.bridge ||
+          data
+      });
+  }
+);
+window.addEventListener(
+  "pcsunited:compensation-ready",
+  event=>{
+    window.TheWingAmyHUD
+      .setCompensation(
+        event?.detail ||
+        null
+      );
+  }
+);
+window.addEventListener(
+  "pcsunited:mortgage-ready",
+  event=>{
+    window.TheWingAmyHUD
+      .setMortgage(
+        event?.detail ||
+        null
+      );
+  }
+);
+/* ============================================================
+   READY
+============================================================ */
+renderScreen(
+  "home"
+);
+window.dispatchEvent(
+  new CustomEvent(
+    "thewing:amy-hud-ready",
+    {
+      detail:{
+        version:
+          CLIENT_VERSION,
+        endpoint:
+          API_URL,
+        mode:
+          "elicitation-concierge"
+      }
+    }
+  )
+);
+})();
+</script>
                   </div>
                 </div>
               </div>
@@ -4059,7 +4298,7 @@
           <div class="footer-content-wrapper-2">
             <a href="#" class="footer-logo-link w-inline-block">
               <div class="logo-footer-wrapper">
-                <div><img src="images/Home-01-About.png" loading="lazy" sizes="100vw" srcset="images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-500.png 500w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-800.png 800w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-1080.png 1080w, images/Home-01-About.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
+                <div><img src="images/Home-01-About.png" loading="lazy" sizes="(max-width: 1260px) 100vw, 1260px" srcset="images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-500.png 500w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-800.png 800w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-1080.png 1080w, images/Home-01-About.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
               </div>
             </a>
             <div class="space-text"></div>
