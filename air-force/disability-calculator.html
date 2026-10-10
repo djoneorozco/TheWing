@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Fri Oct 09 2026 06:51:26 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Oct 10 2026 14:47:40 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a98dc859df0e9554f392080" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -41,41 +41,27 @@
 </script>
 </head>
 <body class="body-4">
-  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="code-navbar w-nav">
-    <a href="../index.html" class="link-block-14 w-inline-block"><img src="../images/download-1.png" loading="lazy" width="162" alt="" class="image-205"></a>
-    <div class="navbar-wrapper-15">
-      <div class="w-layout-hflex nav-link-box-2">
-        <div class="w-layout-hflex nav-one-button-wrap-4">
-          <div class="menu-button-4 w-nav-button"><img width="31" height="18" alt="Hambarger Menu" src="../images/Icon-nav-1.svg" loading="lazy" class="image-204"></div>
-        </div>
-      </div>
-      <div class="style-three-nav-brand">
-        <a href="#" role="link" class="home-three-nav-menu-brand rezoid w-nav-brand"></a>
-      </div>
-      <a role="link" data-w-id="c6ebbbde-81dd-1fef-beb5-86d4b077aa86" href="tel:+1800456789" class="style-three-phone-button responsive-hidden w-inline-block">
-        <div class="home-three-call-button-text">
-          <div class="style-three-phone-button-txt">Lets Talk</div>
-          <div class="style-three-phone-button-txt">(800) 456 7890</div>
-        </div>
-        <div class="home-three-button-icon"><img width="46" height="46" alt="Call Icon" src="../images/Call-Icon.svg" loading="lazy" class="image-203"></div>
-      </a>
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="va-navbar w-nav">
+    <div class="va-disability-header w-embed w-script">
+      <div id="pcsu-va-header-progression-widget" aria-label="Estimated VA rating and compensation"></div>
+      <script src="https://thewing.netlify.app/Disability-Calculator/va-header-progression.js?v=1.0.0" defer=""></script>
     </div>
   </div>
-  <div class="code-embed-82 w-embed">
+  <div class="iframe-disability-calculator w-embed">
     <div style="width:100%; height:100vh; overflow:hidden;">
       <iframe src="https://thewing.netlify.app/Disability-Calculator" style="width:100%; height:100%; border:none;">
       </iframe>
     </div>
   </div>
-  <div class="compensation-strip-3 w-embed w-script"><!--  ============================================================
+  <div class="ask-amy-disability-hud w-embed w-script"><!--  ============================================================
  THEWING.AI • ASK AMY COMMAND CENTER v1.2
  VA DISABILITY RATING CALCULATOR
 ===============================================================  -->
-    <div id="ask-amy-launcher" role="button" tabindex="0" aria-label="Open Ask Amy" style="position:fixed;top:1rem;right:1rem;z-index:2147480000;padding:.75rem 1rem;border-radius:1rem;cursor:pointer;background:radial-gradient(180px 80px at 15% 0%,rgba(108,166,203,.14),transparent 68%),linear-gradient(180deg,rgba(23,48,73,.94),rgba(12,31,49,.94));backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border:1px solid rgba(183,211,232,.18);color:#f2f7fb;font-family:Inter,system-ui,sans-serif;display:flex;align-items:center;gap:.75rem;box-shadow:inset 0 1px 0 rgba(220,237,247,.08),0 16px 38px rgba(2,12,24,.34)">
+    <div id="ask-amy-launcher" role="button" tabindex="0" aria-label="Open Ask Amy" style="position:fixed;top:auto;bottom:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));right:1rem;right:calc(1rem + env(safe-area-inset-right,0px));z-index:2147480000;padding:.75rem 1rem;border-radius:1rem;cursor:pointer;background:radial-gradient(180px 80px at 15% 0%,rgba(108,166,203,.14),transparent 68%),linear-gradient(180deg,rgba(23,48,73,.94),rgba(12,31,49,.94));backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border:1px solid rgba(183,211,232,.18);color:#f2f7fb;font-family:Inter,system-ui,sans-serif;display:flex;align-items:center;gap:.75rem;box-shadow:inset 0 1px 0 rgba(220,237,247,.08),0 16px 38px rgba(2,12,24,.34)">
       <img src="../images/Amy-A.I-Concierge-.png" alt="Amy, TheWing.ai Disability Concierge" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:1px solid rgba(159,227,212,.42);box-shadow:0 0 0 3px rgba(159,227,212,.05),0 8px 18px rgba(2,12,24,.3)">
       <div style="display:flex;flex-direction:column;line-height:1.15">
         <div style="color:#f3f8fc;font-size:.8rem;font-weight:800">Ask Amy</div>
-        <div style="margin-top:2px;color:rgba(202,220,234,.76);font-size:.7rem;font-weight:500">VA Disability Concierge</div>
+        <div id="ask-amy-launcher-subtitle" style="margin-top:2px;color:rgba(202,220,234,.76);font-size:.7rem;font-weight:500">VA Disability Concierge</div>
       </div>
     </div>
     <div id="ask-amy-modal" role="dialog" aria-modal="true" aria-label="Ask Amy Disability Concierge" style="position:fixed;inset:0;z-index:2147480001;display:none;align-items:flex-end;justify-content:flex-end;padding:18px;background:rgba(5,20,33,.32);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)">
@@ -124,8 +110,9 @@
 .aa-btn:hover{filter:brightness(1.06);transform:translateY(-1px)}.aa-btn[disabled]{opacity:.6;cursor:not-allowed;transform:none}
 .aa-caret{display:inline-block;width:1px;height:1.2em;margin-left:2px;background:currentColor;animation:aa-blink 1s steps(1,end) infinite}
 @keyframes aa-blink{50%{opacity:0}}
-@media(max-width:980px){#aa-container{grid-template-columns:1fr}#aa-left{display:none}#aa-right{height:680px;min-height:680px;max-height:680px}}
-@media(max-width:767px){#ask-amy-modal{padding:8px!important}#ask-amy-panel{width:calc(100vw - 16px)!important;max-width:calc(100vw - 16px)!important;max-height:calc(100dvh - 16px)!important}#ask-amy-shell{padding:8px}#aa-right{height:calc(100dvh - 32px);min-height:calc(100dvh - 32px);max-height:calc(100dvh - 32px);border-radius:18px}.aa-topbar{padding:18px 66px 12px 16px}.aa-topbar p{font-size:12px}.aa-quick-prompts{padding:12px 14px 0;flex-wrap:nowrap;overflow-x:auto}.aa-prompt-btn{flex:0 0 auto}.aa-chat{padding:18px 14px}.aa-msg{max-width:90%}.aa-footer{padding:12px}.aa-btn{padding:14px 15px}}
+.aa-hud-portrait{display:none}
+@media(max-width:980px){.aa-hud-heading{display:flex;align-items:center;gap:10px}.aa-hud-heading h2{margin:0}.aa-hud-portrait{display:block;flex:0 0 42px;width:42px;height:42px;max-width:none;border-radius:50%;object-fit:cover;border:1px solid rgba(159,227,212,.42)}#aa-container{grid-template-columns:1fr}#aa-left{display:none}#aa-right{height:680px;min-height:680px;max-height:680px}}
+@media(max-width:767px){#ask-amy-launcher-subtitle{display:none}#ask-amy-modal{padding:8px!important}#ask-amy-panel{width:calc(100vw - 16px)!important;max-width:calc(100vw - 16px)!important;max-height:calc(100dvh - 16px)!important}#ask-amy-shell{padding:8px}#aa-right{height:calc(100dvh - 32px);min-height:calc(100dvh - 32px);max-height:calc(100dvh - 32px);border-radius:18px}.aa-topbar{padding:18px 66px 12px 16px}.aa-topbar p{font-size:12px}.aa-quick-prompts{padding:12px 14px 0;flex-wrap:nowrap;overflow-x:auto}.aa-prompt-btn{flex:0 0 auto}.aa-chat{padding:18px 14px}.aa-msg{max-width:90%}.aa-footer{padding:12px}.aa-btn{padding:14px 15px}}
 </style>
           <div id="aa-container">
             <aside id="aa-left">
@@ -144,7 +131,9 @@
             </aside>
             <section id="aa-right">
               <div class="aa-topbar">
-                <h2>Ask Amy</h2>
+                <div class="aa-hud-heading"><img class="aa-hud-portrait" src="../images/Amy-A.I-Concierge-_2.png" alt="Amy" width="42" height="42">
+                  <h2>Ask Amy</h2>
+                </div>
                 <p>Understand your VA disability estimate, whole-person math, combined rating, final rounding, dependents, and current compensation estimate.</p>
                 <div class="aa-status-pill"><span class="aa-status-dot"></span>Public Session • Live Disability Context</div>
               </div>

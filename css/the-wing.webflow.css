@@ -26835,7 +26835,7 @@ blockquote {
   display: flex;
 }
 
-.compensation-strip-3 {
+.ask-amy-disability-hud {
   margin-top: 0;
   margin-left: 0;
   padding-left: 0;
@@ -35435,12 +35435,13 @@ blockquote {
   box-shadow: 0 2px 5px #0000004f;
 }
 
-.code-embed-82 {
-  padding-top: 99px;
+.iframe-disability-calculator {
+  margin-top: -30px;
+  padding-top: 0;
 }
 
 .body-4 {
-  margin-top: -66px;
+  margin-top: 0;
 }
 
 .grid-pricing-v2-2 {
@@ -40812,6 +40813,30 @@ blockquote {
   display: flex;
 }
 
+.va-navbar {
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  background-color: #0000;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  min-height: 100px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 5px #0000004f;
+}
+
+.va-disability-header {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 @media screen and (min-width: 1280px) {
   h2 {
     width: 130%;
@@ -43899,6 +43924,10 @@ blockquote {
     margin-right: 17px;
   }
 
+  .iframe-disability-calculator {
+    margin-top: 40px;
+  }
+
   .code-embed-83 {
     margin-top: 20px;
     padding-left: 0;
@@ -44601,6 +44630,14 @@ blockquote {
   .ptcal {
     padding-bottom: 13px;
     padding-right: 5px;
+  }
+
+  .va-navbar {
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    justify-content: center;
+    align-items: center;
+    margin-right: 17px;
   }
 }
 
@@ -48952,7 +48989,7 @@ blockquote {
     padding-right: 0;
   }
 
-  .compensation-strip-3 {
+  .ask-amy-disability-hud {
     margin-left: 0;
     padding-left: 0;
   }
@@ -50626,6 +50663,10 @@ blockquote {
     margin-right: 20px;
   }
 
+  .iframe-disability-calculator {
+    margin-top: 20px;
+  }
+
   .body-4 {
     margin-top: -48px;
   }
@@ -51864,6 +51905,19 @@ blockquote {
     grid-row-gap: 0px;
     padding-bottom: 0;
     padding-right: 0;
+  }
+
+  .va-navbar {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .va-disability-header {
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 
@@ -57386,7 +57440,7 @@ blockquote {
     padding-bottom: 0;
   }
 
-  .compensation-strip-3 {
+  .ask-amy-disability-hud {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -59244,8 +59298,10 @@ blockquote {
     min-height: 96px;
   }
 
-  .code-embed-82 {
-    padding-top: 139px;
+  .iframe-disability-calculator {
+    height: 100%;
+    margin-top: -78px;
+    padding-top: 60px;
   }
 
   .grid-pricing-v2-2 {
@@ -61056,6 +61112,17 @@ blockquote {
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .va-navbar {
+    height: 10%;
+    min-height: auto;
+  }
+
+  .va-disability-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
@@ -63039,7 +63106,7 @@ blockquote {
     grid-row-gap: 0px;
   }
 
-  .compensation-strip-3 {
+  .ask-amy-disability-hud {
     margin-left: 40px;
   }
 
@@ -64382,6 +64449,10 @@ blockquote {
   .ptcal {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+  }
+
+  .va-disability-header {
+    margin-left: 40px;
   }
 }
 
@@ -69752,7 +69823,7 @@ blockquote {
     padding-bottom: 0;
   }
 
-  .compensation-strip-3 {
+  .ask-amy-disability-hud {
     width: 100%;
     max-width: 100%;
     margin-bottom: 0;
@@ -72377,12 +72448,13 @@ blockquote {
     padding-left: 10px;
   }
 
-  .code-embed-82 {
-    padding-top: 65px;
+  .iframe-disability-calculator {
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .body-4 {
-    margin-top: -18px;
+    margin-top: 0;
   }
 
   .grid-pricing-v2-2 {
@@ -74422,6 +74494,21 @@ blockquote {
     margin-left: -56px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .va-navbar {
+    height: 90px;
+    min-height: auto;
+    max-height: none;
+    padding-left: 0;
+  }
+
+  .va-disability-header {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 
