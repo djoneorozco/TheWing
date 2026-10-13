@@ -26933,6 +26933,7 @@ blockquote {
 .align-left-14 {
   justify-content: center;
   align-items: flex-start;
+  padding-bottom: 10px;
   display: flex;
 }
 
@@ -27462,7 +27463,7 @@ blockquote {
 }
 
 .heading-160 {
-  color: var(--colors--dark-40);
+  color: var(--colors--dark-30);
   text-align: center;
   letter-spacing: -1px;
   padding-bottom: 10px;
@@ -29206,7 +29207,7 @@ blockquote {
   border: 1px solid #b8aea2;
   border-radius: 24px;
   justify-content: space-between;
-  padding: 24px;
+  padding: 10px 24px;
   display: flex;
   box-shadow: 0 1px 9px 1px #000;
 }
@@ -32061,7 +32062,7 @@ blockquote {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .faq-1-tab-pane {
@@ -32179,7 +32180,7 @@ blockquote {
 .container-111 {
   max-width: 1440px;
   margin-bottom: 0;
-  padding: 1rem 2rem 2rem;
+  padding: 0 2rem 2rem;
 }
 
 .heading-195 {
@@ -39924,6 +39925,7 @@ blockquote {
   justify-content: flex-end;
   align-items: center;
   margin-top: 220px;
+  padding-top: 157px;
   display: flex;
   position: relative;
 }
@@ -44249,6 +44251,11 @@ blockquote {
 
   .image-223-copy {
     box-shadow: 0 2px 5px #000000bf;
+  }
+
+  .home1-2cols-3 {
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
   }
 
   .blog-nae-wrapper-4-copy-copy {
@@ -60749,6 +60756,7 @@ blockquote {
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 220px;
+    margin-left: -62px;
     padding-top: 150px;
   }
 
@@ -68063,7 +68071,7 @@ blockquote {
   .services-h01-text-wrap {
     width: 100%;
     max-width: none;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .content-bg-block.services {
@@ -70046,6 +70054,10 @@ blockquote {
     margin-left: 0;
   }
 
+  .heading-160 {
+    padding-bottom: 0;
+  }
+
   .section-34 {
     background-color: #ecebe4;
     width: 100%;
@@ -70467,7 +70479,8 @@ blockquote {
     height: 100%;
     margin-left: 0;
     padding-top: 10px;
-    padding-bottom: 0;
+    padding-bottom: 108px;
+    display: flex;
   }
 
   .image-219 {
@@ -70884,7 +70897,7 @@ blockquote {
     grid-row-gap: 0rem;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     height: auto;
     margin-left: 10px;
     padding: .25rem;
@@ -71418,7 +71431,7 @@ blockquote {
 
   .heading-195 {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     padding-left: 0;
   }
 
@@ -71903,9 +71916,7 @@ blockquote {
   }
 
   .testimonial-card-bg-img-2.dark {
-    margin-top: 0;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 10px;
     padding-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -73391,7 +73402,7 @@ blockquote {
   }
 
   .primary-glow-wrapper-30.blog-grid-child {
-    height: 155px;
+    height: 255px;
   }
 
   .air-force-base-map {

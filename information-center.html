@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Oct 12 2026 14:59:04 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Oct 13 2026 04:09:38 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a6ff0545aa01c93602dbafe" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -38,7 +38,8 @@
 </script>
 </head>
 <body>
-  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar-4 w-nav"><img src="images/TheWingIcon.png" loading="lazy" width="145" height="95" alt="Logo" srcset="images/0a60464e6a5ffa7452136acee37a55e2_RS-p-500.png 500w, images/0a60464e6a5ffa7452136acee37a55e2_RS-p-800.png 800w, images/0a60464e6a5ffa7452136acee37a55e2_RS-p-1080.png 1080w, images/TheWingIcon.png 1100w" sizes="145px" class="image-228">
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-doc-height="1" role="banner" class="navbar-4 w-nav">
+    <a href="index.html" class="w-inline-block"><img src="images/TheWingIcon.png" loading="lazy" width="145" height="95" alt="Logo" srcset="images/0a60464e6a5ffa7452136acee37a55e2_RS-p-500.png 500w, images/0a60464e6a5ffa7452136acee37a55e2_RS-p-800.png 800w, images/0a60464e6a5ffa7452136acee37a55e2_RS-p-1080.png 1080w, images/TheWingIcon.png 1100w" sizes="145px" class="image-228"></a>
     <div class="container-nav-3 w-container">
       <div class="cart-burger-wrapper-2">
         <nav role="navigation" class="nav-menu-wrapper-7 w-nav-menu">
@@ -284,32 +285,26 @@
       <div id="w-node-_6bee17ca-6848-9c31-734c-6dbf6f2f5d03-602dbafe" class="style-content-wrapper">
         <section class="section-48 hero-2">
           <div class="code-embed-94 w-embed"><!-- 
-THEWING.AI • INFORMATION CENTER MAIN HERO • v2.1
-CHANGES:
-1. Official logo above THEWING.AI.
-2. iPhone portrait, landscape, and Safari layout improvements.
-Paste this entire code into ONE Webflow Embed.
-Keep your existing Information Center content below it.
+THEWING.AI • INFORMATION CENTER MAIN HERO • v2.3
+Updated Information Center content.
+Original copper scanning animations restored.
+Responsive desktop, tablet, and mobile layouts.
+Replace the entire previous hero Embed with this code.
+Keep the existing Information Center content below it.
 Use only once per page.
  -->
             <div id="tw-information-center">
               <style>
-    /* =========================================
-       VARIABLES / SCOPED DEFAULTS
-    ========================================= */
     #tw-information-center {
       --tw-copper: #e7ab70;
       --tw-ivory: #f6f1e7;
       --tw-muted: #dedad2;
       --tw-line: rgba(231,171,112,.5);
-      display: block;
       width: 100%;
       isolation: isolate;
-      container-type: inline-size;
+      container: tw-info / inline-size;
       color: var(--tw-ivory);
-      font-family: Inter, Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
+      font: 16px/1.5 Inter, Arial, Helvetica, sans-serif;
       text-align: left;
       -webkit-font-smoothing: antialiased;
     }
@@ -325,38 +320,64 @@ Use only once per page.
       color: inherit;
       font-family: inherit;
     }
-    #tw-information-center svg {
-      display: block;
+    #tw-information-center a {
+      color: inherit;
+      text-decoration: none;
     }
-    /* =========================================
-       MAIN STAGE
-    ========================================= */
+    #tw-information-center a:focus-visible {
+      outline: 3px solid var(--tw-ivory);
+      outline-offset: 5px;
+    }
+    /* MAIN STAGE */
     #tw-information-center .tw-stage {
       position: relative;
+      isolation: isolate;
+      overflow: hidden;
       width: 100%;
       max-width: 1600px;
       margin: 0 auto;
-      overflow: hidden;
-      isolation: isolate;
-      background: #0b0e10;
       padding: 48px;
-      padding: clamp(24px, 3.4cqw, 54px);
+      padding: clamp(28px, 3.4cqw, 54px);
+      background: #0b0e10;
     }
-    /* =========================================
-       AMY PHOTOGRAPH
-    ========================================= */
+    /* COPPER FRAME */
+    #tw-information-center .tw-frame {
+      position: absolute;
+      z-index: 3;
+      inset: 14px;
+      border: 1px solid var(--tw-line);
+      pointer-events: none;
+      background:
+        linear-gradient(var(--tw-copper),var(--tw-copper))
+          left top / 44px 3px no-repeat,
+        linear-gradient(var(--tw-copper),var(--tw-copper))
+          left top / 3px 44px no-repeat,
+        linear-gradient(var(--tw-copper),var(--tw-copper))
+          right top / 44px 3px no-repeat,
+        linear-gradient(var(--tw-copper),var(--tw-copper))
+          right top / 3px 44px no-repeat,
+        linear-gradient(var(--tw-copper),var(--tw-copper))
+          left bottom / 44px 3px no-repeat,
+        linear-gradient(var(--tw-copper),var(--tw-copper))
+          left bottom / 3px 44px no-repeat,
+        linear-gradient(var(--tw-copper),var(--tw-copper))
+          right bottom / 44px 3px no-repeat,
+        linear-gradient(var(--tw-copper),var(--tw-copper))
+          right bottom / 3px 44px no-repeat;
+    }
+    /* AMY PHOTOGRAPH */
     #tw-information-center .tw-photo {
       position: absolute;
-      z-index: -3;
       inset: 0;
+      z-index: -1;
       overflow: hidden;
       pointer-events: none;
     }
     #tw-information-center .tw-photo img {
-      display: block;
       position: absolute;
       top: 0;
       left: 4%;
+      display: block;
       width: 84%;
       max-width: none;
       height: auto;
@@ -369,54 +390,24 @@ Use only once per page.
         linear-gradient(
           90deg,
           #0b0e10 0%,
-          rgba(11,14,16,.78) 20%,
-          transparent 42%,
-          transparent 69%,
-          rgba(11,14,16,.88) 89%,
+          rgba(11,14,16,.88) 24%,
+          rgba(11,14,16,.5) 39%,
+          transparent 52%,
+          transparent 68%,
           #0b0e10 100%
         ),
         linear-gradient(
           180deg,
-          rgba(11,14,16,.18),
-          transparent 32%,
-          transparent 66%,
-          #0b0e10 96%
+          rgba(11,14,16,.2),
+          transparent 45%,
+          #0b0e10 97%
         );
     }
-    /* =========================================
-       OUTER COPPER FRAME
-    ========================================= */
-    #tw-information-center .tw-frame {
-      position: absolute;
-      z-index: 4;
-      inset: 14px;
-      border: 1px solid var(--tw-line);
-      pointer-events: none;
-      background:
-        linear-gradient(var(--tw-copper),var(--tw-copper))
-          left top / 45px 3px no-repeat,
-        linear-gradient(var(--tw-copper),var(--tw-copper))
-          left top / 3px 45px no-repeat,
-        linear-gradient(var(--tw-copper),var(--tw-copper))
-          right top / 45px 3px no-repeat,
-        linear-gradient(var(--tw-copper),var(--tw-copper))
-          right top / 3px 45px no-repeat,
-        linear-gradient(var(--tw-copper),var(--tw-copper))
-          left bottom / 45px 3px no-repeat,
-        linear-gradient(var(--tw-copper),var(--tw-copper))
-          left bottom / 3px 45px no-repeat,
-        linear-gradient(var(--tw-copper),var(--tw-copper))
-          right bottom / 45px 3px no-repeat,
-        linear-gradient(var(--tw-copper),var(--tw-copper))
-          right bottom / 3px 45px no-repeat;
-    }
-    /* =========================================
-       BRAND / OFFICIAL LOGO
-    ========================================= */
+    /* BRAND */
     #tw-information-center .tw-topline {
       display: flex;
-      align-items: flex-start;
       justify-content: space-between;
+      align-items: flex-start;
       gap: 24px;
     }
     #tw-information-center .tw-brand {
@@ -427,7 +418,6 @@ Use only once per page.
       display: block;
       width: 90px;
       height: 40px;
-      max-width: 100%;
       object-fit: contain;
       object-position: left center;
     }
@@ -438,23 +428,22 @@ Use only once per page.
       line-height: 1.2;
     }
     #tw-information-center .tw-location {
+      max-width: 230px;
       padding-top: 8px;
       color: var(--tw-copper);
       font-size: 11px;
       font-weight: 600;
-      letter-spacing: .18em;
+      letter-spacing: .16em;
+      text-align: right;
       text-transform: uppercase;
     }
-    /* =========================================
-       PAGE TITLE
-    ========================================= */
+    /* INTRODUCTION */
     #tw-information-center .tw-intro {
       position: relative;
-      max-width: 48%;
-      margin-top: 24px;
-      text-shadow: 0 2px 20px rgba(0,0,0,.6);
+      max-width: 42%;
+      margin-top: 28px;
     }
-    #tw-information-center .tw-intro h1 {
+    #tw-information-center h1 {
       font-size: 44px;
       font-size: clamp(30px, 3.3cqw, 53px);
       font-weight: 700;
@@ -462,88 +451,61 @@ Use only once per page.
       letter-spacing: -.035em;
       text-wrap: balance;
     }
-    #tw-information-center .tw-intro h1 span {
+    #tw-information-center h1 span {
       color: var(--tw-copper);
     }
-    #tw-information-center .tw-intro p {
-      margin-top: 12px;
-      max-width: 560px;
-      color: var(--tw-muted);
-      font-size: 17px;
-      line-height: 1.55;
-    }
-    #tw-information-center .tw-intro .tw-lead {
-      color: var(--tw-ivory);
-      font-size: clamp(18px, 1.7cqw, 24px);
+    #tw-information-center .tw-lead {
+      margin-top: 16px;
+      font-size: 22px;
       font-weight: 600;
       line-height: 1.35;
     }
-    #tw-information-center .tw-content-start {
-      height: 1px;
-      scroll-margin-top: 96px;
+    #tw-information-center .tw-description {
+      margin-top: 12px;
+      color: var(--tw-muted);
+      font-size: 17px;
+      line-height: 1.6;
     }
-    #tw-information-center .tw-content-start:focus {
-      outline: none;
+    #tw-information-center .tw-start {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      min-height: 44px;
+      margin-top: 16px;
+      color: var(--tw-copper);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 5px;
     }
-    /* =========================================
-       HUD GRID
-    ========================================= */
+    /* TOPIC PANELS */
     #tw-information-center .tw-panels {
       display: grid;
       grid-template-columns:
         minmax(0,1fr)
-        minmax(0,1.68fr)
+        minmax(0,1.5fr)
         minmax(0,1fr);
-      grid-template-rows: auto auto;
-      gap: 24px 0;
-      margin-top: 34px;
+      gap: 22px 0;
+      margin-top: 30px;
     }
-    #tw-information-center .tw-calculators {
-      grid-column: 1;
-      grid-row: 1;
-    }
-    #tw-information-center .tw-pcs {
-      grid-column: 1;
-      grid-row: 2;
-    }
-    #tw-information-center .tw-financial {
-      grid-column: 3;
-      grid-row: 1;
-    }
-    #tw-information-center .tw-demographics {
-      grid-column: 3;
-      grid-row: 2;
-    }
-    /* =========================================
-       GLASS HUD PANELS
-    ========================================= */
     #tw-information-center .tw-panel {
       position: relative;
+      display: flex;
+      flex-direction: column;
       min-width: 0;
-      min-height: 210px;
-      padding: 25px;
-      overflow: hidden;
+      padding: 24px;
       border: 1px solid var(--tw-line);
-      border-radius: 3px;
-      background:
-        linear-gradient(
-          135deg,
-          rgba(35,42,46,.8),
-          rgba(8,12,15,.91)
-        );
-      box-shadow:
-        0 15px 35px rgba(0,0,0,.23),
-        inset 0 1px 0 rgba(255,255,255,.12);
-      backdrop-filter: blur(13px) saturate(115%);
-      -webkit-backdrop-filter: blur(13px) saturate(115%);
+      border-radius: 2px;
+      background: rgba(11,14,16,.91);
+      transition:
+        background .2s ease,
+        border-color .2s ease;
     }
     #tw-information-center .tw-panel::before,
     #tw-information-center .tw-panel::after {
       content: "";
       position: absolute;
-      z-index: 2;
-      width: 28px;
-      height: 28px;
+      width: 26px;
+      height: 26px;
       pointer-events: none;
     }
     #tw-information-center .tw-panel::before {
@@ -558,13 +520,31 @@ Use only once per page.
       border-right: 2px solid var(--tw-copper);
       border-bottom: 2px solid var(--tw-copper);
     }
-    /* =========================================
-       SCAN ANIMATIONS
-    ========================================= */
+    #tw-information-center .tw-panel:hover {
+      background: #192126;
+      border-color: var(--tw-copper);
+    }
+    #tw-information-center .tw-data {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    #tw-information-center .tw-method {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    #tw-information-center .tw-amy {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    #tw-information-center .tw-limits {
+      grid-column: 3;
+      grid-row: 2;
+    }
+    /* RESTORED COPPER SCANNING ANIMATIONS */
     #tw-information-center .tw-scan {
       position: absolute;
       z-index: 1;
-      top: -4px;
+      top: 3%;
       left: 0;
       width: 100%;
       height: 1px;
@@ -582,13 +562,13 @@ Use only once per page.
       box-shadow: 0 0 12px rgba(231,171,112,.35);
       animation: twInfoHeroScan 7s ease-in-out infinite;
     }
-    #tw-information-center .tw-pcs .tw-scan {
+    #tw-information-center .tw-method .tw-scan {
       animation-delay: -3.5s;
     }
-    #tw-information-center .tw-financial .tw-scan {
+    #tw-information-center .tw-amy .tw-scan {
       animation-delay: -1.75s;
     }
-    #tw-information-center .tw-demographics .tw-scan {
+    #tw-information-center .tw-limits .tw-scan {
       animation-delay: -5.25s;
     }
     @keyframes twInfoHeroScan {
@@ -608,783 +588,385 @@ Use only once per page.
         opacity: 0;
       }
     }
-    /* =========================================
-       PANEL CONTENT
-    ========================================= */
+    /* PANEL CONTENT */
     #tw-information-center .tw-kicker {
+      margin-bottom: 12px;
       color: var(--tw-copper);
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 600;
-      letter-spacing: .19em;
-      line-height: 1.5;
+      letter-spacing: .14em;
       text-transform: uppercase;
     }
-    #tw-information-center .tw-card-body {
-      display: grid;
-      grid-template-columns: minmax(0,1fr) 57px;
-      align-items: center;
-      gap: 12px;
-      margin-top: 20px;
-    }
     #tw-information-center .tw-panel h2 {
-      font-size: 27px;
-      font-size: clamp(21px, 2cqw, 31px);
+      font-size: 26px;
       font-weight: 600;
-      line-height: 1.14;
+      line-height: 1.15;
       letter-spacing: -.025em;
-      overflow-wrap: normal;
+      overflow-wrap: break-word;
     }
     #tw-information-center .tw-panel p {
-      margin-top: 13px;
+      margin-top: 12px;
       color: var(--tw-muted);
       font-size: 16px;
-      line-height: 1.45;
+      line-height: 1.5;
     }
-    #tw-information-center .tw-icon {
-      width: 57px;
-      height: 78px;
+    #tw-information-center .tw-panel-link {
+      display: block;
+      margin-top: auto;
+      padding-top: 18px;
       color: var(--tw-copper);
-      opacity: .95;
+      font-size: 14px;
+      font-weight: 600;
     }
-    /* =========================================
-       FOOTER
-    ========================================= */
+    /* FOOTER */
     #tw-information-center .tw-footer {
-      position: relative;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 30px;
-      margin-top: 34px;
-      padding-top: 28px;
+      align-items: center;
+      gap: 28px;
+      margin-top: 30px;
+      padding-top: 24px;
       border-top: 1px solid var(--tw-line);
     }
-    #tw-information-center .tw-amy-label {
-      display: flex;
-      align-items: center;
-      gap: 15px;
+    #tw-information-center .tw-footer-title {
       color: var(--tw-copper);
-      font-size: 27px;
+      font-size: 22px;
       font-weight: 700;
-      letter-spacing: .075em;
+      line-height: 1.3;
     }
-    #tw-information-center .tw-amy-label::before {
-      content: "";
-      width: 36px;
-      height: 2px;
-      flex-shrink: 0;
-      background: var(--tw-copper);
+    #tw-information-center .tw-footer p {
+      margin-top: 8px;
+      max-width: 600px;
+      color: var(--tw-muted);
+      font-size: 15px;
     }
-    #tw-information-center .tw-explains p {
-      margin-top: 7px;
-      color: var(--tw-ivory);
-      font-size: 21px;
-    }
-    /* =========================================
-       BUTTON
-    ========================================= */
     #tw-information-center .tw-cta {
       display: inline-flex;
-      align-items: center;
       justify-content: center;
-      gap: 28px;
+      align-items: center;
+      gap: 22px;
       flex-shrink: 0;
-      min-height: 64px;
-      padding: 15px 24px;
+      min-height: 52px;
+      padding: 14px 22px;
       border: 1px solid var(--tw-copper);
-      background: rgba(11,14,16,.85);
-      color: var(--tw-ivory);
-      font: inherit;
-      font-size: 20px;
-      font-weight: 500;
-      text-decoration: none;
-      transition:
-        background-color .2s ease,
-        box-shadow .2s ease;
-    }
-    #tw-information-center .tw-cta svg {
-      width: 28px;
-      height: 24px;
-      color: var(--tw-copper);
+      background: #0b0e10;
+      font-size: 17px;
+      font-weight: 600;
     }
     #tw-information-center .tw-cta:hover {
-      color: var(--tw-ivory);
-      background: #31251c;
-      box-shadow: 0 0 22px rgba(231,171,112,.12);
+      background: #263039;
     }
-    #tw-information-center .tw-cta:focus-visible {
-      outline: 3px solid var(--tw-ivory);
-      outline-offset: 5px;
+    #tw-information-center .tw-arrow {
+      color: var(--tw-copper);
     }
-    /* =========================================
-       COMPACT DESKTOP
-    ========================================= */
-    @container (max-width: 1100px) {
-      #tw-information-center .tw-panels {
-        grid-template-columns:
-          minmax(0,1fr)
-          minmax(0,1.3fr)
-          minmax(0,1fr);
-      }
-      #tw-information-center .tw-panel {
-        padding: 22px 18px;
-      }
-      #tw-information-center .tw-card-body {
-        grid-template-columns: minmax(0,1fr);
-        margin-top: 14px;
-      }
-      #tw-information-center .tw-icon {
-        display: none;
-      }
-      #tw-information-center .tw-explains p {
-        font-size: 18px;
-      }
-      #tw-information-center .tw-cta {
-        font-size: 17px;
-        gap: 16px;
-      }
+    /* EXISTING PAGE DESTINATIONS */
+    #Purpose-Vision,
+    #tw-data-methodology,
+    #tw-mortgage-guide,
+    #methodology-faq,
+    #methodology-scope {
+      scroll-margin-top: 110px;
     }
-    /* =========================================
-       TABLET / NARROW CONTAINERS
-    ========================================= */
-    @container (max-width: 800px) {
+    /* TABLET / NARROW WEBFLOW CONTAINERS */
+    @container tw-info (max-width: 900px) {
       #tw-information-center .tw-stage {
-        display: grid;
-        grid-template-columns: minmax(0,1fr);
-        padding: 30px;
-      }
-      #tw-information-center .tw-topline {
-        grid-row: 1;
+        padding: 32px;
       }
       #tw-information-center .tw-intro {
-        grid-row: 2;
         max-width: 100%;
-        margin-top: 26px;
       }
-      #tw-information-center .tw-intro h1 {
-        max-width: 100%;
-        font-size: 40px;
-      }
-      #tw-information-center .tw-intro p {
-        max-width: 590px;
-        font-size: 16px;
-      }
-      #tw-information-center .tw-intro .tw-lead {
-        font-size: 21px;
+      #tw-information-center .tw-description {
+        max-width: 600px;
       }
       #tw-information-center .tw-photo {
         position: relative;
-        z-index: 0;
         inset: auto;
-        grid-row: 3;
-        width: calc(100% + 60px);
-        margin: 24px -30px 0;
-        height: auto;
-        aspect-ratio: 1.35 / 1;
+        z-index: 0;
+        aspect-ratio: 1.5;
+        margin: 24px -32px 0;
       }
       #tw-information-center .tw-photo img {
-        position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 62% 25%;
+        object-position: center 32%;
       }
       #tw-information-center .tw-photo::after {
         background:
           linear-gradient(
             180deg,
-            #0b0e10 0%,
-            transparent 12%,
-            transparent 80%,
-            #0b0e10 100%
+            #0b0e10,
+            transparent 18%,
+            transparent 76%,
+            #0b0e10
           );
       }
-      #tw-information-center .tw-wordmark {
-        font-size: 21px;
-      }
-      #tw-information-center .tw-location {
-        font-size: 10px;
-        max-width: 150px;
-        text-align: right;
-      }
       #tw-information-center .tw-panels {
-        grid-row: 4;
-        grid-template-columns:
-          minmax(0,1fr)
-          minmax(0,1fr);
+        grid-template-columns: repeat(2,minmax(0,1fr));
         gap: 18px;
-        margin-top: 12px;
-      }
-      #tw-information-center .tw-calculators {
-        grid-column: 1;
-        grid-row: 1;
-      }
-      #tw-information-center .tw-pcs {
-        grid-column: 2;
-        grid-row: 1;
-      }
-      #tw-information-center .tw-financial {
-        grid-column: 1;
-        grid-row: 2;
-      }
-      #tw-information-center .tw-demographics {
-        grid-column: 2;
-        grid-row: 2;
-      }
-      #tw-information-center .tw-panel {
-        min-height: 195px;
-      }
-      #tw-information-center .tw-panel h2 {
-        font-size: 25px;
-      }
-      #tw-information-center .tw-footer {
-        grid-row: 5;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 22px;
-      }
-      #tw-information-center .tw-cta {
-        width: 100%;
-        justify-content: space-between;
-      }
-    }
-    /* =========================================
-       PHONE-SIZED CONTAINERS
-    ========================================= */
-    @container (max-width: 480px) {
-      #tw-information-center .tw-stage {
-        padding: 27px 24px;
-        padding-left: max(24px, env(safe-area-inset-left, 0px));
-        padding-right: max(24px, env(safe-area-inset-right, 0px));
-      }
-      #tw-information-center .tw-frame {
-        inset: 9px;
-      }
-      #tw-information-center .tw-topline {
-        gap: 12px;
-        flex-wrap: wrap;
-      }
-      #tw-information-center .tw-mark {
-        width: 70px;
-        height: 32px;
-      }
-      #tw-information-center .tw-wordmark {
-        font-size: 18px;
-        letter-spacing: .16em;
-      }
-      #tw-information-center .tw-location {
-        max-width: 110px;
-        font-size: 9px;
-        letter-spacing: .1em;
-      }
-      #tw-information-center .tw-intro h1 {
-        font-size: 35px;
-        overflow-wrap: anywhere;
-      }
-      #tw-information-center .tw-intro p {
-        font-size: 15px;
-        max-width: 100%;
-      }
-      #tw-information-center .tw-intro .tw-lead {
-        font-size: 19px;
-      }
-      #tw-information-center .tw-photo {
-        width: calc(100% + 48px);
-        margin: 22px -24px 0;
-        aspect-ratio: 1 / 1;
-      }
-      #tw-information-center .tw-panels {
-        grid-template-columns: minmax(0,1fr);
-        gap: 16px;
+        margin-top: 18px;
       }
       #tw-information-center .tw-panel {
         grid-column: auto;
         grid-row: auto;
-        min-height: 172px;
-        padding: 24px;
-        backdrop-filter: blur(8px) saturate(115%);
-        -webkit-backdrop-filter: blur(8px) saturate(115%);
       }
-      #tw-information-center .tw-card-body {
-        grid-template-columns: minmax(0,1fr) 48px;
-        gap: 15px;
-      }
-      #tw-information-center .tw-card-body > div {
-        min-width: 0;
-      }
-      #tw-information-center .tw-icon {
-        display: block;
-        width: 48px;
-        height: 66px;
-      }
-      #tw-information-center .tw-panel h2 {
-        font-size: 25px;
-        overflow-wrap: anywhere;
-      }
-      #tw-information-center .tw-panel p {
-        font-size: 15px;
-      }
-      #tw-information-center .tw-amy-label {
-        font-size: 23px;
-        gap: 11px;
-      }
-      #tw-information-center .tw-amy-label::before {
-        width: 22px;
-      }
-      #tw-information-center .tw-explains {
-        min-width: 0;
-        max-width: 100%;
-      }
-      #tw-information-center .tw-explains p {
-        font-size: 18px;
-      }
-      #tw-information-center .tw-cta {
-        min-height: 56px;
-        max-width: 100%;
-        padding: 15px 18px;
-        gap: 16px;
-        white-space: normal;
-        touch-action: manipulation;
-      }
-      #tw-information-center .tw-cta span {
-        min-width: 0;
-        overflow-wrap: anywhere;
-      }
-      #tw-information-center .tw-cta svg {
-        flex: 0 0 28px;
+      #tw-information-center .tw-footer {
+        align-items: flex-start;
+        flex-direction: column;
       }
     }
-    /* =========================================
-       IPHONE SAFARI VIEWPORT FALLBACK
-       Also supports phone landscape layouts.
-       These rules do not require container-query
-       support in the browser.
-    ========================================= */
-    @media (max-width: 800px),
-           (max-width: 960px) and
-           (max-height: 500px) and
-           (pointer: coarse) {
+    /* VIEWPORT FALLBACK / LANDSCAPE PHONES */
+    @media (max-width: 900px),
+      (max-height: 500px) and (max-width: 1000px) and (pointer: coarse) {
       #tw-information-center .tw-stage {
-        display: grid;
-        grid-template-columns: minmax(0,1fr);
-        padding: 30px;
-      }
-      #tw-information-center .tw-topline {
-        grid-row: 1;
+        padding: 32px;
       }
       #tw-information-center .tw-intro {
-        grid-row: 2;
         max-width: 100%;
-        margin-top: 26px;
       }
-      #tw-information-center .tw-intro h1 {
-        max-width: 100%;
-        font-size: 40px;
-      }
-      #tw-information-center .tw-intro p {
-        max-width: 590px;
-        font-size: 16px;
-      }
-      #tw-information-center .tw-intro .tw-lead {
-        font-size: 21px;
+      #tw-information-center .tw-description {
+        max-width: 600px;
       }
       #tw-information-center .tw-photo {
         position: relative;
-        z-index: 0;
         inset: auto;
-        grid-row: 3;
-        width: calc(100% + 60px);
-        margin: 24px -30px 0;
-        height: auto;
-        aspect-ratio: 1.35 / 1;
+        z-index: 0;
+        aspect-ratio: 1.5;
+        margin: 24px -32px 0;
       }
       #tw-information-center .tw-photo img {
-        position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 62% 25%;
+        object-position: center 32%;
       }
       #tw-information-center .tw-photo::after {
         background:
           linear-gradient(
             180deg,
-            #0b0e10 0%,
-            transparent 12%,
-            transparent 80%,
-            #0b0e10 100%
+            #0b0e10,
+            transparent 18%,
+            transparent 76%,
+            #0b0e10
           );
       }
-      #tw-information-center .tw-wordmark {
-        font-size: 21px;
-      }
-      #tw-information-center .tw-location {
-        font-size: 10px;
-        max-width: 150px;
-        text-align: right;
-      }
       #tw-information-center .tw-panels {
-        grid-row: 4;
-        grid-template-columns:
-          minmax(0,1fr)
-          minmax(0,1fr);
+        grid-template-columns: repeat(2,minmax(0,1fr));
         gap: 18px;
-        margin-top: 12px;
-      }
-      #tw-information-center .tw-calculators {
-        grid-column: 1;
-        grid-row: 1;
-      }
-      #tw-information-center .tw-pcs {
-        grid-column: 2;
-        grid-row: 1;
-      }
-      #tw-information-center .tw-financial {
-        grid-column: 1;
-        grid-row: 2;
-      }
-      #tw-information-center .tw-demographics {
-        grid-column: 2;
-        grid-row: 2;
+        margin-top: 18px;
       }
       #tw-information-center .tw-panel {
-        min-height: 195px;
-      }
-      #tw-information-center .tw-card-body {
-        grid-template-columns: minmax(0,1fr);
-        margin-top: 14px;
-      }
-      #tw-information-center .tw-icon {
-        display: none;
-      }
-      #tw-information-center .tw-panel h2 {
-        font-size: 25px;
+        grid-column: auto;
+        grid-row: auto;
       }
       #tw-information-center .tw-footer {
-        grid-row: 5;
-        flex-direction: column;
         align-items: flex-start;
-        gap: 22px;
-      }
-      #tw-information-center .tw-cta {
-        width: 100%;
-        justify-content: space-between;
+        flex-direction: column;
       }
     }
-    /* =========================================
-       IPHONE PORTRAIT FALLBACK
-    ========================================= */
-    @media (max-width: 480px) {
+    /* PHONE / SMALL CONTAINERS */
+    @container tw-info (max-width: 520px) {
       #tw-information-center .tw-stage {
-        padding: 27px 24px;
-        padding-left: max(24px, env(safe-area-inset-left, 0px));
-        padding-right: max(24px, env(safe-area-inset-right, 0px));
+        padding: 28px 24px;
       }
       #tw-information-center .tw-frame {
         inset: 9px;
       }
       #tw-information-center .tw-topline {
-        gap: 12px;
-        flex-wrap: wrap;
-      }
-      #tw-information-center .tw-mark {
-        width: 70px;
-        height: 32px;
-      }
-      #tw-information-center .tw-wordmark {
-        font-size: 18px;
-        letter-spacing: .16em;
+        flex-direction: column;
+        gap: 14px;
       }
       #tw-information-center .tw-location {
-        max-width: 110px;
-        font-size: 9px;
-        letter-spacing: .1em;
-      }
-      #tw-information-center .tw-intro h1 {
-        font-size: 35px;
-        overflow-wrap: anywhere;
-      }
-      #tw-information-center .tw-intro p {
-        font-size: 15px;
-        max-width: 100%;
-      }
-      #tw-information-center .tw-intro .tw-lead {
-        font-size: 19px;
-      }
-      #tw-information-center .tw-photo {
-        width: calc(100% + 48px);
-        margin: 22px -24px 0;
-        aspect-ratio: 1 / 1;
-      }
-      #tw-information-center .tw-panels {
-        grid-template-columns: minmax(0,1fr);
-        gap: 16px;
-      }
-      #tw-information-center .tw-panel {
-        grid-column: auto;
-        grid-row: auto;
-        min-height: 172px;
-        padding: 24px;
-        backdrop-filter: blur(8px) saturate(115%);
-        -webkit-backdrop-filter: blur(8px) saturate(115%);
-      }
-      #tw-information-center .tw-card-body {
-        grid-template-columns: minmax(0,1fr) 48px;
-        gap: 15px;
-      }
-      #tw-information-center .tw-card-body > div {
-        min-width: 0;
-      }
-      #tw-information-center .tw-icon {
-        display: block;
-        width: 48px;
-        height: 66px;
-      }
-      #tw-information-center .tw-panel h2 {
-        font-size: 25px;
-        overflow-wrap: anywhere;
-      }
-      #tw-information-center .tw-panel p {
-        font-size: 15px;
-      }
-      #tw-information-center .tw-amy-label {
-        font-size: 23px;
-        gap: 11px;
-      }
-      #tw-information-center .tw-amy-label::before {
-        width: 22px;
-      }
-      #tw-information-center .tw-explains {
-        min-width: 0;
-        max-width: 100%;
-      }
-      #tw-information-center .tw-explains p {
-        font-size: 18px;
-      }
-      #tw-information-center .tw-cta {
-        min-height: 56px;
-        max-width: 100%;
-        padding: 15px 18px;
-        gap: 16px;
-        white-space: normal;
-        touch-action: manipulation;
-      }
-      #tw-information-center .tw-cta span {
-        min-width: 0;
-        overflow-wrap: anywhere;
-      }
-      #tw-information-center .tw-cta svg {
-        flex: 0 0 28px;
-      }
-    }
-    /* =========================================
-       EXTRA-SMALL IPHONE SCREENS
-    ========================================= */
-    @media (max-width: 360px) {
-      #tw-information-center .tw-location {
-        max-width: 100%;
+        max-width: none;
+        padding: 0;
         text-align: left;
-        padding-top: 0;
       }
-      #tw-information-center .tw-card-body {
+      #tw-information-center .tw-wordmark {
+        font-size: 21px;
+      }
+      #tw-information-center h1 {
+        font-size: 36px;
+      }
+      #tw-information-center .tw-lead {
+        font-size: 21px;
+      }
+      #tw-information-center .tw-photo {
+        aspect-ratio: 1.2;
+        margin-inline: -24px;
+      }
+      #tw-information-center .tw-panels {
         grid-template-columns: minmax(0,1fr);
       }
-      #tw-information-center .tw-icon {
-        display: none;
+      #tw-information-center .tw-panel {
+        padding: 24px;
       }
-      #tw-information-center .tw-panel h2 {
-        font-size: 24px;
+      #tw-information-center .tw-cta {
+        width: 100%;
       }
     }
-    /* =========================================
-       REDUCED MOTION
-    ========================================= */
+    @media (max-width: 520px) {
+      #tw-information-center .tw-stage {
+        padding: 28px 24px;
+      }
+      #tw-information-center .tw-frame {
+        inset: 9px;
+      }
+      #tw-information-center .tw-topline {
+        flex-direction: column;
+        gap: 14px;
+      }
+      #tw-information-center .tw-location {
+        max-width: none;
+        padding: 0;
+        text-align: left;
+      }
+      #tw-information-center .tw-wordmark {
+        font-size: 21px;
+      }
+      #tw-information-center h1 {
+        font-size: 36px;
+      }
+      #tw-information-center .tw-lead {
+        font-size: 21px;
+      }
+      #tw-information-center .tw-photo {
+        aspect-ratio: 1.2;
+        margin-inline: -24px;
+      }
+      #tw-information-center .tw-panels {
+        grid-template-columns: minmax(0,1fr);
+      }
+      #tw-information-center .tw-panel {
+        padding: 24px;
+      }
+      #tw-information-center .tw-cta {
+        width: 100%;
+      }
+    }
+    /* RESPECT DEVICE REDUCED-MOTION SETTINGS */
     @media (prefers-reduced-motion: reduce) {
       #tw-information-center .tw-scan {
         animation: none;
         opacity: 0;
       }
-      #tw-information-center .tw-cta {
+      #tw-information-center .tw-panel {
         transition: none;
       }
     }
   </style>
-              <!--  =======================================
-       INFORMATION CENTER HERO
-  ========================================  -->
               <section class="tw-stage" aria-labelledby="tw-info-title">
-                <!--  AMY PHOTOGRAPH  -->
-                <div class="tw-photo" aria-hidden="true">
-                  <img src="images/Amy-A.I.-Concierge.png" alt="" width="1254" height="1254" decoding="async" loading="eager" fetchpriority="high">
-                </div>
                 <div class="tw-frame" aria-hidden="true"></div>
-                <!--  OFFICIAL LOGO ABOVE WORDMARK  -->
-                <header class="tw-topline">
+                <!--  BRAND  -->
+                <div class="tw-topline">
                   <div class="tw-brand" aria-label="TheWing.ai">
-                    <img class="tw-mark" src="images/TheWingIcon.png" alt="" width="90" height="40" decoding="async">
-                    <div class="tw-wordmark">
-                      THEWING.AI
-                    </div>
+                    <img class="tw-mark" src="images/TheWingIcon.png" width="90" height="40" alt="" decoding="async">
+                    <span class="tw-wordmark">THEWING.AI</span>
                   </div>
-                  <div class="tw-location">
-                    Built for Air Force members
-                  </div>
-                </header>
-                <!--  PAGE HEADING  -->
+                  <span class="tw-location">
+                    Behind the tools.<br>
+                    Clarity for your decisions.
+                  </span>
+                </div>
+                <!--  INTRODUCTION  -->
                 <div class="tw-intro">
                   <h1 id="tw-info-title">
                     Information <span>Center</span>
                   </h1>
                   <p class="tw-lead">
-                    TheWing calculates. Amy explains.
+                    Understand how TheWing works.
                   </p>
-                  <p>
-                    Explore the data, formulas, planning assumptions,
-                    and limits behind our military pay, housing,
-                    and financial readiness tools.
+                  <p class="tw-description">
+                    See where our data comes from, how estimates are calculated,
+                    and how Amy explains the results—with the assumptions and
+                    limits made clear.
                   </p>
+                  <a class="tw-start" href="#tw-data-methodology">
+                    Start with the methodology
+                    <span aria-hidden="true">↓</span>
+                  </a>
                 </div>
-                <!--  HUD PANELS  -->
-                <div class="tw-panels">
-                  <!--  OFFICIAL CALCULATORS  -->
-                  <article class="tw-panel tw-calculators">
-                    <div class="tw-scan" aria-hidden="true"></div>
-                    <div class="tw-kicker">
-                      Essential tools
-                    </div>
-                    <div class="tw-card-body">
-                      <div>
-                        <h2>
-                          Official<br>
-                          Calculators
-                        </h2>
-                        <p>
-                          Plan with clarity.
-                        </p>
-                      </div>
-                      <svg class="tw-icon" viewbox="0 0 64 84" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                        <rect x="8" y="4" width="48" height="76" rx="5"></rect>
-                        <rect x="15" y="13" width="34" height="16" rx="1"></rect>
-                        <path d="
-                M16 40h7v7h-7z
-                M29 40h7v7h-7z
-                M42 40h7v7h-7z
-                M16 53h7v7h-7z
-                M29 53h7v7h-7z
-                M42 53h7v20h-7z
-                M16 66h7v7h-7z
-                M29 66h7v7h-7z
-              "></path>
-                      </svg>
-                    </div>
-                  </article>
-                  <!--  PCSSNAPSHOT  -->
-                  <article class="tw-panel tw-pcs">
-                    <div class="tw-scan" aria-hidden="true"></div>
-                    <div class="tw-kicker">
-                      Advanced analytics
-                    </div>
-                    <div class="tw-card-body">
-                      <div>
-                        <h2>
-                          PCSSnapshot
-                        </h2>
-                        <p>
-                          See your move more clearly.
-                        </p>
-                      </div>
-                      <svg class="tw-icon" viewbox="0 0 64 84" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                        <path d="M14 65C52 64 11 27 48 22" stroke-dasharray="3 4"></path>
-                        <path d="M23 61c0 7-9 17-9 17S5 68 5 61a9 9 0 1 1 18 0Z"></path>
-                        <circle cx="14" cy="61" r="3"></circle>
-                        <path d="M57 13c0 7-9 17-9 17s-9-10-9-17a9 9 0 1 1 18 0Z"></path>
-                        <circle cx="48" cy="13" r="3"></circle>
-                      </svg>
-                    </div>
-                  </article>
-                  <!--  FINANCIAL FIDUCIARY ANALYSIS  -->
-                  <article class="tw-panel tw-financial">
-                    <div class="tw-scan" aria-hidden="true"></div>
-                    <div class="tw-kicker">
-                      Advanced analytics
-                    </div>
-                    <div class="tw-card-body">
-                      <div>
-                        <h2>
-                          Financial<br>
-                          Fiduciary Analysis
-                        </h2>
-                        <p>
-                          Understand the financial picture.
-                        </p>
-                      </div>
-                      <svg class="tw-icon" viewbox="0 0 64 84" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                        <path d="
-                M4 76h56
-                M10 74V55h9v19
-                M27 74V43h9v31
-                M44 74V29h9v45
-              "></path>
-                        <path d="M11 42l19-19 14 6 12-18"></path>
-                        <circle cx="11" cy="42" r="3" fill="#151a1d"></circle>
-                        <circle cx="30" cy="23" r="3" fill="#151a1d"></circle>
-                        <circle cx="44" cy="29" r="3" fill="#151a1d"></circle>
-                        <circle cx="56" cy="11" r="3" fill="#151a1d"></circle>
-                      </svg>
-                    </div>
-                  </article>
-                  <!--  BASE DEMOGRAPHICS  -->
-                  <article class="tw-panel tw-demographics">
-                    <div class="tw-scan" aria-hidden="true"></div>
-                    <div class="tw-kicker">
-                      Base intelligence
-                    </div>
-                    <div class="tw-card-body">
-                      <div>
-                        <h2>
-                          Base Demographics
-                        </h2>
-                        <p>
-                          Get to know your next community.
-                        </p>
-                      </div>
-                      <svg class="tw-icon" viewbox="0 0 64 84" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                        <path d="M50 24c0 15-18 36-18 36S14 39 14 24a18 18 0 1 1 36 0Z"></path>
-                        <circle cx="32" cy="24" r="6"></circle>
-                        <ellipse cx="32" cy="65" rx="13" ry="4"></ellipse>
-                        <path d="M17 54H9L2 79h60l-7-25h-8M8 68h11m26 0h11"></path>
-                      </svg>
-                    </div>
-                  </article>
+                <!--  AMY PHOTOGRAPH  -->
+                <div class="tw-photo" aria-hidden="true">
+                  <img src="images/Amy-A.I.-Concierge.png" width="1254" height="1254" alt="" loading="eager" decoding="async" fetchpriority="high">
                 </div>
-                <!--  AMY EXPLAINS / CONTINUE INTO PAGE  -->
-                <footer class="tw-footer">
-                  <div class="tw-explains">
-                    <div class="tw-amy-label">
-                      AMY EXPLAINS.
+                <!--  ANIMATED INFORMATION PANELS  -->
+                <nav class="tw-panels" aria-label="Explore the Information Center">
+                  <!--  DATA & SOURCES  -->
+                  <a class="tw-panel tw-data" href="#tw-data-methodology">
+                    <span class="tw-scan" aria-hidden="true"></span>
+                    <span class="tw-kicker">01 / The inputs</span>
+                    <h2>Data &amp; Sources</h2>
+                    <p>
+                      Understand the rate tables, data versions, and inputs
+                      behind your estimates.
+                    </p>
+                    <span class="tw-panel-link">
+                      Explore the methodology
+                      <span aria-hidden="true">↗</span>
+                    </span>
+                  </a>
+                  <!--  CALCULATION METHODS  -->
+                  <a class="tw-panel tw-method" href="#tw-mortgage-guide">
+                    <span class="tw-scan" aria-hidden="true"></span>
+                    <span class="tw-kicker">02 / The methods</span>
+                    <h2>How Calculations Work</h2>
+                    <p>
+                      Follow a housing example from loan amount to monthly
+                      costs and remaining income.
+                    </p>
+                    <span class="tw-panel-link">
+                      See the worked example
+                      <span aria-hidden="true">↗</span>
+                    </span>
+                  </a>
+                  <!--  AMY'S ROLE  -->
+                  <a class="tw-panel tw-amy" href="#methodology-faq">
+                    <span class="tw-scan" aria-hidden="true"></span>
+                    <span class="tw-kicker">03 / The explanation</span>
+                    <h2>Amy’s Role</h2>
+                    <p>
+                      The tools calculate. Amy helps explain the results,
+                      assumptions, and missing information.
+                    </p>
+                    <span class="tw-panel-link">
+                      Read the answers
+                      <span aria-hidden="true">↗</span>
+                    </span>
+                  </a>
+                  <!--  ASSUMPTIONS & LIMITS  -->
+                  <a class="tw-panel tw-limits" href="#methodology-scope">
+                    <span class="tw-scan" aria-hidden="true"></span>
+                    <span class="tw-kicker">04 / The boundaries</span>
+                    <h2>Assumptions &amp; Limits</h2>
+                    <p>
+                      Learn why tool versions can differ and what a planning
+                      result can—and cannot—tell you.
+                    </p>
+                    <span class="tw-panel-link">
+                      Understand the limits
+                      <span aria-hidden="true">↗</span>
+                    </span>
+                  </a>
+                </nav>
+                <!--  FOOTER  -->
+                <div class="tw-footer">
+                  <div>
+                    <div class="tw-footer-title">
+                      TheWing calculates. Amy explains.
                     </div>
                     <p>
-                      The numbers. The insights. Your next step.
+                      Use this guide to understand your estimates before you
+                      use them to plan your next step.
                     </p>
                   </div>
-                  <a class="tw-cta" href="#tw-info-content">
-                    <span>
-                      Explore this guide
-                    </span>
-                    <svg viewbox="0 0 32 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-                      <path d="M16 2v19M7 12l9 9 9-9"></path>
-                    </svg>
+                  <a class="tw-cta" href="#Purpose-Vision">
+                    Explore the full guide
+                    <span class="tw-arrow" aria-hidden="true">↓</span>
                   </a>
-                </footer>
+                </div>
               </section>
-              <!-- 
-    SCROLL DESTINATION
-    Keep the existing Information Center
-    content directly below this embed.
-   -->
-              <div id="tw-info-content" class="tw-content-start" tabindex="-1"></div>
             </div>
           </div>
         </section>
@@ -1461,7 +1043,7 @@ Use only once per page.
                     <div class="button-overflow-hidden-2-copy for--blog-copy">
                       <div class="full-size">
                         <div class="pedding-stroke-13 big--size full-size">
-                          <div class="inside-button-14 none-padding full-size for--blog"><img src="images/Tabs-Icon-2.jpg" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 1439px) 49vw, 50vw" srcset="images/fb2639636b32ce628f4c46a81ae89d53_Tabs-Icon-2-p-500.jpg 500w, images/fb2639636b32ce628f4c46a81ae89d53_Tabs-Icon-2-p-800.jpg 800w, images/fb2639636b32ce628f4c46a81ae89d53_Tabs-Icon-2-p-1080.jpg 1080w, images/fb2639636b32ce628f4c46a81ae89d53_Tabs-Icon-2-p-1600.jpg 1600w, images/Tabs-Icon-2.jpg 1675w" alt="" class="image-251"></div>
+                          <div class="inside-button-14 none-padding full-size for--blog"><img src="images/Tabs-Icon-2.jpg" loading="lazy" sizes="100vw" srcset="images/fb2639636b32ce628f4c46a81ae89d53_Tabs-Icon-2-p-500.jpg 500w, images/fb2639636b32ce628f4c46a81ae89d53_Tabs-Icon-2-p-800.jpg 800w, images/fb2639636b32ce628f4c46a81ae89d53_Tabs-Icon-2-p-1080.jpg 1080w, images/fb2639636b32ce628f4c46a81ae89d53_Tabs-Icon-2-p-1600.jpg 1600w, images/Tabs-Icon-2.jpg 1675w" alt="" class="image-251"></div>
                         </div>
                         <div class="glow-wrapper stroke for--boxes">
                           <div class="glow-item left"></div>
@@ -2783,7 +2365,6 @@ the supplied source, not a new audit.
                           <div class="text-block-48">Visit our Sister Platform</div>
                         </div>
                       </div>
-                      <div class="space-171"></div>
                       <h3 class="heading-160">PCSUnited.com</h3>
                       <div class="opacity-80-4">PCSUnited is specifically designed to resolve the question many military members have during PCS; whether to Buy, Rent or Base Housing. <br><br>Powered by TheWing.ai, PCSUnited leverages it&#x27;s specialized knowledge of real estate analytics with TheWing&#x27;s technology to provide unparalleled service. <br><br></div>
                       <a href="https://pcsunited.com" target="_blank" class="button-white-5 w-inline-block">
@@ -2796,7 +2377,7 @@ the supplied source, not a new audit.
                     <div class="button-overflow-hidden-2 for--blog">
                       <div class="full-size">
                         <div class="pedding-stroke-13 big--size full-size-copy">
-                          <div class="inside-button-14 none-padding full-size for--blog"><img src="images/Base-Demographics-Ad.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 1439px) 49vw, 50vw" srcset="images/Base-Demographics-Ad.png 500w, images/Base-Demographics-Ad.png 800w, images/Base-Demographics-Ad.png 1080w, images/Base-Demographics-Ad.png 1600w, images/Base-Demographics-Ad.png 1672w" alt="Air Force Base information, demographics and Base Maps. " class="image-219"></div>
+                          <div class="inside-button-14 none-padding full-size for--blog"><img src="images/Base-Demographics-Ad.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 1439px) 49vw, 50vw" srcset="images/381d7bdd4461b2886914e60de00952d8_Base-Demographics-Ad-p-500.png 500w, images/381d7bdd4461b2886914e60de00952d8_Base-Demographics-Ad-p-800.png 800w, images/381d7bdd4461b2886914e60de00952d8_Base-Demographics-Ad-p-1080.png 1080w, images/381d7bdd4461b2886914e60de00952d8_Base-Demographics-Ad-p-1600.png 1600w, images/Base-Demographics-Ad.png 1672w" alt="Air Force Base information, demographics and Base Maps. " class="image-219"></div>
                         </div>
                         <div class="glow-wrapper stroke for--boxes">
                           <div class="glow-item left"></div>
