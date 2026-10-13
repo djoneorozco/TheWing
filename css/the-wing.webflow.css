@@ -188,7 +188,7 @@ h3 {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -1668,7 +1668,7 @@ blockquote {
   font-weight: var(--_textstyle---fontweight);
   letter-spacing: var(--_textstyle---letterspacing);
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -2438,7 +2438,7 @@ blockquote {
 
 .header-subtitle.m {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -11927,7 +11927,7 @@ blockquote {
 
 .header-subtitle-copy.m {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -16028,7 +16028,7 @@ blockquote {
 
 .header-subtitle-2.m {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -17595,7 +17595,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -17768,7 +17768,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -24894,7 +24894,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -25267,7 +25267,7 @@ blockquote {
 
 .header-subtitle-2-copy.m {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -27914,8 +27914,8 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .bento-h03-bg-wrap {
@@ -27942,8 +27942,8 @@ blockquote {
 }
 
 .bento-bg-content-2.h03 {
-  grid-column-gap: 11px;
-  grid-row-gap: 11px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
   flex-flow: row;
 }
 
@@ -35777,7 +35777,7 @@ blockquote {
   text-align: center;
   letter-spacing: 0;
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -37811,7 +37811,7 @@ blockquote {
 
 .about-wing-subheader.m {
   --_textstyle---font-family: var(--fonts--primaryfont);
-  --_textstyle---fontsize: var(--_size---fonts--m);
+  --_textstyle---fontsize: var(--radius--m);
   --_textstyle---lineheight: 1.15;
   --_textstyle---fontweight: var(--fontweight--normal);
   --_textstyle---letterspacing: -.03em;
@@ -39923,8 +39923,9 @@ blockquote {
   grid-row-gap: 0px;
   flex-flow: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 220px;
+  margin-left: -50px;
   padding-top: 157px;
   display: flex;
   position: relative;
@@ -41063,6 +41064,10 @@ blockquote {
 
   .home2_hero_image-2 {
     margin-top: 0;
+  }
+
+  .sliderinblack {
+    margin-top: -39px;
   }
 
   .highlight_marquee-2 {
@@ -44239,6 +44244,10 @@ blockquote {
   .glass {
     background-color: #0000;
     padding: 0 0 .2em 2em;
+  }
+
+  .sliderinblack-6-copy {
+    margin-top: -30px;
   }
 
   .section-200.home1-sticky {
@@ -49753,6 +49762,7 @@ blockquote {
     width: 100.001%;
     max-width: 100.001%;
     box-shadow: none;
+    mix-blend-mode: normal;
   }
 
   .about-01-second-number-card {
@@ -51121,8 +51131,9 @@ blockquote {
   }
 
   .about-half-wrapper-6 {
+    mix-blend-mode: normal;
     background-size: cover;
-    margin-bottom: -71px;
+    margin-bottom: 0;
   }
 
   .erase {
@@ -57554,6 +57565,8 @@ blockquote {
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     width: 99%;
+    margin-left: 5px;
+    padding-right: 5px;
     display: block;
   }
 
@@ -57861,7 +57874,8 @@ blockquote {
 
   .image-219 {
     width: 100%;
-    max-width: 100%;
+    max-width: none;
+    height: 600px;
   }
 
   .iphones {
@@ -58198,7 +58212,7 @@ blockquote {
     border-radius: 1.6rem;
     width: 700px;
     height: auto;
-    margin-left: 60px;
+    margin-left: 10px;
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -58612,7 +58626,7 @@ blockquote {
   }
 
   .heading-195 {
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 
   .about-01-first-number-card-2 {
@@ -59016,6 +59030,8 @@ blockquote {
 
   .testimonial-card-bg-img-2.dark {
     margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .container-116 {
@@ -66047,9 +66063,9 @@ blockquote {
   .footer-content-wrapper-2 {
     justify-content: center;
     align-items: center;
-    width: 110%;
+    width: 100%;
     margin-bottom: 40px;
-    margin-left: -134px;
+    margin-left: 0;
   }
 
   .footer-links-wrapper {
@@ -66076,7 +66092,8 @@ blockquote {
   }
 
   .logo-footer-wrapper {
-    margin-left: 119px;
+    margin-left: 0;
+    transform: scale(.9);
   }
 
   .footer-link {
@@ -69693,7 +69710,8 @@ blockquote {
     text-align: center;
     width: 100%;
     max-width: 90%;
-    margin-left: 137px;
+    margin-left: 0;
+    padding-bottom: 0;
   }
 
   .footer-links-title-2 {
@@ -69724,7 +69742,14 @@ blockquote {
     display: flex;
   }
 
-  .text-size-tiny-2, .text-size-tiny-2.text-style-muted60 {
+  .text-size-tiny-2 {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .text-size-tiny-2.text-style-muted60 {
     width: 100%;
     margin-left: 0;
   }
@@ -70013,6 +70038,9 @@ blockquote {
   .style-text-wrapper {
     text-align: center;
     width: 100%;
+    margin-left: 2px;
+    margin-right: 5px;
+    padding-right: 0;
   }
 
   .buttons-display-grid {
@@ -70036,8 +70064,8 @@ blockquote {
     grid-auto-columns: 1fr;
     width: 100%;
     padding-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
     display: flex;
   }
 
@@ -70476,15 +70504,16 @@ blockquote {
     background-color: #111;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 110%;
     margin-left: 0;
     padding-top: 10px;
-    padding-bottom: 108px;
+    padding-bottom: 10px;
     display: flex;
   }
 
   .image-219 {
-    width: 100%;
+    width: 450px;
+    height: 300px;
     position: static;
   }
 
@@ -70616,7 +70645,7 @@ blockquote {
 
   .the-future-is-pcsu-ad {
     background-color: #111;
-    width: 470px;
+    width: 100%;
     height: 550px;
     margin-left: 5px;
     padding-bottom: 20px;
@@ -71849,7 +71878,6 @@ blockquote {
 
   .sliderinblack-4 {
     width: 100%;
-    margin-top: -75px;
     margin-left: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -73175,7 +73203,7 @@ blockquote {
     max-height: none;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0 5px 5px;
+    padding: 0 5px 10px;
   }
 
   .image-container {
@@ -73581,7 +73609,7 @@ blockquote {
     margin-bottom: 0;
     margin-left: 0;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0;
     padding-left: 0;
     font-size: 2.4rem;
   }
@@ -74156,10 +74184,11 @@ blockquote {
   .hero-01-animated-card-4 {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     margin-top: 0;
     margin-left: 0;
+    padding-top: 100px;
     display: flex;
   }
 
@@ -74267,6 +74296,7 @@ blockquote {
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
+    padding-bottom: 20px;
   }
 
   .hero-01-holder-8 {

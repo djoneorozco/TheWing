@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Oct 13 2026 04:09:38 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Oct 13 2026 05:41:07 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a6ff0545aa01c93602db70c" data-wf-site="6a6ff0545aa01c93602db711" lang="en">
 <head>
   <meta charset="utf-8">
@@ -3006,7 +3006,7 @@ window.dispatchEvent(
                           </div>
                         </div>
                       </div>
-                      <div class="opacity-80-9">Explore Air Force bases using our interactive base map. Get insight into your next duty station.<br>‍<br></div>
+                      <div class="opacity-80-9">Explore Air Force bases using our interactive base map. Get insight into your next duty station.<br></div>
                     </div>
                   </div>
                   <div data-w-id="ce45d433-182d-148b-e7fe-def77891458f" class="primary-glow-wrapper-29 blog-grid-child">
@@ -3623,694 +3623,1105 @@ window.dispatchEvent(
       </div>
       <div class="section-wrapper">
         <div class="about-half-wrapper-6">
-          <div class="code-embed-84 w-embed w-script"><!--  ============================================================
-  THEWING • AURORA INTELLIGENCE HUD
-  TRUE TRANSPARENT GLASS PLATFORM BRIEF
-  Full Webflow Embed
-  Version 2.2.0
-  UPDATES
-  - Refined messaging for TheWing master brand
-  - Uses "Military Decision Intelligence"
-  - Clarifies Wing Intelligence and Amy relationship
-  - Changes status to "Intelligence Online"
-  - Expands capability labels beyond PCS and housing
-  - Preserves true transparent glass appearance
-  - Automatically appears 3 seconds after full page load
-  - No click, hover, scroll, or user trigger
-===============================================================  -->
-            <div id="thewing-aurora-intelligence-hud" aria-hidden="true" style="
-    all:initial;
-    display:none;
-    opacity:0;
-    visibility:hidden;
-    transform:translate3d(0,24px,0) scale(.97);
-  ">
-              <link rel="preconnect" href="https://fonts.googleapis.com">
-              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-              <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+          <div class="code-embed-84 w-embed w-script"><!-- 
+THEWING • AURORA PLANNING HUD • V3.2
+Desktop: five goal cards.
+Phone: compact goal dropdown and expandable checklist.
+Includes Webflow width, section-height, and overlap fixes.
+Replace the entire previous Aurora embed.
+Keep your existing background and Ask Amy V4 widget.
+Use once per page.
+ -->
+            <div id="thewing-aurora-intelligence-hud">
               <style>
-    #thewing-aurora-intelligence-hud,
-    #thewing-aurora-intelligence-hud *{
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
-    }
-    #thewing-aurora-intelligence-hud{
-      --tw-ink:#eef3ff;
-      --tw-muted:#d4daea;
-      --tw-line:rgba(255,255,255,.18);
-      --tw-teal:#39f3df;
-      --tw-sapphire:#69a7ff;
-      --tw-warm:#f2aa6b;
-      position:relative;
-      z-index:20;
-      width:min(790px, calc(100% - 48px));
-      margin:22px auto 0;
-      color:var(--tw-ink);
-      font-family:
-        Inter,
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        sans-serif;
-      pointer-events:none;
-      filter:blur(10px);
-      transition:
-        opacity .95s cubic-bezier(.22,1,.36,1),
-        transform .95s cubic-bezier(.22,1,.36,1),
-        filter .8s ease;
-    }
-    #thewing-aurora-intelligence-hud.tw-aurora-visible{
-      opacity:1 !important;
-      visibility:visible !important;
-      transform:
-        translate3d(0,0,0)
-        scale(1) !important;
-      filter:blur(0);
-      pointer-events:auto;
-    }
-    /* ============================================================
-       TRUE TRANSPARENT GLASS PANEL
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-panel{
-      position:relative;
-      isolation:isolate;
-      overflow:hidden;
-      width:100%;
-      padding:24px 28px 22px;
-      border:1px solid var(--tw-line);
-      border-radius:28px;
-      background:
-        linear-gradient(
-          180deg,
-          rgba(255,255,255,.022),
-          rgba(255,255,255,.008)
-        ),
-        rgba(8,12,24,.045);
-      box-shadow:
-        0 24px 60px rgba(0,0,0,.20),
-        0 8px 22px rgba(0,0,0,.10),
-        inset 0 1px 0 rgba(255,255,255,.15),
-        inset 0 -1px 0 rgba(255,255,255,.025);
-      backdrop-filter:
-        blur(7px)
-        saturate(125%)
-        brightness(1.04);
-      -webkit-backdrop-filter:
-        blur(7px)
-        saturate(125%)
-        brightness(1.04);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-panel::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      z-index:0;
-      pointer-events:none;
-      background:
-        radial-gradient(
-          360px 150px at 0% 0%,
-          rgba(57,243,223,.050),
-          transparent 72%
-        ),
-        radial-gradient(
-          340px 150px at 100% 0%,
-          rgba(105,167,255,.040),
-          transparent 74%
-        ),
-        radial-gradient(
-          280px 130px at 84% 100%,
-          rgba(242,170,107,.022),
-          transparent 76%
-        );
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-panel::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      z-index:0;
-      border-radius:inherit;
-      pointer-events:none;
-      background:
-        linear-gradient(
-          135deg,
-          rgba(255,255,255,.065),
-          transparent 22%,
-          transparent 78%,
-          rgba(105,167,255,.016)
-        );
-      opacity:.52;
-    }
-    /* ============================================================
-       SUBTLE AMBIENT AURORA
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-glow{
-      position:absolute;
-      inset:-30%;
-      z-index:0;
-      pointer-events:none;
-      background:
-        radial-gradient(
-          22% 18% at 18% 28%,
-          rgba(57,243,223,.070),
-          transparent 74%
-        ),
-        radial-gradient(
-          20% 18% at 78% 26%,
-          rgba(105,167,255,.055),
-          transparent 74%
-        ),
-        radial-gradient(
-          18% 15% at 76% 76%,
-          rgba(242,170,107,.030),
-          transparent 76%
-        );
-      filter:blur(24px);
-      opacity:.30;
-      animation:
-        twAuroraDrift 12s ease-in-out infinite alternate;
-    }
-    /* ============================================================
-       LIGHT SWEEP
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-sweep{
-      position:absolute;
-      top:-45%;
-      bottom:-45%;
-      left:-42%;
-      z-index:1;
-      width:20%;
-      pointer-events:none;
-      opacity:0;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          rgba(255,255,255,.13),
-          rgba(105,167,255,.045),
-          transparent
-        );
-      filter:blur(9px);
-      transform:skewX(-17deg);
-    }
-    #thewing-aurora-intelligence-hud.tw-aurora-visible
-    .tw-aurora-sweep{
-      animation:
-        twAuroraSweep 1.8s .22s ease-out 1;
-    }
-    /* ============================================================
-       MINIMAL GLASS GRAIN
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-grain{
-      position:absolute;
-      inset:0;
-      z-index:1;
-      pointer-events:none;
-      opacity:.022;
-      background-image:
-        radial-gradient(
-          rgba(255,255,255,.18) .45px,
-          transparent .7px
-        );
-      background-size:11px 11px;
-      mix-blend-mode:soft-light;
-    }
-    /* ============================================================
-       CONTENT
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-content{
-      position:relative;
-      z-index:3;
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-topline{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      margin-bottom:16px;
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-kicker{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      min-width:0;
-      color:#e4e9f6;
-      font-size:10px;
-      line-height:1;
-      font-weight:800;
-      letter-spacing:.16em;
-      text-transform:uppercase;
-      text-shadow:
-        0 2px 10px rgba(0,0,0,.45);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-orb{
-      position:relative;
-      flex:0 0 auto;
-      width:10px;
-      height:10px;
-      border-radius:50%;
-      background:
-        linear-gradient(
-          135deg,
-          var(--tw-teal),
-          var(--tw-sapphire)
-        );
-      box-shadow:
-        0 0 0 5px rgba(57,243,223,.08),
-        0 0 18px rgba(57,243,223,.48);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-orb::after{
-      content:"";
-      position:absolute;
-      inset:-6px;
-      border:1px solid rgba(57,243,223,.28);
-      border-radius:50%;
-      animation:
-        twAuroraPulse 2.7s ease-out infinite;
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-status{
-      display:flex;
-      align-items:center;
-      gap:7px;
-      flex:0 0 auto;
-      color:#dbe5ff;
-      font-size:9px;
-      line-height:1;
-      font-weight:700;
-      letter-spacing:.13em;
-      text-transform:uppercase;
-      text-shadow:
-        0 2px 10px rgba(0,0,0,.45);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-status::before{
-      content:"";
-      width:5px;
-      height:5px;
-      border-radius:50%;
-      background:var(--tw-teal);
-      box-shadow:
-        0 0 9px rgba(57,243,223,.65);
-    }
-    /* ============================================================
-       DIVIDER
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-divider{
-      position:relative;
-      width:100%;
-      height:1px;
-      margin-bottom:18px;
-      overflow:hidden;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          rgba(255,255,255,.16) 18%,
-          rgba(255,255,255,.16) 82%,
-          transparent
-        );
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-divider::after{
-      content:"";
-      position:absolute;
-      top:0;
-      left:-25%;
-      width:22%;
-      height:100%;
-      background:
-        linear-gradient(
-          90deg,
-          transparent,
-          var(--tw-teal),
-          var(--tw-sapphire),
-          transparent
-        );
-      filter:blur(.4px);
-      animation:
-        twDividerFlow 5.5s ease-in-out infinite;
-    }
-    /* ============================================================
-       TEXT
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-copy{
-      max-width:700px;
-      margin:0 auto;
-      text-align:center;
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-title{
-      color:#ffffff;
-      font-size:clamp(17px, 1.6vw, 21px);
-      line-height:1.42;
-      font-weight:700;
-      letter-spacing:-.025em;
-      text-shadow:
-        0 2px 6px rgba(0,0,0,.75),
-        0 3px 18px rgba(0,0,0,.38);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-description{
-      max-width:650px;
-      margin:9px auto 0;
-      color:#e3e8f4;
-      font-size:clamp(12px, 1.05vw, 14px);
-      line-height:1.62;
-      font-weight:400;
-      text-shadow:
-        0 2px 6px rgba(0,0,0,.75),
-        0 2px 12px rgba(0,0,0,.32);
-    }
-    /* ============================================================
-       TRANSPARENT CAPABILITY CHIPS
-    ============================================================ */
-    #thewing-aurora-intelligence-hud .tw-aurora-chips{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:18px;
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-chip{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-height:31px;
-      padding:0 13px;
-      border:1px solid rgba(255,255,255,.15);
-      border-radius:999px;
-      background:
-        rgba(255,255,255,.025);
-      color:#f0f4ff;
-      font-size:10px;
-      line-height:1;
-      font-weight:700;
-      letter-spacing:.02em;
-      box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.07),
-        0 5px 14px rgba(0,0,0,.08);
-      backdrop-filter:
-        blur(4px)
-        saturate(115%);
-      -webkit-backdrop-filter:
-        blur(4px)
-        saturate(115%);
-      text-shadow:
-        0 1px 5px rgba(0,0,0,.55);
-    }
-    #thewing-aurora-intelligence-hud .tw-aurora-chip::before{
-      content:"";
-      width:5px;
-      height:5px;
-      margin-right:7px;
-      border-radius:50%;
-      background:
-        linear-gradient(
-          135deg,
-          var(--tw-teal),
-          var(--tw-sapphire)
-        );
-      box-shadow:
-        0 0 8px rgba(57,243,223,.42);
-    }
-    #thewing-aurora-intelligence-hud
-    .tw-aurora-chip:nth-child(2)::before,
-    #thewing-aurora-intelligence-hud
-    .tw-aurora-chip:nth-child(5)::before{
-      background:
-        linear-gradient(
-          135deg,
-          var(--tw-sapphire),
-          #a689ff
-        );
-      box-shadow:
-        0 0 8px rgba(105,167,255,.45);
-    }
-    #thewing-aurora-intelligence-hud
-    .tw-aurora-chip:nth-child(3)::before{
-      background:
-        linear-gradient(
-          135deg,
-          var(--tw-warm),
-          #ffd09a
-        );
-      box-shadow:
-        0 0 8px rgba(242,170,107,.44);
-    }
-    /* ============================================================
-       ANIMATIONS
-    ============================================================ */
-    @keyframes twAuroraDrift{
-      0%{
-        transform:
-          scale(1.02)
-          translate3d(-10px,0,0);
-      }
-      100%{
-        transform:
-          scale(1.08)
-          translate3d(16px,-10px,0);
-      }
-    }
-    @keyframes twAuroraSweep{
-      0%{
-        left:-42%;
-        opacity:0;
-      }
-      20%{
-        opacity:.62;
-      }
-      72%{
-        opacity:.30;
-      }
-      100%{
-        left:120%;
-        opacity:0;
-      }
-    }
-    @keyframes twAuroraPulse{
-      0%{
-        opacity:.62;
-        transform:scale(.68);
-      }
-      72%,
-      100%{
-        opacity:0;
-        transform:scale(1.45);
-      }
-    }
-    @keyframes twDividerFlow{
-      0%{
-        left:-25%;
-        opacity:0;
-      }
-      20%{
-        opacity:.72;
-      }
-      75%{
-        opacity:.46;
-      }
-      100%{
-        left:105%;
-        opacity:0;
-      }
-    }
-    /* ============================================================
-       TABLET
-    ============================================================ */
-    @media (max-width:767px){
-      #thewing-aurora-intelligence-hud{
-        width:min(680px, calc(100% - 28px));
-        margin-top:18px;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-panel{
-        padding:21px 20px 19px;
-        border-radius:23px;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-kicker{
-        font-size:9px;
-        letter-spacing:.13em;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-status{
-        font-size:8px;
-        letter-spacing:.10em;
-      }
-    }
-    /* ============================================================
-       MOBILE
-    ============================================================ */
-    @media (max-width:480px){
-      #thewing-aurora-intelligence-hud{
-        width:calc(100% - 20px);
-        margin-top:14px;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-panel{
-        padding:19px 17px 17px;
-        border-radius:20px;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-topline{
-        align-items:flex-start;
-        flex-direction:column;
-        gap:10px;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-copy{
-        text-align:left;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-description{
-        margin-left:0;
-        margin-right:0;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-chips{
-        justify-content:flex-start;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-chip{
-        min-height:30px;
-        padding:0 11px;
-        font-size:9px;
-      }
-    }
-    /* ============================================================
-       REDUCED MOTION
-    ============================================================ */
-    @media (prefers-reduced-motion:reduce){
-      #thewing-aurora-intelligence-hud{
-        transform:none !important;
-        filter:none !important;
-        transition:
-          opacity .3s ease;
-      }
-      #thewing-aurora-intelligence-hud .tw-aurora-glow,
-      #thewing-aurora-intelligence-hud .tw-aurora-sweep,
-      #thewing-aurora-intelligence-hud .tw-aurora-orb::after,
-      #thewing-aurora-intelligence-hud .tw-aurora-divider::after{
-        animation:none !important;
-      }
-    }
-  </style>
-              <section class="tw-aurora-panel" aria-label="TheWing Military Decision Intelligence overview">
-                <span class="tw-aurora-glow" aria-hidden="true"></span>
-                <span class="tw-aurora-sweep" aria-hidden="true"></span>
-                <span class="tw-aurora-grain" aria-hidden="true"></span>
-                <div class="tw-aurora-content">
-                  <div class="tw-aurora-topline">
-                    <div class="tw-aurora-kicker">
-                      <span class="tw-aurora-orb" aria-hidden="true"></span>
-                      <span>
-                        Military Decision Intelligence
-                      </span>
-                    </div>
-                    <div class="tw-aurora-status">
-                      Public Tools • No Account Required
+/* WEBFLOW SECTION FIXES */
+.section-wrapper:has(#thewing-aurora-intelligence-hud){
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+}
+.about-half-wrapper-6:has(#thewing-aurora-intelligence-hud){
+  flex:0 0 auto!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  margin-bottom:0!important;
+  padding:28px 0!important;
+}
+.w-embed:has(> #thewing-aurora-intelligence-hud){
+  display:block!important;
+  width:100%!important;
+  min-width:0!important;
+  max-width:none!important;
+  height:auto!important;
+  flex:1 1 100%!important;
+  margin:0!important;
+}
+/* DEFAULTS */
+#thewing-aurora-intelligence-hud{
+  --ag-ink:#f4f7fc;
+  --ag-muted:#b9c9dc;
+  --ag-copper:#efb477;
+  --ag-teal:#65def0;
+  --ag-line:rgba(178,211,233,.28);
+  display:block;
+  position:relative;
+  isolation:isolate;
+  width:calc(100% - 32px);
+  max-width:1170px;
+  margin:24px auto;
+  color:var(--ag-ink);
+  font:16px/1.55 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  text-align:left;
+  -webkit-font-smoothing:antialiased;
+  container:aurora-goals / inline-size;
+}
+#thewing-aurora-intelligence-hud *,
+#thewing-aurora-intelligence-hud *::before,
+#thewing-aurora-intelligence-hud *::after{
+  box-sizing:border-box;
+}
+#thewing-aurora-intelligence-hud h2,
+#thewing-aurora-intelligence-hud h3,
+#thewing-aurora-intelligence-hud p{
+  margin:0;
+  font-family:inherit;
+  color:inherit;
+}
+#thewing-aurora-intelligence-hud button,
+#thewing-aurora-intelligence-hud a{
+  font:inherit;
+  -webkit-tap-highlight-color:transparent;
+}
+#thewing-aurora-intelligence-hud a{color:inherit}
+#thewing-aurora-intelligence-hud button{cursor:pointer}
+#thewing-aurora-intelligence-hud [hidden]{display:none!important}
+#thewing-aurora-intelligence-hud :is(button,a):focus-visible{
+  outline:3px solid var(--ag-teal);
+  outline-offset:5px;
+}
+/* GLASS SHELL */
+#thewing-aurora-intelligence-hud .ag-shell{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  overflow:clip;
+  padding:32px 34px 24px;
+  border:1px solid rgba(199,222,237,.52);
+  border-radius:28px;
+  background:linear-gradient(
+    135deg,
+    rgba(31,55,67,.62),
+    rgba(10,23,35,.72)
+  );
+  box-shadow:
+    0 24px 65px rgba(0,0,0,.3),
+    inset 0 1px 0 rgba(255,255,255,.14);
+  backdrop-filter:blur(10px) saturate(125%);
+  -webkit-backdrop-filter:blur(10px) saturate(125%);
+}
+#thewing-aurora-intelligence-hud .ag-glow{
+  position:absolute;
+  inset:-25%;
+  z-index:0;
+  pointer-events:none;
+  background:
+    radial-gradient(
+      ellipse at 16% 22%,
+      rgba(57,243,223,.11),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 82% 68%,
+      rgba(105,167,255,.09),
+      transparent 40%
+    );
+  filter:blur(24px);
+  animation:agAuroraDrift 12s ease-in-out infinite alternate;
+}
+#thewing-aurora-intelligence-hud .ag-sweep{
+  position:absolute;
+  top:-35%;
+  bottom:-35%;
+  left:-40%;
+  width:22%;
+  z-index:1;
+  pointer-events:none;
+  opacity:0;
+  transform:skewX(-17deg);
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.12),
+    transparent
+  );
+  filter:blur(9px);
+}
+#thewing-aurora-intelligence-hud.ag-enter .ag-sweep{
+  animation:agAuroraSweep 1.8s .15s ease-out both;
+}
+#thewing-aurora-intelligence-hud .ag-content{
+  position:relative;
+  z-index:2;
+}
+/* HEADER */
+#thewing-aurora-intelligence-hud .ag-topline{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+#thewing-aurora-intelligence-hud .ag-kicker{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  font-size:12px;
+  letter-spacing:.18em;
+  font-weight:700;
+}
+#thewing-aurora-intelligence-hud .ag-status{
+  font-size:11px;
+  letter-spacing:.12em;
+  text-align:right;
+  color:#d6e4f4;
+}
+#thewing-aurora-intelligence-hud .ag-orb{
+  position:relative;
+  display:inline-block;
+  flex:none;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:var(--ag-teal);
+  box-shadow:
+    0 0 0 7px rgba(101,222,240,.08),
+    0 0 22px rgba(101,222,240,.5);
+}
+#thewing-aurora-intelligence-hud .ag-orb::after{
+  content:"";
+  position:absolute;
+  inset:-7px;
+  border:1px solid rgba(101,222,240,.35);
+  border-radius:50%;
+  animation:agAuroraPulse 2.7s ease-out infinite;
+}
+#thewing-aurora-intelligence-hud .ag-divider{
+  position:relative;
+  height:1px;
+  overflow:hidden;
+  margin:23px 0;
+  background:linear-gradient(
+    90deg,
+    rgba(101,222,240,.15),
+    var(--ag-line),
+    rgba(101,222,240,.45)
+  );
+}
+#thewing-aurora-intelligence-hud .ag-divider::after{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 -25%;
+  width:24%;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    var(--ag-teal),
+    #8bafff,
+    transparent
+  );
+  animation:agDividerFlow 5.5s ease-in-out infinite;
+}
+#thewing-aurora-intelligence-hud .ag-title{
+  font-size:clamp(30px,4.1cqw,49px);
+  font-weight:750;
+  letter-spacing:-.04em;
+  line-height:1.12;
+}
+#thewing-aurora-intelligence-hud .ag-intro{
+  margin-top:10px;
+  color:var(--ag-muted);
+  font-size:clamp(17px,2.1cqw,23px);
+  line-height:1.45;
+}
+/* DESKTOP GOAL CARDS */
+#thewing-aurora-intelligence-hud .ag-tabs{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:12px;
+  margin-top:25px;
+}
+#thewing-aurora-intelligence-hud .ag-tab{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  min-width:0;
+  min-height:144px;
+  padding:20px 12px 16px;
+  border:1px solid var(--ag-line);
+  border-radius:16px;
+  background:rgba(10,28,41,.28);
+  color:#e7f0fa;
+  font-size:17px;
+  line-height:1.3;
+  text-align:center;
+  transition:
+    background .2s,
+    border-color .2s,
+    transform .2s,
+    box-shadow .2s;
+}
+#thewing-aurora-intelligence-hud .ag-tab:hover{
+  background:rgba(101,222,240,.07);
+  border-color:rgba(180,217,240,.6);
+  transform:translateY(-2px);
+}
+#thewing-aurora-intelligence-hud .ag-tab[aria-selected="true"]{
+  color:var(--ag-copper);
+  border-color:var(--ag-copper);
+  background:linear-gradient(
+    135deg,
+    rgba(239,180,119,.13),
+    rgba(239,180,119,.035)
+  );
+  box-shadow:
+    inset 0 0 0 1px rgba(239,180,119,.18),
+    0 0 18px rgba(239,180,119,.07);
+}
+#thewing-aurora-intelligence-hud .ag-tab[aria-selected="true"]::after{
+  content:"✓";
+  position:absolute;
+  right:10px;
+  top:10px;
+  display:grid;
+  place-items:center;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:var(--ag-copper);
+  color:#18202a;
+  font-size:13px;
+  font-weight:800;
+}
+#thewing-aurora-intelligence-hud .ag-icon{
+  display:block;
+  width:45px;
+  height:45px;
+  flex:none;
+  color:#aac3da;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+#thewing-aurora-intelligence-hud .ag-tab[aria-selected="true"] .ag-icon{
+  color:var(--ag-copper);
+}
+/* DETAIL PANEL */
+#thewing-aurora-intelligence-hud .ag-panel{
+  display:grid;
+  grid-template-columns:minmax(0,2.15fr) minmax(240px,1fr);
+  gap:30px;
+  margin-top:20px;
+  padding:27px 30px;
+  border:1px solid var(--ag-line);
+  border-radius:18px;
+  background:rgba(7,22,34,.3);
+}
+#thewing-aurora-intelligence-hud .ag-panel.ag-change{
+  animation:agContentIn .28s ease both;
+}
+#thewing-aurora-intelligence-hud .ag-eyebrow{
+  color:var(--ag-copper);
+  font-size:12px;
+  letter-spacing:.16em;
+  font-weight:650;
+  margin-bottom:10px;
+}
+#thewing-aurora-intelligence-hud .ag-panel h3{
+  font-size:clamp(25px,3.1cqw,37px);
+  line-height:1.17;
+  letter-spacing:-.025em;
+  font-weight:700;
+  text-wrap:balance;
+}
+#thewing-aurora-intelligence-hud .ag-copy{
+  margin-top:14px;
+  color:var(--ag-muted);
+  font-size:18px;
+  line-height:1.55;
+}
+#thewing-aurora-intelligence-hud .ag-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:24px;
+}
+#thewing-aurora-intelligence-hud .ag-primary,
+#thewing-aurora-intelligence-hud .ag-ask{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  min-height:54px;
+  padding:12px 22px;
+  border-radius:12px;
+  font-size:17px;
+  font-weight:600;
+  line-height:1.3;
+  text-align:center;
+  text-decoration:none;
+  transition:filter .2s,background .2s,transform .2s;
+}
+#thewing-aurora-intelligence-hud .ag-primary{
+  background:linear-gradient(135deg,#f1bf87,#d89b5c);
+  border:1px solid #f3c996;
+  color:#111c27;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.25);
+}
+#thewing-aurora-intelligence-hud .ag-ask{
+  flex:1;
+  min-width:150px;
+  background:rgba(10,24,38,.25);
+  border:1px solid #a7c3dc;
+  color:#dbe9f8;
+}
+#thewing-aurora-intelligence-hud .ag-ask svg{
+  width:24px;
+  height:24px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.6;
+}
+#thewing-aurora-intelligence-hud .ag-primary:hover{
+  filter:brightness(1.08);
+  transform:translateY(-1px);
+}
+#thewing-aurora-intelligence-hud .ag-ask:hover{
+  background:rgba(101,222,240,.1);
+}
+#thewing-aurora-intelligence-hud .ag-extra{
+  display:inline-block;
+  margin-top:16px;
+  color:var(--ag-muted);
+  font-size:15px;
+  text-underline-offset:4px;
+}
+/* CHECKLIST */
+#thewing-aurora-intelligence-hud .ag-ready{
+  border-left:1px solid var(--ag-line);
+  padding-left:28px;
+}
+#thewing-aurora-intelligence-hud .ag-ready-title{
+  font-size:20px;
+  font-weight:650;
+  list-style:none;
+}
+#thewing-aurora-intelligence-hud .ag-ready-title::-webkit-details-marker{
+  display:none;
+}
+#thewing-aurora-intelligence-hud .ag-list{
+  list-style:none;
+  padding:0;
+  margin:16px 0 0;
+  display:grid;
+  gap:13px;
+}
+#thewing-aurora-intelligence-hud .ag-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  color:var(--ag-muted);
+  font-size:16px;
+  line-height:1.5;
+}
+#thewing-aurora-intelligence-hud .ag-list li::before{
+  content:"✓";
+  display:grid;
+  place-items:center;
+  flex:none;
+  width:21px;
+  height:21px;
+  margin-top:2px;
+  border:1.5px solid var(--ag-teal);
+  border-radius:50%;
+  color:var(--ag-teal);
+  font-size:13px;
+  box-shadow:0 0 12px rgba(101,222,240,.14);
+}
+#thewing-aurora-intelligence-hud .ag-note{
+  margin-top:23px;
+  padding-top:16px;
+  border-top:1px solid var(--ag-line);
+  color:var(--ag-muted);
+  font-size:14px;
+  line-height:1.65;
+}
+#thewing-aurora-intelligence-hud .ag-feedback{
+  margin-top:12px;
+  color:var(--ag-copper);
+  font-size:15px;
+}
+#thewing-aurora-intelligence-hud .ag-feedback:empty{
+  display:none;
+}
+/* FOOTER */
+#thewing-aurora-intelligence-hud .ag-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  margin-top:20px;
+  padding-top:20px;
+  border-top:1px solid var(--ag-line);
+}
+#thewing-aurora-intelligence-hud .ag-signature{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  font-size:17px;
+}
+#thewing-aurora-intelligence-hud .ag-footer a{
+  font-size:15px;
+  text-underline-offset:5px;
+}
+/* MOBILE DROPDOWN */
+#thewing-aurora-intelligence-hud .ag-mobile-picker{
+  display:none;
+}
+#thewing-aurora-intelligence-hud .ag-picker-label{
+  display:block;
+  font-size:13px;
+  color:var(--ag-muted);
+  margin-bottom:7px;
+}
+#thewing-aurora-intelligence-hud .ag-select-wrap{
+  position:relative;
+}
+#thewing-aurora-intelligence-hud .ag-select-wrap::after{
+  content:"⌄";
+  position:absolute;
+  right:16px;
+  top:10px;
+  color:var(--ag-copper);
+  pointer-events:none;
+  font-size:23px;
+}
+#thewing-aurora-intelligence-hud .ag-select{
+  appearance:none;
+  -webkit-appearance:none;
+  display:block;
+  width:100%;
+  min-height:50px;
+  padding:12px 44px 12px 14px;
+  border:1px solid var(--ag-copper);
+  border-radius:11px;
+  background:#112432;
+  color:#f4f7fc;
+  font:600 16px/1.4 Inter,system-ui,sans-serif;
+}
+#thewing-aurora-intelligence-hud .ag-select option{
+  background:#112432;
+  color:#f4f7fc;
+}
+#thewing-aurora-intelligence-hud :is(select,summary):focus-visible{
+  outline:3px solid var(--ag-teal);
+  outline-offset:4px;
+}
+/* COMPACT PHONE LAYOUT */
+#thewing-aurora-intelligence-hud.ag-compact{
+  width:calc(100% - 20px);
+  margin:12px auto;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-shell{
+  padding:20px 18px 16px;
+  border-radius:20px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-topline{
+  gap:10px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-kicker{
+  font-size:10px;
+  letter-spacing:.15em;
+  gap:12px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-status{
+  display:none;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-divider{
+  margin:15px 0;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-title{
+  font-size:28px;
+  line-height:1.15;
+  letter-spacing:-.035em;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-intro{
+  font-size:15px;
+  line-height:1.45;
+  margin-top:7px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-tabs{
+  display:none;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-mobile-picker{
+  display:block;
+  margin-top:17px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-panel{
+  display:block;
+  margin-top:16px;
+  padding:17px 15px;
+  border-radius:14px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-eyebrow{
+  display:none;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-panel h3{
+  font-size:22px;
+  line-height:1.22;
+  letter-spacing:-.025em;
+  text-wrap:initial;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-copy{
+  font-size:15px;
+  line-height:1.5;
+  margin-top:9px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-actions{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:9px;
+  margin-top:16px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-primary,
+#thewing-aurora-intelligence-hud.ag-compact .ag-ask{
+  width:100%;
+  min-width:0;
+  min-height:48px;
+  padding:11px 12px;
+  font-size:16px;
+  border-radius:10px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-extra{
+  font-size:14px;
+  margin-top:12px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-ready{
+  border-left:0;
+  border-top:1px solid var(--ag-line);
+  padding:0;
+  margin-top:17px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-ready-title{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  min-height:48px;
+  padding:10px 0 0;
+  font-size:15px;
+  cursor:pointer;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-ready-title::after{
+  content:"+";
+  color:var(--ag-copper);
+  font-size:23px;
+  font-weight:400;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-ready[open] .ag-ready-title::after{
+  content:"−";
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-list{
+  grid-template-columns:1fr;
+  gap:10px;
+  margin-top:14px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-list li{
+  font-size:15px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-note{
+  font-size:13px;
+  margin-top:15px;
+  padding-top:12px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-footer{
+  align-items:flex-start;
+  flex-direction:column;
+  gap:10px;
+  margin-top:15px;
+  padding-top:14px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-signature{
+  font-size:13px;
+  gap:11px;
+}
+#thewing-aurora-intelligence-hud.ag-compact .ag-footer a{
+  display:inline-flex;
+  align-items:center;
+  min-height:32px;
+  font-size:14px;
+}
+@media(max-width:767px){
+  .about-half-wrapper-6:has(#thewing-aurora-intelligence-hud){
+    padding:12px 0!important;
+  }
+}
+/* ANIMATIONS */
+@keyframes agAuroraDrift{
+  from{transform:translate3d(-10px,0,0) scale(1.02)}
+  to{transform:translate3d(16px,-10px,0) scale(1.08)}
+}
+@keyframes agAuroraSweep{
+  0%{left:-40%;opacity:0}
+  20%{opacity:.6}
+  75%{opacity:.25}
+  100%{left:125%;opacity:0}
+}
+@keyframes agAuroraPulse{
+  0%{opacity:.6;transform:scale(.7)}
+  75%,100%{opacity:0;transform:scale(1.5)}
+}
+@keyframes agDividerFlow{
+  0%{left:-25%;opacity:0}
+  20%{opacity:.75}
+  75%{opacity:.45}
+  100%{left:105%;opacity:0}
+}
+@keyframes agContentIn{
+  from{opacity:.35;transform:translateY(5px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@media(prefers-reduced-motion:reduce){
+  #thewing-aurora-intelligence-hud *,
+  #thewing-aurora-intelligence-hud *::before,
+  #thewing-aurora-intelligence-hud *::after{
+    animation:none!important;
+    transition:none!important;
+  }
+}
+</style>
+              <section class="ag-shell" aria-labelledby="ag-title">
+                <span class="ag-glow" aria-hidden="true"></span>
+                <span class="ag-sweep" aria-hidden="true"></span>
+                <div class="ag-content">
+                  <div class="ag-topline">
+                    <span class="ag-kicker">
+                      <span class="ag-orb" aria-hidden="true"></span>
+                      YOUR NEXT STEP
+                    </span>
+                    <span class="ag-status">
+                      PUBLIC TOOLS • NO ACCOUNT REQUIRED
+                    </span>
+                  </div>
+                  <div class="ag-divider" aria-hidden="true"></div>
+                  <h2 id="ag-title" class="ag-title">
+                    What are you planning?
+                  </h2>
+                  <p class="ag-intro">
+                    Choose a goal. See what you need and where to start.
+                  </p>
+                  <!--  DESKTOP GOAL CARDS  -->
+                  <div class="ag-tabs" role="tablist" aria-label="Planning goals">
+                    <button class="ag-tab" id="ag-tab-pay" type="button" role="tab" aria-selected="false" aria-controls="ag-panel" tabindex="-1" data-goal="pay">
+                      <svg class="ag-icon" viewbox="0 0 48 48" aria-hidden="true">
+                        <rect x="5" y="8" width="38" height="32" rx="2"></rect>
+                        <path d="M11 17h12M11 24h8M11 31h12M33 14v20M38 18c-2-4-10-3-10 2 0 5 10 2 10 7 0 5-8 6-11 2"></path>
+                      </svg>
+                      <span>Understand<br>my pay</span>
+                    </button>
+                    <button class="ag-tab" id="ag-tab-promotion" type="button" role="tab" aria-selected="false" aria-controls="ag-panel" tabindex="-1" data-goal="promotion">
+                      <svg class="ag-icon" viewbox="0 0 48 48" aria-hidden="true">
+                        <path d="M8 20 24 6l16 14M8 29l16-14 16 14M8 38l16-14 16 14M14 42l10-9 10 9"></path>
+                      </svg>
+                      <span>Prepare for<br>promotion</span>
+                    </button>
+                    <button class="ag-tab" id="ag-tab-pcs" type="button" role="tab" aria-selected="false" aria-controls="ag-panel" tabindex="-1" data-goal="pcs">
+                      <svg class="ag-icon" viewbox="0 0 48 48" aria-hidden="true">
+                        <path d="M38 19c0 11-14 23-14 23S10 30 10 19a14 14 0 1 1 28 0Z"></path>
+                        <circle cx="24" cy="19" r="5"></circle>
+                      </svg>
+                      <span>Plan a PCS</span>
+                    </button>
+                    <button class="ag-tab" id="ag-tab-home" type="button" role="tab" aria-selected="true" aria-controls="ag-panel" tabindex="0" data-goal="home">
+                      <svg class="ag-icon" viewbox="0 0 48 48" aria-hidden="true">
+                        <path d="m4 23 20-18 20 18M10 19v23h11V28h8v14h9V19"></path>
+                      </svg>
+                      <span>Explore buying<br>a home</span>
+                    </button>
+                    <button class="ag-tab" id="ag-tab-retirement" type="button" role="tab" aria-selected="false" aria-controls="ag-panel" tabindex="-1" data-goal="retirement">
+                      <svg class="ag-icon" viewbox="0 0 48 48" aria-hidden="true">
+                        <path d="M12 26a12 12 0 1 1 24 0M4 27h40M8 33h32M15 39h18"></path>
+                      </svg>
+                      <span>Plan<br> retirement</span>
+                    </button>
+                  </div>
+                  <!--  PHONE GOAL SELECTOR  -->
+                  <div class="ag-mobile-picker">
+                    <label class="ag-picker-label" for="ag-goal-select">
+                      Choose your goal
+                    </label>
+                    <div class="ag-select-wrap">
+                      <select class="ag-select" id="ag-goal-select" aria-controls="ag-panel">
+                        <option value="pay">Understand my pay</option>
+                        <option value="promotion">Prepare for promotion</option>
+                        <option value="pcs">Plan a PCS</option>
+                        <option value="home" selected="">Explore buying a home</option>
+                        <option value="retirement">Plan retirement</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="tw-aurora-divider" aria-hidden="true"></div>
-                  <div class="tw-aurora-copy">
-                    <p class="tw-aurora-title">
+                  <!--  SHARED CONTENT PANEL  -->
+                  <div class="ag-panel" id="ag-panel" role="tabpanel" aria-labelledby="ag-tab-home" tabindex="0">
+                    <div>
+                      <div class="ag-eyebrow" id="ag-eyebrow">
+                        HOME-BUYING PLANNING
+                      </div>
+                      <h3 id="ag-heading">
+                        Understand the monthly cost before you choose a price.
+                      </h3>
+                      <p class="ag-copy" id="ag-copy">
+                        Estimate principal, interest, taxes, insurance, and applicable fees.
+                      </p>
+                      <div class="ag-actions">
+                        <a class="ag-primary" id="ag-primary" href="air-force/mortgage-calculator.html">
+                          Open Mortgage Calculator
+                        </a>
+                        <button class="ag-ask" id="ag-ask" type="button">
+                          <svg viewbox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 11a8 8 0 0 1-11 7.4L4 20l1.6-5A8 8 0 1 1 20 11Z"></path>
+                            <path d="M8 11h8"></path>
+                          </svg>
+                          Ask Amy
+                        </button>
+                      </div>
+                      <a class="ag-extra" id="ag-extra" hidden=""></a>
+                    </div>
+                    <details class="ag-ready" id="ag-ready" open="">
+                      <summary class="ag-ready-title" id="ag-ready-title">
+                        Have ready
+                      </summary>
+                      <ul class="ag-list" id="ag-list">
+                        <li>Home price</li>
+                        <li>Down payment &amp; interest rate</li>
+                        <li>Income &amp; monthly obligations</li>
+                      </ul>
+                      <p class="ag-note" id="ag-note">
+                        Planning estimates. Actual lender terms and property costs can differ.
+                      </p>
+                    </details>
+                  </div>
+                  <p class="ag-feedback" id="ag-feedback" role="status" aria-live="polite"></p>
+                  <noscript>
+                    <p class="ag-note">
+                      Goal selection requires JavaScript. You can still open
+                      the Mortgage Calculator above.
+                    </p>
+                  </noscript>
+                  <div class="ag-footer">
+                    <span class="ag-signature">
+                      <span class="ag-orb" aria-hidden="true"></span>
                       TheWing calculates. Amy explains.
-                    </p>
-                    <p class="tw-aurora-description">
-                      TheWing.ai is a veteran-built Military Decision Intelligence platform for the Air Force community, connecting military pay, career readiness, retirement, VA benefits, PCS, housing and financial planning. Our tools use deterministic engines, defined formulas and structured data, including official-source data where applicable. Amy is the conversational layer that explains calculated results, highlights trade-offs and guides you toward the right tool or next step.
-                    </p>
-                  </div>
-                  <div class="tw-aurora-chips" aria-label="TheWing intelligence capabilities">
-                    <span class="tw-aurora-chip">
-                      Career & Readiness
                     </span>
-                    <span class="tw-aurora-chip">
-                      Pay &amp; Finances
-                    </span>
-                    <span class="tw-aurora-chip">
-                      PCS & Housing
-                    </span>
-                    <span class="tw-aurora-chip">
-                      Retirement &amp; VA
-                    </span>
-                    <span class="tw-aurora-chip">
-                      Tools &amp; Resources
-                    </span>
+                    <a href="information-center.html">
+                      How our estimates work
+                      <span aria-hidden="true">↗</span>
+                    </a>
                   </div>
                 </div>
               </section>
               <script>
-    (() => {
-      "use strict";
-      const HUD_ID = "thewing-aurora-intelligence-hud";
-      const REVEAL_DELAY_MS = 1000;
-      const initializeTheWingAuroraHud = () => {
-        const hud = document.getElementById(HUD_ID);
-        if (
-          !hud ||
-          hud.dataset.twAuroraInitialized === "true"
-        ){
-          return;
-        }
-        hud.dataset.twAuroraInitialized = "true";
-        hud.style.setProperty(
-          "display",
-          "none",
-          "important"
-        );
-        hud.style.setProperty(
-          "opacity",
-          "0",
-          "important"
-        );
-        hud.style.setProperty(
-          "visibility",
-          "hidden",
-          "important"
-        );
-        hud.style.setProperty(
-          "transform",
-          "translate3d(0,24px,0) scale(.97)",
-          "important"
-        );
-        hud.setAttribute(
-          "aria-hidden",
-          "true"
-        );
-        window.setTimeout(() => {
-          hud.style.setProperty(
-            "display",
-            "block",
-            "important"
-          );
-          hud.style.setProperty(
-            "opacity",
-            "0",
-            "important"
-          );
-          hud.style.setProperty(
-            "visibility",
-            "hidden",
-            "important"
-          );
-          void hud.offsetHeight;
-          window.requestAnimationFrame(() => {
-            window.requestAnimationFrame(() => {
-              hud.style.removeProperty("opacity");
-              hud.style.removeProperty("visibility");
-              hud.style.removeProperty("transform");
-              hud.classList.add(
-                "tw-aurora-visible"
-              );
-              hud.setAttribute(
-                "aria-hidden",
-                "false"
-              );
-            });
-          });
-        }, REVEAL_DELAY_MS);
-      };
-      if (document.readyState === "complete"){
-        initializeTheWingAuroraHud();
-      } else {
-        window.addEventListener(
-          "load",
-          initializeTheWingAuroraHud,
-          { once:true }
-        );
+(()=>{
+  "use strict";
+  const root=document.getElementById(
+    "thewing-aurora-intelligence-hud"
+  );
+  if(!root||root.dataset.agReady)return;
+  root.dataset.agReady="true";
+  const find=id=>root.querySelector("#"+id);
+  const tabs=[...root.querySelectorAll("[data-goal]")];
+  const panel=find("ag-panel");
+  const primary=find("ag-primary");
+  const extra=find("ag-extra");
+  const feedback=find("ag-feedback");
+  const picker=find("ag-goal-select");
+  const ready=find("ag-ready");
+  const summary=find("ag-ready-title");
+  const reduceMotion=()=>window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+  /* DESKTOP CONTENT AND SHARED DESTINATIONS */
+  const goals={
+    pay:{
+      eyebrow:"MILITARY PAY & ALLOWANCES",
+      title:"Understand the pieces of your military pay.",
+      copy:"Estimate basic pay and housing allowance using your rank, years of service, and duty location.",
+      ready:[
+        "Rank & years of service",
+        "Duty location",
+        "Dependency status"
+      ],
+      note:"Estimates depend on the rate year and your inputs. Confirm your actual entitlements with your servicing finance office.",
+      label:"Open Pay & BAH Calculator",
+      url:"/air-force/bah-base-pay-calculator",
+      prompt:"Help me understand my military pay and BAH. What information should I have ready?"
+    },
+    promotion:{
+      eyebrow:"PROMOTION PLANNING",
+      title:"See how each input affects your WAPS score.",
+      copy:"Explore scoring scenarios and compare how changes in your entered points affect the total.",
+      ready:[
+        "Promotion cycle & grade",
+        "Available test scores",
+        "Applicable record & decoration points"
+      ],
+      note:"Planning scenarios do not predict selection or replace official promotion results.",
+      label:"Open WAPS Calculator",
+      url:"/waps",
+      prompt:"Help me prepare a WAPS scoring scenario. What inputs do I need, and what are the limits of the estimate?"
+    },
+    pcs:{
+      eyebrow:"PCS & DUTY STATION",
+      title:"Get to know your next duty station.",
+      copy:"Explore Air Force bases, then use the PCS calculator to estimate travel allowances for your move.",
+      ready:[
+        "Current & next duty station",
+        "Planned travel dates",
+        "Travelers, vehicles & orders details"
+      ],
+      note:"Travel estimates depend on your orders, eligibility, and applicable rates. Confirm allowances with your servicing office.",
+      label:"Explore the Base Map",
+      url:"/air-force/base-map",
+      extraLabel:"Estimate PCS travel allowances →",
+      extraUrl:"/air-force/pcs-calculator",
+      prompt:"Help me prepare for a PCS. What should I gather to research my next base and estimate travel allowances?"
+    },
+    home:{
+      eyebrow:"HOME-BUYING PLANNING",
+      title:"Understand the monthly cost before you choose a price.",
+      copy:"Estimate principal, interest, taxes, insurance, and applicable fees.",
+      ready:[
+        "Home price",
+        "Down payment & interest rate",
+        "Income & monthly obligations"
+      ],
+      note:"Planning estimates. Actual lender terms and property costs can differ.",
+      label:"Open Mortgage Calculator",
+      url:"/air-force/mortgage-calculator",
+      prompt:"Help me explore buying a home. What inputs should I prepare to estimate the monthly housing cost?"
+    },
+    retirement:{
+      eyebrow:"RETIREMENT PLANNING",
+      title:"Explore what your next chapter could look like.",
+      copy:"Estimate retirement pay and compare scenarios based on your service, pay history, and retirement plan.",
+      ready:[
+        "Retirement plan",
+        "Years of service",
+        "Rank & applicable pay history"
+      ],
+      note:"Results depend on the supported retirement model and your inputs. Confirm eligibility and benefit details with the responsible office.",
+      label:"Open Retirement Calculator",
+      url:"/air-force/retirement-calculator",
+      prompt:"Help me plan for military retirement. What information do I need to estimate retirement pay?"
+    }
+  };
+  /* SHORTER PHONE COPY */
+  const mobileCopy={
+    pay:{
+      title:"Understand your military pay.",
+      copy:"Estimate basic pay and BAH for your duty location."
+    },
+    promotion:{
+      title:"Explore your WAPS score.",
+      copy:"Compare how changes in your scoring inputs affect the total."
+    },
+    pcs:{
+      title:"Plan your next move.",
+      copy:"Research your next base and estimate PCS travel allowances."
+    },
+    home:{
+      title:"Understand your monthly housing cost.",
+      copy:"Estimate your payment, taxes, insurance, and applicable fees."
+    },
+    retirement:{
+      title:"Plan your next chapter.",
+      copy:"Explore retirement pay based on your service and retirement plan."
+    }
+  };
+  let selected="home";
+  let compact=null;
+  function render(key,animate=true,focusTab=false){
+    const goal=goals[key];
+    if(!goal)return;
+    selected=key;
+    picker.value=key;
+    tabs.forEach(tab=>{
+      const active=tab.dataset.goal===key;
+      tab.setAttribute("aria-selected",String(active));
+      tab.tabIndex=active?0:-1;
+      if(active&&focusTab){
+        tab.focus();
       }
-    })();
-  </script>
+    });
+    panel.setAttribute(
+      "role",
+      compact?"region":"tabpanel"
+    );
+    panel.setAttribute(
+      "aria-labelledby",
+      compact?"ag-heading":"ag-tab-"+key
+    );
+    panel.tabIndex=compact?-1:0;
+    find("ag-eyebrow").textContent=goal.eyebrow;
+    find("ag-heading").textContent=
+      compact?mobileCopy[key].title:goal.title;
+    find("ag-copy").textContent=
+      compact?mobileCopy[key].copy:goal.copy;
+    find("ag-note").textContent=goal.note;
+    primary.textContent=goal.label;
+    primary.setAttribute("href",goal.url);
+    find("ag-list").replaceChildren(
+      ...goal.ready.map(text=>{
+        const li=document.createElement("li");
+        li.textContent=text;
+        return li;
+      })
+    );
+    extra.hidden=!goal.extraUrl;
+    if(goal.extraUrl){
+      extra.href=goal.extraUrl;
+      extra.textContent=goal.extraLabel;
+    }else{
+      extra.removeAttribute("href");
+      extra.textContent="";
+    }
+    feedback.textContent="";
+    panel.classList.remove("ag-change");
+    if(animate){
+      void panel.offsetWidth;
+      panel.classList.add("ag-change");
+    }
+  }
+  /* USE VIEWPORT AND STABLE PARENT WIDTH TO CHOOSE LAYOUT */
+  function updateLayout(){
+    const next=
+      window.innerWidth<=767||
+      root.parentElement.clientWidth<=799;
+    if(next===compact)return;
+    compact=next;
+    root.classList.toggle("ag-compact",compact);
+    find("ag-title").textContent=
+      compact
+        ?"What's your next step?"
+        :"What are you planning?";
+    root.querySelector(".ag-intro").textContent=
+      compact
+        ?"Choose a goal to get started."
+        :"Choose a goal. See what you need and where to start.";
+    ready.open=!compact;
+    summary.textContent=
+      compact?"What you'll need":"Have ready";
+    summary.tabIndex=compact?0:-1;
+    render(selected,false);
+  }
+  /* KEEP CHECKLIST OPEN ON DESKTOP */
+  summary.addEventListener("click",event=>{
+    if(!compact){
+      event.preventDefault();
+    }
+  });
+  picker.addEventListener("change",()=>{
+    render(picker.value);
+  });
+  /* DESKTOP CARD AND KEYBOARD CONTROLS */
+  tabs.forEach((tab,index)=>{
+    tab.addEventListener("click",()=>{
+      render(tab.dataset.goal);
+    });
+    tab.addEventListener("keydown",event=>{
+      let next;
+      if(event.key==="ArrowRight"){
+        next=(index+1)%tabs.length;
+      }else if(event.key==="ArrowLeft"){
+        next=(index-1+tabs.length)%tabs.length;
+      }else if(event.key==="Home"){
+        next=0;
+      }else if(event.key==="End"){
+        next=tabs.length-1;
+      }else{
+        return;
+      }
+      event.preventDefault();
+      render(tabs[next].dataset.goal,true,true);
+    });
+  });
+  /* CONNECT TO YOUR EXISTING ASK AMY WIDGET */
+  find("ag-ask").addEventListener("click",async()=>{
+    const amy=document.getElementById("tw-amy-hud-v4");
+    const input=amy?.querySelector("#twamy-input");
+    if(!amy){
+      feedback.textContent=
+        "Ask Amy is unavailable on this page. You can still open the recommended tool.";
+      return;
+    }
+    amy.style.scrollMarginTop="120px";
+    amy.scrollIntoView({
+      behavior:reduceMotion()?"auto":"smooth",
+      block:"start"
+    });
+    if(input&&!input.disabled){
+      input.focus({preventScroll:true});
+    }
+    const prompt=goals[selected].prompt;
+    if(typeof window.TheWingAmyHUD?.ask==="function"){
+      feedback.textContent=
+        "Your question has been sent to Ask Amy above.";
+      try{
+        await window.TheWingAmyHUD.ask(prompt);
+      }catch(_){
+        feedback.textContent=
+          "Amy could not receive the question. Please try the Ask Amy box above.";
+      }
+    }else if(input){
+      input.value=prompt;
+      input.dispatchEvent(
+        new Event("input",{bubbles:true})
+      );
+      feedback.textContent=
+        "Your question is ready in Ask Amy. Press Send there to continue.";
+    }else{
+      feedback.textContent=
+        "Please use the Ask Amy section above to continue.";
+    }
+  });
+  /* INITIALIZE AND FOLLOW SIZE CHANGES */
+  updateLayout();
+  window.addEventListener(
+    "resize",
+    updateLayout,
+    {passive:true}
+  );
+  if("ResizeObserver" in window){
+    new ResizeObserver(updateLayout).observe(root);
+  }
+  /* GLASS SWEEP WHEN THE HUD ENTERS VIEW */
+  if("IntersectionObserver" in window){
+    const observer=new IntersectionObserver(entries=>{
+      if(entries.some(entry=>entry.isIntersecting)){
+        root.classList.add("ag-enter");
+        observer.disconnect();
+      }
+    },{threshold:.12});
+    observer.observe(root);
+  }else{
+    root.classList.add("ag-enter");
+  }
+})();
+</script>
             </div>
           </div>
         </div>
@@ -4395,7 +4806,7 @@ window.dispatchEvent(
           <div class="footer-content-wrapper-2">
             <a href="#" class="footer-logo-link w-inline-block">
               <div class="logo-footer-wrapper">
-                <div><img src="images/Home-01-About.png" loading="lazy" sizes="(max-width: 1260px) 100vw, 1260px" srcset="images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-500.png 500w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-800.png 800w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-1080.png 1080w, images/Home-01-About.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
+                <div><img src="images/Home-01-About.png" loading="lazy" sizes="100vw" srcset="images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-500.png 500w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-800.png 800w, images/a29aeba24192a3ad0d91747ccae7be76_Home-01-About-p-1080.png 1080w, images/Home-01-About.png 1260w" alt="Profile of a woman with curly hair looking into the distance with a blurred natural background."></div>
               </div>
             </a>
             <div class="space-text"></div>
@@ -4437,11 +4848,6 @@ window.dispatchEvent(
         </div>
         <div class="footer_info">
           <div class="text-size-tiny-2">© Copyright 2025. Veteran Owned and Opearated. TheWing Calculated, <a href="digital-media-air-force-images-heritage.html" target="_blank" class="text-size-tiny-2 text-color-alternate">Amy</a> Explains.</div>
-          <div class="footer_socials">
-            <a href="#" class="social-link w-inline-block"><img loading="lazy" src="images/linkedin_1.svg" alt="LinkedIn" class="social-link-image"></a>
-            <a href="#" class="social-link w-inline-block"><img loading="lazy" src="images/instagram_1.svg" alt="Instagram" class="social-link-image"></a>
-            <a href="#" class="social-link w-inline-block"><img loading="lazy" src="https://cdn.prod.website-files.com/69b6b526f23748df9f189b16/69b6b528f23748df9f189ecc_twitter.svg" alt="" class="social-link-image"></a>
-          </div>
         </div>
         <div class="text-size-tiny-2 text-style-muted60">TheWing™ is Veteran owned and operated under TheWing LLC, incorporated in TX, USA (Reg. No. 1066713014). TheWing.ai provides informational tools and resources designed to assist military members and their families with relocation planning, housing insights, and financial scenario analysis. Where applicable, services may be provided in accordance with regulations established by the [State Real Estate Regulatory Authority] under the [Relevant State Act] (License No. 1066713014). Information on this website is provided for educational purposes only and does not constitute financial, legal, or real estate advice.</div>
       </div>
