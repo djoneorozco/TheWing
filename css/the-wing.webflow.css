@@ -105,15 +105,6 @@
   --spacing--30: 30rem;
 }
 
-.w-layout-grid {
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  display: grid;
-}
-
 .w-layout-blockcontainer {
   max-width: 940px;
   margin-left: auto;
@@ -131,6 +122,15 @@
   flex-direction: column;
   align-items: flex-start;
   display: flex;
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
 }
 
 @media screen and (max-width: 991px) {
@@ -60799,7 +60799,7 @@ blockquote {
   }
 
   ._6 {
-    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Amy-A.I-Concierge-.jpg');
+    background-image: linear-gradient(#0000, #0006 40% 55%, #0000), url('../images/Amy-A.I-Concierge----404.jpg');
     background-position: 0 0, 50%;
     background-size: auto, cover;
     min-height: 100vh;
@@ -75173,10 +75173,6 @@ blockquote {
   }
 }
 
-#w-node-_9ce6fb69-0ced-5d9c-58e3-8250564cd71f-602db70c {
-  justify-self: stretch;
-}
-
 #w-node-a20e7068-528c-2165-b385-785e4c45ca5e-4c45ca57 {
   place-self: center;
 }
@@ -75308,10 +75304,6 @@ blockquote {
 
   #w-node-_087b196d-b026-a298-5d40-c324b41ad81b-602db9df {
     grid-column: span 1 / span 1;
-  }
-
-  #w-node-acf4f51b-8fd2-a7be-2b0c-0d9964e79525-93e40e0c, #w-node-_68e9e909-246f-124a-a547-31c69ee77a8a-93e40e0c {
-    grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
 
